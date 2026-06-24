@@ -1,0 +1,289 @@
+---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "How to Read an IGI Diamond Certificate — Field by Field";
+const description = "Learn every field on an IGI lab-grown diamond certificate: report number, 4Cs, fluorescence, laser inscription, and how to verify your stone. By Suman Smith, Lux Jewels.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/how-to-read-igi-certificate/",
+      "headline": "How to Read an IGI Diamond Certificate — Field by Field",
+      "description": "Learn every field on an IGI lab-grown diamond certificate: report number, 4Cs, fluorescence, laser inscription, and how to verify your stone. By Suman Smith, Lux Jewels.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "How to Read an IGI Certificate", "item": "https://engagementringincanada.com/learn/how-to-read-igi-certificate/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the difference between IGI and GIA certificates for lab-grown diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "Both grade lab-grown diamonds on the same 4Cs scale. IGI has become the leading lab for lab-grown grading in Canada due to faster turnaround. Both certificates are equally verifiable. In the Canadian market, IGI is more common for lab-grown stones."}},
+        {"@type": "Question", "name": "Can I verify my IGI certificate online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Go to igi.org and use the report check tool. Enter the report number and the results will match the physical certificate if genuine."}},
+        {"@type": "Question", "name": "Should I always ask for the IGI report number before buying?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every legitimate stone should come with a grading certificate. The report number lets you independently verify the stone's grade at igi.org. No certificate number means no independent verification — do not buy without one."}},
+        {"@type": "Question", "name": "What does Type IIa mean on an IGI lab-grown certificate?", "acceptedAnswer": {"@type": "Answer", "text": "Type IIa refers to a diamond's chemical purity classification. Type IIa diamonds contain no detectable nitrogen — the most chemically pure diamond type. Most CVD lab-grown diamonds are Type IIa. It's associated with very high colour and transparency."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the difference between IGI and GIA certificates for lab-grown diamonds?",
+    a: "GIA and IGI both grade lab-grown diamonds on the same 4Cs scale. GIA has historically been more dominant in the natural diamond market; IGI has become the leading lab for lab-grown grading because of its faster turnaround and competitive pricing for labs. Both are respected. In the Canadian lab-grown market, IGI is more common."
+  },
+  {
+    q: "Can I verify my IGI certificate online?",
+    a: "Yes. Go to igi.org and use the report check tool. Enter the report number and the results will match the physical certificate if genuine."
+  },
+  {
+    q: "Should I always ask for the IGI report number before buying?",
+    a: "Yes. Every legitimate stone offered at any significant price should come with a grading certificate. The report number lets you independently verify the stone's grade. No certificate number means no independent verification."
+  },
+  {
+    q: "What does 'Type IIa' mean on an IGI lab-grown certificate?",
+    a: "Type IIa refers to a diamond's chemical purity classification. Type IIa diamonds contain no detectable nitrogen, making them the most chemically pure diamond type. Most CVD lab-grown diamonds are Type IIa. It's associated with very high colour and transparency, and is considered the premium classification."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>How to Read an IGI Diamond Certificate</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>How to Read an IGI Certificate</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>An IGI (International Gemological Institute) diamond certificate is a document that records the graded characteristics of a specific diamond. For lab-grown diamonds in Canada, IGI is the most commonly used grading lab. Every IGI lab-grown certificate includes: a unique report number (laser-inscribed on the stone's girdle), carat weight, colour grade, clarity grade, cut grade, shape description, measurements, proportions data, fluorescence, and a plot diagram showing clarity characteristics. I'm Suman Smith, founder of Lux Jewels. I've been working with IGI-certified lab-grown diamonds since 2007 and became Canada's first exclusively lab-grown jewellery specialist in 2015. Reading a certificate accurately is the single most important skill for any engagement ring buyer.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Why the Certificate Matters</h2>
+          <p>The certificate is your only independent evidence of what you're buying.</p>
+          <p>Without it, you're relying on a jeweller's claim about stone quality. With an IGI certificate and the laser-inscribed report number on the stone, you can:</p>
+          <ol>
+            <li>Verify the stone matches the certificate (report number on the girdle matches the document)</li>
+            <li>Verify the certificate is authentic (IGI's online report check at igi.org)</li>
+            <li>Compare quotes: two stones quoted at "1ct G/VS1" may have different cut grades, different fluorescence, or different proportions - the certificate shows all of this</li>
+            <li>Confirm the stone is lab-grown (IGI uses a distinct certificate format for lab-grown)</li>
+          </ol>
+          <p><strong>Every Lux Jewels stone comes with an IGI certificate.</strong> Before buying from any jeweller, ask for the specific IGI report number so you can verify it independently.</p>
+
+          <h2>The IGI Report Number</h2>
+          <p>Located at the top of the certificate. This is the most important field.</p>
+          <p>The laser inscription on the diamond's girdle matches this number. To verify:</p>
+          <ol>
+            <li>Note the report number from the certificate</li>
+            <li>Go to igi.org/verify</li>
+            <li>Enter the report number</li>
+            <li>The result should match the certificate exactly</li>
+          </ol>
+          <p>If there's no report number, or the number doesn't match at igi.org, do not buy that stone.</p>
+          <p>The laser inscription is microscopic - it's typically visible only under 10x magnification. A gemologist or jeweller can confirm the inscription.</p>
+
+          <h2>Shape and Cutting Style</h2>
+          <p>The first descriptive field after the report number.</p>
+          <p>Examples: "Round Brilliant," "Oval Modified Brilliant," "Emerald Cut," "Pear Modified Brilliant," "Cushion Modified Brilliant."</p>
+          <p><strong>What "Modified Brilliant" means:</strong> The stone uses a facet pattern that combines elements of the traditional brilliant cut. It's a standard descriptor - almost all non-round shapes are technically "modified brilliant" or have specific named cutting styles.</p>
+
+          <h2>Measurements</h2>
+          <p>Expressed as minimum diameter x maximum diameter x depth for round stones (e.g., "6.48 x 6.52 x 4.00 mm") or length x width x depth for fancy shapes (e.g., "9.10 x 6.30 x 3.94 mm").</p>
+          <p><strong>Why this matters:</strong></p>
+          <ul>
+            <li>The measurements tell you the actual physical size of the stone, which affects how large it appears on the finger</li>
+            <li>Two 1-carat ovals with different measurements have different face-up surface areas - one may appear noticeably larger</li>
+            <li>For oval, pear, and emerald cuts, the length-to-width ratio can be calculated from the measurements</li>
+          </ul>
+
+          <h2>Carat Weight</h2>
+          <p>Expressed to two decimal places (e.g., 1.02ct). IGI measures to the hundredths place.</p>
+          <p><strong>Important:</strong> This is the weight of the stone only, not the total weight of any setting or band.</p>
+          <p>A "1.0ct diamond" is any diamond between 1.00ct and 1.09ct (since the next price tier starts at 1.10ct). There can be a meaningful price difference between 0.99ct and 1.00ct due to psychological pricing in the market - a 0.99ct can represent significant savings at identical visual size.</p>
+
+          <h2>Colour Grade</h2>
+          <p>Graded on the GIA D-to-Z scale (where D is completely colourless and Z is clearly yellow).</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Description</th>
+                  <th>Practical note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>D, E, F</td>
+                  <td>Colourless</td>
+                  <td>Highest grades, visually similar</td>
+                </tr>
+                <tr>
+                  <td>G, H</td>
+                  <td>Near-colourless</td>
+                  <td>G looks colourless in most settings to the eye</td>
+                </tr>
+                <tr>
+                  <td>I, J</td>
+                  <td>Near-colourless</td>
+                  <td>Faint warmth may be visible, especially in step cuts</td>
+                </tr>
+                <tr>
+                  <td>K-Z</td>
+                  <td>Faint-very light yellow</td>
+                  <td>Visible colour in most settings</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Shape and metal affect colour appearance:</strong></p>
+          <ul>
+            <li>Step cuts (emerald, Asscher) show colour more clearly - G minimum recommended, F safer</li>
+            <li>Round brilliant scatters colour - H acceptable in white gold; I-J acceptable in yellow gold</li>
+            <li>Rose gold is warm: H-I in rose gold looks like F-G in white gold</li>
+            <li>Yellow gold is warm: H-J acceptable; higher colour is wasted in yellow gold</li>
+          </ul>
+          <p><strong>For lab-grown certificates:</strong> The scale is the same as natural diamonds. D colour lab-grown is just as colourless as D natural.</p>
+
+          <h2>Clarity Grade</h2>
+          <p>Graded under 10x magnification. The scale (GIA system):</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FL</td>
+                  <td>Flawless - no internal or external imperfections</td>
+                </tr>
+                <tr>
+                  <td>IF</td>
+                  <td>Internally Flawless - no internal, minor surface</td>
+                </tr>
+                <tr>
+                  <td>VVS1, VVS2</td>
+                  <td>Very Very Slightly Included - near-impossible to see at 10x</td>
+                </tr>
+                <tr>
+                  <td>VS1, VS2</td>
+                  <td>Very Slightly Included - difficult to see at 10x</td>
+                </tr>
+                <tr>
+                  <td>SI1, SI2</td>
+                  <td>Slightly Included - visible at 10x; SI1 usually eye-clean</td>
+                </tr>
+                <tr>
+                  <td>I1, I2, I3</td>
+                  <td>Included - visible to the naked eye</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Eye-clean</strong> is the practical threshold - can you see an inclusion without magnification? Most people can't afford FL/IF lab-grown, and they don't need to. VS1-VS2 is the sweet spot for lab-grown at a reasonable price: clean to the eye, clean under 10x.</p>
+          <p><strong>SI1 can be eye-clean</strong> but depends on the specific stone and the placement of the inclusion. SI2 and below: some inclusions will be visible to the naked eye.</p>
+
+          <h2>Cut Grade (For Round Brilliants Only)</h2>
+          <p>IGI grades the cut of round brilliants: Excellent, Very Good, Good, Fair, Poor.</p>
+          <p>Cut determines how light enters, reflects, and exits the diamond - it's the single biggest driver of sparkle. An Excellent cut round at G colour will outsparkle a D colour stone with a Good cut.</p>
+          <p>For non-round shapes (oval, pear, emerald, cushion), there's no official IGI cut grade. Proportions are described in the measurements and depth/table percentages - but cut quality for fancy shapes is a matter of visual assessment, not a graded scale.</p>
+          <p><strong>Always request Excellent cut for round brilliants.</strong> Very Good can be acceptable; Good and below are not recommended.</p>
+
+          <h2>Polish and Symmetry</h2>
+          <p>Separate grades: Excellent, Very Good, Good, Fair, Poor.</p>
+          <p>For polished gem-quality diamonds, Very Good or Excellent is standard. These grades describe the surface condition (polish) and the precision of facet placement (symmetry).</p>
+          <p><strong>Target: Excellent/Excellent or Very Good/Very Good minimum.</strong></p>
+
+          <h2>Depth and Table Percentages</h2>
+          <p>Proportions expressed as percentages of the diameter:</p>
+          <ul>
+            <li><strong>Table %:</strong> The large flat facet on top (the "table") as a percentage of the diameter. For round brilliants, ideal range is 54-58%.</li>
+            <li><strong>Depth %:</strong> Total depth from table to culet as a percentage of the diameter. For round brilliants, ideal range is 61-62.5%.</li>
+          </ul>
+          <p>Stones outside these ranges can be "cut to weight" - keeping carat weight rather than maximizing light performance. The cut grade accounts for this in round brilliants, but knowing these numbers helps you evaluate fancy shapes where there's no formal cut grade.</p>
+
+          <h2>Fluorescence</h2>
+          <p>The diamond's reaction under ultraviolet (UV) light. Graded: None, Faint, Medium, Strong, Very Strong.</p>
+          <p>For colour grades G and above: fluorescence can sometimes make a D-E stone appear slightly milky under UV-rich sunlight. This is called the "overblue" or "hazy" effect - it's uncommon but worth checking if you're buying a Very Strong fluorescence stone.</p>
+          <p>For H-I colour diamonds: Medium fluorescence actually helps by making the stone appear whiter to the eye. It can add value at these grades.</p>
+          <p><strong>Practical advice:</strong> For D-E colour, prefer None or Faint fluorescence. For G-H, Medium is fine. For I and below, Medium or Strong fluorescence can be a value buy.</p>
+
+          <h2>Clarity Plot</h2>
+          <p>The diagram showing the position and type of inclusions and surface features inside the stone.</p>
+          <p>Plot markings:</p>
+          <ul>
+            <li>Red symbols = internal clarity characteristics (inclusions)</li>
+            <li>Green symbols = surface characteristics (blemishes)</li>
+            <li>Common types: crystal (trapped mineral), needle, cloud, feather (fracture), indented natural</li>
+          </ul>
+          <p>The plot is useful for confirming the stone matches the certificate (inclusions are in characteristic positions) and for understanding what specifically affects the clarity grade.</p>
+
+          <h2>The "Lab-Grown" Notation</h2>
+          <p>IGI lab-grown certificates use a blue certificate design (as opposed to the beige used for natural diamonds). The words "Lab-Grown Diamond" or "Laboratory-Grown Diamond" appear prominently.</p>
+          <p>The laser inscription on the girdle also typically includes "Lab-Grown" alongside the report number.</p>
+
+          <h2>Certificate Verification</h2>
+          <p>Before finalizing any purchase:</p>
+          <ol>
+            <li>Obtain the IGI report number</li>
+            <li>Go to igi.org, then Report Check (or the specific verification URL on the certificate)</li>
+            <li>Confirm: stone description matches, colour and clarity match, and the certificate is current</li>
+          </ol>
+          <p>A real IGI certificate will verify instantly. If a jeweller hesitates to provide the report number or the verification fails, do not proceed.</p>
+
+          <p>I've reviewed hundreds of IGI certificates over the years with clients across Canada - and I still verify every single stone before recommending it. If you're looking at a <a href="/lab-grown-engagement-rings/">lab-grown engagement ring</a> and want a second set of eyes on the certificate details, <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">book a free consultation</a> and we'll go through every field together. I founded Lux Jewels in 2007 and have been working exclusively with lab-grown stones since 2015 - reading these certificates is something I do every day.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

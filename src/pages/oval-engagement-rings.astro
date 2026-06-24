@@ -1,0 +1,366 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Oval Engagement Rings Canada — Lab-Grown & Custom";
+const description = "Shop oval lab-grown engagement rings in Canada. Length-to-width guide, bow-tie explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/oval-engagement-rings/",
+      "url": "https://engagementringincanada.com/oval-engagement-rings/",
+      "name": "Oval Engagement Rings Canada — Lab-Grown & Custom",
+      "description": "Shop oval lab-grown engagement rings in Canada. Length-to-width guide, bow-tie explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Oval Engagement Rings", "item": "https://engagementringincanada.com/oval-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What makes oval engagement rings appear larger than round diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "An oval diamond distributes the same carat weight across a longer surface area, making it appear 10-15% larger face-up than a round of identical carat weight. The elongated shape gives more visual impact per dollar."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the bow-tie effect in oval diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The bow-tie effect is a dark shadow across the centre of oval diamonds caused by how light passes through the elongated shape. Nearly all ovals have some bow-tie. A subtle bow-tie is invisible under normal conditions; a strong one reduces brilliance. Assessing severity requires seeing the stone in motion video, not static photos."}
+        },
+        {
+          "@type": "Question",
+          "name": "What length-to-width ratio is best for oval engagement rings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The most popular oval ratio is 1.40-1.50 for a balanced silhouette. Ratios of 1.35-1.40 produce a fuller oval. Ratios above 1.55 create a very elongated look. The ideal ratio depends on the wearer's finger width and style preference."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are oval lab-grown diamonds more affordable than round diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Oval lab-grown diamonds are typically priced 10-20% below round brilliant diamonds of the same carat weight and grade, because rounds carry a popularity premium. An oval delivers more visible stone at the same price."}
+        },
+        {
+          "@type": "Question",
+          "name": "What metal pairs best with oval lab-grown diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Rose gold is the most popular pairing for oval engagement rings. The warm tone complements the oval shape's softness. White gold and platinum maximize brightness for colourless stones. Two-tone designs with white gold prongs and a yellow or rose band are also popular."}
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a custom oval engagement ring take?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Custom oval rings at Lux Jewels take 4-6 weeks from stone selection to delivery - including consultation, stone sourcing, CAD design approval, fabrication, and insured FedEx Priority shipping across Canada."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do oval lab-grown diamonds come with IGI certification?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. All oval lab-grown diamonds at Lux Jewels include an IGI grading certificate with 4Cs grades, exact measurements (confirming the length-to-width ratio), and a laser girdle inscription you can verify independently."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What makes oval engagement rings appear larger than round diamonds?",
+    a: "An oval diamond distributes the same carat weight across a longer surface area. The elongated shape means the stone looks 10-15% larger face-up compared to a round of identical carat weight. This is one of the main reasons oval has become the top-requested shape - you get more visual impact per dollar. This effect is most pronounced when the ratio is 1.45 or above."
+  },
+  {
+    q: "What is the bow-tie effect and does it ruin an oval ring?",
+    a: "The bow-tie effect is a dark shadow that forms across the centre of oval diamonds due to the way light passes through an elongated stone. Nearly all oval diamonds show some bow-tie - it's not a flaw. The question is severity. A subtle bow-tie is nearly invisible under normal conditions. A strong bow-tie reduces brilliance and draws the eye to the shadow rather than the sparkle. I review stones in motion video (not static photos) to assess bow-tie intensity before recommending them."
+  },
+  {
+    q: "What length-to-width ratio is best for oval engagement rings?",
+    a: "The most popular ratio is between 1.40 and 1.50 for a balanced oval that's neither too round nor too elongated. Ratios of 1.35-1.40 produce a fuller, rounder oval. Ratios above 1.55 create a very elongated silhouette. There's no correct answer - it's a style preference, and the ideal ratio also depends on the width of the wearer's finger."
+  },
+  {
+    q: "Are oval lab-grown diamonds more affordable than round diamonds?",
+    a: "Yes, oval lab-grown diamonds are typically priced 10-20% below round brilliant diamonds of the same carat weight and grade. This is because round cuts carry a premium due to their popularity. An oval gives you more visible stone at the same price point, or the same visible stone at a lower price."
+  },
+  {
+    q: "Do oval engagement rings suit all finger types?",
+    a: "Oval rings are particularly well-suited to shorter or wider fingers because the elongated silhouette creates a lengthening effect. They also work well on longer fingers when set with a fuller ratio (1.35-1.45). The finger-slimming effect is one of the most common reasons clients request ovals when they've never considered diamonds before."
+  },
+  {
+    q: "How many prongs should an oval engagement ring have?",
+    a: "Four prongs are the standard choice and the most common setting for oval rings. Six prongs add security and are a good choice for active wearers. Unlike pointed cuts such as <a href=\"/pear-engagement-rings/\">pear</a> or marquise, oval tips don't require corner prongs to protect sharp ends - ovals are more durable at the tips than those shapes."
+  },
+  {
+    q: "What metal pairs best with an oval lab-grown diamond?",
+    a: "Rose gold is the most popular metal choice for oval engagement rings right now. The warm, pink tone complements the oval shape's softness and pairs particularly well with warmer stone grades (G-H colour). White gold and platinum offer a clean, bright setting that maximizes the appearance of colourless (D-F) stones. Two-tone designs with white gold prongs and a yellow or rose gold band are also popular."
+  },
+  {
+    q: "Can I customize the length-to-width ratio of my oval diamond?",
+    a: "You can't customize the cut of an existing stone - the ratio is set when the diamond is cut. What I do is source stones to your specifications. If you want a 1.50-1.55 ratio with soft tips and minimal bow-tie, I find stones that match that profile rather than showing you an open inventory and having you guess."
+  },
+  {
+    q: "Do oval lab-grown diamonds come with IGI certification?",
+    a: "Yes. All oval lab-grown diamonds we work with come with an IGI grading certificate. The certificate includes the 4Cs (cut, colour, clarity, carat), the specific measurements (which tell you the length-to-width ratio), and a laser girdle inscription that matches the certificate number. You can verify the inscription independently."
+  },
+  {
+    q: "How long does a custom oval engagement ring take?",
+    a: "A custom oval ring typically takes 4-6 weeks from stone selection to delivery. That includes the initial video consultation, stone sourcing and approval, CAD design confirmation, and fabrication. Rush timelines may be available depending on stone availability - ask during your consultation."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Oval Engagement Rings Canada - Lab-Grown &amp; Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Oval Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Oval lab-grown engagement rings appear 10-15% larger per carat than round diamonds of the same weight because the elongated shape distributes surface area differently. The most popular length-to-width ratio is 1.35-1.50. Nearly all oval diamonds show some bow-tie effect - a dark shadow across the centre. The key is choosing a stone where that shadow is subtle rather than pronounced. I'm Suman Smith, founder of Lux Jewels. I've been working with oval lab-grown diamonds since 2007, and I became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't show clients a showroom of pre-made rings and tell them to pick one. I find the oval stone that matches their specific ratio preference, bow-tie tolerance, and budget, then build around it. That's what 18 years in this work produces: the ability to sort a stone parcel by the things that actually affect how a ring looks on someone's hand.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> | <a href="/lab-grown-engagement-rings/">Browse the full lab-grown collection</a></p>
+
+          <h2>Why Oval Diamonds Are Canada's Most Requested Shape Right Now</h2>
+
+          <p>Oval engagement rings have led our request volume at Lux Jewels for the past three years. I see this across Canada and the US - couples are choosing oval over round at a rate I haven't seen before.</p>
+
+          <p>There are practical reasons for that. An oval lab-grown diamond in the 1-2ct range gives you more visible stone than a round of identical carat weight. The elongated silhouette extends along the finger, which creates a slimming and lengthening effect that a round brilliant doesn't. And at the same cut and colour grade, you'll typically pay less for an oval than for a round - rounds carry a premium because they're the most in-demand cut across all diamond categories.</p>
+
+          <p>Add in the oval's natural pairing with rose gold and two-tone bands, and you have a shape that's visually distinctive without being unconventional.</p>
+
+          <h2>How to Choose an Oval Lab-Grown Diamond: The Full Guide</h2>
+
+          <h3>What Is the Best Length-to-Width Ratio for Oval Rings?</h3>
+
+          <p>Length-to-width ratio tells you how elongated the oval is. A ratio of 1:1 would be a circle. A ratio of 2:1 would be very narrow and elongated. The sweet spot depends on the look you're after:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ratio Range</th>
+                  <th>Silhouette Description</th>
+                  <th>Best For</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.30 - 1.40</td>
+                  <td>Classic oval - rounder, fuller</td>
+                  <td>Wider finger profiles; vintage look</td>
+                </tr>
+                <tr>
+                  <td>1.40 - 1.50</td>
+                  <td>Standard oval - most common choice</td>
+                  <td>Most hand types; universally flattering</td>
+                </tr>
+                <tr>
+                  <td>1.50 - 1.65</td>
+                  <td>Elongated oval</td>
+                  <td>Long, lean silhouette; elegant look</td>
+                </tr>
+                <tr>
+                  <td>1.65+</td>
+                  <td>Very elongated (sometimes called "oblong")</td>
+                  <td>Statement rings; fashion-forward buyers</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Most of the oval lab-grown diamonds we work with fall between 1.40 and 1.55. I've seen ratios as narrow as 1.35 and as elongated as 1.70 - both can be beautiful. What you're looking for is a ratio that feels right on the actual hand, not just on a sizing chart.</p>
+
+          <h3>Understanding the Bow-Tie Effect in Oval Diamonds</h3>
+
+          <p>The bow-tie effect is a dark shadow that runs horizontally across the centre of an oval diamond, resembling a bow tie. Here's what you need to know:</p>
+
+          <p><strong>Every oval diamond has some degree of bow-tie.</strong> This isn't a defect - it's a natural result of how light passes through the elongated shape. The real question is whether it's subtle or pronounced.</p>
+
+          <p>A subtle bow-tie is nearly invisible in normal light conditions and only appears when the stone is in certain orientations. A strong bow-tie dominates the centre of the stone and reduces brilliance significantly.</p>
+
+          <p><strong>How to assess bow-tie:</strong> Look at video of the stone in motion, not just static photos. A static top-down photo can make a bow-tie look worse or better than it actually appears. I always review oval stones in motion for clients before recommending them.</p>
+
+          <p>There's no grading report line item for bow-tie intensity - you have to see the stone. This is one reason I review stones on your behalf rather than having you browse a static inventory.</p>
+
+          <h3>Soft Tips vs. Pointed Tips</h3>
+
+          <p>Oval diamonds vary in how sharp or soft the tips at each end of the stone are:</p>
+
+          <ul>
+            <li><strong>Soft tips</strong> (also called "French tips"): The ends of the oval taper gently. Less prone to chipping than pointed cuts. More forgiving in low-profile settings.</li>
+            <li><strong>Pointed tips</strong>: Sharper ends create a more elongated, dramatic silhouette. More like a marquise at the extremes. Require more prong protection at the tips.</li>
+          </ul>
+
+          <p>Unlike marquise or <a href="/pear-engagement-rings/">pear diamonds</a>, oval tips don't typically have sharp points - which is one reason ovals are considered more durable for everyday wear than those shapes.</p>
+
+          <h3>Chubby vs. Slender Ovals</h3>
+
+          <p>Beyond length-to-width ratio, ovals vary in belly fullness - how much the sides curve outward:</p>
+
+          <ul>
+            <li><strong>Chubby ovals</strong> (wide belly): More surface area in the middle, often more brilliant. Look fuller and rounder overall.</li>
+            <li><strong>Slender ovals</strong> (subtle belly): More linear silhouette. Looks larger on the finger but may show the bow-tie effect more.</li>
+          </ul>
+
+          <p>This is a stylistic preference with no right answer. I'll pull examples of both when we're selecting stones.</p>
+
+          <h3>Best Settings for Oval Lab-Grown Diamonds</h3>
+
+          <p><strong>4-prong settings</strong> are the most common choice for oval rings. They hold the stone securely at four points and maximize the visible surface area of the stone.</p>
+
+          <p><strong>6-prong settings</strong> offer more security, which some clients prefer for active lifestyles. The additional prongs reduce the visible surface area slightly but provide better protection for the girdle.</p>
+
+          <p><strong>Hidden halo settings</strong> place a frame of smaller diamonds beneath the girdle of the centre stone, adding perimeter sparkle without a traditional crown halo. This is a popular choice for oval stones right now. See our <a href="/halo-engagement-rings/">halo engagement rings</a> page for more on this setting style.</p>
+
+          <p><strong>East-west settings</strong> orient the oval horizontally across the finger rather than vertically. This is a design statement - it emphasizes width rather than length. Not for everyone, but it produces a distinctive ring profile.</p>
+
+          <p><strong>Pave or split-shank bands</strong> complement oval centres exceptionally well. The secondary sparkle along the band frames the oval without competing with it.</p>
+
+          <h3>Which Metals Work Best with Oval Engagement Rings?</h3>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Metal</th>
+                  <th>How It Works with Oval</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>14K Rose Gold</td>
+                  <td>The most popular pairing. Warm tone complements the oval shape's softness.</td>
+                </tr>
+                <tr>
+                  <td>14K or 18K White Gold</td>
+                  <td>Clean backdrop that lets a D-F colourless stone show maximum brightness.</td>
+                </tr>
+                <tr>
+                  <td>Platinum 950</td>
+                  <td>Same brightness as white gold, longer-lasting, hypoallergenic. Higher cost.</td>
+                </tr>
+                <tr>
+                  <td>14K Yellow Gold</td>
+                  <td>Classic look. Works especially well with warmer G-H stones in an oval.</td>
+                </tr>
+                <tr>
+                  <td>Two-tone (white prongs, yellow or rose band)</td>
+                  <td>Popular for ovals - white prongs maximize stone appearance; coloured band adds warmth.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>All settings at Lux Jewels use repurposed gold (99.5% previously refined).</p>
+
+          <h2>2026 Oval Lab-Grown Engagement Ring Prices (Canada)</h2>
+
+          <p>Oval lab-grown diamonds are priced below equivalent-carat rounds, making them one of the better value options in the category. Here's what you can expect for a complete ring (stone + setting) in 2026:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct oval lab-grown diamond, 14K solitaire</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval lab-grown diamond, 14K solitaire</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval lab-grown diamond, 14K hidden halo</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct oval lab-grown diamond, 18K pave band</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>2.0ct oval lab-grown diamond, Platinum solitaire</td>
+                  <td>Contact for pricing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>For reference, Canadian competitors show these price points for oval lab-grown rings: AGI Design (Toronto) at CA$1,680-CA$5,800 (37 designs), and Bellisa Jewellery (Toronto) from CA$1,835.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Who Does Lux Jewels Serve for Oval Engagement Rings?</h2>
+
+          <p>I work with couples across Canada and the US. I started Lux Jewels in 2007, and in 2015 I became the first Canadian jeweller to dedicate the entire business to lab-grown stones exclusively. That's over two decades with a single focus.</p>
+
+          <p>What that means for oval ring clients: I've reviewed hundreds of oval stones from multiple suppliers, and I have a specific sense of what makes a particular stone worth recommending and what makes it a pass. The bow-tie effect, the belly proportion, the tip shape - all of these affect how a ring looks on an actual hand, and they're not things that show up clearly in a product photo.</p>
+
+          <p>I don't care if you're in Halifax, Vancouver, or Calgary. The consultation is a video call, the stone review is handled by me, the ring is delivered via FedEx Priority with full insurance and signature required.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a></p>
+
+          <h2>Two Ways to Work with Lux Jewels</h2>
+
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          We'll cover stone preferences, ratio, setting styles, and budget. I'll identify oval stones that match your specifications and present options. No commitment. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've already picked a stone or seen a quote elsewhere. Bring it to me. I'll tell you exactly what it's worth, whether the bow-tie is acceptable, whether the ratio is what they're claiming, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

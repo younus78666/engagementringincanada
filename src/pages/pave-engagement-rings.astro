@@ -1,0 +1,310 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Pave Engagement Rings Canada — Lab-Grown Design Guide";
+const description = "Shop pave engagement rings in Canada. Standard pave vs micropave vs French-set explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/pave-engagement-rings/",
+      "url": "https://engagementringincanada.com/pave-engagement-rings/",
+      "name": "Pave Engagement Rings Canada — Lab-Grown Design Guide",
+      "description": "Shop pave engagement rings in Canada. Standard pave vs micropave vs French-set explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Pave Engagement Rings", "item": "https://engagementringincanada.com/pave-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is a pave engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "Pave is a setting style where small accent diamonds are set close together across the band, covering the metal surface with continuous sparkle. Pave describes the band setting style - the centre stone can be any shape. Three main types: standard pave, micropave, and French-set pave."}},
+        {"@type": "Question", "name": "What is the difference between pave and micropave?", "acceptedAnswer": {"@type": "Answer", "text": "Standard pave uses small diamonds with visible metal beads as prongs. Micropave uses smaller stones with finer, less visible prongs - the surface appears almost entirely covered in diamonds. Micropave is more visually refined but requires more careful maintenance due to the fine prongs."}},
+        {"@type": "Question", "name": "Do pave stones fall out?", "acceptedAnswer": {"@type": "Answer", "text": "Some melee stones can loosen over time with daily wear, particularly in micropave. This is a known characteristic of the setting style. Annual prong inspection is recommended. The ring should be removed during heavy manual work, gym use, and exposure to harsh chemicals."}},
+        {"@type": "Question", "name": "Are the pave accent stones also lab-grown at Lux Jewels?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lux Jewels sources lab-grown melee diamonds for the pave band, not natural accent stones. This keeps the entire ring ethically consistent and maintains grade consistency across the centre stone and band."}},
+        {"@type": "Question", "name": "What shapes work best with pave settings?", "acceptedAnswer": {"@type": "Answer", "text": "Any centre shape works with a pave band. The most common pairings: oval or round brilliant with a micropave band, emerald cut with a French-set pave band, cushion with a standard pave band. A halo can also combine with a pave band for maximum coverage."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is a pave engagement ring?",
+    a: "Pave (pah-VAY, from French for \"paved\") is a setting style where small accent diamonds are set close together across the band, covering the metal surface with continuous sparkle. The centre stone can be any shape - pave describes how the band or surrounding metal is set with accent stones, not the main stone itself."
+  },
+  {
+    q: "What is the difference between pave and micropave?",
+    a: "Standard pave uses small diamonds with visible metal beads as the prongs. Micropave uses smaller stones with finer, less visible prongs - producing a surface that appears almost entirely covered in diamonds. Micropave is more visually refined but requires more careful maintenance because the prongs are very fine."
+  },
+  {
+    q: "Do pave stones fall out?",
+    a: "Some melee stones can loosen over time with daily wear, particularly in micropave settings. This is a known characteristic of the setting style, not a defect. Annual inspection to check prong integrity is recommended. Standard pave and French-set pave are slightly more durable because their prongs are larger. The ring should be removed during heavy manual work, gym use, and exposure to harsh chemicals."
+  },
+  {
+    q: "Are the pave accent stones also lab-grown?",
+    a: "At Lux Jewels, yes. I source lab-grown melee diamonds for the pave band, not natural accent stones. This keeps the entire ring ethically consistent and visually uniform in quality grade."
+  },
+  {
+    q: "How long does a custom pave ring take?",
+    a: "4-6 weeks from stone selection and design confirmation to delivery. The pave setting requires precise bench work. I've been producing pave lab-grown rings in Canada since 2007, and exclusively with lab-grown melee since 2015."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Pave Engagement Rings Canada — Lab-Grown Design Guide</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Pave Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Pave (pronounced "pah-VAY") refers to a setting style where small accent diamonds are set closely together across the band or setting, covering the metal in a layer of continuous sparkle. The word comes from the French for "paved." Three main types: standard pave (shared prongs, visible metal beads between stones), micropave (smaller stones, finer prongs, less visible metal), and French-set pave (V-shaped cuts in the metal, maximum stone exposure). Pave is a setting feature, not a shape - it's applied to any ring style. I'm Suman Smith, founder of Lux Jewels. I've been designing pave lab-grown engagement rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat pave as purely decorative. The type of pave, the melee stone quality, and the band configuration all affect both the appearance and the long-term durability of the ring.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>Standard Pave vs. Micropave vs. French-Set — What's Different?</h2>
+
+          <p>The three main types are visually distinct:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Standard Pave</th>
+                  <th>Micropave</th>
+                  <th>French-Set Pave</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stone size</td>
+                  <td>Smaller (0.01-0.03ct each)</td>
+                  <td>Very small (under 0.01ct each)</td>
+                  <td>Small (0.01-0.03ct)</td>
+                </tr>
+                <tr>
+                  <td>Prong style</td>
+                  <td>Tiny shared metal beads</td>
+                  <td>Extremely fine prongs</td>
+                  <td>V-cut seats in metal</td>
+                </tr>
+                <tr>
+                  <td>Metal visibility</td>
+                  <td>Some metal visible between stones</td>
+                  <td>Minimal metal visible</td>
+                  <td>Least metal visible</td>
+                </tr>
+                <tr>
+                  <td>Sparkle pattern</td>
+                  <td>High, even coverage</td>
+                  <td>Very high, very uniform</td>
+                  <td>Maximum exposure, brilliant</td>
+                </tr>
+                <tr>
+                  <td>Durability</td>
+                  <td>Good</td>
+                  <td>Most delicate - very fine prongs</td>
+                  <td>Good</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Clean, sparkle-maximalist look</td>
+                  <td>Maximum coverage, refined look</td>
+                  <td>Vintage and modern-traditional styles</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Standard pave</strong> is the most common. Small metal beads hold each stone. More metal shows between stones - a traditional look that balances sparkle and structure.</p>
+
+          <p><strong>Micropave</strong> uses smaller stones and finer, more precise metalwork. Less metal is visible. The overall effect is a surface that appears almost entirely covered in diamonds. Very fine prongs make this the most maintenance-intensive type - prongs are small enough to need inspection more frequently.</p>
+
+          <p><strong>French-set (also called Fishtail-set or V-set):</strong> Metal is V-cut beneath each stone so more of the stone's surface is exposed. Produces a distinctive sparkle pattern with high reflection angles. Historically popular in Art Deco and vintage designs.</p>
+
+          <h2>Pave as a Setting Feature - Not a Standalone Style</h2>
+
+          <p>Pave appears in several configurations:</p>
+
+          <p><strong>Pave band solitaire:</strong> The centre stone is set in a solitaire configuration; the band itself is lined with pave stones. The simplest and most popular application. The centre stone is still the focal point; the band adds secondary sparkle.</p>
+
+          <p><strong>Halfway pave:</strong> Pave stones cover only the front half of the band (what's visible when the ring is worn). Less metal used, slightly more affordable, and the back of the band is smooth - more comfortable if you remove gloves frequently.</p>
+
+          <p><strong>Full pave band:</strong> Pave stones wrap the entire circumference of the band. Maximum sparkle from every angle. More stones, slightly higher cost.</p>
+
+          <p><strong>Pave halo solitaire:</strong> Centre stone has a halo of pave accent stones around it, and the band also has pave. The most maximalist configuration - very popular in the 2010s-early 2020s.</p>
+
+          <p><strong>Hidden pave:</strong> Pave stones on the inner edge of the halo or the underside of the setting (visible only in certain lighting angles). A detail-oriented option for buyers who want an unexpected sparkle element.</p>
+
+          <h2>Lab-Grown Melee Stones in Pave Settings</h2>
+
+          <p>Most engagement rings use natural diamonds as the small accent (melee) stones in pave bands - even when the centre stone is lab-grown. At Lux Jewels, I source lab-grown melee diamonds for the pave setting, not natural accent stones.</p>
+
+          <p>This matters because:</p>
+          <ul>
+            <li>The entire ring is conflict-free and consistently ethical</li>
+            <li>Lab-grown melee is visually identical to natural melee</li>
+            <li>Grade consistency is maintained across the entire ring</li>
+          </ul>
+
+          <p>I source all melee at consistent colour grades to match the centre stone's apparent colour.</p>
+
+          <h2>The Durability Question You Should Ask Before Ordering</h2>
+
+          <p>I'm going to say something that most jewellers avoid: pave settings require more maintenance than solitaires.</p>
+
+          <p>The small prongs that hold each pave stone are tiny. Over years of daily wear, a small number of melee stones can work loose. This isn't a defect - it's a characteristic of the setting style. The smaller the prong (micropave especially), the more susceptible.</p>
+
+          <p><strong>What this means in practice:</strong></p>
+          <ul>
+            <li>Inspect your ring annually with a jeweller who can check prong integrity</li>
+            <li>Remove the ring before contact with harsh chemicals, heavy manual work, or gym use</li>
+            <li>A white gold pave band will need rhodium replating every few years (same as any white gold ring)</li>
+            <li>Rose gold and yellow gold pave bands don't need replating</li>
+          </ul>
+
+          <p><strong>For active wearers:</strong> A bezel-set solitaire or a standard (not micro) pave band is more durable for daily wear. I tell every client this before recommending a micropave design.</p>
+
+          <h2>Colour Grade Considerations for Pave Settings</h2>
+
+          <p>The melee stones in a pave band need to be close in colour to the centre stone. If the centre is D-E and the melee are H-I, the band will appear warmer than the centre - a noticeable mismatch in white gold or platinum settings.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Centre Stone Colour</th>
+                  <th>Recommended Melee Colour for White Gold</th>
+                  <th>Recommended Melee Colour for Yellow/Rose Gold</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>D-F</td>
+                  <td>E-F (or better)</td>
+                  <td>G-H is acceptable</td>
+                </tr>
+                <tr>
+                  <td>G-H</td>
+                  <td>G-H</td>
+                  <td>H-I acceptable</td>
+                </tr>
+                <tr>
+                  <td>I-J</td>
+                  <td>I-J</td>
+                  <td>I-J</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>I source melee to match the centre stone's colour tier. This is worth asking about when comparing quotes from other jewellers - melee colour is frequently not disclosed in standard quotes.</p>
+
+          <h2>2026 Pave Ring Prices (Canada)</h2>
+
+          <p>Pave bands add cost relative to plain bands because of the additional stones and the more precise setting work.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0ct oval, F/VS1, standard pave band, 14K white gold</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct round, G/VS2, micropave band, 14K white gold</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct oval, E/VVS2, French-set pave band, 18K white gold</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct emerald cut, G/VS1, French-set pave solitaire, Platinum</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>All rings use repurposed gold (99.5% previously refined). All stones IGI-certified.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h2>Two Ways to Start</h2>
+
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          We'll establish the pave type that suits your style and wear patterns, the centre shape, and the budget. I'll discuss the durability tradeoffs honestly before you commit to a micropave design. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've been quoted a specific pave ring and want to know whether the melee grade is disclosed, whether the metal choice is appropriate for the setting type, and whether the price reflects what you're getting.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

@@ -1,0 +1,318 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Solitaire Engagement Rings Canada — Lab-Grown Guide";
+const description = "Shop lab-grown solitaire engagement rings in Canada. 4-prong vs 6-prong vs bezel explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/solitaire-engagement-rings/",
+      "url": "https://engagementringincanada.com/solitaire-engagement-rings/",
+      "name": "Solitaire Engagement Rings Canada — Lab-Grown Guide",
+      "description": "Shop lab-grown solitaire engagement rings in Canada. 4-prong vs 6-prong vs bezel explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Solitaire Engagement Rings", "item": "https://engagementringincanada.com/solitaire-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the most popular solitaire engagement ring in Canada right now?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The most common configuration is an oval lab-grown diamond in a 4-prong solitaire on a knife-edge or pave band in 14K rose or yellow gold. Round brilliant in a 6-prong Tiffany-style solitaire is the most classic choice. Both are consistently popular in 2026."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between 4-prong, 6-prong, and bezel solitaire settings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "4-prong solitaires maximize stone visibility with four small contact points. 6-prong adds two more claw points for extra security and is especially popular with round brilliant diamonds. Bezel settings wrap the stone's girdle in a complete metal rim for maximum protection and a modern aesthetic, at the cost of some visible stone surface."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does a solitaire engagement ring look too simple?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Solitaire settings are architecturally simple and timeless. Their simplicity maximizes visibility of the centre stone. For more sparkle, a pave band adds accent diamonds to the shank while keeping the centre as a solitaire. A halo adds a frame of accent stones around the centre stone entirely."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a lab-grown solitaire cost compared to natural diamond?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lab-grown diamonds cost 70-90% less than equivalent natural diamonds in 2026. For a solitaire where the stone represents most of the total price, the saving is significant. A 1.0ct natural F/VS1 round brilliant can cost C$6,000-C$10,000 for the stone alone; the same grade lab-grown is typically C$800-C$1,500."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I add a pave band to a solitaire ring?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. A pave band adds small diamonds along both sides of the shank, adding sparkle to the band while keeping the centre stone as a true solitaire. This is one of the most popular modifications to a standard solitaire setting."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the most popular solitaire engagement ring in Canada right now?",
+    a: "The most common configuration in our Canadian consultations is an oval lab-grown diamond in a 4-prong solitaire setting on a knife-edge or pave band in 14K rose or yellow gold. Round brilliant in a 6-prong Tiffany-style solitaire remains the most classic choice. Both are consistently popular."
+  },
+  {
+    q: "Is a solitaire engagement ring too simple?",
+    a: "That depends on your aesthetic. A solitaire is architecturally simple — one stone, one band. That simplicity is the point. It's also timeless in a way that trend-driven settings aren't. If you'll be looking at this ring for 40 years, a solitaire is one of the few configurations where that's genuinely true. If you want more sparkle or visual complexity, a pave band or halo adds those elements. Neither is wrong."
+  },
+  {
+    q: "What prong setting is best for an oval diamond solitaire?",
+    a: "Four prongs are standard for oval solitaires. The prongs are typically positioned at the four points of the oval (north, south, east, west) to secure the stone at its widest points. Some designers use V-tip prongs on the north and south points of an oval to protect the ends and add a slightly different aesthetic. Six prongs are less common on ovals but are available."
+  },
+  {
+    q: "Can I add a pave band to a solitaire setting?",
+    a: "Yes. A pave band — small diamonds set into the shank along both sides — adds sparkle to the band without adding stones to the setting itself. The centre stone remains a solitaire (single stone, no halo or side stones), but the band has accent diamonds. This is one of the most popular modifications to a standard solitaire."
+  },
+  {
+    q: "How does a bezel solitaire compare to a prong solitaire for durability?",
+    a: "A bezel setting wraps the stone's girdle in a complete metal rim, providing the most secure and protective hold of any setting style. The metal rim prevents the stone from loosening or falling out even if the ring is knocked hard. The trade-off is that the metal rim covers part of the stone's visible surface, reducing the \"open\" appearance you get from prongs. Bezel settings are often recommended for active wearers or people who work with their hands."
+  },
+  {
+    q: "How much does a lab-grown solitaire cost less than a natural diamond solitaire?",
+    a: "Lab-grown diamonds in the same grade and carat weight typically cost 70-90% less than equivalent natural diamonds in 2026. For a solitaire ring where the stone represents 80-90% of the total price, this is a very significant difference. A 1.0ct natural round brilliant in F/VS1 can easily run C$6,000-C$10,000 for the stone alone. The same grade in a lab-grown stone is typically available for C$800-C$1,500. The solitaire setting is the same either way."
+  },
+  {
+    q: "Do solitaire rings ship across Canada?",
+    a: "Yes. All Lux Jewels rings ship via FedEx Priority, fully insured, with signature required. We ship to all Canadian provinces and to the US. Custom solitaire orders take 4-6 weeks from stone selection to delivery."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Solitaire Engagement Rings Canada — Lab-Grown Guide</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Solitaire Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>A solitaire engagement ring features one centre stone and a plain or lightly detailed band — no side stones, no halo, no cluster. It's the most timeless setting configuration because it puts all visual emphasis on the centre stone. Solitaires are available in every diamond shape: round, oval, emerald cut, pear, cushion, radiant, and more. The setting choice — 4-prong, 6-prong, or bezel — affects how the stone is displayed and how secure it is. I'm Suman Smith, founder of Lux Jewels. I've been designing solitaire lab-grown engagement rings across Canada since 2007, and in 2015 I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat solitaire as a default or a budget choice. A well-selected 1.0ct oval in VS1, E colour, excellent cut, set in a perfectly proportioned 4-prong solitaire on a knife-edge band — that's one of the most beautiful rings in any collection. The setting's simplicity is intentional: everything you paid for in that stone is fully visible.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>What Is a Solitaire Setting?</h2>
+
+          <p>A solitaire setting holds a single centre stone with no additional stones in the main setting. The band can be plain, engraved, or have a pave accent, but the centre element is one stone only.</p>
+
+          <p>This is distinct from:</p>
+          <ul>
+            <li><strong>Halo settings</strong> — a frame of smaller diamonds surrounds the centre stone</li>
+            <li><strong>Three-stone settings</strong> — a centre stone flanked by two side stones</li>
+            <li><strong>Cluster settings</strong> — multiple smaller stones arranged to create the appearance of one large stone</li>
+          </ul>
+
+          <p>The solitaire is the most common engagement ring configuration globally and the setting that most clearly shows the quality of the centre stone.</p>
+
+          <h2>4-Prong vs 6-Prong vs Bezel: The Full Comparison</h2>
+
+          <p>The setting style determines how the stone is held and how much of it is visible. Here's what you need to know about each option:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>4-Prong</th>
+                  <th>6-Prong</th>
+                  <th>Bezel</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Stone visibility</td>
+                  <td>Maximum — 4 small contact points</td>
+                  <td>Slightly reduced — 6 contact points</td>
+                  <td>Reduced — stone rim wrapped in metal</td>
+                </tr>
+                <tr>
+                  <td>Security</td>
+                  <td>Good for all shapes</td>
+                  <td>Stronger for round and oval</td>
+                  <td>Strongest — full perimeter support</td>
+                </tr>
+                <tr>
+                  <td>Shape compatibility</td>
+                  <td>All shapes</td>
+                  <td>Round and oval especially</td>
+                  <td>All shapes; very clean with round and oval</td>
+                </tr>
+                <tr>
+                  <td>Profile height</td>
+                  <td>Can be low or high</td>
+                  <td>Typically higher crown</td>
+                  <td>Usually low profile</td>
+                </tr>
+                <tr>
+                  <td>Snag risk</td>
+                  <td>Low with good prong sizing</td>
+                  <td>Low</td>
+                  <td>Minimal — no prongs to catch</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Buyers who want maximum stone exposure</td>
+                  <td>Buyers who want classic security</td>
+                  <td>Active hands; modern aesthetic preference</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>4-prong solitaires</strong> expose the maximum surface area of the stone. The classic Tiffany-style 4-prong setting uses a raised basket beneath the stone. For shapes like <a href="/oval-engagement-rings/">oval</a>, pear, and marquise, 4-prong works well without looking sparse.</p>
+
+          <p><strong>6-prong solitaires</strong> (sometimes called "Tiffany 6-prong" after a common style) add two additional claw points. For round brilliant diamonds in particular, 6-prong is a common choice — the prongs align with the facets in a way that can enhance the appearance of the stone.</p>
+
+          <p><strong>Bezel settings</strong> wrap a thin metal rim around the entire girdle of the stone, holding it flush. The stone is fully enclosed at the girdle. This is the most protective setting for daily wear, produces a very clean modern aesthetic, and essentially eliminates snag risk. The trade-off is that the metal rim covers part of the stone's visible surface area.</p>
+
+          <h2>Cathedral vs. Low-Profile Solitaire</h2>
+
+          <p>Beyond the prong count, solitaire settings vary in profile height — how high the stone sits above the finger:</p>
+
+          <p><strong>Cathedral profile:</strong> The setting has arched metal shoulders that rise up to support the stone at height. This displays the stone prominently, shows the full profile when viewed from the side, and has an elegant, dramatic look. The trade-off is that a high-profile ring can catch on things more and may be removed more often for practical tasks.</p>
+
+          <p><strong>Low-profile solitaire:</strong> The stone sits closer to the finger. Less dramatic but more practical for active wearers. A bezel setting produces a naturally low profile. You can also get a 4-prong solitaire in a lower crown height.</p>
+
+          <p>For most clients, I recommend discussing your lifestyle before settling on profile height. A nurse who can't wear jewelry during shifts might want a ring that comes on and off easily — a lower profile is practical. Someone in a creative or desk job who wears their ring constantly can consider higher profiles.</p>
+
+          <h2>Band Options for Solitaire Rings</h2>
+
+          <p>"Solitaire" doesn't mean the band has to be plain. The most popular band options for solitaire centres:</p>
+
+          <p><strong>Knife-edge band:</strong> The band has a ridge along the centre, narrowing to a point (like the edge of a knife) in cross-section. It's thinner-looking than a flat band of the same metal weight. Very popular for minimalist solitaire rings.</p>
+
+          <p><strong>Flat band:</strong> Flat top surface, rounded or squared profile. The most classical and simple option. Width can vary from 1.5mm (delicate) to 4mm (bold).</p>
+
+          <p><strong>Pave band:</strong> Small diamonds set along the shank of the ring add sparkle to an otherwise plain band. The centre stone is still a solitaire — no halo, no side stones — but the band has accent diamonds. This is a popular compromise between the minimalism of a pure solitaire and the sparkle of a halo setting.</p>
+
+          <p><strong>Twisted or trellis shank:</strong> The two sides of the band twist beneath the stone, creating a more sculptural look than a straight shank. This is a solitaire setting but with more visual interest from the band geometry.</p>
+
+          <p>All settings use repurposed gold (99.5% previously refined). Metal options: 14K yellow, white, or rose gold; 18K yellow, white, or rose gold; Platinum 950.</p>
+
+          <h2>Does Solitaire Look Small?</h2>
+
+          <p>This is one of the most common concerns for solitaire ring buyers, and the honest answer is: it depends on the stone, not the setting.</p>
+
+          <p>A solitaire setting maximizes the visible surface area of your stone. It adds nothing around the stone to make it look larger. What it does is put all the visual weight on the actual <a href="/lab-grown-diamonds-canada/">diamond</a> — meaning a well-graded 1.0ct stone in a solitaire looks like a 1.0ct stone. A 1.0ct stone in a <a href="/halo-engagement-rings/">halo</a> might appear larger because the halo's accent diamonds add perimeter width.</p>
+
+          <p>The implication is this: if you're considering a solitaire and you want a ring that reads as substantial, the answer is to invest in the stone rather than the setting. An <a href="/oval-engagement-rings/">oval lab-grown diamond</a> in VS1, E-F colour, with an excellent cut, set in a 4-prong solitaire will always look more impressive than a lower-grade stone in a halo. The halo can't fix a stone that doesn't have the grades to back it up.</p>
+
+          <p>This is why solitaire settings are the most honest test of stone quality. I've been making this point to clients since 2015 — the solitaire doesn't need to apologize for its simplicity. Since 2015, when I committed to lab-grown exclusively, I've built solitaire rings for clients across Canada who wanted their stone to do the talking.</p>
+
+          <h2>2026 Solitaire Lab-Grown Engagement Ring Prices (Canada)</h2>
+
+          <p>Solitaire settings are among the most price-efficient configurations because the setting cost is lower than halo or three-stone designs. The price is almost entirely determined by the stone.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct round brilliant, G/VS1, 14K 4-prong solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval, E/VS1, 14K 4-prong solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct round brilliant, F/VS1, 14K 6-prong solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct <a href="/emerald-cut-engagement-rings/">emerald cut</a>, F/VS1, Platinum bezel solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>2.0ct oval, D/VVS2, Platinum 4-prong cathedral</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Reference pricing from Canadian competitors:</strong></p>
+          <ul>
+            <li>AGI Design (Toronto): from CA$1,680 (solitaire range)</li>
+            <li>Bellisa Jewellery (Toronto): from CA$1,835</li>
+          </ul>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+
+          <p>We'll discuss your stone shape preference, prong style, band type, and budget. I'll identify stone candidates that match your specifications and present options with pricing. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+
+          <p>You've already seen a specific solitaire — maybe from a local jeweller, maybe online — and you want a straight assessment of whether the stone grade justifies the price and whether the setting is what they're describing.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

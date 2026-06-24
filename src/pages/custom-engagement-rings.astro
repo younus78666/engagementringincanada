@@ -1,0 +1,344 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Custom Engagement Rings Canada — Lab-Grown Design";
+const description = "Design your own lab-grown engagement ring in Canada. 4-step CAD process, IGI-certified stones, free video consultation, and insured Canada-wide delivery.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/custom-engagement-rings/",
+      "url": "https://engagementringincanada.com/custom-engagement-rings/",
+      "name": "Custom Engagement Rings Canada — Lab-Grown Design",
+      "description": "Design your own lab-grown engagement ring in Canada. 4-step CAD process, IGI-certified stones, free video consultation, and insured Canada-wide delivery.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Custom Engagement Rings", "item": "https://engagementringincanada.com/custom-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "Service",
+      "name": "Custom Engagement Ring Design",
+      "serviceType": "Custom Jewelry Design",
+      "provider": {
+        "@type": "JewelryStore",
+        "name": "Lux Jewels",
+        "founder": {"@type": "Person", "name": "Suman Smith"},
+        "foundingDate": "2007",
+        "areaServed": ["CA", "US"]
+      },
+      "description": "Custom lab-grown engagement ring design service in Canada. 4-step CAD process, IGI-certified stones, free video consultation, 4-6 week delivery.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "CAD",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does a custom engagement ring take at Lux Jewels?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The standard timeline is 4-6 weeks from your first consultation to delivery. Consultation and CAD design take 1-2 weeks. Stone sourcing takes 3-5 business days once the CAD is approved. Casting and setting take 10-15 business days. FedEx Priority shipping is typically next-day once dispatched."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a custom engagement ring cost in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Custom rings at Lux Jewels start from the price confirmed at stan.store/luxjewels. The price depends on carat weight, stone type (lab-grown diamond or moissanite), metal choice, and setting complexity. Book a free consultation for a no-obligation quote."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see the design before anything is made?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - always. We provide a photorealistic CAD rendering for your approval before we source a single stone or pour any metal. Nothing is built until you approve the design."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you ship custom engagement rings across Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All orders ship via FedEx Priority, fully insured, with signature confirmation required. We ship to all Canadian provinces and to the US."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do custom lab-grown rings cost less than natural diamond rings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, significantly. Lab-grown diamonds cost 70-90% less than comparable natural diamonds, which means a custom lab-grown ring often costs less than a mass-produced natural diamond ring from a chain."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What metals do you use for custom engagement rings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "14K and 18K yellow gold, white gold, and rose gold, plus platinum 950. All gold settings use repurposed gold (99.5% previously refined)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a warranty on custom engagement rings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Contact Lux Jewels at shine@luxjewels.com for complete warranty terms on your custom ring."
+          }
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "How long does a custom engagement ring take at Lux Jewels?",
+    a: "The standard timeline is 4-6 weeks from your first consultation to delivery. Consultation and CAD design take 1-2 weeks. Stone sourcing takes 3-5 business days once the CAD is approved. Casting and setting take 10-15 business days. FedEx Priority shipping is typically next-day once dispatched. If you're working toward a specific date, tell us at consultation and we'll build the timeline from it."
+  },
+  {
+    q: "How much does a custom engagement ring cost in Canada?",
+    a: "Custom rings at Lux Jewels start from C$[OWNER INPUT] for a 0.5ct lab-grown diamond in 14K gold, including the stone, setting, IGI certificate, and insured delivery. The price depends on carat weight, stone type (lab-grown diamond or moissanite), metal choice (14K, 18K, or platinum), and setting complexity. Book a <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>free consultation</a> for a no-obligation quote. Pricing subject to change. Confirm current rate at <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>stan.store/luxjewels</a> before booking."
+  },
+  {
+    q: "Can I see the design before anything is made?",
+    a: "Yes, always. We provide a photorealistic CAD rendering for your approval before we source a single stone or pour any metal. You can request adjustments at the CAD stage. Nothing is built until you're completely happy with the design."
+  },
+  {
+    q: "Do you ship custom rings across Canada?",
+    a: "Yes. All orders ship via FedEx Priority, fully insured, with signature confirmation required. We ship to all Canadian provinces and to the US."
+  },
+  {
+    q: "Do custom lab-grown rings cost less than natural diamond rings?",
+    a: "Yes, significantly. Lab-grown diamonds cost 70-90% less than comparable natural diamonds, which means a custom lab-grown ring often costs less than a mass-produced natural diamond ring from a chain. Custom doesn't mean expensive - it means made exactly for you."
+  },
+  {
+    q: "What metals do you use for custom rings?",
+    a: "We work in 14K and 18K yellow gold, white gold, and rose gold, plus platinum 950. All gold settings use repurposed gold (99.5% previously refined)."
+  },
+  {
+    q: "Is there a warranty on custom engagement rings?",
+    a: "Contact Lux Jewels at <a href='mailto:shine@luxjewels.com'>shine@luxjewels.com</a> for complete warranty terms on your custom ring."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Custom Engagement Rings — Designed by You, Crafted in Canada</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Custom Engagement Rings Canada</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>A custom engagement ring from Lux Jewels takes 4-6 weeks from your first consultation to delivery. The process has 4 steps: free video consultation, CAD rendering with your approval, stone sourcing with an IGI grading report, and crafting plus insured delivery across Canada. Lab-grown diamonds and moissanite are both available.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't sell you a ring off a display stand. I don't add a markup for a showroom lease, and I don't push you toward a more expensive stone just because it's on this week's promotion. I'm Suman Smith, and for over 20 years I've designed custom engagement rings for couples across Canada and the US. I started Lux Jewels in 2007, and in 2015 I became the first jeweller in Canada to specialize exclusively in lab-grown diamonds. Every ring I build starts with a conversation, not a catalogue.</p>
+
+          <ul>
+            <li>Custom design from your first idea to a finished ring: 4-6 weeks</li>
+            <li>All consultations via video call (Zoom or Google Meet) - online-only, Canada-wide</li>
+            <li>IGI-certified lab-grown diamonds or Forever One moissanite by Charles &amp; Colvard</li>
+            <li>CAD photorealistic rendering for your approval before any metal is poured</li>
+            <li>14K, 18K repurposed gold (99.5% previously refined) or platinum 950</li>
+            <li>Free 30-40 minute consultation with no obligation, no pressure</li>
+            <li>Ships Canada-wide via FedEx Priority, insured and signature-required</li>
+          </ul>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <h2>Our Custom Ring Design Process - 4 Steps from Idea to Ring</h2>
+
+          <p>You don't need to know exactly what you want. You need a rough direction and 30 minutes. That's enough to start.</p>
+
+          <h3>Step 1 - Book Your Free Design Consultation</h3>
+
+          <p>Your first consultation is 30-40 minutes via video call (Zoom or Google Meet). There's no in-person option and no physical studio - the entire process happens online, which means you can start from anywhere in Canada or the US.</p>
+
+          <p>Bring whatever you have: Pinterest saves, screenshots, a vague sense of shape (oval, round, solitaire, halo), and a budget range. I'll ask questions about the wearer's style, hand shape, and daily wear habits. By the end of the call, you'll know which stone type I'd recommend, what carat weight fits your budget, and what setting direction makes sense for you.</p>
+
+          <p>I've run thousands of these calls. They're not sales calls. There's no obligation and no follow-up pressure if you decide we're not the right fit.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book Your Free Consultation</a></p>
+
+          <h3>Step 2 - Your Design Takes Shape in CAD (You Approve Before We Build)</h3>
+
+          <p>After your consultation, my design team produces a photorealistic 3D CAD rendering of your ring. You'll see the exact dimensions, stone placement, setting profile, and metal choice in a detailed rendered image - not a hand sketch. You can rotate it. You can see it from every angle.</p>
+
+          <p>This step takes 5-7 business days. If you want adjustments (different prong style, thinner band, adjusted stone height), we revise. We don't pour a single gram of metal or source a single stone until you tell us the design is exactly right. That approval step is non-negotiable.</p>
+
+          <h3>Step 3 - Choose Your Stone (With the IGI Report in Hand)</h3>
+
+          <p>Once the CAD is approved, I source your centre stone to match the specifications we agreed on. You'll receive the IGI grading certificate before the stone is set. The report number is laser-inscribed on the stone's girdle and verifiable on IGI's online database. You're not taking my word for the grade - you can check it yourself.</p>
+
+          <p>For lab-grown diamonds, I source E or F colour and VS1 clarity as my standard recommendation for most designs. For moissanite, I source Forever One by Charles &amp; Colvard in the colourless grade.</p>
+
+          <p>Learn more about <a href="/lab-grown-diamonds-canada/">our lab-grown diamond sourcing process</a>.</p>
+
+          <h3>Step 4 - Crafted and Delivered in 4-6 Weeks</h3>
+
+          <p>Ring casting, stone setting, finishing, and quality inspection take 10-15 business days. Once complete, your ring ships via FedEx Priority, fully insured, with signature required on delivery.</p>
+
+          <p>You'll receive a tracking number the day it ships. Your ring arrives ready to propose with.</p>
+
+          <p>For couples working toward a specific date, tell me at your consultation and we'll build the timeline from there.</p>
+
+          <h2>Why Choose a Custom Lab-Grown Engagement Ring?</h2>
+
+          <p><strong>It's yours.</strong> No one else has your ring design, your stone grade, and your specific setting configuration in your exact metal. A custom ring reflects your relationship, not a display case target.</p>
+
+          <p><strong>Lab-grown savings change the math.</strong> Because lab-grown diamonds cost 70-90% less than equivalent natural stones, your budget goes further. You can choose a larger carat weight, a more complex setting, or a better metal than you'd afford with a mined diamond at the same price point.</p>
+
+          <p><strong>You know exactly what's in your ring.</strong> Every stone I supply comes with an IGI grading certificate and a laser-inscribed report number. You verify the grade yourself - online, any time. That's not a sales pitch. It's verifiable.</p>
+
+          <p><strong>The entire process is online.</strong> No commute to a showroom. No sales floor pressure. You design your ring on a video call from your kitchen table. I've been running online custom ring consultations since 2007 - and since 2015 I've focused exclusively on lab-grown diamonds. I know how to make this work over a screen.</p>
+
+          <h2>How Much Does a Custom Engagement Ring Cost in Canada?</h2>
+
+          <h3>Custom Ring Pricing at Lux Jewels</h3>
+
+          <p>Pricing is confirmed at your free consultation, since every ring is built to your exact specifications. Below is the configuration guide to help you understand what drives the number.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ring Configuration</th>
+                  <th>Estimated Price Range (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.5ct lab-grown diamond, 14K solitaire</td>
+                  <td>C$[STARTING PRICE - OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct lab-grown diamond, 14K solitaire</td>
+                  <td>C$[PRICE - OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct lab-grown diamond, 14K halo</td>
+                  <td>C$[PRICE - OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct moissanite Forever One, 14K solitaire</td>
+                  <td>C$[PRICE - OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct lab-grown diamond, 18K solitaire</td>
+                  <td>C$[PRICE - OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h3>What Affects the Price of a Custom Ring?</h3>
+
+          <p>Four variables drive the final price. Stone size (carat weight) is the biggest lever - a 1ct lab-grown diamond costs roughly twice as much as a 0.5ct of the same grade. Stone type matters too: moissanite costs significantly less than lab-grown diamond at any equivalent size. Metal choice adds cost as you move up from 14K to 18K to platinum 950. And setting complexity ranges from a clean four-prong solitaire (simpler, less labor) to a pave-set halo with a split band (more labor, more stone coverage).</p>
+
+          <p>We'll give you a firm quote after your free consultation. No surprises.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h2>Popular Styles We Design</h2>
+
+          <h3>Custom Oval Engagement Rings</h3>
+
+          <p>Oval lab-grown diamonds appear up to 15% larger per carat than rounds, which makes them one of the most popular shapes I work with. The elongated silhouette flatters every hand shape. I set oval stones in solitaire, hidden halo, and east-west configurations most frequently.</p>
+
+          <p><a href="/oval-engagement-rings/">Browse our oval engagement rings</a></p>
+
+          <h3>Custom Emerald Cut Engagement Rings</h3>
+
+          <p>Emerald cut's step-cut facets create a hall-of-mirrors effect that's completely unlike any brilliant cut. It suits a bold, art-deco aesthetic and shows off high-clarity lab-grown stones. I recommend VS1 or better for this shape since the transparency makes inclusions more visible.</p>
+
+          <p><a href="/emerald-cut-engagement-rings/">Browse our emerald cut rings</a></p>
+
+          <h3>Custom Solitaire Engagement Rings</h3>
+
+          <p>A solitaire puts all the focus on the centre stone. With a lab-grown diamond, you can choose a larger stone than your budget would allow in a natural diamond - without reducing quality. Clean, timeless, and never out of fashion.</p>
+
+          <p><a href="/solitaire-engagement-rings/">Browse our solitaire rings</a></p>
+
+          <h3>Custom Halo and Hidden Halo Rings</h3>
+
+          <p>A halo setting surrounds the centre stone with accent diamonds, adding perimeter sparkle and making the centre stone appear significantly larger. A hidden halo places those accent stones beneath the girdle for a subtle version of the same effect. Both work especially well with oval and round centres.</p>
+
+          <p><a href="/halo-engagement-rings/">Browse our halo engagement rings</a></p>
+
+          <h2>Serving Toronto, Vancouver, Calgary, Montreal - and Every Province in Between</h2>
+
+          <p>My custom ring process is entirely online. Whether you're in Toronto, Vancouver, Calgary, Montreal, or anywhere across Canada or the US, the process is the same: a free video call to start, CAD renders sent to your inbox, a stone grading report in your hands before anything is built, and FedEx Priority delivery to your door.</p>
+
+          <p>I've been doing this since 2007. I've shipped to every province. I've designed rings for couples in cities without a single lab-grown specialist nearby. Online isn't a limitation - it's why couples from Halifax to Victoria work with Lux Jewels. You get the same quality whether you're an hour from a major jewellery district or six hours away from one. And since 2015, every ring I design has been built around lab-grown diamonds - before any other Canadian jeweller made that commitment.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <h2>Book Your Free Custom Ring Consultation</h2>
+
+          <p>Your free consultation is 30-40 minutes via video call. You bring ideas - photos, screenshots, a rough sense of style and budget. I bring over 20 years of expertise and zero pressure. There's no obligation.</p>
+
+          <p>I started Lux Jewels in 2007 because I watched too many couples overpay for rings they didn't fully understand. A free consultation is how I fix that for you. You'll leave knowing what stone grade is right for your budget, what setting direction suits the wearer's style, and what the honest price should be.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <p>Already comparing jewellers and want direct expert guidance before you commit? The No-BS Call is $199 for 30 minutes. Bring your quotes, your shortlist, your questions - I'll give you a straight answer on every one. The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

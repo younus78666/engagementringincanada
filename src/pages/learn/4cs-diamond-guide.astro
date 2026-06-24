@@ -1,0 +1,349 @@
+﻿---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "The 4Cs of Diamonds Explained for Engagement Ring Buyers";
+const description = "Carat, colour, clarity, cut explained for engagement ring buyers in Canada. Shape-specific 4Cs priorities and lab-grown grading tips by Suman Smith, Lux Jewels Canada.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/4cs-diamond-guide/",
+      "headline": "The 4Cs of Diamonds Explained for Engagement Ring Buyers",
+      "description": "Carat, colour, clarity, cut explained for engagement ring buyers in Canada. Shape-specific 4Cs priorities and lab-grown grading tips by Suman Smith, Lux Jewels Canada.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "The 4Cs Diamond Guide", "item": "https://engagementringincanada.com/learn/4cs-diamond-guide/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Which of the 4Cs matters most?", "acceptedAnswer": {"@type": "Answer", "text": "For round brilliants: cut matters most - it determines sparkle. A poorly cut D colour stone sparkles less than a well-cut G colour stone. For step cuts: colour matters most because the open facets show colour more clearly."}},
+        {"@type": "Question", "name": "Is VS1 or VS2 better for an engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "VS1 is safe for all shapes. VS2 is usually fine for brilliant cuts where facets scatter light. For step cuts (emerald, Asscher), VS1 is the recommended floor because the open facets can show a VS2 inclusion more easily."}},
+        {"@type": "Question", "name": "Does carat weight equal size?", "acceptedAnswer": {"@type": "Answer", "text": "No. Carat is weight. Size depends on proportions and shape. An oval appears 10-15% larger than a round at the same carat weight. A deep, poorly cut stone can appear smaller than a lighter but well-cut stone."}},
+        {"@type": "Question", "name": "What colour grade should I buy for an engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "For white gold/platinum: G is the practical floor for brilliant cuts; F or better for step cuts. For yellow gold: G-I acceptable for brilliant cuts. For rose gold: H-I acceptable. Higher colour in yellow gold doesn't look noticeably better."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Which of the 4Cs matters most?",
+    a: "For round brilliants: cut matters most - it determines sparkle, and a poorly cut D colour stone sparkles less than a well-cut G colour stone. For step cuts (emerald, Asscher): colour matters most - the open facets show colour more clearly than brilliant cuts."
+  },
+  {
+    q: "Is VS1 or VS2 better for engagement rings?",
+    a: "VS1 is safe for all shapes. VS2 is often fine for brilliant cuts (round, oval, pear) where the facets scatter light and hide inclusions. For step cuts (emerald), VS1 is the recommended floor - the open facets can show a VS2 inclusion more easily."
+  },
+  {
+    q: "Does carat weight equal size?",
+    a: "No. Carat is weight; size depends on proportions. An oval appears 10-15% larger than a round at the same carat weight due to its elongated face-up surface area. A deep, poorly cut stone can be 1.5ct and appear smaller than a well-cut 1.2ct."
+  },
+  {
+    q: "What colour grade should I buy?",
+    a: "For white gold/platinum: G is the practical floor for brilliant cuts; F or better for step cuts. For yellow gold: G-I is fine for brilliant cuts. For rose gold: H-I acceptable. Higher colour grades in yellow gold don't look noticeably different from G-H."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>The 4Cs of Diamonds Explained for Engagement Ring Buyers</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>4Cs Diamond Guide</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>The 4Cs are the universal grading system for diamonds: Cut (how well the stone handles light), Colour (degree of colourlessness, D-to-Z scale), Clarity (internal characteristics, FL-to-I3 scale), and Carat (physical weight). Cut matters most for round brilliants - it determines sparkle. Colour matters most for step cuts (emerald, Asscher) - their large facets show colour. For most buyers in Canada's lab-grown market, the priority order is: Cut &gt; Colour &gt; Clarity &gt; Carat. But this changes by shape. I'm Suman Smith, founder of Lux Jewels. I've been helping Canadian couples optimize the 4Cs for their budget since 2007. In 2015, I became Canada's first lab-grown specialist - meaning I've applied this framework to thousands of lab-grown stone selections.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Cut - The Most Underestimated C</h2>
+
+          <p>Cut is the only one of the 4Cs that's entirely determined by human skill. It describes how precisely a diamond's facets are formed and how effectively light enters, reflects, and exits the stone.</p>
+
+          <p>A poorly cut diamond traps light internally (it doesn't reflect back to your eye). A well-cut diamond moves light efficiently - producing the sparkle you actually see.</p>
+
+          <p><strong>For round brilliants:</strong> IGI and GIA issue a formal cut grade: Excellent, Very Good, Good, Fair, Poor.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>IGI Cut Grade</th>
+                  <th>What It Means</th>
+                  <th>Recommendation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Excellent</td>
+                  <td>Maximum light performance - all proportions optimized</td>
+                  <td>Always choose this</td>
+                </tr>
+                <tr>
+                  <td>Very Good</td>
+                  <td>Very close to Excellent - minor deviations</td>
+                  <td>Acceptable if budget-constrained</td>
+                </tr>
+                <tr>
+                  <td>Good</td>
+                  <td>Noticeable reduction in light performance</td>
+                  <td>Not recommended</td>
+                </tr>
+                <tr>
+                  <td>Fair/Poor</td>
+                  <td>Significant light leakage</td>
+                  <td>Avoid</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>For fancy shapes (oval, emerald, pear, cushion, radiant):</strong> There's no formal IGI cut grade. You assess proportions manually - depth percentage, table percentage, length-to-width ratio - and by visual inspection.</p>
+
+          <p><strong>Why cut matters more than colour or clarity:</strong> A D colour diamond with a Good cut sparkles less than an H colour diamond with an Excellent cut. Sparkle comes from cut, not colour.</p>
+
+          <h2>Colour - Most Important for Step Cuts</h2>
+
+          <p>Colour describes the degree of yellow or brown tint in a white diamond. The GIA scale runs D (completely colourless) to Z (clearly yellow). Most engagement ring diamonds are D-J.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Colour Grade</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>D, E, F</td>
+                  <td>Colourless - no yellow detectable even by experts</td>
+                </tr>
+                <tr>
+                  <td>G, H</td>
+                  <td>Near-colourless - no colour detectable by casual observation</td>
+                </tr>
+                <tr>
+                  <td>I, J</td>
+                  <td>Near-colourless - very faint warmth may be detectable in white metal</td>
+                </tr>
+                <tr>
+                  <td>K and below</td>
+                  <td>Faint to very light yellow - visible colour</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>Shape changes how colour reads:</strong></p>
+
+          <p>Step cuts (emerald cut, Asscher) have large, open facets that act like windows - colour is much more visible. F minimum recommended; G is the practical floor.</p>
+
+          <p>Brilliant cuts (round, oval, pear) scatter light effectively, which masks colour. H and even I can appear colourless in rose or yellow gold settings.</p>
+
+          <p><strong>Metal choice affects colour perception:</strong></p>
+
+          <ul>
+            <li>White gold or platinum: colour reads "as graded" - closer to D, the better</li>
+            <li>Rose gold: warms the stone appearance - H looks like F in white gold</li>
+            <li>Yellow gold: G-J is the right range; D-F is wasted because yellow gold warms the stone anyway</li>
+          </ul>
+
+          <h2>Clarity - Where Lab-Grown Buyers Can Save</h2>
+
+          <p>Clarity describes the presence of internal characteristics (inclusions) and surface features (blemishes), graded under 10x magnification.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Grade</th>
+                  <th>Description</th>
+                  <th>Practical note</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FL / IF</td>
+                  <td>Flawless/Internally Flawless</td>
+                  <td>Highest grades, rarely needed</td>
+                </tr>
+                <tr>
+                  <td>VVS1, VVS2</td>
+                  <td>Very Very Slightly Included</td>
+                  <td>Near-impossible to see under 10x</td>
+                </tr>
+                <tr>
+                  <td>VS1, VS2</td>
+                  <td>Very Slightly Included</td>
+                  <td>VS1: not visible under 10x. VS2: rarely</td>
+                </tr>
+                <tr>
+                  <td>SI1</td>
+                  <td>Slightly Included</td>
+                  <td>Often eye-clean; stone-by-stone assessment</td>
+                </tr>
+                <tr>
+                  <td>SI2</td>
+                  <td>Slightly Included</td>
+                  <td>Some inclusions visible to naked eye</td>
+                </tr>
+                <tr>
+                  <td>I1-I3</td>
+                  <td>Included</td>
+                  <td>Visible inclusions - avoid for engagement rings</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>The eye-clean standard:</strong> The practical threshold for engagement ring buyers is "eye-clean" - you can't see inclusions without magnification. VS1 is a safe choice across all shapes. VS2 is often eye-clean in brilliant cuts. SI1 can be eye-clean but requires visual confirmation.</p>
+
+          <p><strong>Shape-specific clarity guidance:</strong></p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Shape</th>
+                  <th>Clarity Floor</th>
+                  <th>Why</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="/round-engagement-rings/">Round brilliant</a></td>
+                  <td>VS2 (SI1 stone-by-stone)</td>
+                  <td>Brilliant facets scatter light and hide inclusions</td>
+                </tr>
+                <tr>
+                  <td><a href="/oval-engagement-rings/">Oval</a></td>
+                  <td>VS2</td>
+                  <td>Similar scattering to round</td>
+                </tr>
+                <tr>
+                  <td><a href="/emerald-cut-engagement-rings/">Emerald cut</a></td>
+                  <td>VS1 (minimum)</td>
+                  <td>Step-cut facets act as windows - inclusions visible</td>
+                </tr>
+                <tr>
+                  <td><a href="/cushion-cut-engagement-rings/">Cushion (modern)</a></td>
+                  <td>VS2</td>
+                  <td>Crushed ice facets scatter inclusions</td>
+                </tr>
+                <tr>
+                  <td><a href="/cushion-cut-engagement-rings/">Cushion (antique)</a></td>
+                  <td>VS1</td>
+                  <td>Larger facets are more transparent - like step cut</td>
+                </tr>
+                <tr>
+                  <td><a href="/pear-engagement-rings/">Pear</a></td>
+                  <td>VS2</td>
+                  <td>Brilliant facets scatter; tip area slightly more visible</td>
+                </tr>
+                <tr>
+                  <td><a href="/radiant-cut-engagement-rings/">Radiant</a></td>
+                  <td>VS2</td>
+                  <td>Brilliant cut facets scatter inclusions</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Carat - The Most Misunderstood C</h2>
+
+          <p>Carat is a unit of weight, not size. 1 carat = 0.2 grams. Two diamonds of identical carat weight can appear very different sizes depending on their proportions.</p>
+
+          <p><strong>Face-up size is what matters on the finger.</strong> A 1.0ct oval with ideal length-to-width ratio (1.40-1.50) occupies more face-up area than a 1.0ct square cushion.</p>
+
+          <p><strong>Elongated shapes appear larger per carat:</strong></p>
+          <ul>
+            <li>Oval: appears 10-15% larger than round at same carat</li>
+            <li>Pear: appears 10-15% larger per carat than round</li>
+            <li>Marquise: the most face-up area per carat of any shape</li>
+          </ul>
+
+          <p><strong>Why carat weight has price cliffs:</strong> The market prices by weight thresholds - 0.50, 0.75, 1.00, 1.50, 2.00 carats. A 0.99ct and 1.00ct look identical, but the 1.00ct typically costs 10-20% more per carat. If you're at a budget limit, 0.90-0.97ct instead of 1.00ct can represent meaningful savings at essentially identical visual size.</p>
+
+          <h2>Prioritizing the 4Cs by Shape and Budget</h2>
+
+          <p>No single priority order works for all shapes. Here's the practical framework:</p>
+
+          <p><strong>Round brilliant priority:</strong> Cut &gt; Colour &gt; Clarity &gt; Carat<br />
+          Always Excellent cut. Colour: G or better for white gold/platinum. VS2 or SI1 (eye-clean) for clarity.</p>
+
+          <p><strong>Oval priority:</strong> Cut quality (proportions) &gt; Colour &gt; Clarity &gt; Carat<br />
+          No cut grade - assess the L:W ratio and bow-tie effect. G-H colour. VS2 clarity.</p>
+
+          <p><strong>Emerald cut priority:</strong> Colour &gt; Clarity &gt; Cut &gt; Carat<br />
+          Step cut shows colour most. F-G for white gold. VS1 minimum clarity.</p>
+
+          <p><strong>Cushion (modern) priority:</strong> Cut &gt; Clarity &gt; Colour &gt; Carat<br />
+          Modern cushion = crushed ice sparkle. VS2 clarity. G colour.</p>
+
+          <p><strong>Pear priority:</strong> Symmetry (which is part of cut) &gt; Colour &gt; Clarity &gt; Carat<br />
+          Poor symmetry ruins a pear. G-H colour. VS2 clarity.</p>
+
+          <h2>The 4Cs in Practice: A Budget Example</h2>
+
+          <p>Assume a C$3,000 lab-grown centre stone budget:</p>
+
+          <p><strong>Less-informed choice:</strong> 1.5ct, H, SI1 round - bigger carat but compromised quality<br />
+          <strong>Better choice:</strong> 1.0ct, G, VS2, Excellent cut round - visible difference in sparkle and cleanliness</p>
+
+          <p>In my consultations, clients consistently prefer a smaller stone with better cut and clarity over a larger stone that's hazy or included. Cut quality is visible every day; carat weight is a number on a certificate.</p>
+
+          <p>I've guided hundreds of couples through this exact trade-off since founding Lux Jewels in 2007. When I first introduced lab-grown diamonds to my practice in 2015, I found that the same 4Cs principles apply - you just get significantly more stone for your budget. I'd love to help you apply this framework to your specific ring. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free 30-40 minute consultation</a> and we'll work through your shape, budget, and 4Cs priorities together.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

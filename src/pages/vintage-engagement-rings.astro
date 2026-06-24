@@ -1,0 +1,348 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Vintage Engagement Rings Canada — Lab-Grown Custom";
+const description = "Shop vintage-inspired lab-grown engagement rings in Canada. Art Deco, milgrain, filigree designs. Custom from scratch or modify an existing style. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/vintage-engagement-rings/",
+      "url": "https://engagementringincanada.com/vintage-engagement-rings/",
+      "name": "Vintage Engagement Rings Canada — Lab-Grown Custom",
+      "description": "Shop vintage-inspired lab-grown engagement rings in Canada. Art Deco, milgrain, filigree designs. Custom from scratch or modify an existing style. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Vintage Engagement Rings", "item": "https://engagementringincanada.com/vintage-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the most popular vintage engagement ring style in Canada in 2026?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Edwardian-inspired rings are the most requested vintage style - pave bands, milgrain edging, thin delicate settings in rose or yellow gold. Art Deco is second (more geometric, structured). Victorian full filigree is the most ornate and least common."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are vintage engagement rings more expensive than modern designs?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes, typically. Milgrain, filigree, and hand-engraved detailing require more production time than clean modern solitaire settings. The complexity of the vintage design is the primary cost variable. A simple milgrain edge adds a moderate premium; full filigree crown work adds a more significant one."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can lab-grown diamonds be used in vintage settings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes, completely. The setting style is independent of stone origin. A milgrain Art Deco setting looks identical with a natural or lab-grown diamond because the stone is the same material either way - identical chemistry, hardness, and optical properties. Lux Jewels has used lab-grown diamonds exclusively in vintage-inspired settings since 2015."}
+        },
+        {
+          "@type": "Question",
+          "name": "What metal works best for vintage engagement rings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yellow gold is historically authentic for Victorian designs and is trending strongly in Canada in 2026. Rose gold suits Edwardian and Victorian aesthetics well. Platinum and white gold are the metals of record for Art Deco. The choice affects aesthetic, not quality."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which diamond shapes work best with vintage ring settings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Oval suits Victorian and Edwardian. Emerald cut is historically authentic for Art Deco (pairs with baguette side stones). Cushion cut suits Victorian (closest to the old mine cut of the era). Round brilliant works with all three eras. Princess and radiant cuts are modern and less suited to period-accurate vintage settings."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the most popular vintage engagement ring style in Canada in 2026?",
+    a: "Based on consultation data, the most requested vintage style is Edwardian-inspired — pave bands, milgrain edging, and a thin, delicate setting in rose gold or yellow gold. Art Deco is the second most requested, driven by buyers who want a more structured, geometric look. Victorian designs with full filigree and floral motifs are the most ornate and are less common but consistently available."
+  },
+  {
+    q: "Are vintage engagement rings more expensive than modern designs?",
+    a: "Yes, typically. Milgrain, filigree, and hand-engraved detailing require more production time than a clean modern solitaire. A simple milgrain-edged band adds a moderate premium. Full filigree crown work adds a more significant one. Custom vintage designs built from scratch are priced after a consultation — the complexity of the design is the primary variable."
+  },
+  {
+    q: "What metal works best for vintage engagement rings?",
+    a: "Yellow gold is the most historically authentic choice for Victorian designs and is experiencing a strong resurgence in 2026 among Canadian buyers. Rose gold suits Edwardian-inspired and Victorian designs especially well. Platinum and white gold are the metals of record for Art Deco (Edwardian jewellers used platinum; Art Deco embraced it for its strength and cool white tone). There's no wrong answer — the metal affects the aesthetic, not the ring's quality."
+  },
+  {
+    q: "Do vintage-inspired rings hold up to daily wear?",
+    a: "Milgrain and filigree designs can wear over time, just as any fine-detail metalwork does. The elements that reduce that wear: heavier gauge metal (not hairline-thin bands), setting the stone securely with appropriate prong protection, and occasional professional cleaning to remove debris from filigree openwork. A ring built with appropriate metal gauge will last decades. I'll discuss durability during the consultation so you know what to expect from your specific design."
+  },
+  {
+    q: "Can I add vintage elements to a modern ring design?",
+    a: "Yes. One of the most popular approaches is a \"vintage modern hybrid\" — a contemporary stone shape (oval, emerald cut) in a setting that uses milgrain edging or subtle Art Deco geometry without going fully period-accurate. This produces a ring that reads as distinctive without being costumey. We design these regularly."
+  },
+  {
+    q: "What makes Lux Jewels different from other vintage ring designers in Canada?",
+    a: "I founded Lux Jewels in 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015. Most vintage ring specialists in Canada — like Era Design in Vancouver — require in-person appointments at a specific location. I work across Canada and the US entirely online, and every vintage ring is custom-designed to the client's specifications rather than chosen from a display case."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Vintage Engagement Rings Canada — Lab-Grown Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Vintage Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Vintage-inspired engagement rings reference historical design eras — most commonly Art Deco (1920s-1930s), Victorian (1837-1901), and Edwardian (1901-1915). Key design elements include milgrain edging, filigree scrollwork, floral and foliate motifs, and pave or rose-cut stone accents. Lab-grown diamonds work beautifully in vintage settings — the stone material doesn't affect how a setting is designed or how it wears. I'm Suman Smith, founder of Lux Jewels. I've been designing vintage-inspired lab-grown rings in Canada since 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't hand clients a catalogue of pre-made vintage rings and tell them to choose. Vintage style means something different to each person — one person wants minimal milgrain on a thin band, another wants full filigree with a floral crown setting. I build vintage rings from the ground up through a custom design process, or I modify an existing style until it's exactly what you're looking for.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>The Three Vintage Eras (and What Makes Each Different)</h2>
+
+          <p>When buyers say "vintage," they usually mean one of three distinct design periods. Understanding which one resonates with you makes the design process much faster.</p>
+
+          <h3>Art Deco (1920s-1930s)</h3>
+
+          <p>Art Deco rings are the most requested vintage style we work with. The defining characteristics are geometric precision, high contrast, and architectural symmetry. Think:</p>
+
+          <ul>
+            <li>Sharp angles and straight lines</li>
+            <li>High-contrast black and white (platinum or white gold with colourless diamonds)</li>
+            <li>Bold geometric shapes — hexagons, chevrons, fan shapes in the setting</li>
+            <li>Filigree used sparingly and precisely (not flowing, but structured)</li>
+            <li><a href="/emerald-cut-engagement-rings/">Emerald cut</a> and Asscher cut centres are the most historically authentic for Art Deco</li>
+            <li>Baguette side stones flanking the centre stone</li>
+          </ul>
+
+          <p>Art Deco rings work especially well with emerald cut lab-grown diamonds — the rectangular step-cut aligns with the geometric precision of the era's aesthetic.</p>
+
+          <h3>Victorian (1837-1901)</h3>
+
+          <p>Victorian engagement rings are the most romantic and ornate of the three eras. Key elements:</p>
+
+          <ul>
+            <li>Flowing, naturalistic motifs: flowers, leaves, vines, birds</li>
+            <li>Yellow gold settings (the dominant metal of the Victorian period)</li>
+            <li>Rose-cut diamonds and gemstone accents (sapphires, rubies, pearls)</li>
+            <li>Cluster settings (a centre stone surrounded by a ring of smaller stones)</li>
+            <li>Scrollwork and milgrain on virtually every surface</li>
+            <li><a href="/oval-engagement-rings/">Oval</a> and <a href="/cushion-cut-engagement-rings/">cushion cut</a> centres most common</li>
+          </ul>
+
+          <p>Victorian-inspired designs in yellow gold with lab-grown diamonds are one of the most requested styles we're seeing in 2026. The warm metal pairs naturally with the organic, flowing design language.</p>
+
+          <h3>Edwardian (1901-1915)</h3>
+
+          <p>Edwardian style sits between Victorian and Art Deco — lighter and more delicate than Victorian, softer than Art Deco. Platinum was introduced as a setting metal during this era, and it changed everything:</p>
+
+          <ul>
+            <li>Lace-like filigree work (possible because platinum is stronger than gold)</li>
+            <li>Garland motifs — ribbon-like swags and bows</li>
+            <li>Delicate milgrain edges throughout</li>
+            <li>A light, airy aesthetic compared to the heavier Victorian look</li>
+            <li>Round brilliant and <a href="/oval-engagement-rings/">oval</a> centres most common</li>
+            <li>Pave-set diamond accents along the entire shank</li>
+          </ul>
+
+          <p>Edwardian designs in platinum or white gold with a round or oval lab-grown diamond remain some of the most technically demanding rings to produce — and some of the most striking.</p>
+
+          <h2>Key Design Elements in Vintage Engagement Rings</h2>
+
+          <h3>What Is Milgrain?</h3>
+
+          <p>Milgrain (from the French "mille-grain" — a thousand grains) is a decorative edging made of tiny raised beads of metal applied along the edge of a ring band or setting. It's one of the most common vintage design elements.</p>
+
+          <p><strong>Hand-engraved milgrain</strong> is applied by an engraver after casting — more precise, more refined, more expensive.</p>
+
+          <p><strong>Cast milgrain</strong> is formed as part of the mould — less precise, more affordable, still attractive on the right design.</p>
+
+          <p>Both are available. For detailed Art Deco and Edwardian designs, hand-engraved milgrain reads more authentically. For simpler vintage-inspired bands where milgrain is one element among several, cast milgrain is appropriate.</p>
+
+          <h3>What Is Filigree?</h3>
+
+          <p>Filigree is metalwork where fine wire is twisted and soldered into intricate openwork patterns — scrolls, lace, geometric shapes. It's a hallmark of Edwardian jewellery and appears in many Victorian designs.</p>
+
+          <p>Filigree adds significant weight and presence to a ring without adding material weight — the openwork creates visual complexity while keeping the setting lightweight. Lab-grown diamond settings with filigree crowns are among the most distinctive <a href="/custom-engagement-rings/">custom rings</a> we produce.</p>
+
+          <h3>Rose-Cut Accents</h3>
+
+          <p>The rose-cut was one of the dominant diamond cuts before the modern brilliant cut was developed in the 20th century. A rose-cut diamond has a flat base and a domed upper surface with triangular facets — it produces a gentle, diffuse glow rather than brilliant sparkle.</p>
+
+          <p>Many vintage-inspired ring designs use rose-cut accent diamonds alongside a modern brilliant-cut or step-cut centre stone. The combination is effective: the centre stone provides modern brilliance while the accents reference historical aesthetics.</p>
+
+          <h2>Which Stone Shapes Work Best with Vintage Settings?</h2>
+
+          <p>Not every diamond shape reads as "vintage." Here's how to think about shape-to-style matching:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Shape</th>
+                  <th>Vintage Era Match</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="/oval-engagement-rings/">Oval</a></td>
+                  <td>Victorian, Edwardian</td>
+                  <td>Most versatile vintage shape; elongating and romantic</td>
+                </tr>
+                <tr>
+                  <td><a href="/emerald-cut-engagement-rings/">Emerald cut</a></td>
+                  <td>Art Deco</td>
+                  <td>Historically authentic; pairs with baguette side stones</td>
+                </tr>
+                <tr>
+                  <td><a href="/cushion-cut-engagement-rings/">Cushion cut</a></td>
+                  <td>Victorian</td>
+                  <td>Old mine cut predecessor; most historical</td>
+                </tr>
+                <tr>
+                  <td>Round brilliant</td>
+                  <td>Edwardian, Victorian</td>
+                  <td>Classic choice; works with all vintage settings</td>
+                </tr>
+                <tr>
+                  <td><a href="/pear-engagement-rings/">Pear</a></td>
+                  <td>Victorian, Edwardian</td>
+                  <td>Romantic; teardrop shape suits floral motifs</td>
+                </tr>
+                <tr>
+                  <td>Marquise</td>
+                  <td>Victorian, Art Deco</td>
+                  <td>Dramatic; less common but historically documented</td>
+                </tr>
+                <tr>
+                  <td>Princess / square</td>
+                  <td>Not vintage-authentic</td>
+                  <td>Modern cut; less suited to period settings</td>
+                </tr>
+                <tr>
+                  <td>Radiant</td>
+                  <td>Art Deco-adjacent</td>
+                  <td>Rectangle with brilliance; can work in geometric Art Deco</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The most popular combination we see in Canadian vintage-inspired orders: oval lab-grown diamond in an Edwardian-inspired pave setting with milgrain edge, yellow or rose gold band. A close second is emerald cut with Art Deco geometric prong work in platinum.</p>
+
+          <h2>Can Lab-Grown Diamonds Be Used in Vintage Settings?</h2>
+
+          <p>Yes, completely. The setting style has nothing to do with where the stone came from. A milgrain-edged, filigree-crown Art Deco setting looks identical whether the centre stone is a natural diamond or a lab-grown one. The stone is structurally and chemically the same material either way.</p>
+
+          <p>What does matter is cut grade and shape. A vintage setting designed around a cushion cut will look best with a cushion cut stone — not because of the stone's origin, but because the prong geometry and crown shape are designed for that silhouette.</p>
+
+          <p>I've been using lab-grown diamonds exclusively in vintage-inspired settings since 2015. The stones behave identically in the setting, the IGI certification is the same, and the appearance under any light condition is the same. Anyone who tells you otherwise is misinformed.</p>
+
+          <h2>2026 Vintage Engagement Ring Prices (Canada)</h2>
+
+          <p>Canadian jewellers offering vintage-inspired lab-grown engagement rings are pricing them at a meaningful premium over standard solitaire settings — the additional design complexity, hand-finishing, and milgrain/filigree work justifies it.</p>
+
+          <p><strong>Reference pricing from Canadian competitors:</strong></p>
+          <ul>
+            <li>Era Design (Vancouver): lab diamond vintage rings from C$2,750</li>
+            <li>AGI Design (Toronto): $1,680-$5,800 range (includes vintage-inspired styles)</li>
+            <li>Bellisa Jewellery (Toronto): from $1,835</li>
+          </ul>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Lux Jewels Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct oval, Edwardian pave setting, 14K rose gold</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval, Victorian floral crown, 18K yellow gold</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct emerald cut, Art Deco baguette setting, Platinum</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct cushion cut, full filigree Victorian, 18K yellow gold</td>
+                  <td>Contact for pricing</td>
+                </tr>
+                <tr>
+                  <td>Custom design (fully bespoke vintage from sketch)</td>
+                  <td><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>All settings use repurposed gold (99.5% previously refined). Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start Your Vintage Ring Design</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+
+          <p>We'll identify which vintage era resonates with you, discuss stone shape and setting preferences, and start a design direction. If you've seen specific rings you like — photos from Pinterest, historical jewellery, anything — bring them to the call. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+
+          <p>You've already been quoted a vintage-inspired ring elsewhere, or you've found a specific style you love and want a second opinion on the design, the stone grade, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

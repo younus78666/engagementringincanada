@@ -1,0 +1,395 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Moissanite Engagement Rings Canada — Ethical Alternative";
+const description = "Shop moissanite engagement rings in Canada. Full moissanite vs lab-grown diamond comparison, 2026 CAD pricing, and custom design. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/moissanite-engagement-rings/",
+      "url": "https://engagementringincanada.com/moissanite-engagement-rings/",
+      "name": "Moissanite Engagement Rings Canada — Ethical Alternative",
+      "description": "Shop moissanite engagement rings in Canada. Full moissanite vs lab-grown diamond comparison, 2026 CAD pricing, and custom design. Free video consultation. Ships Canada-wide.",
+      "dateModified": "2026-06-24",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Moissanite Engagement Rings", "item": "https://engagementringincanada.com/moissanite-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is moissanite made of?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Moissanite is silicon carbide (SiC), a lab-created gemstone first discovered in a meteorite crater in 1893 by Henri Moissan. All moissanite used in jewellery today is lab-grown. It's a distinct gemstone with its own chemical composition and optical properties - not a diamond."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does moissanite get cloudy?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Moissanite doesn't cloud, yellow, or lose brilliance over time. It has Mohs hardness 9.25. What looks like cloudiness is usually soap or lotion film on the surface, easily removed with warm water and mild dish soap."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much do moissanite engagement rings cost in Canada?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A 1ct-equivalent moissanite stone runs approximately C$250-C$600 in Canada in 2026. Finished moissanite rings (stone + custom setting) typically start around C$1,000-C$1,800 depending on the metal and setting complexity."}
+        },
+        {
+          "@type": "Question",
+          "name": "Is moissanite better than a lab-grown diamond?",
+          "acceptedAnswer": {"@type": "Answer", "text": "They serve different buyers. Moissanite costs 65-75% less than a comparable lab-grown diamond, allowing a much larger stone at the same price. It has more rainbow colour fire than diamond. It isn't a diamond though - if stone identity matters to you, choose lab-grown diamond. If budget and size are the priority, moissanite is an honest, strong choice."}
+        },
+        {
+          "@type": "Question",
+          "name": "Which moissanite brand is best?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Charles & Colvard produces the Forever One line - the industry standard for colourless moissanite. Lux Jewels sources Charles & Colvard Forever One for all moissanite custom designs."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does moissanite look like a diamond?",
+          "acceptedAnswer": {"@type": "Answer", "text": "To most people at normal viewing distance: yes. The main visible difference is that moissanite produces more rainbow colour fire than a diamond, especially in direct sunlight. Some wearers love this characteristic; others prefer diamond's more neutral fire."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can moissanite rings be shipped across Canada?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. All orders from Lux Jewels ship via FedEx Priority, fully insured, with signature required. We ship to all Canadian provinces and to the US."}
+        },
+        {
+          "@type": "Question",
+          "name": "What metal works best with moissanite?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Colourless moissanite pairs most cleanly with white gold or platinum 950. Rose gold and yellow gold work well with near-colourless grades. All Lux Jewels settings use repurposed gold (99.5% previously refined)."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is moissanite made of?",
+    a: "Moissanite is silicon carbide (SiC), a lab-created gemstone first discovered in a meteorite crater in 1893 by Henri Moissan. All moissanite used in jewellery today is lab-grown. It's a distinct gemstone with its own chemical composition and optical properties - not a diamond."
+  },
+  {
+    q: "Does moissanite get cloudy?",
+    a: "No. Moissanite doesn't cloud, yellow, or lose brilliance over time. It has Mohs hardness 9.25, making it highly scratch-resistant. What looks like cloudiness is usually soap or lotion film on the surface - easily removed with warm water and mild dish soap."
+  },
+  {
+    q: "How much do moissanite engagement rings cost in Canada?",
+    a: "A 1ct-equivalent moissanite stone runs approximately C$250-C$600 in Canada in 2026. Finished moissanite rings (stone + custom setting) typically start around C$1,000-C$1,800 depending on the metal and setting complexity. Pricing subject to change. Confirm current rate at <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>stan.store/luxjewels</a> before booking."
+  },
+  {
+    q: "Is moissanite better than a lab-grown diamond?",
+    a: "They serve different buyers. Moissanite costs 65-75% less than a comparable lab-grown diamond, which means a much larger stone at the same price. It has more rainbow colour fire than diamond. It isn't a diamond though - its chemistry is different. If the stone type identity matters to you, choose <a href='/lab-grown-engagement-rings/'>lab-grown diamond</a>. If budget and size are the priority, moissanite is an honest, strong choice."
+  },
+  {
+    q: "Which moissanite brand is the best?",
+    a: "Charles &amp; Colvard produces the Forever One line - the industry standard for colourless moissanite. At Lux Jewels, we source Charles &amp; Colvard Forever One for all moissanite custom designs."
+  },
+  {
+    q: "Can I get a moissanite ring shipped across Canada?",
+    a: "Yes. All orders ship via FedEx Priority, fully insured, with signature required on delivery. We ship to all Canadian provinces and to the US."
+  },
+  {
+    q: "Does moissanite look like a diamond in a finished ring?",
+    a: "To most people who aren't trained gemologists: yes, at normal viewing distance. The main visible difference is that moissanite produces more rainbow colour fire than a diamond, especially in direct sunlight or bright indoor lighting. Some wearers love this. Others prefer the more neutral fire of a diamond. Neither is wrong."
+  },
+  {
+    q: "What metal works best with moissanite?",
+    a: "Colourless moissanite pairs most cleanly with white gold or platinum 950, where the white metal brings out the stone's clarity. Rose gold and yellow gold settings work well with near-colourless moissanite. All Lux Jewels settings use repurposed gold (99.5% previously refined)."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Moissanite Engagement Rings - Canada's Brilliant Ethical Alternative</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Moissanite Engagement Rings Canada</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p><strong>Quick Answer:</strong> Moissanite is a lab-created silicon carbide gemstone with Mohs hardness 9.25. It's not a diamond, but it shares diamond-level durability, and its higher refractive index (2.65-2.69 vs diamond's 2.42) produces more brilliance and rainbow fire. In Canada in 2026, a 1ct-equivalent moissanite costs approximately C$250-C$600. Forever One by Charles &amp; Colvard is the industry standard for colour and consistency.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>Moissanite is one of the hardest, most optically brilliant gemstones on earth. It's also lab-created, conflict-free, and a fraction of the cost of a lab-grown diamond. I'm Suman Smith, founder of Lux Jewels, and I've been designing moissanite rings alongside lab-grown diamond rings since 2007. I don't position moissanite as "second best." It's a distinct gemstone with its own optical character - and for some couples, it's the right choice.</p>
+
+          <!-- Quick Facts -->
+          <ul>
+            <li>Silicon carbide (SiC) - a distinct gemstone, not a diamond or simulant</li>
+            <li>Mohs hardness 9.25 - suitable for everyday engagement ring wear</li>
+            <li>Refractive index 2.65-2.69 vs diamond's 2.42 - more brilliance and rainbow fire</li>
+            <li>Lab-created - no mining, no ethical supply-chain concerns</li>
+            <li>Forever One by Charles &amp; Colvard: the colourless standard in moissanite</li>
+            <li>2026 Canada pricing: C$250-C$600 for a 1ct-equivalent stone</li>
+            <li>Does not cloud, yellow, or lose sparkle over time</li>
+          </ul>
+
+          <p><a href="/lab-grown-engagement-rings/">Shop our moissanite ring collection</a></p>
+
+          <h2>What Is Moissanite?</h2>
+          <p>Moissanite is a gemstone made of silicon carbide (SiC). It's not carbon, which means it's not a diamond - not a lab-grown diamond, not a natural diamond, not a diamond simulant. It's a separate gemstone entirely, with its own chemistry, its own optical properties, and its own certification standard.</p>
+
+          <h3>Where Does Moissanite Come From?</h3>
+          <p>In 1893, chemist Henri Moissan - who later won the Nobel Prize in Chemistry - found microscopic crystals in a meteor crater in Canyon Diablo, Arizona. He initially believed he'd found diamonds. Analysis revealed the crystals were silicon carbide, a compound previously unknown in nature. The gemstone was eventually named after him.</p>
+          <p>Natural moissanite exists only in trace amounts, found in certain meteorites and rock formations from high-pressure geological events. Every moissanite used in jewellery today is lab-created, grown from silicon and carbon in controlled conditions. It's not "artificial" in the sense of being fake - it's simply produced where natural occurrence is impossible at commercial scale.</p>
+
+          <h3>Is Moissanite a Real Gemstone?</h3>
+          <p>Yes - it's a certified, graded gemstone with its own identity. It's not trying to be a diamond. Moissanite has a distinct refractive index, a distinct fire signature, and its own grading standard. Charles &amp; Colvard, the company that commercialized moissanite for jewellery in 1998, produces the Forever One line - the colourless industry benchmark.</p>
+          <p>If someone tells you moissanite is "fake" - they're confusing it with cubic zirconia, which is a different, much softer material. Moissanite is real. It just isn't a diamond.</p>
+
+          <h3>Does Moissanite Pass a Diamond Tester?</h3>
+          <p>This is worth a nuanced answer because most retailers give a binary yes or no.</p>
+          <p>Standard thermal conductivity diamond testers check how quickly heat moves through a stone. Diamond and moissanite both conduct heat at high rates, which means many thermal testers will read moissanite as "diamond." However, advanced multi-testers (like the DiamondSure or Presidium Multi Tester) can distinguish moissanite from diamond based on their different electrical conductivity properties.</p>
+          <p>The takeaway: on a standard store tester, moissanite often reads as diamond. On professional equipment, it reads as moissanite. That's not deception - it's physics. And any reputable jeweller who works with moissanite will tell you this upfront.</p>
+
+          <h2>How Does Moissanite Compare to Lab-Grown Diamonds and Natural Diamonds?</h2>
+          <p>This is where most buyers need a clear table, not marketing language. Here's the honest comparison.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Moissanite</th>
+                  <th>Lab-Grown Diamond</th>
+                  <th>Natural Diamond</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Material</td>
+                  <td>Silicon carbide (SiC)</td>
+                  <td>Carbon (C)</td>
+                  <td>Carbon (C)</td>
+                </tr>
+                <tr>
+                  <td>Mohs hardness</td>
+                  <td>9.25</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Refractive index</td>
+                  <td>2.65-2.69</td>
+                  <td>2.42</td>
+                  <td>2.42</td>
+                </tr>
+                <tr>
+                  <td>Colour fire (dispersion)</td>
+                  <td>Higher - more rainbow flash</td>
+                  <td>Standard diamond fire</td>
+                  <td>Standard diamond fire</td>
+                </tr>
+                <tr>
+                  <td>Brilliance</td>
+                  <td>Very high</td>
+                  <td>High</td>
+                  <td>High</td>
+                </tr>
+                <tr>
+                  <td>Is it a diamond?</td>
+                  <td>No</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Passes thermal tester</td>
+                  <td>Often (reads as diamond)</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>2026 price (1ct equiv., CA)</td>
+                  <td>C$250-C$600</td>
+                  <td>C$1,000-C$2,500</td>
+                  <td>C$6,000-C$12,000</td>
+                </tr>
+                <tr>
+                  <td>Certification</td>
+                  <td>Charles &amp; Colvard grading</td>
+                  <td>IGI / GIA</td>
+                  <td>IGI / GIA</td>
+                </tr>
+                <tr>
+                  <td>Resale value</td>
+                  <td>Minimal</td>
+                  <td>30-40% of purchase</td>
+                  <td>40-60% of purchase</td>
+                </tr>
+                <tr>
+                  <td>Environmental impact</td>
+                  <td>Low (lab-created)</td>
+                  <td>Low (lab-created)</td>
+                  <td>High (mining)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The key visual difference in a finished ring: moissanite produces more rainbow colour flash than diamond, especially in sunlight. Some wearers love this. Others prefer the more subdued fire of a diamond. That's a preference, not a quality difference.</p>
+
+          <h2>How Much Do Moissanite Engagement Rings Cost in Canada?</h2>
+          <p>Moissanite is the most affordable premium gemstone option for engagement rings in Canada. In 2026, here's what you can expect to pay for the stone alone, before setting and design costs.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Carat Equivalent</th>
+                  <th>Moissanite (CAD)</th>
+                  <th>Lab-Grown Diamond (CAD)</th>
+                  <th>Savings vs Lab-Grown</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.5ct</td>
+                  <td>C$150-C$300</td>
+                  <td>C$500-C$900</td>
+                  <td>60-70%</td>
+                </tr>
+                <tr>
+                  <td>1.0ct</td>
+                  <td>C$250-C$600</td>
+                  <td>C$1,000-C$2,500</td>
+                  <td>65-75%</td>
+                </tr>
+                <tr>
+                  <td>1.5ct</td>
+                  <td>C$400-C$900</td>
+                  <td>C$2,000-C$4,500</td>
+                  <td>65-75%</td>
+                </tr>
+                <tr>
+                  <td>2.0ct</td>
+                  <td>C$600-C$1,400</td>
+                  <td>C$3,500-C$7,500</td>
+                  <td>65-75%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>For reference, Canadian competitors show the following moissanite ring pricing (stone + setting):</p>
+          <ul>
+            <li>Bellisa Jewellery: CA$1,835-CA$2,643 for finished rings</li>
+            <li>AGI Design: CA$1,680-CA$2,846 for finished rings</li>
+            <li>Forever Ring: starting at CA$1,000</li>
+          </ul>
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h2>Does Moissanite Get Cloudy Over Time?</h2>
+          <p>No. This is one of the most common concerns buyers bring to me, and the answer is a firm no.</p>
+          <p>Moissanite doesn't cloud, yellow, or lose brilliance with age. It has no internal carbon or organic compounds that can oxidize or degrade over time the way some other stones can. The hardness of 9.25 means it resists scratching from daily contact with most surfaces. What looks like cloudiness in moissanite is almost always surface-level contamination from soap, lotions, and skin oils - a 30-second cleaning with warm water and mild dish soap restores full sparkle.</p>
+          <p>The distinction worth knowing: cubic zirconia (CZ) does cloud and yellow over years. Moissanite doesn't. They're frequently confused, which is where the concern comes from.</p>
+
+          <h2>Why Choose Moissanite for an Engagement Ring?</h2>
+
+          <h3>The Budget Argument</h3>
+          <p>If your budget can get you a 0.75ct lab-grown diamond or a 2ct moissanite in the same 14K setting, and both options involve a durable, brilliant, certified gemstone - moissanite lets you go significantly larger for the same spend. For couples where visual size matters more than the specific gemstone type, that's a straightforward calculation.</p>
+
+          <h3>The Ethics Argument</h3>
+          <p>Moissanite is entirely lab-created. There's no mining, no excavation, no supply-chain sourcing from conflict regions. The environmental footprint is lower than natural diamond mining by a significant margin. It's also lower than lab-grown diamond production, which requires considerable electricity for the growth process. If environmental minimalism is the priority, moissanite wins.</p>
+
+          <h3>The Optical Argument</h3>
+          <p>Moissanite's refractive index of 2.65-2.69 is higher than diamond's 2.42. That means moissanite returns more light - both white light (brilliance) and coloured light (fire). In a ring, this produces the rainbow flash many wearers find beautiful. It's a different optical signature than a diamond, not a lesser one.</p>
+
+          <h3>The Honesty Argument</h3>
+          <p>Some couples simply want a beautiful ring that doesn't cost three months' salary - and they don't want to pretend otherwise. Moissanite is a strong, honest choice: a real gemstone with real certification, at a price that lets you start a life together without financial strain.</p>
+
+          <h2>Forever One by Charles &amp; Colvard - The Moissanite Standard</h2>
+          <p>Not all moissanite is equal. The clarity and colour consistency of moissanite stones varies by manufacturer. Charles &amp; Colvard - the original patent holder who first commercialized moissanite for jewellery in 1998 - produces the Forever One line, which is the colourless standard in moissanite grading.</p>
+          <p>Forever One moissanite grades are:</p>
+          <ul>
+            <li><strong>Colourless (D-E-F equivalent):</strong> the clearest, most diamond-like colour range</li>
+            <li><strong>Near-colourless (G-H-I equivalent):</strong> a slight warmth that's less visible in yellow or rose gold settings</li>
+          </ul>
+          <p>For white gold or platinum settings, I always recommend colourless grade Forever One. The colour difference is subtle, but the higher grade holds better in a white metal context.</p>
+          <p>At Lux Jewels, I source Charles &amp; Colvard Forever One for all moissanite custom designs.</p>
+
+          <h2>Custom Moissanite Ring Design at Lux Jewels</h2>
+          <p>I've been working with moissanite alongside lab-grown diamonds since 2007. In 2015, when I became the first Canadian jeweller to commit exclusively to lab-grown stones, I kept moissanite in the lineup because some buyers genuinely need the price point it offers, and they deserve the same quality design process regardless of stone type.</p>
+          <p>Every custom moissanite ring at Lux Jewels goes through the same 4-step process:</p>
+          <ol>
+            <li>Free video consultation (30-40 min, Zoom or Google Meet)</li>
+            <li>CAD photorealistic rendering (your approval before anything is built)</li>
+            <li>Stone sourcing (Charles &amp; Colvard Forever One, colourless grade)</li>
+            <li>Crafting + FedEx Priority insured delivery, Canada-wide</li>
+          </ol>
+          <p><a href="/custom-engagement-rings/">Learn about our full custom design process</a></p>
+
+          <h2>Popular Moissanite Ring Styles</h2>
+
+          <h3>Oval Moissanite Engagement Rings</h3>
+          <p>Oval moissanite in a solitaire or hidden halo setting is one of my most-requested designs. The elongated shape maximizes visual size per dollar, and moissanite's high refractive index means an oval moissanite produces exceptional sparkle from every angle.</p>
+          <p><a href="/oval-engagement-rings/">Browse oval engagement rings</a></p>
+
+          <h3>Emerald Cut Moissanite Rings</h3>
+          <p>Emerald cut moissanite shows a distinctive hall-of-mirrors effect in the step-cut facets. At this cut, the moissanite's rainbow fire is more subtle - the long facets show depth over flash, which suits the architectural aesthetic of emerald cut design.</p>
+          <p><a href="/emerald-cut-engagement-rings/">Browse emerald cut rings</a></p>
+
+          <h3>Round Brilliant Moissanite Rings</h3>
+          <p>Round brilliant is the classic. Moissanite's refractive index means a round moissanite produces maximum brilliance and fire - more than a round diamond of the same size. If you want maximum sparkle per dollar, this is the combination.</p>
+
+          <h2>Two Ways to Work With Lux Jewels</h2>
+
+          <div class="lj-two-ways">
+            <div class="lj-two-ways__option">
+              <h3>Free Consultation - 30 to 40 Minutes</h3>
+              <p>We'll talk through your stone options (moissanite vs lab-grown diamond), your style preferences, and what's achievable at your budget. No pressure, no obligation. All via video call.</p>
+              <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Free Consultation</a>
+            </div>
+            <div class="lj-two-ways__option">
+              <h3>No-BS Call - $199 for 30 Minutes</h3>
+              <p>You've narrowed it down. You want a straight answer from someone with over 20 years of experience in this specific space. I'll compare any quotes you've received, explain what you're looking at grade-for-grade, and tell you whether the pricing you're seeing is fair.</p>
+              <p>The first and only service of its kind in the world.</p>
+              <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+              <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book a No-BS Call</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

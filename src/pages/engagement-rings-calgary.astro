@@ -1,0 +1,182 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Engagement Rings Calgary — Lab-Grown, Online & Custom";
+const description = "Lab-grown engagement rings for Calgary couples. IGI-certified, custom design, insured FedEx delivery across Calgary and Alberta. Free video consultation with Suman Smith.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/engagement-rings-calgary/",
+      "url": "https://engagementringincanada.com/engagement-rings-calgary/",
+      "name": "Engagement Rings Calgary — Lab-Grown, Online & Custom",
+      "description": "Lab-grown engagement rings for Calgary couples. IGI-certified, custom design, insured FedEx delivery across Calgary and Alberta. Free video consultation with Suman Smith.",
+      "inLanguage": "en-CA",
+      "areaServed": {"@type": "City", "name": "Calgary", "containedInPlace": {"@type": "Province", "name": "Alberta"}},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Engagement Rings Calgary", "item": "https://engagementringincanada.com/engagement-rings-calgary/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Do you have a showroom in Calgary?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lux Jewels operates entirely online. Consultations are video calls via Zoom or Google Meet. Rings ship via FedEx Priority, fully insured, signature required. Operating this way since 2007."}},
+        {"@type": "Question", "name": "When did Lux Jewels start serving Calgary clients?", "acceptedAnswer": {"@type": "Answer", "text": "Lux Jewels has served Calgary couples since 2007. In 2015, founder Suman Smith became Canada's first exclusively lab-grown jewellery specialist — before the current Calgary lab-grown boutiques launched their lab-grown focus."}},
+        {"@type": "Question", "name": "How does delivery to Calgary work?", "acceptedAnswer": {"@type": "Answer", "text": "FedEx Priority, fully insured, signature required. Typical delivery to Calgary is next-day from ship date. Custom orders take 4-6 weeks to produce before shipping. Tracking provided at shipment."}},
+        {"@type": "Question", "name": "Are all engagement ring shapes available for Calgary orders?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All shapes — oval, emerald cut, cushion, round, pear, solitaire, halo, vintage, radiant, and custom — are available for Calgary and Alberta orders. All stones are IGI-certified."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Do you have a showroom in Calgary?",
+    a: "No. Lux Jewels is entirely online. Consultations are video calls via Zoom or Google Meet. Rings ship via FedEx Priority, fully insured, with signature required. I've operated this way since 2007."
+  },
+  {
+    q: "Why work with an online jeweller instead of a Calgary showroom like Vena Nova or Qakare?",
+    a: "Lower overhead means lower prices for equivalent quality. Calgary showroom rent, staff, and display inventory are embedded in local ring prices. We don't have those costs. You also work directly with me - not a sales representative - and have access to stone inventory from multiple suppliers rather than one local stock."
+  },
+  {
+    q: "When did Lux Jewels start serving Calgary clients?",
+    a: "Lux Jewels has served Calgary couples since 2007. I became Canada's first exclusively lab-grown jewellery specialist in 2015 - before the current Calgary lab-grown boutiques had launched their lab-grown focus."
+  },
+  {
+    q: "How long does delivery to Calgary take?",
+    a: "Next-day from ship date for FedEx Priority to Calgary. Custom orders take 4-6 weeks to produce before shipping. All rings are fully insured with signature required."
+  },
+  {
+    q: "Are all engagement ring shapes available for Calgary orders?",
+    a: "Yes. All shapes - oval, emerald cut, cushion, round, pear, solitaire, halo, vintage, radiant, and custom - are available. All stones are IGI-certified. Custom design is available from a free consultation."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Rings Calgary — Lab-Grown, Online &amp; Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Rings Calgary</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lux Jewels serves Calgary and Alberta couples with IGI-certified lab-grown engagement rings through a fully online process - free video consultation, custom design, and insured FedEx Priority delivery to any Alberta address. I'm Suman Smith, founder of Lux Jewels. With over 20 years in the Canadian jewellery industry, I founded Lux Jewels in 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown diamonds - before any of the current Calgary specialists existed.</p>
+          <p>I don't require Calgary clients to visit a Market Mall showroom or make an appointment downtown. The ring process - consultation, stone selection, design, production, delivery - is fully online. The ring arrives at your door insured and verified.</p>
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Calgary's Lab-Grown Engagement Ring Market in 2026</h2>
+          <p>Calgary's lab-grown diamond market has grown significantly. Key competitors as of 2026:</p>
+          <p><strong>Vena Nova (Market Mall)</strong> - Claims to be the "first fully lab created diamond experience to Calgary." Retail jewellery experience since 1979. Showroom at Market Mall, Calgary.</p>
+          <p><strong>Qakare</strong> - Calgary's custom engagement ring and certified lab-grown specialist. Custom builds and ready-made collections.</p>
+          <p><strong>Alberta Diamond Exchange</strong> - 25+ years in Calgary. Diamond specialists with lab-grown options.</p>
+          <p><strong>Breslauer &amp; Warren</strong> - Lab-grown and custom design, Calgary.</p>
+          <p><strong>POLAR</strong> - Has a Calgary AB workshop. Custom made-in-Canada rings, 4-6 week timeline.</p>
+          <p>The Calgary market, like Toronto and Vancouver, is dominated by showroom-based competitors. Every local option requires an in-person visit at some point in the process.</p>
+
+          <h2>A Note on Vena Nova's "First in Calgary" Claim</h2>
+          <p>Vena Nova positions themselves as the first fully lab-grown experience in Calgary. That's a Calgary-specific claim.</p>
+          <p>Here's the broader picture: In 2015, I became the first Canadian jeweller to dedicate an entire jewellery business exclusively to lab-grown diamonds - not just a collection within a traditional jewellery store, but an entire business built around lab-grown stones from day one. This happened before Vena Nova existed as a lab-grown specialist and before any current Calgary competitor had made lab-grown their sole focus.</p>
+          <p>If you're choosing between Calgary's newest lab-grown option and a business that built the lab-grown specialist model before Calgary had one, that distinction is worth knowing.</p>
+
+          <h2>Why Calgary Couples Work with Lux Jewels</h2>
+          <p><strong>No showroom means lower prices.</strong> Market Mall retail space isn't cheap. Showroom rent, display cases, and foot-traffic staff are all built into local ring prices. We have none of those costs.</p>
+          <p><strong>Alberta province-wide reach.</strong> We serve the same Calgary client as Edmonton, Lethbridge, Red Deer, Fort McMurray, or any other Alberta community. The video call and insured delivery are identical.</p>
+          <p><strong>Direct founder access.</strong> You're working with me - Suman Smith - for the entire process. Not a showroom sales associate.</p>
+          <p><strong>I've been doing this longer.</strong> I founded Lux Jewels in 2007. I've been exclusively lab-grown since 2015. The Calgary lab-grown specialists opened their doors afterward.</p>
+
+          <h2>Popular Styles Among Calgary Buyers</h2>
+          <p>Based on consultations with Calgary and Alberta clients:</p>
+          <p><strong>Shape:</strong> Oval and round brilliant are the most requested shapes in Calgary. Cushion cut is more popular in Calgary than in other cities we've observed - likely influenced by the classic, romantic aesthetic that aligns with Alberta's aesthetic culture.</p>
+          <p><strong>Metal:</strong> Yellow gold is strong in Calgary - stronger than in Vancouver or Toronto. Rose gold is second. White gold and platinum are less common.</p>
+          <p><strong>Budget:</strong> Calgary consultation budgets tend toward the C$2,000-C$5,000 range for a complete ring. Lab-grown makes this budget go further than natural stones would.</p>
+          <p><strong>All shapes available for Calgary orders:</strong></p>
+          <p>
+            <a href="/oval-engagement-rings/">Oval</a> |
+            <a href="/emerald-cut-engagement-rings/">Emerald cut</a> |
+            <a href="/cushion-cut-engagement-rings/">Cushion</a> |
+            <a href="/solitaire-engagement-rings/">Solitaire</a> |
+            <a href="/halo-engagement-rings/">Halo</a> |
+            <a href="/round-engagement-rings/">Round</a> |
+            <a href="/rose-gold-engagement-rings/">Rose Gold</a> |
+            <a href="/vintage-engagement-rings/">Vintage</a> |
+            <a href="/pear-engagement-rings/">Pear</a> |
+            <a href="/radiant-cut-engagement-rings/">Radiant</a>
+          </p>
+          <p>All rings use repurposed gold (99.5% previously refined). All stones IGI-certified.</p>
+
+          <h2>Delivery to Calgary and Alberta</h2>
+          <p>FedEx Priority, fully insured, signature required. Typical delivery to Calgary and Edmonton: next-day from ship date. Custom orders: 4-6 weeks production + shipping.</p>
+          <p>Delivery areas include:</p>
+          <ul>
+            <li>Calgary (all quadrants: NW/NE/SW/SE/Centre)</li>
+            <li>Edmonton and greater Edmonton area</li>
+            <li>Red Deer, Lethbridge, Medicine Hat, Fort McMurray, Grande Prairie</li>
+            <li>All Alberta communities</li>
+          </ul>
+
+          <h2>2026 Price Context</h2>
+          <p>Calgary's local lab-grown specialists don't publicly list prices - Vena Nova, Qakare, and ADX all require consultation for pricing. This is standard for custom jewellery. Lux Jewels pricing is similarly available on request.</p>
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <h2>Two Ways to Start</h2>
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br />
+          Video call via Zoom or Google Meet. Style, stone, and budget discussion. I'll follow up with stone candidates and pricing. No commitment.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br />
+          You've received a quote from a Calgary jeweller. Bring it. I'll tell you whether the stone grade is appropriate and whether the price is fair for what's described.</p>
+          <p>The first and only service of its kind in the world.</p>
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

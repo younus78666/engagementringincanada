@@ -1,0 +1,267 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Rose Gold Engagement Rings Canada — Lab-Grown Custom";
+const description = "Shop rose gold lab-grown engagement rings in Canada. 14K vs 18K rose gold compared, which stone shapes pair best, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/rose-gold-engagement-rings/",
+      "url": "https://engagementringincanada.com/rose-gold-engagement-rings/",
+      "name": "Rose Gold Engagement Rings Canada — Lab-Grown Custom",
+      "description": "Shop rose gold lab-grown engagement rings in Canada. 14K vs 18K rose gold compared, which stone shapes pair best, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Rose Gold Engagement Rings", "item": "https://engagementringincanada.com/rose-gold-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Does rose gold require replating like white gold?", "acceptedAnswer": {"@type": "Answer", "text": "No. Rose gold gets its colour from the copper alloy content, not a surface coating. It maintains its colour without replating. White gold is rhodium-plated and needs replating every 1-5 years; rose gold doesn't."}},
+        {"@type": "Question", "name": "Is 14K or 18K rose gold better for engagement rings?", "acceptedAnswer": {"@type": "Answer", "text": "14K rose gold is typically the better choice - more durable (higher copper content), deeper pink tone, and lower cost than 18K. 18K has a lighter, more golden-pink tone and is slightly softer. Both are excellent; it's a matter of colour preference."}},
+        {"@type": "Question", "name": "What stone colour grade works best in rose gold?", "acceptedAnswer": {"@type": "Answer", "text": "G-H colour stones are very effective in rose gold because the warm metal reduces the visible warmth of slightly off-white stone grades. G in rose gold typically looks as clean as E in white gold to most eyes, making rose gold economically strategic for buyers working with a set budget."}},
+        {"@type": "Question", "name": "What shapes pair best with rose gold?", "acceptedAnswer": {"@type": "Answer", "text": "Oval is the most popular rose gold pairing - warm metal and soft oval silhouette complement each other naturally. Pear, round, cushion, and vintage-inspired designs also pair well with rose gold."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Does rose gold require replating like white gold?",
+    a: "No. Rose gold gets its colour from the copper alloy content, not from a surface coating. It doesn't require rhodium plating and won't lose its colour the way white gold does over time. White gold is plated with rhodium (typically needs replating every 1-5 years); rose gold maintains its colour without treatment."
+  },
+  {
+    q: "Is 14K or 18K rose gold better for engagement rings?",
+    a: "14K rose gold is typically the better choice for engagement rings. It's more durable (higher copper content adds hardness), typically has a deeper, richer pink tone, and costs less than 18K. 18K rose gold is slightly softer and has a lighter, more golden-pink tone that some clients prefer. Both are excellent choices - it's a matter of colour preference and durability priority."
+  },
+  {
+    q: "What colour grade works best in rose gold?",
+    a: "G-H colour stones are very effective in rose gold because the warm metal tone reduces the visible warmth of slightly-off-white stone grades. G in rose gold typically looks as clean as E in white gold to most eyes. This is one reason rose gold is popular for clients working with a set budget - you can buy more stone at a slightly warmer grade and get equivalent appearance."
+  },
+  {
+    q: "What stone shapes work best with rose gold?",
+    a: "Oval is the most popular pairing - the warm metal and soft silhouette complement each other naturally. Pear, round, and cushion also pair well. Rose gold is especially suited to vintage-inspired designs where the warm tone reinforces the period aesthetic."
+  },
+  {
+    q: "How long does a rose gold engagement ring take?",
+    a: "Custom rose gold rings take 4-6 weeks from stone selection to delivery. I've been building rose gold lab-grown rings across Canada since 2015, when I founded Canada's first exclusively lab-grown jewellery business. All rings ship via FedEx Priority, fully insured, with signature required."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Rose Gold Engagement Rings Canada</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Rose Gold Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Rose gold engagement rings use a gold alloy blended with copper to produce the characteristic warm pink tone. The copper content determines the depth of the pink colour - more copper means deeper rose, less means a lighter, more golden pink. In Canada in 2026, rose gold remains one of the top metal choices for engagement rings, particularly with oval, pear, and vintage-inspired settings. I'm Suman Smith, founder of Lux Jewels. I've been designing rose gold lab-grown engagement rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat rose gold as just a colour option. The warm tone of rose gold interacts with stone colour grades in specific ways - it can enhance the warmth of G-H colour stones or create a beautiful contrast with colourless D-F diamonds. Choosing the right stone grade for a rose gold setting is part of the design process.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>What Is Rose Gold and How Is It Made?</h2>
+
+          <p>Pure gold (24K) is too soft for jewellery. Engagement ring settings are made from gold alloys - mixtures of gold with other metals that add hardness. The alloy composition determines both the gold purity designation (14K, 18K) and the colour.</p>
+
+          <p><strong>Rose gold = gold + copper + sometimes silver</strong></p>
+
+          <p>The copper content creates the pink tint:</p>
+          <ul>
+            <li>More copper = deeper, warmer rose/pink</li>
+            <li>Less copper = lighter, more champagne gold tone</li>
+            <li>Some rose gold alloys also include small amounts of silver to lighten and balance the colour</li>
+          </ul>
+
+          <p><strong>14K vs 18K Rose Gold:</strong></p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>14K Rose Gold</th>
+                  <th>18K Rose Gold</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gold content</td>
+                  <td>58.3% gold</td>
+                  <td>75% gold</td>
+                </tr>
+                <tr>
+                  <td>Durability</td>
+                  <td>More durable (higher copper content adds hardness)</td>
+                  <td>Slightly softer than 14K</td>
+                </tr>
+                <tr>
+                  <td>Colour depth</td>
+                  <td>Deeper, richer rose/pink tone</td>
+                  <td>Lighter, more yellow-gold pink</td>
+                </tr>
+                <tr>
+                  <td>Price</td>
+                  <td>Lower</td>
+                  <td>Higher (more gold content)</td>
+                </tr>
+                <tr>
+                  <td>Hypoallergenic?</td>
+                  <td>Some copper sensitivity possible (rare)</td>
+                  <td>Same</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Buyers who want the classic deep rose tone</td>
+                  <td>Buyers who prefer a lighter, more golden pink</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>For most clients, 14K rose gold is the choice - the deeper colour is typically what people picture when they say "rose gold," and 14K is more durable for daily wear than 18K. The price difference is meaningful but not dramatic for a custom ring.</p>
+
+          <h2>Which Diamond Shapes Pair Best with Rose Gold?</h2>
+
+          <p>Rose gold's warm copper tone interacts differently with each stone shape and colour grade:</p>
+
+          <p><strong>Oval:</strong> The most popular rose gold pairing in our Canada consultations. The elongated oval silhouette paired with a rose gold pave band or plain knife-edge is one of the most requested configurations we build. The warm tone complements oval's soft, romantic silhouette naturally. See our <a href="/oval-engagement-rings/">oval engagement rings</a> collection.</p>
+
+          <p><strong>Pear:</strong> Pear diamonds - a teardrop hybrid of round and marquise - pair naturally with rose gold. The romantic, feminine aesthetic of pear shape aligns with the warm metal tone. Browse our <a href="/pear-engagement-rings/">pear engagement rings</a>.</p>
+
+          <p><strong>Round:</strong> Rose gold + round brilliant is a classic combination. The warm metal creates a softer, more romantic look than white gold without being as statement-making as yellow gold. Explore our <a href="/round-engagement-rings/">round engagement rings</a>.</p>
+
+          <p><strong>Cushion:</strong> Cushion cut and rose gold produce one of the most Victorian-adjacent aesthetics in modern rings. The pillow-like shape and warm metal work together. See our <a href="/cushion-cut-engagement-rings/">cushion cut engagement rings</a>.</p>
+
+          <p><strong>Vintage-inspired settings:</strong> Rose gold is one of the dominant metals for Edwardian and Victorian-inspired designs. Milgrain and filigree details read beautifully in rose gold. Browse our <a href="/vintage-engagement-rings/">vintage engagement rings</a>.</p>
+
+          <h2>Stone Colour in Rose Gold Settings</h2>
+
+          <p>Rose gold's warm tone interacts with stone colour in an important way:</p>
+
+          <p><strong>G-H colour stones in rose gold:</strong> The slight warmth of a G or H colour grade is less noticeable in rose gold than in white gold, because the warm metal doesn't create the same contrast. A G stone in rose gold can look as clean and white as an E stone in white gold, from most viewing distances.</p>
+
+          <p><strong>D-F colour stones in rose gold:</strong> Colourless stones in rose gold produce a striking contrast - a very white, bright centre stone against warm pink metal. This is a deliberate aesthetic choice rather than the default.</p>
+
+          <p><strong>I-J colour stones in rose gold:</strong> The warmer grades pair naturally with rose gold because the metal's tone aligns with theirs. This is the most budget-efficient combination if you're aiming for rose gold - you can go slightly warmer on colour grade without it showing.</p>
+
+          <p>This means rose gold is one of the most economically strategic metals: you can work with slightly warmer stone grades and get equivalent visual results to a whiter stone in a white metal setting.</p>
+
+          <h2>Does Rose Gold Fade or Need Replating?</h2>
+
+          <p>Rose gold doesn't require rhodium plating (unlike white gold, which is typically plated with rhodium to maintain its bright white appearance). Rose gold maintains its colour through the alloy composition itself.</p>
+
+          <p><strong>The copper content does age slightly over time.</strong> Very fine rose gold can develop a very subtle deepening of tone after years of wear, as the copper oxidizes minutely. This is considered patina by most jewellers - not a defect. Many clients prefer the aged appearance.</p>
+
+          <p><strong>White gold comparison:</strong> White gold is actually yellow gold alloyed with white metals (nickel or palladium), then rhodium plated to appear white. The plating wears off over time (typically 1-5 years depending on wear) and requires replating. Rose gold requires no plating - the colour is the alloy, not a coating.</p>
+
+          <p>This means rose gold rings typically require less maintenance than equivalent white gold rings. If you're deciding between the two metals for a low-maintenance ring, rose gold has an advantage.</p>
+
+          <h2>2026 Rose Gold Lab-Grown Engagement Ring Prices (Canada)</h2>
+
+          <p>Metal choice is a relatively modest price variable compared to stone grade and carat weight. Rose gold and yellow gold are typically priced equivalently. Platinum costs more than all gold alloys.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct oval, G/VS1, 14K rose gold solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval, F/VS1, 14K rose gold pave band</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct round, G/VS1, 14K rose gold halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct pear, F/VS1, 14K rose gold solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>All settings use repurposed gold (99.5% previously refined).</p>
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h2>Two Ways to Start</h2>
+
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          We'll confirm 14K vs 18K rose gold, pair it with the right stone shape and colour grade, and discuss setting style. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've been quoted a rose gold ring and want a second opinion on whether the stone grade is appropriate for the metal, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

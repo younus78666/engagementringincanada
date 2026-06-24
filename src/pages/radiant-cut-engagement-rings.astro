@@ -1,0 +1,281 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Radiant Cut Engagement Rings Canada — Lab-Grown Guide";
+const description = "Shop radiant cut lab-grown engagement rings in Canada. Radiant vs emerald cut compared, clarity guide, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/radiant-cut-engagement-rings/",
+      "url": "https://engagementringincanada.com/radiant-cut-engagement-rings/",
+      "name": "Radiant Cut Engagement Rings Canada — Lab-Grown Guide",
+      "description": "Shop radiant cut lab-grown engagement rings in Canada. Radiant vs emerald cut compared, clarity guide, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Radiant Cut Engagement Rings", "item": "https://engagementringincanada.com/radiant-cut-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the difference between radiant cut and princess cut?", "acceptedAnswer": {"@type": "Answer", "text": "Both are rectangular/square brilliant-cut diamonds. Princess cut is a true square with uncut corners vulnerable to chipping. Radiant cut has cropped (beveled) corners, making it more durable. Radiant cut is the safer everyday-wear choice between the two."}},
+        {"@type": "Question", "name": "How does radiant cut compare to emerald cut?", "acceptedAnswer": {"@type": "Answer", "text": "Both are rectangular with cropped corners. Radiant cut has brilliant-cut facets (sparkle and fire). Emerald cut has step-cut facets (hall-of-mirrors effect). Radiant cut is more forgiving of lower clarity grades; emerald cut requires VS1 or better to look its best."}},
+        {"@type": "Question", "name": "What clarity grade do I need for radiant cut?", "acceptedAnswer": {"@type": "Answer", "text": "VS2 is often acceptable for radiant cut because brilliant-cut facets scatter light and hide inclusions more effectively than step cuts. SI1 can work if inclusions are positioned at the edge rather than the centre. This is a stone-by-stone assessment."}},
+        {"@type": "Question", "name": "Do radiant cut lab-grown diamonds come with IGI certification?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All radiant cut lab-grown diamonds at Lux Jewels include an IGI grading certificate with 4Cs grades, measurements, and laser girdle inscription you can verify independently."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the difference between radiant cut and princess cut?",
+    a: "Both are rectangular/square brilliant-cut diamonds, but they're distinct shapes. Princess cut is a true square with uncut corners and a different facet pattern (chevron-shaped). Radiant cut has cropped (beveled) corners, which eliminates the sharp stress points that make princess cut corners vulnerable to chipping. Radiant cut is the more durable choice."
+  },
+  {
+    q: "Does radiant cut look bigger or smaller than emerald cut?",
+    a: "Radiant cut typically appears slightly larger face-up than an emerald cut of the same carat weight, because the brilliant facets produce more light return and visual weight. Emerald cut's step facets can read as \"darker\" in some lighting, reducing perceived size."
+  },
+  {
+    q: "What length-to-width ratio is best for radiant cut?",
+    a: "The most popular range is 1.25-1.40 for a clear rectangular shape that isn't too elongated. Near-square ratios (1.00-1.10) produce what's sometimes called a \"square radiant.\" Ratios above 1.45 are elongated enough to approach emerald cut proportions."
+  },
+  {
+    q: "Can I get a radiant cut lab-grown diamond with an IGI certificate?",
+    a: "Yes. All lab-grown diamonds at Lux Jewels include an IGI grading certificate with 4Cs grades, exact measurements, and a laser girdle inscription verifiable against the certificate."
+  },
+  {
+    q: "How long does a custom radiant cut engagement ring take?",
+    a: "4-6 weeks from stone selection to delivery. Rings ship via FedEx Priority, fully insured, with signature required, to all Canadian provinces and the US."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Radiant Cut Engagement Rings Canada — Lab-Grown Guide</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Radiant Cut Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Radiant cut diamonds combine a rectangular outline with brilliant-cut facets underneath — producing the sparkle pattern of a round brilliant in a rectangular shape. This makes radiant cut more forgiving of lower clarity and colour grades than emerald cut, which has step-cut facets that reveal inclusions and colour more clearly. I'm Suman Smith, founder of Lux Jewels. I've been designing radiant cut lab-grown rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat radiant cut as a consolation prize for people who wanted emerald cut but couldn't afford the clarity grades. Radiant cut is a genuine first-choice shape for buyers who want a rectangular silhouette with maximum brilliance rather than the hall-of-mirrors effect of step cuts.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>What Makes Radiant Cut Different?</h2>
+
+          <p>The radiant cut was developed in the 1970s by Henry Grossbard as a way to bring brilliant-cut sparkle to the rectangular shape that had previously only been available in step cuts (emerald, Asscher). The key innovation was applying triangular brilliant-cut facets to the pavilion of a rectangular stone with cropped corners.</p>
+
+          <p>The result: a diamond that looks rectangular like an emerald cut but fires light like a round brilliant.</p>
+
+          <p><strong>Radiant vs Emerald Cut — Direct Comparison:</strong></p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Radiant Cut</th>
+                  <th>Emerald Cut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Outline</td>
+                  <td>Rectangular, cropped corners</td>
+                  <td>Rectangular, cropped corners</td>
+                </tr>
+                <tr>
+                  <td>Facet style</td>
+                  <td>Brilliant-cut (triangular facets)</td>
+                  <td>Step-cut (rectangular facets)</td>
+                </tr>
+                <tr>
+                  <td>Light pattern</td>
+                  <td>Sparkle and fire</td>
+                  <td>Hall-of-mirrors (long flashes)</td>
+                </tr>
+                <tr>
+                  <td>Clarity sensitivity</td>
+                  <td>Low — inclusions hidden by facets</td>
+                  <td>High — VS1+ minimum recommended</td>
+                </tr>
+                <tr>
+                  <td>Colour sensitivity</td>
+                  <td>Moderate — G+ recommended</td>
+                  <td>High — G+ strongly recommended</td>
+                </tr>
+                <tr>
+                  <td>Visual weight per carat</td>
+                  <td>Higher — brilliant facets add brightness</td>
+                  <td>Lower — step facets can look "darker"</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Sparkle-first buyers who want rectangular shape</td>
+                  <td>Elegance-first buyers who want architectural look</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The short version: if you want the rectangle but you want it to sparkle, radiant cut is the right shape.</p>
+
+          <h2>Clarity and Colour for Radiant Cut</h2>
+
+          <p>One of radiant cut's main advantages over <a href="/emerald-cut-engagement-rings/">emerald cut</a> is its tolerance for lower clarity grades.</p>
+
+          <p><strong>Clarity:</strong> VS2 is often acceptable for radiant cut, depending on inclusion type and placement. The brilliant-cut facets scatter light the same way round brilliants do, which makes inclusions less visible to the naked eye. An SI1 radiant cut with well-placed inclusions can look eye-clean. This is a stone-by-stone assessment, not a grade-based rule.</p>
+
+          <p><strong>Colour:</strong> G or better is the standard recommendation, but H colour can look good in radiant cuts set in yellow gold (warm metal + warm stone grade produces a cohesive look). In white gold or platinum, the contrast can make H look slightly warmer than it would in a round, so G or better is safer for those metals.</p>
+
+          <p>This more tolerant clarity and colour profile means a radiant cut diamond in a given budget can often be a larger stone than an equivalent emerald cut, because you don't need to pay the premium for VS1 or D-F grades.</p>
+
+          <h2>Length-to-Width Ratios for Radiant Cut</h2>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ratio</th>
+                  <th>Appearance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.00 - 1.10</td>
+                  <td>Near-square radiant (sometimes called "square radiant")</td>
+                </tr>
+                <tr>
+                  <td>1.20 - 1.35</td>
+                  <td>Classic rectangular radiant</td>
+                </tr>
+                <tr>
+                  <td>1.35 - 1.50</td>
+                  <td>More elongated, approaches emerald cut silhouette length</td>
+                </tr>
+                <tr>
+                  <td>1.50+</td>
+                  <td>Very elongated — unusual; makes the stone look narrow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Most clients request ratios between 1.25-1.40. Below 1.15, a radiant cut starts to look like a cushion cut from above. Above 1.45, the rectangle becomes noticeably elongated — which some buyers love and others find too narrow.</p>
+
+          <h2>Best Settings for Radiant Cut</h2>
+
+          <p><strong><a href="/solitaire-engagement-rings/">Solitaire</a> with straight prongs:</strong> The most common choice. Four corner prongs at the beveled corners. Simple, architectural.</p>
+
+          <p><strong><a href="/halo-engagement-rings/">Halo setting</a>:</strong> A frame of smaller brilliant-cut diamonds around the radiant centre adds perimeter sparkle and amplifies the stone's already-strong light return. Very popular combination.</p>
+
+          <p><strong>Three-stone with baguette or trapezoid side stones:</strong> The rectangular outline pairs well with flanking stones that reinforce the geometry. Less common than baguette pairings with emerald cut, but equally valid.</p>
+
+          <p><strong>East-west orientation:</strong> A radiant cut oriented horizontally. Less common than east-west oval, but distinctive.</p>
+
+          <p>All settings use repurposed gold (99.5% previously refined). Metal options: 14K or 18K yellow, white, or rose gold; Platinum 950.</p>
+
+          <h2>2026 Radiant Cut Lab-Grown Prices (Canada)</h2>
+
+          <p>Radiant cut lab-grown diamonds are often priced below oval or round of the same carat weight, because demand for radiant cut is lower and less price pressure applies. This means more stone per dollar than the most popular shapes.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0ct radiant cut, G/VS2, 14K solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct radiant cut, F/VS1, 14K halo</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct radiant cut, G/VS2, 18K solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+
+          <p>We'll find your ideal radiant cut ratio, clarity tolerance, and setting preference. I'll source stones that match your specifications. Video call via Zoom or Google Meet. I've been doing this since 2007, and since 2015 I've worked exclusively with lab-grown stones — so I know exactly what to look for in a radiant cut that'll perform well for your budget.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+
+          <p>You've seen a quote for a radiant cut ring elsewhere. Bring it. I'll tell you whether the stone's clarity grade is visually meaningful for radiant cut, whether the ratio is right, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

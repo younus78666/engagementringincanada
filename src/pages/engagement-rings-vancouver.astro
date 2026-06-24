@@ -1,0 +1,189 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Engagement Rings Vancouver — Lab-Grown, Online & Custom";
+const description = "Lab-grown engagement rings for Vancouver couples. IGI-certified, custom design, insured FedEx delivery across Metro Vancouver. Free video consultation with Suman Smith.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/engagement-rings-vancouver/",
+      "url": "https://engagementringincanada.com/engagement-rings-vancouver/",
+      "name": "Engagement Rings Vancouver — Lab-Grown, Online & Custom",
+      "description": "Lab-grown engagement rings for Vancouver couples. IGI-certified, custom design, insured FedEx delivery across Metro Vancouver. Free video consultation with Suman Smith.",
+      "inLanguage": "en-CA",
+      "areaServed": {"@type": "City", "name": "Vancouver", "containedInPlace": {"@type": "Province", "name": "British Columbia"}},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Engagement Rings Vancouver", "item": "https://engagementringincanada.com/engagement-rings-vancouver/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Do you have a studio or showroom in Vancouver?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lux Jewels operates entirely online. Consultations are 30-40 minute video calls via Zoom or Google Meet. Rings deliver via FedEx Priority, fully insured, with signature required. The online model has been in place since 2007."}},
+        {"@type": "Question", "name": "How does delivery work to Vancouver?", "acceptedAnswer": {"@type": "Answer", "text": "FedEx Priority, fully insured, signature required. Typical delivery to Vancouver addresses is next-day from ship date. Custom orders take 4-6 weeks to produce before shipping."}},
+        {"@type": "Question", "name": "What makes Lux Jewels different from Vancouver custom jewellers?", "acceptedAnswer": {"@type": "Answer", "text": "Lux Jewels was founded in 2007, and in 2015 became the first Canadian jewellery business to specialize exclusively in lab-grown diamonds - ahead of every current Vancouver boutique that has since added lab-grown collections. Clients work directly with founder Suman Smith throughout the process."}},
+        {"@type": "Question", "name": "Are all shapes available for Vancouver orders?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. All shapes - oval, emerald cut, round brilliant, pear, cushion, radiant, solitaire, halo, vintage, and more - are available for Vancouver and BC orders. All stones are IGI-certified. Rings ship via FedEx Priority to any BC address."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Do you have a studio or showroom in Vancouver?",
+    a: "No. Lux Jewels is entirely online. Consultations are 30-40 minute video calls via Zoom or Google Meet. Rings deliver via FedEx Priority, fully insured, with signature required. I've operated this way since 2007 — the online model was always intentional, not a fallback."
+  },
+  {
+    q: "Why use an online jeweller instead of a Vancouver showroom?",
+    a: "Lower overhead means lower prices for equivalent quality. Vancouver showroom rent, artisan staff, and display inventory are real costs embedded in ring prices. We also give you access to stone inventory from multiple suppliers rather than whatever a single studio happens to carry. And you work directly with me — not a sales representative."
+  },
+  {
+    q: "How does delivery work to Vancouver?",
+    a: "FedEx Priority, fully insured, signature required. Typical delivery to Vancouver addresses is next-day from ship date. Tracking is provided when the order ships. For custom orders, production is 4-6 weeks."
+  },
+  {
+    q: "What makes Lux Jewels different from Vancouver custom jewellers like Era Design or LL Private Jewellers?",
+    a: "I founded Lux Jewels in 2007. In 2015, I became the first Canadian jeweller to dedicate the entire business to lab-grown diamonds exclusively — ahead of every current Vancouver boutique that has since added lab-grown collections. You're working with the pioneer, not a recent adapter."
+  },
+  {
+    q: "Do Vancouver couples typically prefer any particular ring style?",
+    a: "Based on our consultations, Vancouver clients tend toward minimalist aesthetics — clean solitaires, hidden halos, architectural designs. Oval is the most popular shape. Platinum is more common in Vancouver than other Canadian cities. Custom design requests are higher in Vancouver than in most other cities we serve."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Rings Vancouver — Lab-Grown, Online &amp; Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Rings Vancouver</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lux Jewels serves Vancouver and Metro Vancouver couples with IGI-certified lab-grown engagement rings through a fully online process — free video consultation, custom design, and insured FedEx Priority delivery to any BC address. No showroom required. I'm Suman Smith, founder of Lux Jewels. With over 20 years in the Canadian jewellery industry, I founded Lux Jewels in 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown diamonds in 2015.</p>
+          <p>I don't ask Vancouver clients to schedule a parking spot in Gastown or Robson Street. The consultation is a video call, the stone selection process is handled by me, and the ring is delivered to your door — whether that's downtown Vancouver, North Shore, Richmond, Surrey, or anywhere else in BC.</p>
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Vancouver's Lab-Grown Engagement Ring Market in 2026</h2>
+          <p>Vancouver has one of the most competitive engagement ring markets in Canada, driven by the city's strong jewellery culture and high disposable income demographics. The key players as of 2026:</p>
+          <p><strong>Luxury Diamonds</strong> — Downtown Vancouver. Custom bespoke rings with GIA-certified natural and lab-grown diamonds. Master goldsmith production. Full showroom.</p>
+          <p><strong>Pure Diamond</strong> — Downtown Vancouver showroom plus online presence. Local BC artisan focus, wholesale market access, lab-grown and mined diamonds.</p>
+          <p><strong>Era Design</strong> — East Vancouver studio, open by appointment. Custom and unique engagement rings, handcrafted in-house. Lab-grown available. Founded 2003. Designer with 20+ years experience. Prices from C$2,750 for lab-grown.</p>
+          <p><strong>LL Private Jewellers</strong> — Custom lab-grown, made in Vancouver. Custom design services.</p>
+          <p><strong>Cullen Jewellery</strong> — Lab-grown and moissanite. Has Vancouver-category pages.</p>
+          <p><strong>POLAR</strong> — Canada-wide, custom, made-in-Canada claim. Not Vancouver-specific.</p>
+          <p>Every showroom-based competitor has appointment queues, showroom costs, and a sales structure that reflects their overhead. The price difference between a showroom ring and an equivalent online ring isn't always visible — it's built into every price point.</p>
+
+          <h2>Why Vancouver Couples Work with Lux Jewels Online</h2>
+          <p>I'll be direct: not having a Vancouver showroom is a deliberate choice. I've been working this way since 2007 — over a decade before the most established local boutiques added lab-grown to their collections.</p>
+          <p><strong>No showroom overhead means lower prices.</strong> A rental in downtown Vancouver, Gastown, or Yaletown isn't cheap. That cost gets embedded in every ring's price. Our overhead is design time and stone sourcing — and that's all you're paying for.</p>
+          <p><strong>You get the founder directly.</strong> At Lux Jewels, you're working with me — Suman Smith — throughout the entire process. Not a sales rep who passes your notes to a designer you never meet.</p>
+          <p><strong>BC province-wide reach.</strong> Showrooms serve the area around their location. I serve the entire province equally: Vancouver, Victoria, Kelowna, Prince George, Kamloops. The video consultation and insured delivery are the same regardless of where you are in BC.</p>
+          <p><strong>The process is genuinely efficient.</strong> A 30-40 minute video call covers everything a Saturday in a showroom covers, without the commute and the sales environment.</p>
+          <p>Since 2015, when I committed Lux Jewels entirely to lab-grown stones, I've worked with couples in every BC city. I did this before any of the current Vancouver boutiques had added lab-grown collections, and I know this material well.</p>
+
+          <h2>Popular Engagement Ring Styles Among Vancouver Buyers</h2>
+          <p>Based on our consultations with Vancouver and BC clients, the most requested configurations:</p>
+          <p><strong>Shape:</strong> Oval is consistently the top request. Emerald cut is second, particularly popular among Vancouver's design-forward buyers who appreciate the architectural aesthetic. Round brilliant and pear are third and fourth.</p>
+          <p><strong>Metal:</strong> White gold and rose gold tie for first place in BC consultations. Platinum is more common in Vancouver than in other Canadian cities — aligned with the market's appreciation for premium materials.</p>
+          <p><strong>Setting style:</strong> Solitaire is the most common for Vancouver buyers (minimalist aesthetic). Hidden halo is second. Clean, architectural designs with minimal embellishment read as distinctly West Coast.</p>
+          <p><strong>Custom design:</strong> Vancouver clients have one of the highest custom design request rates of any city we work with. The creative culture in Vancouver extends to ring design — many clients want something that doesn't appear in a standard catalogue.</p>
+
+          <h2>Shapes Available for Vancouver Clients</h2>
+          <p>All shapes in the Lux Jewels collection are available for Vancouver orders:</p>
+          <p>
+            <a href="/oval-engagement-rings/">Oval</a> |
+            <a href="/emerald-cut-engagement-rings/">Emerald cut</a> |
+            <a href="/solitaire-engagement-rings/">Solitaire</a> |
+            <a href="/halo-engagement-rings/">Halo</a> |
+            <a href="/vintage-engagement-rings/">Vintage</a> |
+            <a href="/pear-engagement-rings/">Pear</a> |
+            <a href="/cushion-cut-engagement-rings/">Cushion</a> |
+            <a href="/radiant-cut-engagement-rings/">Radiant</a> |
+            <a href="/round-engagement-rings/">Round</a> |
+            <a href="/rose-gold-engagement-rings/">Rose Gold</a>
+          </p>
+          <p>All shapes available in 14K or 18K yellow, white, or rose gold, and Platinum 950. All lab-grown stones IGI-certified. All rings use repurposed gold (99.5% previously refined).</p>
+
+          <h2>Delivery to Vancouver and Metro BC</h2>
+          <p>All rings ship via FedEx Priority, fully insured, with signature required. Typical delivery to Vancouver addresses is next-day from ship date.</p>
+          <p>We deliver to:</p>
+          <ul>
+            <li>Vancouver (all neighbourhoods: Downtown, Kitsilano, East Van, West Side, Burnaby, North Vancouver, West Vancouver)</li>
+            <li>Metro Vancouver (Richmond, Surrey, Langley, Coquitlam, Port Moody, Delta, White Rock)</li>
+            <li>Rest of BC (Victoria, Kelowna, Kamloops, Prince George, Nanaimo, and all BC communities)</li>
+            <li>All Canadian provinces and territories</li>
+            <li>United States</li>
+          </ul>
+          <p>Custom orders: 4-6 weeks from stone selection to delivery.</p>
+
+          <h2>2026 Price Context for Vancouver Lab-Grown Rings</h2>
+          <p>Vancouver competitors are pricing lab-grown custom rings at:</p>
+          <ul>
+            <li>Era Design: from C$2,750 for lab-grown designs</li>
+            <li>Luxury Diamonds: custom pricing (by consultation)</li>
+            <li>Pure Diamond: custom pricing (by consultation, wholesale access claim)</li>
+          </ul>
+          <p>Lux Jewels pricing is available on request. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> or <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">No-BS Call</a> to discuss your specific requirements.</p>
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <h2>Two Ways to Work with Lux Jewels as a Vancouver Client</h2>
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+          <p>Video call via Zoom or Google Meet. We'll discuss style, stone preferences, and budget. I'll identify options and follow up with stone candidates and pricing. No commitment.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+          <p>You've visited a Vancouver showroom or been quoted a ring online. You want a straight second opinion from someone with over 20 years in this industry. Bring the quote, the certificate number, or the specific product link.</p>
+          <p>The first and only service of its kind in the world.</p>
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

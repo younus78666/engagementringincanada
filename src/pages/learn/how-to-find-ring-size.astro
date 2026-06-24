@@ -1,0 +1,236 @@
+﻿---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "How to Find Your Ring Size at Home — 5 Methods";
+const description = "Find your ring size at home before buying an engagement ring. Five methods compared — string, paper, calipers, printable gauge, jeweller sizer. By Suman Smith, Lux Jewels Canada.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/how-to-find-ring-size/",
+      "headline": "How to Find Your Ring Size at Home — 5 Methods",
+      "description": "Find your ring size at home before buying an engagement ring. Five methods compared — string, paper, calipers, printable gauge, jeweller sizer. By Suman Smith, Lux Jewels Canada.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "How to Find Your Ring Size", "item": "https://engagementringincanada.com/learn/how-to-find-ring-size/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the average ring size for Canadian women?", "acceptedAnswer": {"@type": "Answer", "text": "The most common ring size for Canadian women is approximately 6-7 (16.5-17.3mm diameter). The median is often cited as size 6 or 6.5. Measuring directly is always more reliable than assuming average."}},
+        {"@type": "Question", "name": "Should I size up or down if I'm between ring sizes?", "acceptedAnswer": {"@type": "Answer", "text": "Size up. A slightly loose ring is easier to resize smaller than a tight ring is to resize larger. Fingers also tend to swell in warm weather, so a ring fitting in winter may feel tighter in summer."}},
+        {"@type": "Question", "name": "Can every engagement ring be resized?", "acceptedAnswer": {"@type": "Answer", "text": "Most plain band and standard solitaire designs can be resized 1-2 sizes. Eternity bands and full-pave designs are difficult or impossible to resize without removing and resetting stones. Confirm resizeability before ordering if your size is uncertain."}},
+        {"@type": "Question", "name": "Which ring sizing method is most accurate?", "acceptedAnswer": {"@type": "Answer", "text": "Professional measurement at a local jeweller is most accurate. A purchased ring sizer tool is the most accurate at-home method. The string/paper wrap method is least accurate and should be used only as a starting estimate."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the average ring size for Canadian women?",
+    a: "The most common ring size for Canadian women is approximately 6-7 (16.5-17.3mm diameter). The median is often cited as size 6 or 6.5. Individual sizes vary significantly, so measuring directly is always better than assuming average."
+  },
+  {
+    q: "Should I size up or down if I'm between ring sizes?",
+    a: "Size up. A slightly loose ring is easier to resize smaller than a tight ring is to resize larger. Also, fingers tend to swell in warm weather - a ring that fits in winter may feel tighter in summer."
+  },
+  {
+    q: "How much does ring resizing cost?",
+    a: "Most simple resizing (up or down 1-2 sizes) is C$40-C$100 at a local jeweller. Complex designs with pave or engraving may cost more. Ask us about our resizing policy when you <a href=\"https://luxjewels.com/booking-appointment/\" target=\"_blank\" rel=\"noopener\">book your consultation</a>."
+  },
+  {
+    q: "Can every ring be resized?",
+    a: "Most plain band and standard solitaire designs can be resized 1-2 sizes easily. Eternity bands (pave all the way around) and some very intricate designs are difficult or impossible to resize without removing and resetting stones. Confirm resizeability before ordering if your size is uncertain."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>How to Find Your Ring Size at Home — 5 Methods</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>How to Find Your Ring Size</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>The five methods for measuring ring size at home are: (1) string/paper wrap method, (2) existing ring diameter measurement, (3) printable ring size gauge, (4) ring sizer tool (purchased or provided by a jeweller), and (5) professional measurement at any jeweller's shop. The most accurate is a professional measurement or a purchased ring sizer. The least accurate is the string method. For engagement rings where you're guessing your partner's size, size up rather than down - resizing larger is easier than resizing smaller. I'm Suman Smith, founder of Lux Jewels. I've been guiding clients through the ring-sizing process since 2007 and have seen most sizing mistakes happen because of a single avoidable error.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Why Ring Size Matters for Lab-Grown Engagement Rings</h2>
+          <p>Most custom lab-grown engagement rings can be resized after delivery. But the resizing window matters:</p>
+          <ul>
+            <li><strong>Resizing up 1-2 sizes:</strong> Usually manageable. The jeweller adds metal.</li>
+            <li><strong>Resizing down 1-2 sizes:</strong> Also manageable. The jeweller removes metal and re-solders.</li>
+            <li><strong>Resizing by 3+ sizes:</strong> Can stress the setting, especially pave or eternity bands where accent stones are set around the full circumference.</li>
+            <li><strong>Resizing a full-pave eternity band:</strong> Very difficult without significant cost - stones must be removed, the band resized, stones reset.</li>
+          </ul>
+          <p>For solitaires and most custom designs, 1-2 sizes of error is easily corrected. For eternity bands and full-pave designs, accuracy matters more.</p>
+
+          <h2>Method 1: String or Paper Strip Wrap</h2>
+          <p><strong>What you need:</strong> A thin strip of paper or string, a pen, a ruler</p>
+          <p><strong>How to do it:</strong></p>
+          <ol>
+            <li>Cut a thin strip of paper (2-4mm wide) or cut a piece of string about 15cm long</li>
+            <li>Wrap snugly around the base of the finger where the ring will sit</li>
+            <li>Mark where the end meets the strip/string</li>
+            <li>Measure the length from the start to the mark in millimetres</li>
+            <li>Use a standard ring size chart to convert circumference to ring size (see table below)</li>
+          </ol>
+          <p><strong>Tips:</strong></p>
+          <ul>
+            <li>Measure at the end of the day - fingers are slightly larger in the afternoon/evening due to temperature and activity</li>
+            <li>Measure the specific finger: dominant hand fingers are typically slightly larger</li>
+            <li>Don't wrap too tightly - the ring needs to slide over the knuckle</li>
+          </ul>
+          <p><strong>Accuracy:</strong> Moderate. The paper or string can stretch slightly, and the wrapping pressure affects the measurement. Use this as a starting estimate and confirm with another method if possible.</p>
+
+          <h2>Method 2: Measure an Existing Ring</h2>
+          <p>If your partner has a ring they currently wear on the same finger, you can measure its diameter.</p>
+          <p><strong>What you need:</strong> A ruler or calipers (digital calipers are ideal, ~C$15 at any hardware store), the existing ring</p>
+          <p><strong>How to do it:</strong></p>
+          <ol>
+            <li>Place the ring on a flat surface</li>
+            <li>Measure the inside diameter (the open space inside the ring, not the outer edge of the metal) in millimetres</li>
+            <li>Use the size chart below to convert diameter to ring size</li>
+          </ol>
+          <p><strong>Tips:</strong></p>
+          <ul>
+            <li>Measure the inside diameter, not the outside</li>
+            <li>If the ring is a different finger (index vs ring finger), the size won't apply - fingers vary significantly in size</li>
+          </ul>
+          <p><strong>Accuracy:</strong> High, if you're measuring the correct finger. This is the most reliable non-professional method.</p>
+
+          <h2>Method 3: Printable Ring Size Gauge</h2>
+          <p>Several jewellery websites and Lux Jewels' consultation preparation guide include a printable ring size gauge - a printed page with circles of known diameter.</p>
+          <p><strong>How to do it:</strong></p>
+          <ol>
+            <li>Print the gauge at exactly 100% scale (not "fit to page") - verify by measuring the printed 1-inch reference box</li>
+            <li>Place your partner's ring over each circle until you find the one that matches the inside circumference</li>
+          </ol>
+          <p><strong>Tips:</strong></p>
+          <ul>
+            <li>Verify print scale before trusting the result. A printer printing at 97% instead of 100% will make every size read slightly small.</li>
+            <li>This method works best with a reference ring from the same finger</li>
+          </ul>
+          <p><strong>Accuracy:</strong> Moderate-high if print scale is verified.</p>
+
+          <h2>Method 4: Purchased Ring Sizer Tool</h2>
+          <p>Ring sizer tools are inexpensive (C$5-C$20) and available at jewellery supply stores, Amazon Canada, or requested from us before your consultation.</p>
+          <p>A ring sizer is a set of metal or plastic rings in standard Canadian/US sizes (typically 3-13 in half sizes) that you can try on the finger.</p>
+          <p><strong>How to use:</strong></p>
+          <ol>
+            <li>Try each sizer ring over the knuckle - the ring should slide over the knuckle and fit snugly (but not uncomfortably) at the base</li>
+            <li>If between sizes, size up</li>
+          </ol>
+          <p><strong>Accuracy:</strong> High - the most accurate non-professional method. Simulates the actual ring-wearing experience.</p>
+
+          <h2>Method 5: Professional Measurement at a Local Jeweller</h2>
+          <p>Any local jeweller will measure ring size free of charge in under 2 minutes. No purchase required.</p>
+          <p><strong>What to do:</strong></p>
+          <ol>
+            <li>Go to any jewellery store</li>
+            <li>Ask for a ring size measurement (they'll have ring sizers)</li>
+            <li>Ask them to measure the specific finger where the engagement ring will be worn</li>
+            <li>Note the result in both US/Canadian size and millimetres (ask for both)</li>
+          </ol>
+          <p><strong>Accuracy:</strong> Highest of all methods.</p>
+
+          <h2>Ring Size Conversion Table (Canadian/US to mm)</h2>
+          <p>Canadian and US ring sizes use the same scale.</p>
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ring Size (US/CA)</th>
+                  <th>Circumference (mm)</th>
+                  <th>Inside Diameter (mm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>4</td><td>46.8</td><td>14.9</td></tr>
+                <tr><td>4.5</td><td>47.8</td><td>15.2</td></tr>
+                <tr><td>5</td><td>49.3</td><td>15.7</td></tr>
+                <tr><td>5.5</td><td>50.3</td><td>16.0</td></tr>
+                <tr><td>6</td><td>51.8</td><td>16.5</td></tr>
+                <tr><td>6.5</td><td>52.8</td><td>16.8</td></tr>
+                <tr><td>7</td><td>54.4</td><td>17.3</td></tr>
+                <tr><td>7.5</td><td>55.4</td><td>17.7</td></tr>
+                <tr><td>8</td><td>56.9</td><td>18.2</td></tr>
+                <tr><td>8.5</td><td>57.9</td><td>18.5</td></tr>
+                <tr><td>9</td><td>59.5</td><td>19.0</td></tr>
+                <tr><td>9.5</td><td>60.5</td><td>19.3</td></tr>
+                <tr><td>10</td><td>62.0</td><td>19.8</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Most Canadian women's ring fingers fall in the size 5-7 range (16.5-17.3mm diameter). Most men's range falls in the 9-11 range.</p>
+
+          <h2>The Knuckle Problem</h2>
+          <p>The ring needs to slide over the knuckle to reach the base of the finger. If your partner has large knuckles relative to their base finger width, they may need to size up slightly to accommodate the knuckle - which means the ring may feel slightly loose when sitting at rest at the base.</p>
+          <p>For this situation, there are a few solutions:</p>
+          <ul>
+            <li><strong>Comfort-fit band:</strong> Slightly rounded interior that slides over knuckles more easily</li>
+            <li><strong>Sizing beads:</strong> Small metal beads welded inside the band that make the ring fit more snugly at the base while the larger opening still passes over the knuckle</li>
+          </ul>
+          <p>Let us know during the consultation if this applies and we'll factor it into the design.</p>
+
+          <h2>Guessing Your Partner's Size (Proposal Rings)</h2>
+          <p>If you're buying a surprise ring:</p>
+          <ol>
+            <li><strong>Borrow an existing ring</strong> from the same finger - the inside diameter method (Method 2) works well</li>
+            <li><strong>Ask their friends or family</strong> - someone close often knows</li>
+            <li><strong>Default to size 6</strong> - the statistical average for Canadian women's ring fingers</li>
+            <li><strong>Size up rather than down</strong> - resizing up (adding metal) is slightly simpler than resizing down (removing metal and re-soldering)</li>
+            <li>I've helped hundreds of clients get the sizing right for surprise proposals since founding Lux Jewels in 2007. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> and I'll walk you through exactly what to do.</li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

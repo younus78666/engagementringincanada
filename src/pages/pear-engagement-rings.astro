@@ -1,0 +1,247 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Pear Engagement Rings Canada — Lab-Grown & Custom";
+const description = "Shop pear lab-grown engagement rings in Canada. Pear cut guide — bow-tie, orientation, which metals suit it best, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/pear-engagement-rings/",
+      "url": "https://engagementringincanada.com/pear-engagement-rings/",
+      "name": "Pear Engagement Rings Canada — Lab-Grown & Custom",
+      "description": "Shop pear lab-grown engagement rings in Canada. Pear cut guide — bow-tie, orientation, which metals suit it best, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Pear Engagement Rings", "item": "https://engagementringincanada.com/pear-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What direction should a pear engagement ring face?", "acceptedAnswer": {"@type": "Answer", "text": "Most people wear the point facing outward (toward the fingernail) for maximum elongation. Some prefer the point facing inward for a rounder appearance. East-west (horizontal) orientation is also popular. All are valid style preferences."}},
+        {"@type": "Question", "name": "Do pear diamonds show a bow-tie effect?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Most pear diamonds show some bow-tie effect — a dark shadow across the widest part caused by the elongated shape's geometry. Severity ranges from imperceptible to dominant. Stones should be assessed in motion video, not static photos, to evaluate bow-tie."}},
+        {"@type": "Question", "name": "What is the most important quality factor for pear diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "Symmetry. The two halves of a pear should be perfect mirror images. Any visible asymmetry between wings or an off-centre tip is a significant defect. Look for Excellent symmetry on the IGI certificate."}},
+        {"@type": "Question", "name": "How does pear compare to oval?", "acceptedAnswer": {"@type": "Answer", "text": "Both are elongated brilliant-cut shapes that lengthen the finger. Pear has a pointed tip and one rounded end; oval has two rounded ends. Pear is more directional and slightly more distinctive. Oval is symmetrical from end to end and more common in Canada's current market."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What direction should a pear engagement ring face?",
+    a: "Most people wear the point facing outward (toward the fingernail) because this orientation is the most elongating on the finger. Some clients prefer the point facing inward (toward the palm), which produces a rounder appearance from above. Some wear pear east-west (horizontal). All orientations are valid — it's a style preference."
+  },
+  {
+    q: "Do pear diamonds show a bow-tie effect?",
+    a: "Yes. Most pear diamonds show a bow-tie effect to some degree — a dark shadow across the widest part of the stone caused by the geometry of the elongated shape. The severity ranges from imperceptible to dominant. I review stones in motion video to assess bow-tie before recommending them."
+  },
+  {
+    q: "How does pear compare to oval in terms of appearance?",
+    a: "Both are elongated brilliant-cut shapes with a similar elongating effect on the finger. Pear has a pointed tip and one rounded end; oval has two rounded ends. Pear is more directional (the ring has a defined 'up' orientation); oval is symmetrical from end to end. Pear is slightly more distinctive and less common than oval in the current Canadian market."
+  },
+  {
+    q: "What is the most important quality factor for pear diamonds?",
+    a: "Symmetry. The two halves of a pear diamond should be perfect mirror images of each other. Any visible asymmetry between the wings or an off-centre tip is a significant defect. IGI certificates include a symmetry grade — look for Excellent."
+  },
+  {
+    q: "How long does a custom pear engagement ring take?",
+    a: "4-6 weeks from stone selection to delivery. All rings ship via FedEx Priority, fully insured, with signature required, to all Canadian provinces and the US. Since 2015, when I became Canada's first exclusively lab-grown jewellery specialist, I've designed and delivered pear rings to clients in every province."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Pear Engagement Rings Canada — Lab-Grown &amp; Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Pear Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Pear diamonds are a hybrid cut — a rounded base like a round brilliant, tapering to a single point at the top. The result is a teardrop silhouette that elongates the finger more than any other shape. Pear diamonds also show a bow-tie effect similar to oval, and the pointed tip requires prong protection. I'm Suman Smith, founder of Lux Jewels. I've been designing pear lab-grown engagement rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat pear as a novelty shape. It's one of the most consistently requested shapes in our custom design consultations, particularly from clients who want something distinctly different from round and oval while maintaining a classic, romantic profile.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>What Makes Pear Cut Distinctive?</h2>
+
+          <p>The pear cut (also called pear brilliant or teardrop cut) has:</p>
+
+          <ul>
+            <li><strong>58 brilliant-cut facets</strong> — same total as round brilliant, producing comparable brilliance</li>
+            <li><strong>Asymmetric outline</strong> — round base tapering to a single pointed tip</li>
+            <li><strong>Natural finger-lengthening effect</strong> — the elongated silhouette extends further along the finger than any other shape per carat weight</li>
+          </ul>
+
+          <p>The pear is essentially a combination of a round diamond and a marquise diamond. It has the curved base geometry of a round and the pointed tip of a marquise, without the marquise's second pointed end. This makes pear less fragile than marquise (one point to protect rather than two) while sharing the elongating quality.</p>
+
+          <h2>Pear Cut: What to Look for When Buying</h2>
+
+          <h3>1. Symmetry — Critical</h3>
+          <p>The most important quality factor for pear diamonds. The two halves of the pear, divided by a line running from the tip through the base, should be mirror images. Any visible asymmetry — a wing that's wider on one side, or a tip that's off-centre — is a defect, not a preference.</p>
+          <p>Symmetry isn't a grading report line item for cut overall, but it's listed in the "Symmetry" field of the IGI certificate. "Excellent" symmetry on a pear is the minimum acceptable.</p>
+
+          <h3>2. The Bow-Tie Effect</h3>
+          <p>Like oval and marquise, pear diamonds show a bow-tie effect — a dark shadow across the widest part of the stone. The severity ranges from barely perceptible to strongly dominant. I assess bow-tie in motion video before recommending a stone.</p>
+
+          <h3>3. The Point</h3>
+          <p>The pointed tip of a pear diamond requires at least one V-tip prong to protect it. A pointed gemstone tip is a chip risk if it's unsupported. All pear settings we work with include proper tip protection.</p>
+
+          <h3>4. Length-to-Width Ratio</h3>
+          <p>Pear diamonds range from nearly round (short and wide) to very elongated (long and narrow):</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ratio</th>
+                  <th>Appearance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.40 - 1.50</td>
+                  <td>Full, rounded pear — less elongated</td>
+                </tr>
+                <tr>
+                  <td>1.50 - 1.65</td>
+                  <td>Classic pear proportion — most popular range</td>
+                </tr>
+                <tr>
+                  <td>1.65 - 1.80</td>
+                  <td>Elongated pear — more dramatic finger extension</td>
+                </tr>
+                <tr>
+                  <td>1.80+</td>
+                  <td>Very elongated — unusual; can look narrow</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Most clients request ratios between 1.50-1.65. The most elongating effect on the finger comes from ratios above 1.60.</p>
+
+          <h2>How to Wear a Pear Engagement Ring</h2>
+
+          <p><strong>Orientation:</strong> The most common orientation is with the point facing away from the hand (toward the fingernail). This is the most elongating orientation. Some clients choose to wear the point toward the palm (reversed), which looks rounder from the observer's perspective. Neither is wrong — it's a preference.</p>
+
+          <p><strong>East-west pear:</strong> A pear oriented horizontally across the finger instead of vertically. This is a distinctive, modern alternative that emphasizes the width of the stone. The tip points to the side rather than toward the nail.</p>
+
+          <h2>Best Settings for Pear Diamonds</h2>
+
+          <p><strong>5-prong solitaire:</strong> The most secure setting for pear. Three prongs along the rounded base and one V-prong (or two prongs close together) at the tip. The point is the most critical prong placement.</p>
+
+          <p><strong>Halo with pear:</strong> A halo traces the teardrop outline, adding significant visual size and framing the shape. Very popular in Canada for pear diamonds.</p>
+
+          <p><strong>East-west solitaire:</strong> A horizontal orientation in a bezel or prong setting. The bezel is especially effective for horizontal pear — it wraps the tip and base securely.</p>
+
+          <p><strong>Three-stone with side stones:</strong> Pear centre flanked by side stones. Common pairings: trillion (triangular) side stones that mirror the pear's angular tip.</p>
+
+          <p>All settings use repurposed gold (99.5% previously refined). Available metals: 14K or 18K yellow, white, or rose gold; Platinum 950.</p>
+
+          <h2>Rose Gold and Pear: The Natural Pairing</h2>
+
+          <p>Pear and rose gold pair naturally — the teardrop shape's soft, romantic silhouette is reinforced by rose gold's warm tone. This is one of the most consistently requested pear ring configurations at Lux Jewels.</p>
+
+          <p>Yellow gold is the second most popular for pear. G-H colour stones pair especially well with rose and yellow gold because the warm metal reduces the visible warmth of the stone grade.</p>
+
+          <h2>2026 Pear Lab-Grown Prices (Canada)</h2>
+
+          <p>Pear diamonds are typically priced below oval and round at equivalent carat and grade, because demand is lower and there's less price pressure. This means more visible stone per dollar.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct pear, G/VS1, 14K solitaire, rose gold</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct pear, F/VS1, 14K solitaire, yellow gold</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct pear, G/VS1, 14K halo, white gold</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct pear, E/VS1, Platinum solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+          <p>We'll go over ratio preferences, bow-tie assessment, orientation choice, and metal. I'll source stones that fit your specifications. Video call via Zoom or Google Meet.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+          <p>You've been quoted a specific pear stone and want a second opinion on the symmetry grade, bow-tie severity, and whether the tip protection is adequate.</p>
+          <p>The first and only service of its kind in the world.</p>
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

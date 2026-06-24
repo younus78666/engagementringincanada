@@ -1,0 +1,262 @@
+---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "Moissanite vs Lab-Grown Diamond — Which Is Right for You?";
+const description = "Moissanite vs lab-grown diamond: fire, brilliance, hardness, price, and grading compared. Honest guide for Canadian buyers. By Suman Smith, Canada's first lab-grown specialist.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/moissanite-vs-lab-grown-diamond/",
+      "headline": "Moissanite vs Lab-Grown Diamond — Which Is Right for You?",
+      "description": "Moissanite vs lab-grown diamond: fire, brilliance, hardness, price, and grading compared. Honest guide for Canadian buyers. By Suman Smith, Canada's first lab-grown specialist.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "Moissanite vs Lab-Grown Diamond", "item": "https://engagementringincanada.com/learn/moissanite-vs-lab-grown-diamond/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Will moissanite pass a diamond tester?", "acceptedAnswer": {"@type": "Answer", "text": "Many will on older thermal testers. Moissanite is thermally conductive similarly to diamond. Newer multi-tester tools using electrical conductivity can distinguish them. A trained gemologist can identify moissanite by its double refraction and distinctive fire pattern."}},
+        {"@type": "Question", "name": "Does moissanite look fake or cheap?", "acceptedAnswer": {"@type": "Answer", "text": "No. Moissanite is a beautiful gemstone. In indirect lighting it's difficult to distinguish from diamond. In strong direct light, higher fire (coloured flashes) is the main visible difference. Whether this looks 'better' or 'different' is a personal preference."}},
+        {"@type": "Question", "name": "What is the main visual difference between moissanite and lab-grown diamond?", "acceptedAnswer": {"@type": "Answer", "text": "Moissanite has higher dispersion (0.104 vs 0.044 for diamond), producing more coloured light flashes (fire). In strong direct light or sunlight, moissanite shows more rainbow-like sparkle than diamond. In indirect light, the difference is subtle."}},
+        {"@type": "Question", "name": "How much cheaper is moissanite than lab-grown diamond?", "acceptedAnswer": {"@type": "Answer", "text": "Moissanite is typically 50-70% less expensive than lab-grown diamond at equivalent visible sizes. A 6.5mm colourless moissanite (1.0ct diameter equivalent) is approximately C$400-C$800 in Canada vs C$1,400-C$2,200 for a 1.0ct G/VS2 Excellent lab-grown diamond."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Will moissanite pass a diamond tester?",
+    a: "Many will. Moissanite is thermally conductive in a way similar to diamond — older thermal diamond testers often misidentify moissanite as diamond. Newer testers using electrical conductivity in addition to thermal testing can distinguish them. A trained gemologist with a UV loupe or spectroscope can identify moissanite by its double refraction and characteristic fire."
+  },
+  {
+    q: "Does moissanite look fake or cheap?",
+    a: "No — moissanite is a beautiful gemstone in its own right. At distances and in indirect lighting, it's very difficult to distinguish from diamond. In strong direct light, the higher fire (coloured flashes) is the main visible difference — which some buyers find more beautiful than diamond, not less. \"Cheap\" is a buyer perception issue, not a material quality issue."
+  },
+  {
+    q: "Can moissanite be set in the same settings as diamond?",
+    a: "Yes. Moissanite and diamond use the same prong, bezel, and pave setting styles. Lux Jewels designs moissanite in the same settings as diamond."
+  },
+  {
+    q: "What is the difference between \"Forever One\" and regular moissanite?",
+    a: "\"Forever One\" is Charles & Colvard's premium moissanite grade — colourless (equivalent to D-E-F diamond colour). Regular moissanite may be near-colourless (G-H-I equivalent). The visual difference is subtle. Charles & Colvard is the dominant moissanite brand but there are other quality producers."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Moissanite vs Lab-Grown Diamond — Which Is Right for You?</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Moissanite vs Lab-Grown Diamond</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Moissanite and lab-grown diamond look similar but aren't identical. Lab-grown diamond is pure carbon — chemically and optically identical to mined diamond. Moissanite is silicon carbide (SiC) — a different material entirely. Moissanite has a higher refractive index (2.65 vs 2.42 for diamond), producing more fire (coloured light flashes) and slightly different sparkle. Moissanite is about 50-70% less expensive than lab-grown diamond at comparable visible sizes. Hardness: diamond 10 (Mohs), moissanite 9.25 — both are excellent for daily wear. I'm Suman Smith, founder of Lux Jewels. Since 2015, when I became Canada's first exclusively lab-grown specialist, I've offered both. This is the honest comparison I give every client who asks.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>The Fundamental Difference</h2>
+          <p>Lab-grown diamond and moissanite are different materials:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Lab-Grown Diamond</th>
+                  <th>Moissanite</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Chemical composition</td>
+                  <td>Pure carbon (C)</td>
+                  <td>Silicon carbide (SiC)</td>
+                </tr>
+                <tr>
+                  <td>Crystal structure</td>
+                  <td>Cubic</td>
+                  <td>Hexagonal</td>
+                </tr>
+                <tr>
+                  <td>Mohs hardness</td>
+                  <td>10 (hardest)</td>
+                  <td>9.25</td>
+                </tr>
+                <tr>
+                  <td>Refractive index</td>
+                  <td>2.418</td>
+                  <td>2.650-2.691</td>
+                </tr>
+                <tr>
+                  <td>Dispersion (fire)</td>
+                  <td>0.044</td>
+                  <td>0.104</td>
+                </tr>
+                <tr>
+                  <td>Density</td>
+                  <td>3.52 g/cm&sup3;</td>
+                  <td>3.22 g/cm&sup3;</td>
+                </tr>
+                <tr>
+                  <td>Graded by IGI/GIA?</td>
+                  <td>Yes — full 4Cs</td>
+                  <td>No — quality descriptors only (near-colourless, colourless, etc.)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The refractive index and dispersion numbers explain the visual difference:</p>
+          <ul>
+            <li>Higher refractive index = more total light reflection (moissanite appears brighter in some lights)</li>
+            <li>Higher dispersion = more fire (moissanite shows more coloured light flashes — rainbow-like sparkle)</li>
+          </ul>
+          <p>In strong direct light (sunlight, stage lighting), moissanite can appear "disco ball"-like due to its high dispersion. This is a characteristic some buyers love and others dislike.</p>
+
+          <h2>Visual Comparison: What You Actually See</h2>
+
+          <h3>Lab-grown diamond appearance</h3>
+          <ul>
+            <li>White, bright sparkle (brilliance)</li>
+            <li>Controlled fire — some coloured flashes, never overwhelming</li>
+            <li>Similar to any natural diamond of the same shape and grade</li>
+            <li>Very transparent look in step cuts (emerald, Asscher)</li>
+          </ul>
+
+          <h3>Moissanite appearance</h3>
+          <ul>
+            <li>Very bright sparkle, often described as "more sparkle than diamond"</li>
+            <li>High fire — strong coloured light flashes, more visible than in diamond</li>
+            <li>Some observers find this "too sparkly" or "looks different" compared to diamond</li>
+            <li>In direct sunlight or bright store lighting, the difference is most visible</li>
+          </ul>
+
+          <p><strong>The experienced eye test:</strong> A trained jeweller or gemologist can often identify moissanite by its distinctive double refraction (you can sometimes see "doubling" of facets when viewed through the stone) and its characteristic fire pattern. Casual observers often can't tell the difference.</p>
+
+          <h2>Hardness and Daily Wear</h2>
+          <p>Diamond (Mohs 10) is the hardest natural substance — nothing scratches it except another diamond. Moissanite at 9.25 is the second hardest commonly used gemstone. For practical daily wear, both are excellent.</p>
+          <p>What Mohs hardness means practically:</p>
+          <ul>
+            <li>Diamond won't scratch from normal contact (keys, metal, dust)</li>
+            <li>Moissanite is also extremely scratch-resistant — harder than sapphire, ruby, or any other gemstone commonly used in jewellery</li>
+            <li>The difference between 9.25 and 10 isn't noticeable in daily wear over a 5-10 year period</li>
+          </ul>
+          <p>Both are appropriate for daily wear in an engagement ring.</p>
+
+          <h2>Grading and Certification</h2>
+          <p><strong>Lab-grown diamond:</strong> IGI, GIA, and other gemological labs issue full 4Cs grading reports for lab-grown diamonds. The certificate includes cut, colour, clarity, carat weight, and the laser-inscribed report number for verification.</p>
+          <p><strong>Moissanite:</strong> IGI doesn't issue the same grading certificate for moissanite. Charles &amp; Colvard (the original moissanite manufacturer) and other producers provide quality documents, but they describe colour grade (colourless, near-colourless, etc.) rather than the full 4Cs. There's no independent report number tied to a specific stone the same way an IGI diamond certificate works.</p>
+          <p><strong>Practical implication:</strong> Buying lab-grown diamond means buying a graded stone with an independently verifiable certificate. Moissanite doesn't have the same verification infrastructure.</p>
+
+          <h2>Price Comparison (Canada, 2026)</h2>
+          <p>Both moissanite and lab-grown diamond are significantly less expensive than natural diamonds. But they're priced differently:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Visible Size</th>
+                  <th>Lab-Grown Diamond (G/VS2, Excellent)</th>
+                  <th>Moissanite (Colourless)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>6.5mm (approx. 1.0ct diameter)</td>
+                  <td>C$1,400-C$2,200</td>
+                  <td>C$400-C$800</td>
+                </tr>
+                <tr>
+                  <td>8.0mm (approx. 1.5ct diameter)</td>
+                  <td>C$2,200-C$4,000</td>
+                  <td>C$700-C$1,400</td>
+                </tr>
+                <tr>
+                  <td>9.2mm (approx. 2.0ct diameter)</td>
+                  <td>C$3,500-C$6,500</td>
+                  <td>C$1,000-C$2,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Moissanite is typically 50-70% less than lab-grown diamond at equivalent visible sizes. Prices are estimates and subject to change based on market conditions.</p>
+          <p><strong>Important note on carat weight:</strong> Moissanite and diamond don't share the same density, so carat weights aren't comparable. Moissanite is typically sold by millimeter measurements (the visible size), not by carat. A 6.5mm moissanite is listed as "equivalent to 1.0ct diamond" in visible diameter.</p>
+
+          <h2>When Moissanite Makes Sense</h2>
+          <p>Moissanite is a legitimate and beautiful stone. I recommend it when:</p>
+          <ul>
+            <li><strong>Budget is the primary constraint.</strong> At C$800-C$1,000 total budget, a well-cut moissanite in a quality setting is a better outcome than a very small lab-grown diamond.</li>
+            <li><strong>Visible size matters most.</strong> If a client wants a 3ct+ visual equivalent, moissanite can achieve this for C$1,500-C$2,000. The same visible size in lab-grown diamond would be C$8,000+.</li>
+            <li><strong>The buyer knows and accepts the difference.</strong> Moissanite is its own stone. Clients who know they're buying moissanite and appreciate its specific sparkle pattern are very happy with it.</li>
+            <li><strong>Long-term wear and scratch resistance are priorities.</strong> At 9.25 Mohs, moissanite is very durable.</li>
+          </ul>
+
+          <h2>When Lab-Grown Diamond Makes More Sense</h2>
+          <ul>
+            <li><strong>The buyer wants something that is technically a diamond.</strong> Moissanite isn't a diamond. Lab-grown diamond is.</li>
+            <li><strong>Independent grading and verification matter.</strong> IGI certificates with laser-inscribed report numbers are available for lab-grown, not for moissanite.</li>
+            <li><strong>The ring will be set with other natural diamonds.</strong> If a family heirloom has natural diamonds and the client wants a matching lab-grown diamond, moissanite won't match — different refractive index and fire pattern.</li>
+            <li><strong>The buyer's partner is aware of and interested in the distinction.</strong> For some couples, the diamond designation matters emotionally regardless of cost.</li>
+            <li><strong>Step cuts are planned.</strong> The visual difference between moissanite and diamond is most apparent in step cuts where the large open facets show the different optical properties clearly.</li>
+          </ul>
+
+          <h2>Lux Jewels and Moissanite</h2>
+          <p>I offer moissanite at Lux Jewels and have since 2015 — Canada's first exclusively lab-grown (and lab-grown alternative) specialist. Our <a href="/moissanite-engagement-rings/">moissanite engagement rings</a> page covers styles and consultation details.</p>
+          <p>For most clients with a budget of C$2,000+, I'd guide you toward lab-grown diamond for the certification, the visual match to natural diamond, and the grading verification system. For clients with tighter budgets who want a larger visible stone, moissanite is often the honest recommendation.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> to discuss which option fits your specific situation.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

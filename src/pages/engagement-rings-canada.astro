@@ -1,0 +1,316 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Lab-Grown Engagement Rings — Shop Canada's Collection";
+const description = "Shop our full collection of lab-grown engagement rings in Canada. All ring shapes, custom design, and IGI-certified stones. Free consultation, ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/engagement-rings-canada/",
+      "url": "https://engagementringincanada.com/engagement-rings-canada/",
+      "name": "Lab-Grown Engagement Rings — Shop Canada's Collection",
+      "description": "Shop our full collection of lab-grown engagement rings in Canada. All ring shapes, custom design, and IGI-certified stones. Free consultation, ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Engagement Rings Canada", "item": "https://engagementringincanada.com/engagement-rings-canada/" }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are lab-grown engagement rings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Lab-grown engagement rings use diamonds grown in a laboratory rather than mined from the earth. Lab-grown diamonds are chemically, physically, and optically identical to natural diamonds, certified by IGI or GIA, and cost 70-90% less than equivalent natural stones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do lab-grown engagement rings cost in Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Canada in 2026, a finished 1ct lab-grown diamond engagement ring typically ranges from C$1,500 to C$4,500 depending on cut grade, setting complexity, and metal choice. Custom designs are quoted after a free consultation. Pricing subject to change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are lab-grown diamonds real diamonds?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Lab-grown diamonds are pure carbon in the same cubic crystal structure as natural diamonds, with Mohs hardness 10 and identical optical properties. They're graded by IGI and GIA using the same 4Cs criteria."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I customize a lab-grown engagement ring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every design is available with different metal, stone grade, or setting. For fully custom designs from scratch, book a free consultation at engagementringincanada.com."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do lab-grown rings ship across Canada?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. All orders ship via FedEx Priority, fully insured, with signature required. We ship to all Canadian provinces and the US."
+          }
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What are lab-grown engagement rings?",
+    a: "Lab-grown engagement rings use diamonds grown in a laboratory rather than mined from the earth. Lab-grown diamonds are chemically, physically, and optically identical to natural diamonds. They're certified by IGI or GIA and cost 70-90% less than equivalent natural stones."
+  },
+  {
+    q: "How much do lab-grown engagement rings cost in Canada?",
+    a: "In Canada in 2026, a finished 1ct lab-grown diamond engagement ring (stone + standard setting) typically ranges from C$1,500 to C$4,500 depending on cut grade, setting complexity, and metal choice. Starting prices from Canadian specialists range from CA$1,300 to CA$1,835. Custom designs are quoted after a free consultation. Pricing subject to change. Confirm current rate at <a href=\"https://stan.store/luxjewels\" target=\"_blank\" rel=\"noopener\">stan.store/luxjewels</a> before booking."
+  },
+  {
+    q: "What's the best shape for a lab-grown engagement ring?",
+    a: "The best shape depends on the wearer's preferences. Oval is the most popular right now and gives the most visual size per carat. Emerald cut is the most elegant and architectural. Round brilliant produces maximum brilliance. There's no wrong answer - it's a style preference. Browse all shapes on this page to compare."
+  },
+  {
+    q: "Are lab-grown diamonds real diamonds?",
+    a: "Yes. Lab-grown diamonds are pure carbon in the same cubic crystal structure as natural diamonds. They have Mohs hardness 10, identical optical properties, and are graded by IGI and GIA using the same 4Cs criteria. The only difference is origin."
+  },
+  {
+    q: "Can I customize a lab-grown engagement ring?",
+    a: "Yes. Every ring in the collection is available in a custom version - different metal, different stone grade, different setting style. And if you don't see what you want, we can design from scratch. <a href=\"https://luxjewels.com/booking-appointment/\" target=\"_blank\" rel=\"noopener\">Book a free consultation</a> to get started."
+  },
+  {
+    q: "How long does a lab-grown ring take to make?",
+    a: "Custom designs take 4-6 weeks from consultation to delivery. Contact us during your free consultation to discuss timelines for your specific design."
+  },
+  {
+    q: "Do lab-grown rings ship across Canada?",
+    a: "Yes. All orders ship via FedEx Priority, fully insured, with signature required on delivery. We ship to all Canadian provinces and to the US."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Lab-Grown Engagement Rings — Canada's Full Collection</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Rings Canada</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lab-grown engagement rings are chemically identical to mined diamond rings. They're grown in a lab using HPHT or CVD technology, certified by IGI, and available at 70-90% less than natural diamond prices. Every ring in this collection is IGI-certified and available for custom modification.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I'm Suman Smith, founder of Lux Jewels, and I've been designing lab-grown rings in Canada since 2007. I became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015 - over a decade before the national chains started adding lab-grown collections to their display cases. Every design here is available in a custom version. If you don't see what you're looking for, <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">book a free consultation</a> and we'll start from scratch.</p>
+
+          <p><a href="/lab-grown-diamonds-canada/">Learn about lab-grown diamonds</a> | <a href="/custom-engagement-rings/">Browse our custom design service</a></p>
+
+          <h2>Shop by Shape - Find Your Ring</h2>
+
+          <p>The shape of the centre stone is usually the first decision. Here's the full collection broken down by shape, with what makes each one work.</p>
+
+          <h3>Oval Lab-Grown Engagement Rings</h3>
+
+          <p>Oval is the most requested shape we work with right now. The elongated silhouette makes the stone appear larger per carat than a round, which means more visual impact at the same price point. Oval lab-grown diamonds in E-F colour are one of the best-value choices in any budget.</p>
+
+          <p><a href="/oval-engagement-rings/">Browse oval engagement rings</a></p>
+
+          <h3>Emerald Cut Lab-Grown Engagement Rings</h3>
+
+          <p>Emerald cut produces a hall-of-mirrors effect through its rectangular step-cut facets. It's the most architecturally distinctive shape we work with. Clarity grade matters most here - VS1 or better recommended, since the open facets make inclusions more visible.</p>
+
+          <p><a href="/emerald-cut-engagement-rings/">Browse emerald cut rings</a></p>
+
+          <h3>Round Brilliant Lab-Grown Engagement Rings</h3>
+
+          <p>Round brilliant is the classic for a reason: the 58 facets are engineered to maximize light return. It's the most forgiving shape for slightly lower colour or clarity grades because the brilliant-cut style scatters inclusions and colour. An excellent-cut round lab-grown diamond in G/VS1 is one of the most beautiful stones you can put in a ring.</p>
+
+          <p><a href="/solitaire-engagement-rings/">Browse solitaire engagement rings</a> (most rounds are solitaire-set)</p>
+
+          <h3>Halo and Hidden Halo Lab-Grown Engagement Rings</h3>
+
+          <p>A halo setting places a frame of accent diamonds around the centre stone, adding perimeter sparkle and creating the appearance of a significantly larger stone. A hidden halo places those accent stones beneath the girdle of the centre stone - subtle from above, visible from the side in the right light.</p>
+
+          <p><a href="/halo-engagement-rings/">Browse halo engagement rings</a></p>
+
+          <h3>Vintage-Inspired Lab-Grown Engagement Rings</h3>
+
+          <p>Milgrain detailing, filigree bands, and settings that reference the 1920s-1930s aesthetic. Vintage-inspired designs pair especially well with oval, pear, and cushion cut lab-grown diamonds.</p>
+
+          <p><a href="/vintage-engagement-rings/">Browse vintage engagement rings</a></p>
+
+          <h3>Pear Lab-Grown Engagement Rings</h3>
+
+          <p>Pear is a teardrop shape - a hybrid of the round and marquise. It's elongating on the finger and produces excellent brilliance. Most commonly worn with the point facing outward. Lab-grown pear diamonds in the 1-2ct range are one of the better carat-per-dollar options in the collection.</p>
+
+          <p><a href="/pear-engagement-rings/">Browse pear engagement rings</a></p>
+
+          <h3>Cushion Cut Lab-Grown Engagement Rings</h3>
+
+          <p>Cushion cut has rounded corners and a pillow-like profile. Older cushion cuts (sometimes called "antique" or "old mine") have fewer facets and a different light pattern than modern cushions. Both work well with lab-grown stones. Cushion cut lab-grown diamonds pair naturally with a pave band.</p>
+
+          <p><a href="/cushion-cut-engagement-rings/">Browse cushion cut rings</a></p>
+
+          <h3>Radiant Cut Lab-Grown Engagement Rings</h3>
+
+          <p>Radiant cut combines the shape of an emerald cut with the brilliance of a round - rectangular outline, brilliant-cut facets underneath. It hides inclusions better than emerald cut and shows more fire. A good choice if you want the rectangular silhouette without the strict clarity requirement of emerald cut.</p>
+
+          <p><a href="/radiant-cut-engagement-rings/">Browse radiant cut rings</a></p>
+
+          <h3>Solitaire Lab-Grown Engagement Rings</h3>
+
+          <p>One stone, one band, no distractions. Solitaire settings work with every shape. The design puts all the focus on the stone grade and cut quality, which is exactly where it belongs with a lab-grown diamond you've sourced with an IGI report in hand.</p>
+
+          <p><a href="/solitaire-engagement-rings/">Browse solitaire rings</a></p>
+
+          <h2>Shop by Metal</h2>
+
+          <p>All lab-grown engagement rings in the collection are available in the following metals:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Metal</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>14K Yellow Gold</td>
+                  <td>Classic warmth. The most common metal for engagement rings.</td>
+                </tr>
+                <tr>
+                  <td>14K White Gold</td>
+                  <td>Clean, bright setting that enhances colourless stones. Rhodium plated.</td>
+                </tr>
+                <tr>
+                  <td>14K Rose Gold</td>
+                  <td>Warm, romantic tone. Works especially well with oval and pear stones.</td>
+                </tr>
+                <tr>
+                  <td>18K Yellow Gold</td>
+                  <td>Higher gold content than 14K. Slightly richer colour.</td>
+                </tr>
+                <tr>
+                  <td>18K White Gold</td>
+                  <td>Higher purity than 14K, with rhodium plating.</td>
+                </tr>
+                <tr>
+                  <td>Platinum 950</td>
+                  <td>The densest option. Naturally white, hypoallergenic, doesn't require replating.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>All gold settings use repurposed gold (99.5% previously refined). Metal choice affects price: platinum costs more than 18K gold, which costs more than 14K.</p>
+
+          <h2>2026 Lab-Grown Engagement Ring Price Guide (Canada)</h2>
+
+          <p>Here's what you can expect to spend on a lab-grown diamond engagement ring in Canada in 2026. These are complete ring prices (stone + standard setting), not stone-only prices.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.5ct lab-grown diamond, 14K solitaire</td>
+                  <td>Contact us for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct lab-grown diamond, 14K solitaire</td>
+                  <td>Contact us for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct lab-grown diamond, 14K halo</td>
+                  <td>Contact us for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct lab-grown diamond, 18K solitaire</td>
+                  <td>Contact us for current pricing</td>
+                </tr>
+                <tr>
+                  <td>Custom design</td>
+                  <td><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>For reference: Canadian competitors show the following starting prices for finished lab-grown rings: Bellisa Jewellery CA$1,835-CA$2,643; POLAR from CA$1,300; AGI Design CA$1,680-CA$2,846.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Why Lux Jewels for Lab-Grown Engagement Rings?</h2>
+
+          <p>I built Lux Jewels in 2007 because the jewellery industry in Canada wasn't giving buyers what they needed: straight answers, transparent pricing, and access to high-quality stones without a showroom markup. In 2015, I made the switch to lab-grown diamonds exclusively - well before the national chains started taking lab-grown seriously. That's over a decade of focused experience with lab-grown stones that most competitors simply don't have.</p>
+
+          <p>What you get at Lux Jewels:</p>
+
+          <ul>
+            <li>Every stone comes with an IGI grading certificate and laser girdle inscription you can verify</li>
+            <li>No in-person requirement - the entire process (consultation, CAD review, stone approval, delivery) happens online via Zoom or Google Meet</li>
+            <li>Canada-wide reach: couples in every province work with me without needing to live near a major jewellery district</li>
+            <li>The same design process whether your budget is C$1,500 or C$15,000</li>
+          </ul>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> | <a href="/custom-engagement-rings/">Learn about our custom design process</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

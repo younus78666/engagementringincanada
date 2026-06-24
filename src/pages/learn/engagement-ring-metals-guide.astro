@@ -1,0 +1,261 @@
+﻿---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "Engagement Ring Metals Guide — Gold vs Platinum Compared";
+const description = "14K vs 18K gold vs platinum for engagement rings: durability, maintenance, colour, and cost compared. Lab-grown specific metal guide by Suman Smith, Lux Jewels Canada.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/engagement-ring-metals-guide/",
+      "headline": "Engagement Ring Metals Guide — Gold vs Platinum Compared",
+      "description": "14K vs 18K gold vs platinum for engagement rings: durability, maintenance, colour, and cost compared. Lab-grown specific metal guide by Suman Smith, Lux Jewels Canada.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "Engagement Ring Metals Guide", "item": "https://engagementringincanada.com/learn/engagement-ring-metals-guide/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Does white gold require more maintenance than yellow gold?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. White gold needs rhodium replating every 1-2 years to maintain its bright white colour as the plating wears through daily wear. Yellow gold, rose gold, and platinum don't require replating."}},
+        {"@type": "Question", "name": "Is platinum worth the extra cost for an engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "For clients who want a white metal without the maintenance of rhodium replating: yes. Platinum is naturally white, denser, and develops a patina over time. For clients comfortable with periodic replating, white gold achieves a similar appearance at lower upfront cost."}},
+        {"@type": "Question", "name": "Does metal colour affect how a diamond looks?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. Warm metals (rose gold, yellow gold) make warmer-colour stones look whiter because the metal's warmth counteracts the stone's warmth. This means you can choose a lower (less expensive) colour grade in rose or yellow gold and achieve the same visual result as a higher grade in white gold or platinum."}},
+        {"@type": "Question", "name": "What is the most durable metal for daily wear?", "acceptedAnswer": {"@type": "Answer", "text": "14K gold (any colour) is technically the hardest and most scratch-resistant of the common engagement ring metals. Platinum is very durable but develops a visible surface patina. 18K gold is softer than 14K. For active wearers, 14K gold is the most practical choice."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Does white gold require more maintenance than yellow gold?",
+    a: "Yes. White gold needs rhodium replating every 1-2 years to maintain its bright white colour. The underlying gold alloy shows through as the plating wears, creating a slightly warmer appearance. Yellow, rose, and platinum don't require replating."
+  },
+  {
+    q: "Is platinum worth the extra cost?",
+    a: "For clients who want a white metal and don't want to maintain rhodium plating: yes. Platinum is naturally white, heavier, and develops a beautiful patina. For clients who don't mind periodic replating, 14K or 18K white gold achieves the same appearance at a lower upfront cost."
+  },
+  {
+    q: "Can I get rose gold in platinum?",
+    a: "No. Platinum is always silvery-white. Rose gold and yellow gold are gold alloys - they can be 14K or 18K but not platinum. If you want a warm-toned metal, the choice is yellow or rose gold."
+  },
+  {
+    q: "Does the metal affect the sparkle of the diamond?",
+    a: "Not directly. But the metal colour affects the apparent colour of the diamond - especially with step-cut stones. Warm metals (rose, yellow) make warmer-colour stones look whiter, which can allow you to select a lower (less expensive) colour grade for the same visual appearance."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Ring Metals Guide: Gold vs Platinum Compared</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Ring Metals Guide</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Engagement ring metals in Canada are primarily 14K gold (in yellow, white, or rose), 18K gold, and Platinum 950. 14K gold is the most durable for daily wear (harder, more scratch-resistant). 18K is richer in colour and softer. Platinum is the densest, most prestigious, and requires no rhodium replating - but scratches more visibly and costs more. White gold requires rhodium replating every 1-2 years. Rose and yellow gold require no replating. I'm Suman Smith, founder of Lux Jewels. I've been selecting metals for custom lab-grown engagement rings since 2007. In 2015, when I became Canada's first exclusively lab-grown specialist, the question of metal choice became more central to my consultations - because metal affects how lab-grown stone colour reads, which changes recommendations significantly.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>The Four Main Options</h2>
+
+          <h3>14K Yellow Gold</h3>
+          <ul>
+            <li><strong>Gold content:</strong> 58.3% pure gold (14/24 parts)</li>
+            <li><strong>Alloy:</strong> Remaining 41.7% is typically copper, silver, and zinc</li>
+            <li><strong>Colour:</strong> Warm, classic yellow - slightly less rich than 18K</li>
+            <li><strong>Durability:</strong> Hardest of the gold alloys - most resistant to scratching</li>
+            <li><strong>Maintenance:</strong> No replating required</li>
+            <li><strong>Tarnish:</strong> Doesn't tarnish or corrode under normal conditions</li>
+            <li><strong>Hypoallergenic:</strong> Reasonably hypoallergenic. Some people react to the copper alloy - if known metal sensitivities exist, discuss this</li>
+            <li><strong>Best for:</strong> Active wearers, clients who don't want maintenance, warm-coloured stone preferences (rose gold, yellow gold settings make warmer colour grades acceptable)</li>
+          </ul>
+          <p>All Lux Jewels rings use repurposed gold (99.5% previously refined) in 14K and 18K configurations.</p>
+
+          <h3>18K Yellow Gold</h3>
+          <ul>
+            <li><strong>Gold content:</strong> 75% pure gold (18/24 parts)</li>
+            <li><strong>Colour:</strong> Richer, deeper yellow than 14K - noticeably warmer and more luxurious in appearance</li>
+            <li><strong>Durability:</strong> Softer than 14K - more prone to scratching but also bends rather than shatters under impact</li>
+            <li><strong>Maintenance:</strong> No replating required</li>
+            <li><strong>Best for:</strong> Vintage-inspired designs, intricate milgrain or filigree work (softer metal takes detail better), buyers who want the richest yellow gold appearance</li>
+            <li><strong>Price premium:</strong> Approximately 10-20% more than 14K for the same design due to higher gold content</li>
+          </ul>
+
+          <h3>White Gold (14K or 18K)</h3>
+          <p>White gold is gold alloyed with white metals (typically palladium, nickel, or silver) to achieve a white or silvery appearance. The gold itself is never naturally white - the white appearance comes from the alloy composition and the rhodium plating applied on top.</p>
+
+          <p><strong>Rhodium plating:</strong> White gold rings are rhodium-plated at the factory. Rhodium is a platinum-group metal that provides the bright, white, mirror-like surface finish on all white gold rings. Over time (6-18 months of daily wear), the plating wears and the warmer yellowish gold alloy beneath begins to show. Replating is required to restore the original bright white colour.</p>
+
+          <p><strong>Cost of replating:</strong> Typically C$50-C$150 per replating depending on ring complexity.</p>
+
+          <p><strong>Why this matters:</strong> A white gold ring that hasn't been replated in 2 years can look noticeably warmer than a freshly plated ring. The rhodium-plated appearance is also what affects how stone colour reads - a freshly plated white gold ring makes stone colour appear crisper than replating that's worn down.</p>
+
+          <p><strong>14K vs 18K white gold:</strong> 14K white gold has a higher alloy content (fewer gold molecules), so it's naturally whiter before plating and may hold its white appearance slightly longer between replating. 18K white gold has a higher gold content and typically shows the underlying yellow cast sooner.</p>
+
+          <h3>Rose Gold (14K or 18K)</h3>
+          <p>Rose gold is gold alloyed primarily with copper, which gives it the warm pink-to-rose colour. More copper means a deeper rose colour.</p>
+
+          <p><strong>14K rose gold:</strong> Approximately 58.3% gold, ~33% copper, ~8% silver. Produces a moderately pink, warm tone. Durable (harder than 18K due to higher alloy content).</p>
+
+          <p><strong>18K rose gold:</strong> 75% gold, ~25% copper. Deeper, richer rose-pink colour. Slightly softer than 14K rose gold.</p>
+
+          <p><strong>Maintenance:</strong> No rhodium replating required. Rose gold's colour is inherent to the alloy - it doesn't fade or change the way white gold does (it may develop a subtle patina over years, which many clients consider beautiful).</p>
+
+          <p><strong>Colour compatibility:</strong> Rose gold is one of the warmest metals and affects stone colour appearance significantly. An H colour diamond in rose gold reads as equivalent to an F in white gold/platinum. This means you can achieve a whiter appearance at a lower colour grade (= lower cost) by choosing rose gold over white gold.</p>
+
+          <h3>Platinum 950</h3>
+          <p>Platinum engagement rings are made of 95% pure platinum with 5% iridium, ruthenium, or cobalt. Platinum is significantly denser and heavier than gold.</p>
+          <ul>
+            <li><strong>Purity:</strong> 95% platinum (marked Pt950)</li>
+            <li><strong>Colour:</strong> Naturally white - no rhodium plating required, no colour change over time</li>
+            <li><strong>Durability:</strong> Very scratch-resistant in terms of surface hardness, but platinum develops a "patina" - a soft, satin finish from micro-scratches that actually develops over the first year of wear. Many clients love this look; others prefer the mirror finish maintained by white gold replating.</li>
+            <li><strong>Weight:</strong> Noticeably heavier than gold rings of the same design - can feel substantial on the finger</li>
+            <li><strong>Prong strength:</strong> Platinum prongs are very secure - the metal is dense enough that prongs wear more slowly than gold</li>
+            <li><strong>Price:</strong> Typically C$300-C$700 more than the equivalent design in 14K gold, depending on complexity</li>
+            <li><strong>No replating:</strong> The main maintenance advantage over white gold - platinum never needs replating because it's naturally white</li>
+          </ul>
+          <p><strong>Who it suits:</strong> Clients who want a white metal, hate the maintenance of white gold replating, and appreciate a heavier ring feel. Very popular in Vancouver and Toronto consultations.</p>
+
+          <h2>Comparison Table</h2>
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>14K White Gold</th>
+                  <th>18K White Gold</th>
+                  <th>14K Yellow Gold</th>
+                  <th>18K Yellow Gold</th>
+                  <th>14K Rose Gold</th>
+                  <th>Platinum 950</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Gold/metal content</td>
+                  <td>58.3% gold</td>
+                  <td>75% gold</td>
+                  <td>58.3% gold</td>
+                  <td>75% gold</td>
+                  <td>58.3% gold</td>
+                  <td>95% platinum</td>
+                </tr>
+                <tr>
+                  <td>Colour</td>
+                  <td>White (rhodium)</td>
+                  <td>White (rhodium)</td>
+                  <td>Warm yellow</td>
+                  <td>Rich yellow</td>
+                  <td>Pink/rose</td>
+                  <td>Naturally white</td>
+                </tr>
+                <tr>
+                  <td>Replating needed</td>
+                  <td>Yes, 1-2yr</td>
+                  <td>Yes, ~1yr</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>No</td>
+                  <td>No</td>
+                </tr>
+                <tr>
+                  <td>Durability</td>
+                  <td>High</td>
+                  <td>Moderate-high</td>
+                  <td>High</td>
+                  <td>Moderate</td>
+                  <td>High</td>
+                  <td>High</td>
+                </tr>
+                <tr>
+                  <td>Scratch pattern</td>
+                  <td>Minor scratches visible</td>
+                  <td>Minor scratches visible</td>
+                  <td>Minor scratches visible</td>
+                  <td>Minor scratches visible</td>
+                  <td>Minor scratches visible</td>
+                  <td>Develops patina</td>
+                </tr>
+                <tr>
+                  <td>Price relative to 14K WG</td>
+                  <td>--</td>
+                  <td>+10-15%</td>
+                  <td>Similar</td>
+                  <td>+10-15%</td>
+                  <td>Similar</td>
+                  <td>+20-40%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Metal and Stone Colour: The Interaction</h2>
+          <p>This is the most important metal decision factor that most guides skip.</p>
+
+          <p><strong>Step-cut diamonds (emerald, Asscher):</strong> Step cuts show colour clearly. In white gold or platinum, the colour reads as graded. In rose or yellow gold, the warm metal "covers" some of the stone's warmth - meaning an I colour <a href="/emerald-cut-engagement-rings/">emerald cut</a> in yellow gold looks more like G-H to the eye. This is a meaningful value opportunity.</p>
+
+          <p><strong>Brilliant cuts (round, oval, pear):</strong> Brilliant cuts are more forgiving of colour. G-H reads colourless to most eyes in white gold. In rose or yellow gold, H-I is acceptable and may actually appear warmer and more antique in a way many clients find appealing.</p>
+
+          <p><strong>Practical guidance:</strong></p>
+          <ul>
+            <li>White gold or platinum: Use F-G for step cuts; G-H for brilliant cuts</li>
+            <li><a href="/rose-gold-engagement-rings/">Rose gold</a>: H-I for brilliant cuts; G-H still appropriate for step cuts</li>
+            <li>Yellow gold: G-I for all brilliant cuts; G for step cuts if colour matters</li>
+          </ul>
+
+          <p>I've worked through these metal decisions with clients since 2007, and the stone-metal colour interaction is consistently the most underappreciated factor. If you'd like to talk through what makes sense for your specific stone and budget, a <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">free consultation</a> is the most efficient place to do that. I also offer a <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">No-BS Call</a> for clients who want focused, paid advice without any obligation to purchase.</p>
+
+          <p>All Lux Jewels custom designs use repurposed gold (99.5% previously refined) - not newly mined material. Since becoming Canada's first exclusively lab-grown diamond specialist in 2015, I've made it a point to match the ethics of the stone with the ethics of the setting metal. You can learn more about the full <a href="/custom-engagement-rings/">custom engagement ring</a> process or explore <a href="/solitaire-engagement-rings/">solitaire settings</a> if you're deciding on a style alongside your metal choice.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

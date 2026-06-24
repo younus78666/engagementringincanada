@@ -1,0 +1,274 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Unique Engagement Rings Canada — Custom Lab-Grown";
+const description = "One-of-a-kind lab-grown engagement rings in Canada. Custom designs, east-west settings, alternative stones, and unique shapes. Free video consultation.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/unique-engagement-rings/",
+      "url": "https://engagementringincanada.com/unique-engagement-rings/",
+      "name": "Unique Engagement Rings Canada — Custom Lab-Grown",
+      "description": "One-of-a-kind lab-grown engagement rings in Canada. Custom designs, east-west settings, alternative stones, and unique shapes. Free video consultation.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Unique Engagement Rings", "item": "https://engagementringincanada.com/unique-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does custom mean at Lux Jewels vs other jewellers?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Most jewellers who offer 'custom' offer modification of an existing catalogue design. At Lux Jewels, custom means starting from your description: a CAD rendering of a ring that didn't previously exist, built to your specifications from the first consultation call."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can I bring a sketch or photo of what I want?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. A rough sketch, reference photo, Instagram screenshot, or any visual reference is useful starting material. Share it before or during the free consultation call and we'll build a design direction from it."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are alternative stones like salt and pepper diamonds or marquise shapes available?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lux Jewels works with salt and pepper lab-grown diamonds, marquise and non-standard cuts, moissanite, and fancy colour lab-grown diamonds (yellow, pink, blue). Each is available for custom design."}
+        },
+        {
+          "@type": "Question",
+          "name": "How long does a unique custom engagement ring take?",
+          "acceptedAnswer": {"@type": "Answer", "text": "4-6 weeks from stone selection to delivery. The CAD design review happens around week 2, and nothing goes into fabrication without your approval. Rings ship via FedEx Priority, fully insured, with signature required."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is an east-west engagement ring setting?",
+          "acceptedAnswer": {"@type": "Answer", "text": "An east-west setting orients the centre stone horizontally across the finger rather than vertically. An oval or marquise stone oriented east-west produces a wide, sculptural profile that's completely distinct from the standard vertical orientation. It's one of the 2026 trend directions in Canadian engagement ring design."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What does \"custom\" mean at Lux Jewels vs. other jewellers?",
+    a: "Most Canadian jewellers who offer \"custom\" rings offer customization of an existing design — you pick a catalogue ring and change the metal, the stone grade, or the band style. That's modification, not custom. At Lux Jewels, custom means starting from your description: we produce a CAD rendering of a ring that didn't previously exist, built to your specifications from the first consultation call."
+  },
+  {
+    q: "How much does a unique or custom engagement ring cost?",
+    a: "It depends on the design complexity and the stone choice. Simple east-west orientations or two-stone configurations add moderate cost over standard settings. Fully bespoke designs from sketch are the most design-intensive and carry a corresponding premium. <a href=\"https://luxjewels.com/booking-appointment/\" target=\"_blank\" rel=\"noopener\">Book a free consultation</a> and I'll give you an honest estimate after understanding your design."
+  },
+  {
+    q: "Can I bring a sketch or photo of what I want?",
+    a: "Yes. That's often the most efficient way to start. Even a rough sketch on paper that you photograph and email ahead of the consultation gives us a design direction immediately. Reference photos, screenshots from Instagram or Pinterest, photos of historical jewellery — all of it is useful starting material."
+  },
+  {
+    q: "Are alternative stones (salt and pepper, marquise, moissanite) available?",
+    a: "Yes. I work with all of these. Salt and pepper lab-grown diamonds for speckled gray/black aesthetics, marquise and other non-standard cuts for distinctive silhouettes, moissanite for clients who want maximum fire with no diamond premium, and fancy colour lab-grown diamonds for yellow, pink, or blue centre stones. Each of these is available for custom design."
+  },
+  {
+    q: "How long does a unique custom ring take?",
+    a: "4-6 weeks from stone selection to delivery. The CAD review happens in the middle of that window — typically around week 2 — and you approve the design before fabrication begins. Nothing goes into production without your sign-off."
+  },
+  {
+    q: "Do you ship custom rings across Canada?",
+    a: "Yes. All rings ship via FedEx Priority, fully insured, with signature required. We ship to all provinces and to the US. In 2015 I became Canada's first lab-grown jewellery specialist, and in the years since I've worked with clients in every province, designing and delivering custom rings without requiring anyone to visit a showroom."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Unique Engagement Rings Canada - Custom Lab-Grown</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Unique Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>A unique engagement ring is one designed to your specific preferences rather than chosen from a shared catalogue. At Lux Jewels, "unique" means custom from the start: non-standard stone orientations (east-west, bypass), two-stone designs, non-traditional shapes (marquise, pear, hexagonal), alternative stone pairings (lab-grown diamond with sapphire accent, salt and pepper diamonds), or fully bespoke designs that don't reference any existing ring. I'm Suman Smith, founder of Lux Jewels. I've been designing custom lab-grown engagement rings in Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't work from a catalogue that I ask clients to scroll through and select from. Every ring starts with a conversation about what specifically isn't working for you in the options you've already seen. That conversation drives the design process, not the other way around.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>Why Most Engagement Rings Look the Same</h2>
+
+          <p>It's worth being honest about why you're looking at a page called "unique engagement rings" in the first place.</p>
+
+          <p>Most jewellery retailers — even the good ones — sell from catalogues. A catalogue has to satisfy the broadest possible customer base, which means it gravitates toward the configurations most people order. Round solitaire in four-prong white gold. Oval in yellow gold with pave band. Emerald cut in platinum. These are beautiful rings. They're also the rings you see in 80% of Instagram posts.</p>
+
+          <p>That's not a criticism of those rings. It's an observation about how commercial inventory works. When a business needs to show 200 rings in a showroom or on a website, they pick the 200 most likely to sell.</p>
+
+          <p>I don't have a catalogue. I have a design process, and it starts with your specific vision rather than an existing product line.</p>
+
+          <h2>What Makes an Engagement Ring Genuinely Unique</h2>
+
+          <p>"Unique" in jewellery marketing often means "we have 600 styles" — which isn't unique at all. Here's what actually differentiates a ring:</p>
+
+          <h3>Non-Standard Stone Orientation</h3>
+
+          <p><strong>East-west settings</strong> rotate the centre stone 90 degrees so it sits horizontally across the finger rather than vertically. An oval or marquise stone oriented east-west produces a wide, sculptural profile that's completely distinct from the standard vertical orientation. East-west settings are one of the 2026 trend directions showing up in Canadian consumer research.</p>
+
+          <p><strong>Tilted or angled settings</strong> orient the stone at 45 degrees — a look popularized with pear and marquise shapes. It produces a floating, asymmetric appearance that reads as contemporary and deliberate.</p>
+
+          <h3>Two-Stone Rings</h3>
+
+          <p>Two stones of equal or unequal size, set side by side or at opposite ends of a bypass shank. Two-stone designs don't appear in most ring catalogues because they require custom sizing work for each client. They're meaningful because they represent two people — increasingly popular for that symbolic reason.</p>
+
+          <h3>Non-Traditional Shapes</h3>
+
+          <p>Beyond the six most common shapes (round, oval, emerald, cushion, pear, radiant), there are cuts that produce genuinely distinctive silhouettes:</p>
+
+          <p><strong>Marquise:</strong> Elongated pointed oval — the most finger-lengthening shape in the category. Rare enough now that most people don't see them regularly. Works with east-west orientation for maximum visual distinction.</p>
+
+          <p><strong>Hexagonal or geometric cut:</strong> Modern custom cuts in hexagonal or rectilinear outlines. These are always custom orders — you won't find them in standard catalogues.</p>
+
+          <p><strong>Kite or shield cut:</strong> Angular, asymmetric cuts that produce edgy, modern rings unlike anything in a standard collection.</p>
+
+          <p><strong>Salt and pepper diamonds:</strong> Lab-grown diamonds with visible inclusions that produce a speckled gray or black interior. The inclusions are the aesthetic. Very distinctive, very personal, no two stones look the same.</p>
+
+          <h3>Alternative Stone Combinations</h3>
+
+          <p>Most engagement rings feature one stone and one metal. Unique rings often involve:</p>
+
+          <p><strong>Lab-grown diamond with coloured stone accents:</strong> A lab-grown diamond centre flanked by blue sapphire baguettes, or with an emerald accent in a three-stone setting. The contrast creates a distinctive look no standard catalogue carries.</p>
+
+          <p><strong>Moissanite as the centre stone:</strong> If you want an alternative to diamond, <a href="/moissanite-engagement-rings/">moissanite</a> (silicon carbide, refractive index 2.65-2.69, nearly as hard as diamond) produces more fire than a diamond and carries none of the diamond premium. We work with moissanite alongside lab-grown diamonds.</p>
+
+          <p><strong>Fancy color lab-grown diamonds:</strong> Lab-grown technology produces fancy color diamonds (yellow, pink, blue) more consistently than mining does. A yellow lab-grown diamond in a rose gold setting is both distinctive and ethical.</p>
+
+          <h3>Fully Bespoke Design from Sketch</h3>
+
+          <p>You have something in your head that doesn't exist yet. We start with a description or a rough sketch, produce a CAD rendering, revise it until it matches your vision, then build it. This is the most resource-intensive option and also the one that produces the most genuinely one-of-a-kind ring.</p>
+
+          <h2>The Custom Design Process at Lux Jewels</h2>
+
+          <p>Every unique ring follows the same four-stage process:</p>
+
+          <p><strong>Stage 1: Discovery Call (Free, 30-40 minutes)</strong><br>
+          We cover what you've seen that hasn't worked, what elements attract you, what the wearer does day-to-day (affects setting height and durability), and budget. By the end of this call, I have enough to propose a design direction. Since 2015, when I started Canada's first exclusively lab-grown jewellery business, I've run hundreds of these calls and they're the most useful 40 minutes in the entire ring-buying process.</p>
+
+          <p><strong>Stage 2: Stone Sourcing</strong><br>
+          I source a shortlist of stones matching your specifications. For unique rings, this often means unusual shapes or grades — salt and pepper, fancy colour, marquise — which require specific sourcing rather than pulling from standard inventory.</p>
+
+          <p><strong>Stage 3: CAD Design Review</strong><br>
+          A 3D CAD rendering of the ring is produced for your approval. You'll see the exact proportions, prong placement, and band profile before anything is fabricated. Nothing goes into production without your sign-off.</p>
+
+          <p><strong>Stage 4: Fabrication and Delivery</strong><br>
+          Ring is fabricated, quality-checked, and shipped via FedEx Priority, fully insured, with signature required. All metal settings use repurposed gold (99.5% previously refined). Total custom timeline: 4-6 weeks from stone selection.</p>
+
+          <h2>What Does a Unique Engagement Ring Cost in Canada?</h2>
+
+          <p>Custom design and unusual stone selections carry price variables that standard rings don't:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Design Element</th>
+                  <th>Price Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Standard shape (oval, round, emerald)</td>
+                  <td>No premium</td>
+                </tr>
+                <tr>
+                  <td>East-west or tilted orientation</td>
+                  <td>Moderate (custom prong work)</td>
+                </tr>
+                <tr>
+                  <td>Two-stone design</td>
+                  <td>Moderate (additional stone + setting work)</td>
+                </tr>
+                <tr>
+                  <td>Marquise or pear</td>
+                  <td>Slightly below round (less market demand)</td>
+                </tr>
+                <tr>
+                  <td>Salt and pepper diamond</td>
+                  <td>Often lower than equivalent white lab-grown</td>
+                </tr>
+                <tr>
+                  <td>Fancy colour lab-grown</td>
+                  <td>Premium depending on colour intensity</td>
+                </tr>
+                <tr>
+                  <td>Fully bespoke from sketch</td>
+                  <td>Highest (most design time)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>For reference:</strong> Canadian custom jewellers are pricing unique/custom lab-grown designs from C$2,750 upward.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <p><strong>Free Consultation — 30 to 40 Minutes</strong><br>
+          The only entry point for unique and custom designs. Tell me what you've seen that hasn't worked, share reference images if you have them, and we'll start a design direction together. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call — $199 for 30 Minutes</strong><br>
+          You've been quoted a custom ring elsewhere and you want a second opinion on the design, the stone choice, and whether the price is fair for the complexity described.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

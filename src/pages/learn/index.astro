@@ -1,0 +1,233 @@
+﻿---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "Engagement Ring Guide — Learn Hub by Lux Jewels Canada";
+const description = "Complete engagement ring education hub: lab-grown diamonds, the 4Cs, IGI certificates, metals, budget guides, and ring sizing — all by Canada's first lab-grown specialist.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/learn/",
+      "url": "https://engagementringincanada.com/learn/",
+      "name": "Engagement Ring Guide — Learn Hub by Lux Jewels Canada",
+      "description": "Complete engagement ring education hub: lab-grown diamonds, the 4Cs, IGI certificates, metals, budget guides, and ring sizing — all by Canada's first lab-grown specialist.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"}
+        ]
+      }
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What's the most important thing to know before buying an engagement ring in Canada?",
+    a: "Always ask for the IGI or GIA certificate number before agreeing to a price. Without the grading report, you can't verify what you're actually buying. A diamond's grade determines its value far more than its size."
+  },
+  {
+    q: "Are lab-grown diamonds real diamonds?",
+    a: "Yes. Lab-grown diamonds have the same chemical composition, crystal structure, and optical properties as mined diamonds. The only difference is origin. I've been working with them since 2015 when I made Lux Jewels Canada's first exclusively lab-grown jewellery business."
+  },
+  {
+    q: "What does the 4Cs mean and which one matters most?",
+    a: "Carat (weight), colour (how colourless), clarity (inclusions), and cut (how the stone is faceted). For most shapes, cut quality has the biggest impact on how the diamond looks. Our <a href='/learn/4cs-diamond-guide/'>4Cs guide</a> explains how to prioritize by shape."
+  },
+  {
+    q: "How much should I spend on an engagement ring in Canada?",
+    a: "There's no rule. What you get at C$2,000 vs. C$15,000 depends on stone size, grade, and setting complexity. Our <a href='/learn/engagement-ring-budget-canada/'>Canada budget guide</a> breaks down exactly what's realistic at each price point in the current lab-grown market."
+  },
+  {
+    q: "What's the difference between 14K and 18K gold?",
+    a: "14K is 58.3% pure gold, 18K is 75% pure gold. 18K is slightly softer but richer in colour. For engagement rings worn daily, 14K is often the practical choice. Our <a href='/learn/engagement-ring-metals-guide/'>metals guide</a> covers durability, maintenance, and who each suits."
+  },
+  {
+    q: "Is a free consultation really free?",
+    a: "Yes. My free consultation is a 30-40 minute Zoom or async call where I walk you through options for your budget and preferences. There's no obligation and nothing to buy. If you want a faster, more focused session, the No-BS Call is a 30-minute paid consultation at $199."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Ring Guide — Learn by Lux Jewels</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Learn</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>This guide covers everything you need to understand before buying an engagement ring in Canada - lab-grown vs natural diamonds, the 4Cs, IGI certificates, metals, budget planning, ring sizing, and how to avoid common pricing traps. Written by Suman Smith, founder of Lux Jewels. I've been working in the Canadian jewellery industry for over 20 years. I founded Lux Jewels in 2007 and became Canada's first lab-grown diamond specialist in 2015.</p>
+          <p>This isn't a polished marketing resource. It's what I tell clients in consultations - direct, technical, and specific to the Canadian market.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Start Here: What Most Buyers Get Wrong</h2>
+
+          <p>Most engagement ring decisions are made with incomplete information. Specifically:</p>
+
+          <ul>
+            <li><strong>Prices are quoted without the grading certificate number.</strong> You can't verify what you're buying without an IGI or GIA certificate.</li>
+            <li><strong>"Lab-grown" doesn't mean "identical in quality"</strong> unless the grade is specified. A D/IF lab-grown isn't the same as an H/SI2.</li>
+            <li><strong>Total carat weight doesn't equal centre stone carat weight.</strong> A "2ct ring" with 1ct centre + 1ct of accent melee looks very different from a 2ct solitaire.</li>
+            <li><strong>Metal type affects stone colour appearance.</strong> H in rose gold looks similar to E in white gold. The same stone looks different in different metals.</li>
+            <li><strong>Lab-grown prices in Canada vary significantly</strong> between jewellers at equivalent grades. Getting a second opinion is worth it.</li>
+          </ul>
+
+          <h2>The Complete Guide</h2>
+
+          <div class="lj-learn-grid">
+
+            <a href="/learn/how-lab-grown-diamonds-are-made/" class="lj-learn-card">
+              <h3>How Lab-Grown Diamonds Are Made</h3>
+              <p>CVD vs. HPHT explained. What the growth process means for quality and the difference between "Type IIa" and standard lab-grown diamonds.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/lab-grown-vs-natural-diamonds/" class="lj-learn-card">
+              <h3>Lab-Grown vs. Natural Diamonds: The Real Differences</h3>
+              <p>Side-by-side comparison of chemistry, appearance, grading, resale value, and environmental impact. Why the visual difference is zero but the price difference is significant.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/how-to-read-igi-certificate/" class="lj-learn-card">
+              <h3>How to Read an IGI Diamond Certificate</h3>
+              <p>Every field on an IGI certificate explained - carat, colour, clarity, cut, fluorescence, laser inscription, and the report number you should verify.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/4cs-diamond-guide/" class="lj-learn-card">
+              <h3>The 4Cs Explained for Engagement Ring Buyers</h3>
+              <p>Carat, colour, clarity, cut - and how to prioritize them by shape. What to prioritize for oval vs. emerald cut vs. round brilliant.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/engagement-ring-budget-canada/" class="lj-learn-card">
+              <h3>Engagement Ring Budget Guide for Canada (2026)</h3>
+              <p>What you actually get at C$2,000, C$4,000, C$8,000, and C$15,000 in Canada's lab-grown market. How to allocate budget between stone and setting.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/engagement-ring-metals-guide/" class="lj-learn-card">
+              <h3>Engagement Ring Metals Guide: Gold vs. Platinum</h3>
+              <p>14K vs. 18K vs. platinum: durability, maintenance, colour, hardness, and who each suits. The rhodium replating question answered for white gold.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/how-to-find-ring-size/" class="lj-learn-card">
+              <h3>How to Find Your Ring Size at Home</h3>
+              <p>Five methods for measuring ring size, accuracy of each, and why to size up rather than down for comfort-fit bands.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+            <a href="/learn/moissanite-vs-lab-grown-diamond/" class="lj-learn-card">
+              <h3>Moissanite vs. Lab-Grown Diamond: Which Is Right for You?</h3>
+              <p>Refractive index, fire, brilliance, hardness, and pricing. The honest answer on when moissanite makes sense and when it doesn't.</p>
+              <span class="lj-learn-card__link">Read the guide &rarr;</span>
+            </a>
+
+          </div>
+
+          <h2>About This Guide</h2>
+
+          <p>These articles are written by me, Suman Smith. I founded Lux Jewels in 2007 and made it Canada's first exclusively lab-grown jewellery business in 2015. Every article draws on what I've covered in thousands of consultations with Canadian couples over the past 20 years.</p>
+
+          <p>There's no affiliate marketing here. I don't earn commissions from grading labs, metal suppliers, or other jewellers. These are the explanations I'd give you on a 30-minute call.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> if you'd prefer to discuss your situation directly.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>
+
+<style>
+  .lj-learn-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+
+  .lj-learn-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border: 1px solid #e6e2de;
+    border-radius: 4px;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    background: #ffffff;
+  }
+
+  .lj-learn-card:hover {
+    border-color: #bcaf9f;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+
+  .lj-learn-card h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.1rem;
+    color: #202020;
+    margin: 0 0 0.75rem;
+    line-height: 1.4;
+  }
+
+  .lj-learn-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 0 1rem;
+    flex: 1;
+  }
+
+  .lj-learn-card__link {
+    font-size: 0.875rem;
+    color: #601c2b;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+  }
+
+  .lj-learn-card:hover .lj-learn-card__link {
+    text-decoration: underline;
+  }
+</style>

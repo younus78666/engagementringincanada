@@ -1,0 +1,411 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Emerald Cut Engagement Rings Canada — Lab-Grown Guide";
+const description = "Emerald cut lab-grown engagement rings in Canada. Clarity guide, hall-of-mirrors effect, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/emerald-cut-engagement-rings/",
+      "url": "https://engagementringincanada.com/emerald-cut-engagement-rings/",
+      "name": "Emerald Cut Engagement Rings Canada — Lab-Grown Guide",
+      "description": "Emerald cut lab-grown engagement rings in Canada. Clarity guide, hall-of-mirrors effect, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Emerald Cut Engagement Rings", "item": "https://engagementringincanada.com/emerald-cut-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the hall-of-mirrors effect in emerald cut diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The hall-of-mirrors effect describes the visual pattern of emerald cut's step-cut facets — long flashes of light and shadow that shift as the stone moves, resembling looking between two parallel mirrors. This is unique to step-cut shapes and produces a cooler, more architectural appearance than the sparkle of brilliant-cut diamonds."}
+        },
+        {
+          "@type": "Question",
+          "name": "What clarity grade do I need for an emerald cut diamond?",
+          "acceptedAnswer": {"@type": "Answer", "text": "VS1 or better is the standard recommendation for emerald cut diamonds. The open step-cut facets make inclusions more visible than in brilliant cuts. VS2 can work on a stone-by-stone basis, but SI1 and below are generally not recommended for emerald cuts."}
+        },
+        {
+          "@type": "Question",
+          "name": "Does colour grade matter more for emerald cut diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Step-cut facets reflect colour rather than scattering it. G or better is recommended for emerald cuts. D-F colourless stones produce the most striking icy appearance. Lower colour grades show more obviously in emerald cuts than in brilliant cuts."}
+        },
+        {
+          "@type": "Question",
+          "name": "How does emerald cut compare to radiant cut?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Both are rectangular, but emerald cut has step-cut facets (hall-of-mirrors, more architectural) while radiant cut has brilliant-cut facets (more sparkle, more forgiving of lower clarity and colour). Emerald cut requires VS1+ and G+ to look its best; radiant cut is more grade-tolerant."}
+        },
+        {
+          "@type": "Question",
+          "name": "What setting works best for emerald cut lab-grown diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A simple solitaire with four straight corner prongs is the most appropriate setting — it frames the stone without competing with the step-cut facets. Three-stone settings with side baguettes are a natural pairing. Halos are less common because they disrupt the clean architectural lines."}
+        },
+        {
+          "@type": "Question",
+          "name": "What length-to-width ratio is best for emerald cut rings?",
+          "acceptedAnswer": {"@type": "Answer", "text": "The most popular range is 1.35-1.50. Ratios below 1.30 approach near-square. Ratios above 1.55 produce a very elongated look. Most clients find 1.40-1.50 the most versatile."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the hall-of-mirrors effect in emerald cut diamonds?",
+    a: "The hall-of-mirrors effect describes the visual pattern produced by emerald cut's step-cut facets. Instead of scattering light like brilliant-cut facets, the rectangular step facets reflect light in parallel planes — long flashes of light and shadow that shift as the stone moves. It resembles looking between two parallel mirrors. This effect is unique to step-cut shapes (emerald and Asscher) and produces a cooler, more architectural appearance than the fiery sparkle of brilliant cuts."
+  },
+  {
+    q: "What clarity grade do I need for an emerald cut diamond?",
+    a: "VS1 or better is the standard recommendation for emerald cut diamonds. The open step-cut facets and flat table create a clear window into the interior of the stone, making inclusions more visible than in brilliant cuts. Some VS2 stones can be eye-clean depending on inclusion type and placement, but this requires reviewing the specific stone rather than relying on the grade alone. SI1 and below are generally not recommended for emerald cuts."
+  },
+  {
+    q: "Does colour grade matter more for emerald cut diamonds?",
+    a: "Yes. The step-cut facets reflect colour rather than scattering it. A G-colour round brilliant often looks nearly colourless, but a G-colour emerald cut may show slight warmth more noticeably. For emerald cuts, G or better is recommended, with D-F colourless stones producing the most striking icy, clean appearance."
+  },
+  {
+    q: "How does emerald cut compare to radiant cut?",
+    a: "Both are rectangular shapes, but emerald cut has step-cut facets (hall-of-mirrors effect) while radiant cut has brilliant-cut facets (sparkle and fire). Emerald cut has higher sensitivity to clarity and colour grades because step facets don't hide inclusions or tinting. Radiant cut is more forgiving of lower grades and produces more brilliance. Emerald cut is the architectural choice; radiant is the brilliant choice. You can <a href=\"/radiant-cut-engagement-rings/\">browse radiant cut rings here</a>."
+  },
+  {
+    q: "What length-to-width ratio is best for emerald cut rings?",
+    a: "The most popular range is 1.35-1.50. Ratios below 1.30 approach near-square (Asscher-like). Ratios above 1.55 produce a very elongated rectangle. Most clients find the 1.40-1.50 range the most versatile — long enough to elongate the finger, not so elongated that the proportions look unusual."
+  },
+  {
+    q: "Why are emerald cut rings more expensive than oval at the same carat weight?",
+    a: "They're not necessarily more expensive at the same carat weight, but emerald cuts require higher clarity and colour grades to look their best — and higher grades cost more. An SI1 oval can look beautiful. An SI1 emerald cut typically doesn't. The clarity and colour requirements (VS1+, G+) mean the average emerald cut purchase ends up at a higher price point than the average oval purchase."
+  },
+  {
+    q: "What setting works best for emerald cut lab-grown diamonds?",
+    a: "A simple solitaire with four straight corner prongs is the most common and most appropriate setting for emerald cut — it frames the stone without competing with the step-cut facets. Three-stone settings with side baguettes are a natural pairing that reinforces the rectangular geometry. Halos are less common for emerald cuts because they disrupt the clean architectural lines of the shape."
+  },
+  {
+    q: "Do emerald cut rings ship across Canada?",
+    a: "Yes. All Lux Jewels rings ship via FedEx Priority, fully insured, with signature required on delivery. We work with couples across every province and territory, as well as the US. The entire process happens online — consultation, stone review, CAD design approval, and delivery."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Emerald Cut Engagement Rings Canada</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Emerald Cut Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Emerald cut diamonds have rectangular step-cut facets that produce a hall-of-mirrors effect — long flashes of light and shadow rather than the sparkle pattern of brilliant-cut diamonds. Clarity grade matters more for emerald cuts than any other shape because the open, flat facets make inclusions visible. VS1 or better is the standard recommendation. I'm Suman Smith, founder of Lux Jewels. I've been designing emerald cut lab-grown rings across Canada since 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't push clients toward whatever's in stock. An emerald cut buyer typically knows what they want — a cleaner, more architectural look than the sparkle-heavy shapes. My job is to find a VS1 or better stone with the right colour grade and length-to-width ratio, then build a setting that doesn't compete with that clarity window.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> | <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>What Makes Emerald Cut Diamonds Different?</h2>
+
+          <p>Emerald cut is one of the oldest diamond shapes. It originated as a cut technique developed for actual emerald gemstones (which are brittle), then adopted for diamonds. The defining characteristics are:</p>
+
+          <p><strong>Step-cut facets:</strong> Instead of triangular brilliant-cut facets that scatter light, emerald cut uses rectangular facets arranged in steps along the pavilion and crown. This produces long, mirror-like reflections rather than sparkle.</p>
+
+          <p><strong>Open table:</strong> The flat crown facet (the "table") on an emerald cut is proportionally larger than on a brilliant cut. This creates a transparency window that lets you see straight into the stone.</p>
+
+          <p><strong>Rectangular silhouette:</strong> The outline is rectangular with cut corners. The beveled corners reduce stress concentration that would otherwise occur at a sharp 90-degree point.</p>
+
+          <p>This combination produces what jewellers call the hall-of-mirrors effect — a visual pattern of dark and light rectangles that shift as the stone moves, like looking between two parallel mirrors. It's one of the most architecturally elegant looks in all diamond shapes.</p>
+
+          <h2>Why Clarity Grade Matters More for Emerald Cut</h2>
+
+          <p>This is the most important buying consideration for emerald cuts, and it's the one most buyers don't know until they've already picked a stone.</p>
+
+          <p>Brilliant-cut diamonds (round, oval, cushion, halo) scatter light through 57-58 triangular facets. That scattering hides inclusions and masks colour tinting. It's forgiving.</p>
+
+          <p>Emerald cut does the opposite. The step facets reflect light in flat planes rather than scattering it. The open table creates a clear window into the stone's interior. An inclusion that would be completely invisible in a round brilliant is often clearly visible to the naked eye in an equivalent emerald cut.</p>
+
+          <p><strong>The standard recommendation:</strong> VS1 clarity or better for emerald cut lab-grown diamonds. Some buyers with excellent eyesight or small hand-lens experience push that to VVS2. VS2 can work for some stones, but it requires reviewing the specific inclusions and their placement — you can't make a grade-level call without seeing the stone.</p>
+
+          <p>This is why the price range for emerald cuts in Canada spans from C$2,539 to C$8,314 (Temple and Grace data) for roughly the same carat weights — clarity grade drives a significant portion of that range.</p>
+
+          <p><strong>Clarity grade quick reference for emerald cut:</strong></p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Clarity Grade</th>
+                  <th>For Emerald Cut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>FL / IF (Flawless)</td>
+                  <td>No visible inclusions at any magnification. Perfect but expensive.</td>
+                </tr>
+                <tr>
+                  <td>VVS1 / VVS2</td>
+                  <td>Nearly impossible to find inclusions even under 10x magnification. Excellent choice.</td>
+                </tr>
+                <tr>
+                  <td>VS1</td>
+                  <td>Inclusions not visible to naked eye. This is the standard recommended minimum for emerald cuts.</td>
+                </tr>
+                <tr>
+                  <td>VS2</td>
+                  <td>Inclusions visible with effort under magnification; may be eye-clean depending on type and placement. Assess stone-by-stone.</td>
+                </tr>
+                <tr>
+                  <td>SI1+</td>
+                  <td>Generally not recommended for emerald cut — inclusions often visible to the naked eye.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Why Colour Grade Matters More for Emerald Cut</h2>
+
+          <p>The same logic applies to colour. Brilliant-cut diamonds scatter light in a way that masks subtle colour tinting. An H-colour round brilliant often looks near-colourless to most people.</p>
+
+          <p>An emerald cut's flat, parallel facets don't scatter colour — they reflect it. This means colour tinting shows more visibly in emerald cuts than in brilliant cuts. The recommendation shifts:</p>
+
+          <p><strong>For emerald cut lab-grown diamonds: G or better. D-F ideal.</strong></p>
+
+          <p>G is the most popular choice for emerald cuts — it's technically "near-colourless" but the step-cut reflects that slight warmth less than an I or J in the same shape. D-F colourless stones in an emerald cut produce the clean, icy, almost blue-white appearance that defines the best emerald cut rings.</p>
+
+          <p>This is also why white gold or platinum settings work particularly well with emerald cuts. The cool metal tone doesn't introduce warmth that would compete with the icy appearance of a high-colour emerald stone.</p>
+
+          <h2>Emerald Cut vs. Radiant Cut: Which Is Right for You?</h2>
+
+          <p>Buyers frequently confuse emerald cut and radiant cut because both have a rectangular outline. The difference is facet structure:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Emerald Cut</th>
+                  <th>Radiant Cut</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Facet style</td>
+                  <td>Step-cut (rectangular facets)</td>
+                  <td>Brilliant-cut (triangular facets)</td>
+                </tr>
+                <tr>
+                  <td>Light pattern</td>
+                  <td>Hall-of-mirrors (long flashes)</td>
+                  <td>Sparkle (scattered light)</td>
+                </tr>
+                <tr>
+                  <td>Clarity sensitivity</td>
+                  <td>High — VS1 minimum recommended</td>
+                  <td>Lower — inclusions hidden by facets</td>
+                </tr>
+                <tr>
+                  <td>Colour sensitivity</td>
+                  <td>High — G or better recommended</td>
+                  <td>Lower — colour less visible</td>
+                </tr>
+                <tr>
+                  <td>Visual weight</td>
+                  <td>Looks slightly smaller face-up than radiant</td>
+                  <td>Appears fuller and brighter per carat</td>
+                </tr>
+                <tr>
+                  <td>Personality</td>
+                  <td>Architectural, cool, understated</td>
+                  <td>Energetic, sparkly, more casual</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Buyers who want elegance over flash</td>
+                  <td>Buyers who want rectangle shape with maximum brilliance</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The short version: if you're choosing between these two shapes, emerald cut is the architectural choice; radiant cut is the brilliant choice. Both are available as lab-grown in Canada.</p>
+
+          <p><a href="/radiant-cut-engagement-rings/">Browse radiant cut rings</a></p>
+
+          <h2>What Length-to-Width Ratio Works Best for Emerald Cut?</h2>
+
+          <p>Length-to-width (L:W) ratio controls how elongated the rectangle looks:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Ratio</th>
+                  <th>Appearance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.25 - 1.35</td>
+                  <td>Nearly square emerald — chunky, classic Art Deco look</td>
+                </tr>
+                <tr>
+                  <td>1.35 - 1.50</td>
+                  <td>Standard emerald cut — most popular range</td>
+                </tr>
+                <tr>
+                  <td>1.50 - 1.65</td>
+                  <td>Elongated emerald — longer, more dramatic silhouette</td>
+                </tr>
+                <tr>
+                  <td>1.65+</td>
+                  <td>Very elongated — rare; a statement stone</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The most requested range we see is 1.40-1.50. Ratios below 1.30 start to approach what's sometimes called an "Asscher cut" — a near-square step cut with more internal pattern and less length.</p>
+
+          <h3>Does Emerald Cut Look Smaller Than Round or Oval?</h3>
+
+          <p>This is one of the most common questions, and the answer is nuanced.</p>
+
+          <p>An emerald cut can appear slightly smaller face-up than a round or oval of the same carat weight because brilliant cuts have more light return and visual weight. The open facets of an emerald cut can look "darker" in some lighting conditions.</p>
+
+          <p>However, the elongated rectangle reads as visually large on the finger — the shape covers more finger length than a round at the same carat weight. The silhouette looks substantial even when the sparkle is lower than a brilliant cut.</p>
+
+          <p>The right framing is this: emerald cut rings don't look small, they look refined. Buyers who prioritize sparkle volume should consider oval or round. Buyers who want architectural elegance should choose emerald.</p>
+
+          <h2>Best Settings for Emerald Cut Lab-Grown Diamonds</h2>
+
+          <p>All settings at Lux Jewels use repurposed gold (99.5% previously refined) as standard across 14K and 18K options.</p>
+
+          <p><strong>Solitaire with straight prongs:</strong> The most common choice. Four corner prongs secure the beveled corners of the stone. Simple, architectural, lets the stone speak. This is the correct setting for showing off the hall-of-mirrors effect.</p>
+
+          <p><strong>Bezel or partial bezel:</strong> A thin metal frame wraps around part or all of the stone's girdle. Reduces the view into the stone slightly but adds security and a modern aesthetic.</p>
+
+          <p><strong>East-west solitaire:</strong> Emerald cut oriented horizontally across the finger. Unusual and modern — maximizes the width of the stone across the hand.</p>
+
+          <p><strong>Three-stone setting:</strong> Emerald centre flanked by two smaller side stones (baguette cuts are a natural pairing with emerald). Side baguettes reinforce the step-cut aesthetic rather than competing with it.</p>
+
+          <p><strong>Pave band without halo:</strong> Unlike oval and round, emerald cut doesn't typically benefit from a halo — the step-cut facets absorb the ring's clean geometric lines. A pave band adds sparkle without disrupting the architectural feel of the centre stone.</p>
+
+          <h2>2026 Emerald Cut Lab-Grown Engagement Ring Prices (Canada)</h2>
+
+          <p>Emerald cut lab-grown diamonds are priced based heavily on clarity grade — a VS1 stone costs meaningfully more than a VS2 at the same carat weight because the grade is more visually consequential.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct emerald cut, VS1, D-F, 14K solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct emerald cut, VS1, G, 14K solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.0ct emerald cut, VVS2, E, 14K solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>1.5ct emerald cut, VS1, F, 18K white gold solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+                <tr>
+                  <td>2.0ct emerald cut, VVS1, D, Platinum solitaire</td>
+                  <td>Contact for current pricing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><strong>For reference:</strong> Temple and Grace Canada shows emerald cut lab-grown rings from C$2,539 to C$8,314. The wide range reflects clarity and carat differences — VS1 and VVS stones cost significantly more than VS2 in this shape.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Why I Recommend IGI for Emerald Cut Lab-Grown Diamonds</h2>
+
+          <p>Every emerald cut lab-grown diamond I source comes with an IGI grading certificate. Here's why that's especially important for this shape:</p>
+
+          <p><strong>The clarity grade tells you the grade, not the placement.</strong> A VS1 stone can have an inclusion that's dead centre in the table (more visible) or at the very edge near the girdle (nearly invisible). The IGI certificate gives you the grade; I review the actual inclusion position and type before recommending the stone.</p>
+
+          <p><strong>The colour grade is meaningful for emerald cuts.</strong> In brilliant cuts, a G vs an H is often undetectable. In emerald cuts, the difference shows. The IGI certificate gives you an objective colour grade so you know exactly what you're working with.</p>
+
+          <p><strong>The laser girdle inscription matches the certificate.</strong> You can verify the stone you received matches the stone on the certificate. This is the chain of custody that matters.</p>
+
+          <p>I started this business in 2015 as Canada's first lab-grown specialist because I saw that the industry was cutting corners on certification, especially with alternative gemstones. I became Canada's first exclusively lab-grown jeweller in 2015 because IGI certification on every stone isn't an add-on — it's the baseline. Learn more about <a href="/lab-grown-diamonds-canada/">lab-grown diamonds in Canada</a>.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <p><strong>Free Consultation — 30 to 40 Minutes</strong><br />
+          We'll discuss your clarity tolerance, colour preference, and length-to-width ratio. I'll find emerald cut stones that match your specifications and walk you through options. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call — $199 for 30 Minutes</strong><br />
+          You've already seen a specific stone or received a quote for an emerald cut ring. Bring the IGI certificate number or the specific measurements. I'll tell you whether the clarity grade is appropriate for the stone's inclusion placement, whether the colour grade is showing in the face-up view, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

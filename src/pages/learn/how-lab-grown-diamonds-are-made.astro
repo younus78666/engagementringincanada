@@ -1,0 +1,256 @@
+---
+import Base from '../../layouts/Base.astro';
+import TwoWaysCTA from '../../components/TwoWaysCTA.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const title = "How Lab-Grown Diamonds Are Made — CVD vs HPHT Guide";
+const description = "Learn how lab-grown diamonds are made: CVD vs HPHT processes explained. What the growth method means for quality and your IGI certificate. By Suman Smith, Lux Jewels.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://engagementringincanada.com/learn/how-lab-grown-diamonds-are-made/",
+      "headline": "How Lab-Grown Diamonds Are Made — CVD vs HPHT Guide",
+      "description": "Learn how lab-grown diamonds are made: CVD vs HPHT processes explained. What the growth method means for quality and your IGI certificate.",
+      "author": {"@type": "Person", "name": "Suman Smith"},
+      "publisher": {"@type": "Organization", "name": "Lux Jewels"},
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://engagementringincanada.com/learn/"},
+          {"@type": "ListItem", "position": 3, "name": "How Lab-Grown Diamonds Are Made", "item": "https://engagementringincanada.com/learn/how-lab-grown-diamonds-are-made/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Is a CVD diamond better than HPHT?", "acceptedAnswer": {"@type": "Answer", "text": "Not inherently. Both produce gem-quality diamonds graded on identical scales. The grade (colour, clarity, cut, carat) is what matters, not the growth process. CVD more commonly produces very high colour grades, but both processes can yield identical quality at the same grade level."}},
+        {"@type": "Question", "name": "Can you tell the difference between CVD and HPHT with the naked eye?", "acceptedAnswer": {"@type": "Answer", "text": "No. Both are optically identical to the naked eye and to standard gemological tools. Advanced spectroscopy can detect the growth method, but this has no practical consequence for jewellery."}},
+        {"@type": "Question", "name": "Do lab-grown diamonds come with a certificate?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lab-grown diamonds from Lux Jewels come with an IGI certificate. The IGI report number is laser-inscribed on the diamond's girdle, verifiable through IGI's online tool."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Is a CVD diamond better than HPHT?",
+    a: "Not inherently. Both produce gem-quality diamonds graded on identical scales. CVD more commonly produces very high colour grades (D-E), but an HPHT D/VVS2 is identical in quality to a CVD D/VVS2. The grade is what matters, not the process."
+  },
+  {
+    q: "Can you tell the difference between CVD and HPHT with the naked eye?",
+    a: "No. Both are optically identical to the naked eye and to standard gemological tools. Advanced spectroscopy can detect the growth method, but this has no practical consequence for jewellery."
+  },
+  {
+    q: "Is lab-grown the same as synthetic?",
+    a: "The FTC updated its guidelines in 2018 to clarify that \"synthetic\" is technically incorrect for lab-grown diamonds because it implies a material that's not real. Lab-grown diamonds are real diamonds. The FTC no longer considers \"synthetic\" an accurate descriptor. The correct terms are \"lab-grown,\" \"laboratory-grown,\" or \"lab-created.\""
+  },
+  {
+    q: "Do lab-grown diamonds come with a certificate?",
+    a: "Yes. At Lux Jewels, every stone comes with an IGI certificate. The certificate includes the laser-inscribed report number on the diamond's girdle. You can verify the stone matches its certificate using IGI's online verification tool."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>How Lab-Grown Diamonds Are Made: CVD vs HPHT Guide</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call &mdash; $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/learn/">Learn</a><span class="lj-breadcrumb__sep">/</span>
+        <span>How Lab-Grown Diamonds Are Made</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lab-grown diamonds are created by two processes: Chemical Vapor Deposition (CVD) and High Pressure High Temperature (HPHT). CVD grows diamonds layer-by-layer from a carbon gas mixture in a vacuum chamber. HPHT replicates the conditions inside the Earth — extreme pressure and heat — to convert graphite or carbon into a diamond crystal. Both produce real diamonds with identical chemistry (pure carbon, cubic crystal structure, Mohs hardness 10) to mined diamonds. The process takes days to weeks, versus billions of years for natural diamonds. I'm Suman Smith, founder of Lux Jewels. I've been working with lab-grown diamonds since 2007 and became Canada's first exclusively lab-grown jewellery specialist in 2015.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>Understanding the process matters practically: some types of HPHT produce specific optical characteristics that show on an IGI certificate. And knowing the difference between CVD and HPHT helps you understand the certificate you receive.</p>
+
+          <h2>What Lab-Grown Diamonds Actually Are</h2>
+
+          <p>Before the process: what exactly is a lab-grown diamond?</p>
+
+          <p>A lab-grown diamond is a real diamond. Same chemical composition: pure carbon atoms in a cubic crystal lattice. Same hardness: Mohs 10 (hardest substance in nature). Same refractive index. Same density. Same optical properties.</p>
+
+          <p>The only difference is where it was made. A mined diamond formed 100-200 km below the Earth's surface over billions of years and was brought to the surface through volcanic activity. A lab-grown diamond was made in a controlled growth environment over days or weeks.</p>
+
+          <p>Gemological labs — GIA, IGI, and others — grade lab-grown diamonds on the same 4Cs scale as natural diamonds: cut, colour, clarity, and carat weight. IGI is the most common grading lab for lab-grown diamonds in the Canadian market.</p>
+
+          <h2>Process 1: Chemical Vapor Deposition (CVD)</h2>
+
+          <p>CVD is the most common method used for gem-quality lab-grown diamonds today.</p>
+
+          <p><strong>How it works:</strong></p>
+
+          <ol>
+            <li>A thin diamond seed (a small slice of existing diamond, natural or lab-grown) is placed in a sealed vacuum chamber.</li>
+            <li>The chamber is filled with a carbon-rich gas mixture — typically methane (CH&#8324;) and hydrogen (H&#8322;).</li>
+            <li>The chamber is heated to approximately 700-1,000&#176;C using microwave or radio-frequency energy.</li>
+            <li>The energy breaks down the gas molecules, releasing carbon atoms.</li>
+            <li>Carbon atoms deposit layer-by-layer onto the seed crystal, building up a new diamond.</li>
+            <li>Growth takes several weeks for a gem-quality stone.</li>
+            <li>The rough diamond is cut from the substrate and polished.</li>
+          </ol>
+
+          <p><strong>Characteristics of CVD diamonds:</strong></p>
+          <ul>
+            <li>Typically Type IIa (very high purity, no nitrogen or boron impurities)</li>
+            <li>Can produce a very high colour range — D-E-F is common in CVD production</li>
+            <li>Growth occurs in flat layers, which is why many CVD diamonds are flat-grown</li>
+            <li>May show faint brown or grey tints (called "post-growth color") that are removed by a subsequent HPHT treatment</li>
+          </ul>
+
+          <p><strong>The CVD + HPHT combination:</strong> Many CVD-grown diamonds undergo an additional HPHT treatment after CVD growth to remove residual colour tints. This is standard practice, not a defect.</p>
+
+          <h2>Process 2: High Pressure High Temperature (HPHT)</h2>
+
+          <p>HPHT was the original lab-grown diamond process, first successfully used by GE in 1954.</p>
+
+          <p><strong>How it works:</strong></p>
+
+          <ol>
+            <li>A carbon source (graphite or carbon powder) and a small diamond seed are placed together in a metal catalyst (typically cobalt, nickel, or iron).</li>
+            <li>The assembly is placed inside a hydraulic press.</li>
+            <li>Extreme pressure (5-6 GPa — roughly 1.5 million pounds per square inch) and extreme heat (1,300-1,600&#176;C) are applied.</li>
+            <li>The metal catalyst melts, facilitating carbon dissolution and recrystallization around the diamond seed.</li>
+            <li>As conditions are slowly changed, carbon deposits onto the seed, growing the diamond crystal.</li>
+            <li>Growth takes days to weeks depending on desired size.</li>
+          </ol>
+
+          <p><strong>Characteristics of HPHT diamonds:</strong></p>
+          <ul>
+            <li>Often cubic octahedral crystal form (eight-sided crystal shape, different from CVD's flat plate growth)</li>
+            <li>Can produce high colour but often contains more nitrogen (Type Ia or Ib) — which can produce yellow or brown tints in some stones</li>
+            <li>The metal catalyst can sometimes leave metallic inclusions, visible on some IGI clarity grades</li>
+            <li>Some HPHT diamonds show a distinctive growth sector pattern under polarized light</li>
+          </ul>
+
+          <p><strong>HPHT as a colour enhancement treatment:</strong> Separate from growing new diamonds, HPHT is also used as a treatment to improve the colour of existing lab-grown CVD diamonds. This isn't a newer process — it's a standard post-growth finishing step.</p>
+
+          <h2>What This Means for Your IGI Certificate</h2>
+
+          <p>An IGI certificate doesn't always specify CVD or HPHT — but some certificates list the growth method. What you will see:</p>
+
+          <ul>
+            <li><strong>Cut, colour, clarity, carat:</strong> Graded identically to natural diamonds on the 4Cs scale</li>
+            <li><strong>"Lab-Grown" or "Laboratory-Grown":</strong> Clearly indicated — IGI uses different certificate colours for lab-grown (light blue) vs. natural (beige)</li>
+            <li><strong>Laser inscription:</strong> The girdle of the diamond is laser-inscribed with the IGI report number. This is how you verify the stone matches the certificate.</li>
+            <li><strong>Fluorescence:</strong> Some lab-grown diamonds, particularly HPHT, show strong fluorescence under UV light. This is noted on the certificate.</li>
+            <li><strong>Type classification (sometimes shown):</strong> Type IIa (typically CVD, very pure) vs. Type Ia/Ib (typically HPHT, may contain nitrogen)</li>
+          </ul>
+
+          <h2>Does the Growth Method Affect Quality?</h2>
+
+          <p>For practical jewellery purposes: no, if the stone has been graded to a good colour and clarity level.</p>
+
+          <p>Both CVD and HPHT can produce excellent, colourless, eye-clean diamonds. Both processes produce stones that are graded identically. The quality of the finished stone is what matters — and that's captured in the IGI grade.</p>
+
+          <p>Where it can matter:</p>
+          <ul>
+            <li>Very high colour (D-E) diamonds are more commonly CVD because the process more readily produces colourless stones</li>
+            <li>Budget stones at lower colour grades may be HPHT with nitrogen content</li>
+            <li>Metallic inclusions in HPHT are rare but possible at lower clarity grades</li>
+          </ul>
+
+          <h2>CVD vs. HPHT at a Glance</h2>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>CVD</th>
+                  <th>HPHT</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Primary process</td>
+                  <td>Carbon gas deposition</td>
+                  <td>Extreme pressure + heat</td>
+                </tr>
+                <tr>
+                  <td>Introduced commercially</td>
+                  <td>1980s-1990s (refined 2010s)</td>
+                  <td>1950s (GE)</td>
+                </tr>
+                <tr>
+                  <td>Crystal growth direction</td>
+                  <td>Layer-by-layer (flat)</td>
+                  <td>Cubic/octahedral</td>
+                </tr>
+                <tr>
+                  <td>Common purity</td>
+                  <td>Type IIa (very high purity)</td>
+                  <td>Type Ia or IIa</td>
+                </tr>
+                <tr>
+                  <td>Colour range</td>
+                  <td>D-J commonly</td>
+                  <td>D-J commonly</td>
+                </tr>
+                <tr>
+                  <td>Common in market</td>
+                  <td>More common for gem quality</td>
+                  <td>Both common</td>
+                </tr>
+                <tr>
+                  <td>Post-growth treatment</td>
+                  <td>Often HPHT color treatment</td>
+                  <td>Rarely post-treated</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Why Lux Jewels Specifies Lab-Grown Only</h2>
+
+          <p>I founded Lux Jewels in 2007 and made the shift to exclusively lab-grown in 2015 for straightforward reasons: lab-grown diamonds are chemically and optically identical to mined, they're certified by the same grading labs, and they're available at a fraction of the price for the same quality grade. Since 2015, when I became the first Canadian jewellery specialist to commit exclusively to lab-grown, I've sourced both CVD and HPHT stones — choosing based on the grade and value for each client's specific requirements.</p>
+
+          <p>If you want to discuss which process has produced the best options for your specific budget and grade target, that's exactly what the consultation is for.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

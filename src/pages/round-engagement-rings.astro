@@ -1,0 +1,201 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Round Engagement Rings Canada — Lab-Grown Brilliant";
+const description = "Shop round brilliant lab-grown engagement rings in Canada. Why round costs more, cut grade explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/round-engagement-rings/",
+      "url": "https://engagementringincanada.com/round-engagement-rings/",
+      "name": "Round Engagement Rings Canada — Lab-Grown Brilliant",
+      "description": "Shop round brilliant lab-grown engagement rings in Canada. Why round costs more, cut grade explained, 2026 CAD pricing. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Round Engagement Rings", "item": "https://engagementringincanada.com/round-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Why do round diamonds cost more than other shapes?", "acceptedAnswer": {"@type": "Answer", "text": "Round brilliants command a price premium because the cut wastes more rough material and demand is highest (approximately 70-75% of all diamond purchases). For lab-grown diamonds, demand pricing still applies even without the same cutting-waste economics."}},
+        {"@type": "Question", "name": "What cut grade should I get for a round lab-grown diamond?", "acceptedAnswer": {"@type": "Answer", "text": "Excellent or Very Good cut. The IGI cut grade for round brilliants directly measures light return. An Excellent cut stone looks noticeably better than a Good cut in the same colour and clarity. The cost premium from Very Good to Excellent is usually modest and worth it."}},
+        {"@type": "Question", "name": "Is round or oval better value in lab-grown diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "Oval is typically 15-25% less expensive than round at the same carat, colour, and clarity grade because demand for round is higher. Oval also appears slightly larger face-up. If you're equally happy with either shape, oval offers better value per dollar."}},
+        {"@type": "Question", "name": "What colour grade is needed for a round lab-grown diamond?", "acceptedAnswer": {"@type": "Answer", "text": "H colour often looks near-colourless in a round brilliant, especially in yellow gold. For white gold or platinum, G or better provides reliable colourlessness. D-F is the premium colourless tier and is more accessible in lab-grown than in natural diamonds."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Why do round diamonds cost more than other shapes?",
+    a: "Round brilliants command a price premium because the round cut wastes more rough diamond material during cutting, and because demand for round diamonds is significantly higher than any other shape (approximately 70-75% of all diamond purchases). Both factors push prices up. For lab-grown diamonds, the demand premium is still present even without the same cutting-waste economics as mined stones."
+  },
+  {
+    q: "What cut grade should I get for a round lab-grown diamond?",
+    a: "Excellent or Very Good cut. The GIA/IGI cut grade for round brilliants directly measures light return — an Excellent cut stone in the same colour and clarity grade will look noticeably better than a Good cut stone in direct comparison. For lab-grown rounds, the cost difference between Very Good and Excellent is often modest and worth paying."
+  },
+  {
+    q: "Is round or oval better value in lab-grown diamonds?",
+    a: "Oval is typically 15-25% less expensive than round at the same carat, colour, and clarity grade because demand for round is higher. Oval also appears slightly larger per carat face-up due to elongated surface area. If you'd be equally happy with either shape, oval offers more value. If round is your preference, the price premium for the most light-efficient cut ever designed is a legitimate reason to pay it."
+  },
+  {
+    q: "What's the most popular round engagement ring setting in Canada?",
+    a: "Based on Lux Jewels consultation data, the most requested configurations are: (1) 6-prong solitaire in 14K white gold or platinum; (2) round halo in 14K rose or yellow gold; (3) pave band solitaire in any metal. Round halo has been gaining on solitaire as the second-most-popular choice."
+  },
+  {
+    q: "How long does a round brilliant engagement ring take?",
+    a: "Custom orders take 4-6 weeks from stone selection to delivery. Since 2015, when I became Canada's first lab-grown specialist, I've built hundreds of round brilliant rings for clients across every province, all delivered via FedEx Priority with full insurance and signature required."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Round Engagement Rings Canada — Lab-Grown Brilliant</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Round Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Round brilliant is the most popular diamond shape globally. The round brilliant cut has 58 facets engineered to maximize light return — more than any other diamond shape. It's also the most expensive shape per carat because the cutting process wastes more rough material, and demand is highest for round. I'm Suman Smith, founder of Lux Jewels. I've been designing round brilliant lab-grown engagement rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+          <p>I don't sell round diamonds as the "safe choice" without explaining why they cost more. A well-cut round brilliant in E-F/VS1 is genuinely one of the most beautiful configurations in the collection. What I won't do is let a client overpay for a popular shape when an oval at the same grade would serve them better at lower cost.</p>
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Why Round Brilliant Costs More Than Other Shapes</h2>
+          <p>Round brilliant diamonds command a price premium over most other shapes for two reasons:</p>
+          <p><strong>1. Cutting waste:</strong> A round diamond is cut from an octahedral rough crystal. Cutting a round shape from a rough crystal wastes more material than cutting elongated shapes (oval, pear, emerald) that can better utilize the crystal's natural geometry. More waste means a higher cost per finished carat.</p>
+          <p><strong>2. Demand premium:</strong> Round brilliants represent approximately 70-75% of all diamond purchases globally. Higher demand creates higher prices even when supply is consistent.</p>
+          <p>For lab-grown diamonds, the demand premium is the more significant factor. The production process doesn't have the same waste economics as mined diamond cutting, but demand pricing still applies because consumers want round brilliants most.</p>
+          <p><strong>The implication:</strong> An oval lab-grown diamond in F/VS1 excellent cut is typically 15-25% less expensive than a round brilliant of the same carat, colour, and clarity. If you'd be equally happy with either shape, the oval represents better value. If you specifically want round, you're paying for the most optimized sparkle cut ever developed, which is a legitimate reason to pay the premium.</p>
+
+          <h2>Why Cut Grade Matters Most for Round Diamonds</h2>
+          <p>For every diamond shape, cut affects light return. For round brilliants, it matters more than any other 4C because the entire facet structure is designed around a specific mathematical model of light behavior.</p>
+          <p><strong>The GIA cut grades for round brilliant:</strong></p>
+          <ul>
+            <li><strong>Excellent</strong> - Maximum light return; fire and brilliance are at peak levels</li>
+            <li><strong>Very Good</strong> - Nearly as good; practically indistinguishable to most eyes</li>
+            <li><strong>Good</strong> - Some light leakage; noticeable reduction in brilliance in certain lighting</li>
+            <li><strong>Fair / Poor</strong> - Significant light leakage; the stone looks "dead" in some conditions</li>
+          </ul>
+          <p>For lab-grown round brilliants, I recommend Excellent or Very Good cut only. The cost difference between Very Good and Excellent is often modest; the visual difference in a well-lit room is meaningful.</p>
+          <p><strong>Proportions that drive Excellent cut:</strong></p>
+          <ul>
+            <li>Table: 54-58%</li>
+            <li>Depth: 61-62.5%</li>
+            <li>Crown angle: 34-35 degrees</li>
+            <li>Pavilion angle: 40.6-41 degrees</li>
+          </ul>
+          <p>These numbers are on the IGI certificate. I review them as part of the stone selection process so you don't have to.</p>
+
+          <h2>Colour and Clarity for Round Brilliant</h2>
+          <p>Round brilliant is the most forgiving shape for colour and clarity, because the 58 brilliant-cut facets scatter light in a way that hides both:</p>
+          <p><strong>Colour:</strong> H colour in a round brilliant often looks near-colourless to most people, especially in yellow gold. For white gold and platinum, G or better provides reliable colourlessness. D-F is the "white on white" look. Some clients want it, others can't see the difference from G. For lab-grown diamonds where D-F costs less of a premium than natural stones, D-F is more accessible.</p>
+          <p><strong>Clarity:</strong> VS2 is often eye-clean for round brilliants. SI1 with well-positioned inclusions (at the edge, not the table) can also be eye-clean. This is a stone-by-stone call, which is why I review specific stones rather than selling by grade alone.</p>
+
+          <h2>Popular Round Engagement Ring Configurations</h2>
+          <p><strong>Tiffany 6-prong solitaire:</strong> The most iconic engagement ring configuration. Six prongs arranged around a round centre stone in a raised basket setting. Clean, timeless.</p>
+          <p><strong>4-prong solitaire:</strong> Four points of contact, more stone visible. A slightly more modern aesthetic than 6-prong.</p>
+          <p><strong>Round halo:</strong> A ring of accent diamonds around the round centre stone. Dramatically increases apparent size. Very popular in Canada in 2026.</p>
+          <p><strong>Pave solitaire:</strong> A plain round centre in a solitaire setting with pave diamonds along the shank. Sparkle without the halo.</p>
+          <p><strong>Round three-stone:</strong> Centre round flanked by two smaller rounds or other shapes. A classic, meaningful configuration.</p>
+          <p>All settings use repurposed gold (99.5% previously refined). Available metals: 14K or 18K yellow, white, or rose gold; Platinum 950.</p>
+
+          <h2>2026 Round Brilliant Lab-Grown Prices (Canada)</h2>
+          <p>Round brilliants are typically the highest-priced shape per carat due to demand. Lab-grown rounds are still dramatically less expensive than equivalent natural diamonds.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0ct round brilliant, G/VS1, 14K 6-prong solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct round brilliant, F/VS1, 14K halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct round brilliant, E/VS1, 18K solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>2.0ct round brilliant, D/VVS2, Platinum solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          We'll go over cut grade requirements, your colour and clarity priorities, and setting preference. I'll identify round brilliants that hit your specifications and discuss the oval comparison honestly if you want it. Video call via Zoom or Google Meet.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've been quoted a round brilliant and want to know if the cut grade is actually Excellent (certificates can say one thing, stones can behave differently) and whether the price is fair.</p>
+          <p>The first and only service of its kind in the world.</p>
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

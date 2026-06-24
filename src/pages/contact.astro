@@ -1,0 +1,151 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+
+const title = "Contact Lux Jewels — Book a Consultation";
+const description = "Contact Suman Smith at Lux Jewels. Book a free 30-40 min video consultation or a No-BS Diamond Buying Call. Online-only, Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact Lux Jewels",
+  "description": description,
+  "url": "https://engagementringincanada.com/contact/",
+  "mainEntity": {
+    "@type": "Person",
+    "name": "Suman Smith",
+    "jobTitle": "Founder, Lux Jewels",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Lux Jewels",
+      "foundingDate": "2007",
+      "url": "https://luxjewels.com"
+    }
+  }
+});
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Get in Touch</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Contact</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- INTRO SECTION -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <div class="lj-prose">
+          <p>I've been helping Canadians find the right engagement ring since 2007, and I do all of it remotely. I don't run a showroom, I don't do walk-ins, and I'm not attached to any supplier's inventory. That means every conversation we have is genuinely about what's right for you.</p>
+
+          <p>I offer two ways to connect, depending on where you are in your search. If you're still exploring and want to understand your options, the free consultation is the right starting point. If you've done your homework and want direct, unfiltered guidance on a specific stone or ring, the No-BS Call is built for that.</p>
+
+          <p>I typically respond to booking requests within 24 hours on business days. I work with clients across Canada, from Vancouver to Halifax, entirely by video. There's no pressure, no upsell, and no obligation after either session.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO CTA BOXES -->
+  <section class="lj-section lj-section-pad" style="background:#f9f8f6;border-top:1px solid #e6e2de;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:900px;margin:0 auto;">
+
+        <!-- Box 1: Free Consultation -->
+        <div style="background:#ffffff;border:1px solid #e6e2de;border-radius:4px;padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1rem;">
+          <p style="font-family:'Playfair Display',Georgia,serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#bcaf9f;margin:0;">Option 1</p>
+          <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;color:#202020;margin:0;">Free Consultation</h2>
+          <p style="font-size:0.95rem;color:#202020;margin:0;">A 30-40 minute video call at no charge. I walk you through diamond quality, ring styles, and realistic pricing for your budget. I've been running these since 2007, and I keep them honest and practical.</p>
+          <ul style="font-size:0.92rem;color:#202020;padding-left:1.2rem;margin:0;line-height:1.8;">
+            <li>30-40 minutes by video</li>
+            <li>No cost, no commitment</li>
+            <li>Covers diamonds, metals, settings, and budget</li>
+            <li>I share my screen to show real stones</li>
+            <li>Available Canada-wide</li>
+          </ul>
+          <div style="margin-top:auto;padding-top:1rem;">
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary" style="display:block;text-align:center;">Book Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Box 2: No-BS Call -->
+        <div style="background:#601c2b;border:1px solid #601c2b;border-radius:4px;padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1rem;">
+          <p style="font-family:'Playfair Display',Georgia,serif;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:#bcaf9f;margin:0;">Option 2</p>
+          <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.6rem;color:#ffffff;margin:0;">No-BS Diamond Buying Call</h2>
+          <p style="font-size:0.95rem;color:#f9f8f6;margin:0;">A 30-minute deep dive at $199. I review specific stones you're considering, compare retailer quotes, and tell you exactly what I'd do in your position. I pioneered lab-grown diamonds in Canada back in 2015 and I give you the same advice I'd give a friend.</p>
+          <ul style="font-size:0.92rem;color:#f9f8f6;padding-left:1.2rem;margin:0;line-height:1.8;">
+            <li>30 minutes, focused and direct</li>
+            <li>$199 flat fee</li>
+            <li>Review quotes, compare specific stones</li>
+            <li>I tell you if a deal is worth it or not</li>
+            <li>No affiliate links, no sales angle</li>
+          </ul>
+          <div style="margin-top:auto;padding-top:1rem;">
+            <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light" style="display:block;text-align:center;border-color:#bcaf9f;color:#ffffff;">Book No-BS Call - $199</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Mobile stack override -->
+      <style>
+        @media (max-width: 640px) {
+          .lj-contact-grid {
+            grid-template-columns: 1fr !important;
+          }
+        }
+      </style>
+
+    </div>
+  </section>
+
+  <!-- PERSONAL NOTE -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <div class="lj-prose">
+          <h2>A Note from Suman</h2>
+          <p>I started Lux Jewels in 2007 because I believed people deserve straight answers about jewellery without the retail markup and the pressure sales floor. I introduced lab-grown diamonds to my clients in 2015, well before they became mainstream, because I saw immediately that the quality was there and the value proposition was undeniable.</p>
+
+          <p>I work exclusively online, which means I can spend my time focusing on the quality of the conversation rather than maintaining a storefront. Every ring I help design is made with ethically sourced stones and repurposed gold (99.5% previously refined), and I stand behind every recommendation I make.</p>
+
+          <p>I keep my calendar limited so I can give each client real attention. If you reach out through either booking link, I'll do my best to get back to you within one business day to confirm your slot or answer a quick question before we meet.</p>
+
+          <p>I look forward to talking with you.</p>
+
+          <p style="font-family:'Playfair Display',Georgia,serif;font-size:1.05rem;color:#601c2b;margin-top:0.5rem;">Suman Smith<br><span style="font-family:'Lato',sans-serif;font-size:0.9rem;color:#666;font-style:normal;">Founder, Lux Jewels, Since 2007</span></p>
+
+          <div style="background:#f9f8f6;border:1px solid #e6e2de;border-radius:4px;padding:1.25rem 1.5rem;margin-top:2rem;">
+            <p style="margin:0;font-size:0.93rem;color:#202020;"><strong>Response time:</strong> I typically respond to new booking requests within 24 hours on business days (Monday through Friday). Weekend requests are picked up first thing Monday morning.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

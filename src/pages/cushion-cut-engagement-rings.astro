@@ -1,0 +1,276 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Cushion Cut Engagement Rings Canada — Lab-Grown Guide";
+const description = "Shop cushion cut lab-grown engagement rings in Canada. Modern vs antique cushion explained, 2026 CAD pricing, which settings work best. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/cushion-cut-engagement-rings/",
+      "url": "https://engagementringincanada.com/cushion-cut-engagement-rings/",
+      "name": "Cushion Cut Engagement Rings Canada — Lab-Grown Guide",
+      "description": "Shop cushion cut lab-grown engagement rings in Canada. Modern vs antique cushion explained, 2026 CAD pricing, which settings work best. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Cushion Cut Engagement Rings", "item": "https://engagementringincanada.com/cushion-cut-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the difference between modern and antique cushion cut diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "Modern cushion has crushed ice facets producing high scattered sparkle, similar to round brilliant. Antique cushion has larger facets producing defined chunky flashes and more fire (coloured light). The light patterns look very different — modern for maximum sparkle, antique for distinctive fire and vintage aesthetic."}},
+        {"@type": "Question", "name": "Is cushion cut the same as princess cut?", "acceptedAnswer": {"@type": "Answer", "text": "No. Princess cut is a square with sharp uncut corners and a chevron facet pattern. Cushion cut has rounded corners (the pillow shape) and can be square or rectangular. Cushion cut is more durable because sharp corners chip; cushion's rounded corners are more resistant."}},
+        {"@type": "Question", "name": "What clarity grade do I need for cushion cut?", "acceptedAnswer": {"@type": "Answer", "text": "Modern cushion: VS2 is often acceptable because crushed ice facets scatter light and hide inclusions similarly to round brilliant. Antique cushion: VS1 is safer because larger facets can show inclusions more clearly. Always a stone-by-stone assessment."}},
+        {"@type": "Question", "name": "What setting is most popular for cushion cut diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "The halo is most popular for cushion cut, creating the 'double cushion' look. Solitaire is the most timeless option. Cushion cut is also strongly associated with vintage-inspired settings because it's the closest modern shape to the old mine cut used in Victorian jewellery."}},
+        {"@type": "Question", "name": "How does cushion cut compare to oval in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Oval is elongated and finger-lengthening with a more modern connotation in Canada. Cushion is square/rectangular with a softer, more vintage-adjacent aesthetic. Both are priced below round at similar carat and grade levels."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the difference between modern and antique cushion cut diamonds?",
+    a: "Modern cushion (modified brilliant) has many small \"crushed ice\" facets in the pavilion that produce high sparkle and scattered light — similar to round brilliant. Antique cushion (old mine cut-inspired) has larger, fewer facets that produce defined flashes and more fire (coloured light). The light patterns look very different. Modern cushion is more common; antique cushion is more distinctive and suits vintage aesthetics."
+  },
+  {
+    q: "Is cushion cut the same as princess cut?",
+    a: "No. Princess cut is a square with sharp, uncut corners and a distinctive chevron-facet pattern. Cushion cut has rounded corners (the \"pillow\" shape). Cushion cut is generally more durable than princess cut because sharp corners are vulnerable to chipping. Cushion cut can also be rectangular, while princess cut is specifically square."
+  },
+  {
+    q: "What clarity grade do I need for cushion cut?",
+    a: "Modern cushion (crushed ice): VS2 is often acceptable, similar to round brilliant. Antique cushion: VS1 is safer because the larger facets are more transparency-like and can show inclusions more clearly. Always a stone-by-stone call for specific clarity features."
+  },
+  {
+    q: "What setting is most popular for cushion cut diamonds?",
+    a: "The halo is the most popular setting for cushion cut, creating the \"double cushion\" look. Solitaire in 4-prong is the most timeless option. Cushion cut is also one of the shapes most associated with vintage-inspired settings — the shape is closest to the old mine cut used in Victorian jewellery."
+  },
+  {
+    q: "How does cushion cut compare to oval?",
+    a: "Both are softer, more romantic shapes compared to rectangular step cuts. Oval is elongated and finger-lengthening; cushion is square/rectangular with a wider face-up profile. Oval has a more modern connotation in Canada right now; cushion is more classic and vintage-adjacent. In terms of value, both are priced below round at similar carat and grade levels. I've worked with both shapes extensively since 2015, when I founded Canada's first lab-grown specialist jewellery business."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Cushion Cut Engagement Rings Canada</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Cushion Cut Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Cushion cut diamonds have a square or rectangular outline with rounded corners, resembling a pillow (hence the name). There are two main varieties: modern cushion (modified brilliant facets, high sparkle) and antique cushion (larger facets, more fire, softer light pattern). Cushion cut is the shape that bridges round and emerald — it has brilliant-cut sparkle in a softer, more romantic shape. I'm Suman Smith, founder of Lux Jewels. I've been designing cushion cut lab-grown engagement rings across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't treat all cushion cuts as equivalent. The facet structure and proportions vary dramatically between modern cushion, antique cushion, and extended cushion variants. Getting the right cushion for a client means understanding which light pattern they're after, not just selecting a shape on a screen.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> | <a href="/lab-grown-engagement-rings/">Browse the full collection</a></p>
+
+          <h2>Modern Cushion vs Antique Cushion Cut — What's Different?</h2>
+
+          <p>This is the most important distinction to understand before buying a cushion diamond:</p>
+
+          <p><strong>Modern cushion (modified brilliant cushion):</strong> Uses additional small facets in the pavilion beneath the main facets — these are called "crushed ice" facets. The effect is a sparkling, broken-up light pattern that resembles crushed ice. High brilliance, very similar to a round brilliant in terms of sparkle pattern.</p>
+
+          <p><strong>Antique cushion (cushion brilliant, cushion modified with larger facets):</strong> Fewer, larger facets in the pavilion. Produces "chunky" flashes of light rather than crushed ice. Slower, more defined light pattern. More fire (coloured flashes) relative to brilliance (white light). Similar to what you see in estate and antique jewellery.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Modern Cushion</th>
+                  <th>Antique/Old Mine Cushion</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Facet style</td>
+                  <td>Crushed ice (many small facets)</td>
+                  <td>Chunky flashes (larger facets)</td>
+                </tr>
+                <tr>
+                  <td>Light pattern</td>
+                  <td>High sparkle, scattered</td>
+                  <td>Defined flashes, more fire</td>
+                </tr>
+                <tr>
+                  <td>Visual comparison</td>
+                  <td>Similar to round brilliant</td>
+                  <td>Similar to a looser, older round brilliant</td>
+                </tr>
+                <tr>
+                  <td>Clarity tolerance</td>
+                  <td>VS2 acceptable (facets scatter inclusions)</td>
+                  <td>VS1+ more important (larger facets can show inclusions)</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Sparkle-maximalists</td>
+                  <td>Vintage aesthetic buyers; fire-preferring buyers</td>
+                </tr>
+                <tr>
+                  <td>Popularity</td>
+                  <td>Most common cushion today</td>
+                  <td>Less common, but very distinctive</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>If you've seen a cushion cut ring and thought "that sparkles like crazy" — that was likely a modern cushion. If you've seen one with beautiful coloured flashes and a softer glow — that was likely antique or semi-antique cushion.</p>
+
+          <h2>Square vs Rectangular Cushion</h2>
+
+          <p>Cushion cuts range from nearly square to noticeably rectangular:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Length-to-Width Ratio</th>
+                  <th>Appearance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.00 - 1.05</td>
+                  <td>Near-square cushion (most common)</td>
+                </tr>
+                <tr>
+                  <td>1.05 - 1.15</td>
+                  <td>Slightly rectangular — softly elongated</td>
+                </tr>
+                <tr>
+                  <td>1.15 - 1.30</td>
+                  <td>Noticeably rectangular — elongated cushion</td>
+                </tr>
+                <tr>
+                  <td>1.30+</td>
+                  <td>Extended cushion — approaches radiant cut territory</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Most clients request near-square to slightly rectangular (1.00-1.10). "Extended cushion" or "cushion modified" above 1.20 starts to look more like a radiant cut and is sometimes sold under that name.</p>
+
+          <h2>Clarity and Colour for Cushion Cut</h2>
+
+          <p><strong>Clarity:</strong> Modern cushion with crushed ice facets is more forgiving of lower clarity grades — VS2 is often acceptable. The scattered facets hide inclusions similarly to round brilliant. Antique cushion with larger facets is more like emerald cut in clarity sensitivity — VS1 is safer.</p>
+
+          <p><strong>Colour:</strong> G or better for cushion cuts in white gold or platinum. The cushion shape retains colour more than round brilliant (cushion facets don't scatter colour as effectively as 58-facet round cuts). H in yellow or rose gold is acceptable. For a very colourless, bright appearance in a cushion, F-G is the safe range.</p>
+
+          <h2>Best Settings for Cushion Cut Diamonds</h2>
+
+          <p><strong>Halo setting:</strong> The most popular configuration for cushion cut. A square or rounded halo around the cushion centre creates the "double cushion" or "cushion in cushion" look. Very high visual impact.</p>
+
+          <p><strong>Solitaire:</strong> Clean and elegant. A 4-prong setting with slightly rounded or claw-shaped prongs suits the cushion's soft corners. The pillowy outline reads beautifully in a simple setting.</p>
+
+          <p><strong>Pave band solitaire:</strong> Cushion solitaire with pave diamonds along the shank. The secondary sparkle frames the centre without competing.</p>
+
+          <p><strong>Three-stone:</strong> Cushion centre with two smaller side stones (trapezoid or trillion cuts are common pairings with cushion).</p>
+
+          <p><strong>Vintage settings:</strong> Cushion cut is the closest modern shape to the old mine cut used in Victorian-era jewellery. A cushion in a Victorian or Edwardian-inspired setting with milgrain and yellow gold is one of the most historically resonant combinations.</p>
+
+          <p>All settings use repurposed gold (99.5% previously refined). Available metals: 14K or 18K yellow, white, or rose gold; Platinum 950.</p>
+
+          <h2>2026 Cushion Cut Lab-Grown Prices (Canada)</h2>
+
+          <p>Cushion cut lab-grown diamonds are typically priced similarly to oval — below round, above emerald cut. Modern cushion and antique cushion are priced comparably at the same carat and grade.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1.0ct cushion, G/VS2, 14K solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct cushion, G/VS1, 14K halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct cushion, F/VS1, 18K pave solitaire</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct antique cushion, G/VS1, 18K YG vintage setting</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          We'll establish which cushion type you prefer (modern sparkle or antique fire), your ratio and colour preferences, and setting style. I'll source stones matching your specifications. Video call via Zoom or Google Meet.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book your free consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've been quoted a specific cushion cut and want a second opinion on whether it's modern or antique cushion, whether the clarity grade is appropriate for the facet type, and whether the price is fair.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn lj-btn--light">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

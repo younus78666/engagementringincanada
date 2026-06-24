@@ -1,0 +1,187 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "About Suman Smith — Lux Jewels Lab-Grown Diamond Specialist";
+const description = "Suman Smith founded Lux Jewels in 2007 and became Canada's first exclusively lab-grown diamond specialist in 2015. Custom engagement rings, Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://engagementringincanada.com/about/#suman-smith",
+      "name": "Suman Smith",
+      "jobTitle": "Founder and Lab-Grown Diamond Specialist",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Lux Jewels",
+        "url": "https://luxjewels.com"
+      },
+      "description": "Suman Smith founded Lux Jewels in 2007 and became Canada's first exclusively lab-grown diamond specialist in 2015. She designs custom engagement rings for clients across Canada, working remotely via video consultation.",
+      "knowsAbout": ["lab-grown diamonds", "custom engagement rings", "diamond certification", "CAD ring design"],
+      "nationality": "Canadian"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/about/",
+      "url": "https://engagementringincanada.com/about/",
+      "name": "About Suman Smith — Lux Jewels Lab-Grown Diamond Specialist",
+      "description": "Suman Smith founded Lux Jewels in 2007 and became Canada's first exclusively lab-grown diamond specialist in 2015. Custom engagement rings, Canada-wide.",
+      "about": {
+        "@id": "https://engagementringincanada.com/about/#suman-smith"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://engagementringincanada.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About",
+            "item": "https://engagementringincanada.com/about/"
+          }
+        ]
+      }
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What happens during the Free Consultation?",
+    a: "The Free Consultation is a 30-40 minute video call where I learn about your vision, budget, and timeline. I'll walk you through diamond shapes, lab-grown stone grades, and metal options. There's no obligation and no pressure. You'll leave with a clear picture of what's possible and what it'll cost. <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>Book your free spot here.</a>"
+  },
+  {
+    q: "What's the No-BS Call and who is it for?",
+    a: "The No-BS Call is a focused 30-minute paid session ($199) for clients who've already done their research and want to get straight to comparing specific stones, finalizing a design, or reviewing a CAD rendering. It's the fastest path from idea to finished ring. <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>Book a No-BS Call here.</a>"
+  },
+  {
+    q: "Do I need to visit a showroom or meet in person?",
+    a: "Not at all. I've run Lux Jewels as a fully remote service since the beginning. Every consultation happens over Zoom or Google Meet. Finished rings ship Canada-wide via FedEx Priority, fully insured, with signature required on delivery."
+  },
+  {
+    q: "How long does the custom ring process take?",
+    a: "From consultation to delivery, most custom engagement rings take 4-6 weeks. That includes your design call, the CAD rendering review (where you approve the exact look before anything is cast), stone selection, fabrication, and quality check. I'll give you a firm timeline at your first consultation."
+  }
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>About Suman Smith</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>About</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Suman Smith founded Lux Jewels in 2007. In 2015, she became Canada's first jeweller working exclusively with lab-grown diamonds. She works one-on-one with every client, fully online, and ships finished rings across Canada via insured FedEx Priority.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>How Lux Jewels Started</h2>
+          <p>I started Lux Jewels in 2007 with a single belief: buying an engagement ring shouldn't feel like a gauntlet. The traditional jewellery industry had a reputation for pressure tactics, confusing grading language, and prices that didn't reflect what clients were actually getting. I wanted to do it differently.</p>
+          <p>I built the business around honest conversations, transparent pricing, and custom designs that people genuinely loved. From the beginning, clients came to me through referrals, not foot traffic. That's still true today. I've never relied on a showroom, because a showroom isn't what creates trust. The work does.</p>
+
+          <h2>Why I Moved Exclusively to Lab-Grown Diamonds in 2015</h2>
+          <p>In 2015, I made a decision that no other Canadian jeweller had made at the time: I moved the entire Lux Jewels offering to lab-grown diamonds only. It wasn't a marketing move. It was a values decision.</p>
+          <p>Lab-grown diamonds are physically, chemically, and optically identical to mined stones. They carry the same IGI and GIA certifications. They're graded on the same 4Cs scale. The only meaningful difference is where they come from and what they cost. When I compared a lab-grown diamond to a mined stone of equivalent quality, the lab-grown option gave clients 30-50% more diamond for the same budget. That's a straightforward win for the person buying the ring.</p>
+          <p>I also pair lab-grown stones with repurposed gold (99.5% previously refined) for every ring we craft. It's the most responsible way to work with precious metals, and it doesn't compromise on quality in any way.</p>
+          <p>That 2015 pivot made Lux Jewels the first and only exclusively lab-grown diamond jeweller in Canada. It also put me in a position to offer something unique: genuine expertise in a category most jewellers were treating as a side offering.</p>
+
+          <h2>How I Work With Clients Today</h2>
+          <p>I talk to every client personally. That's not a policy that might change as the business grows. It's the point of the business.</p>
+          <p>Every engagement starts with a conversation, either through a Free Consultation (30-40 minutes, no charge) or a No-BS Call ($199, 30 minutes) for clients who've already done their research and want to move quickly. Both happen over Zoom or Google Meet. I don't do in-person appointments, and there's no showroom to visit.</p>
+          <p>After that first call, I source stones that match your specifications and budget. You review them before anything moves forward. Then we go into the design phase, where a CAD rendering shows you the exact ring before it's cast. You approve that rendering. Only then does fabrication begin.</p>
+          <p>Most custom rings are ready in 4-6 weeks. They ship Canada-wide via FedEx Priority, fully insured, with signature required on delivery. I've shipped to clients in British Columbia, Ontario, Alberta, Quebec, Nova Scotia, and everywhere in between.</p>
+
+          <h2>What Makes This Different</h2>
+          <p>The No-BS Call is something I'm particularly proud of. It's a 30-minute paid consultation that gives you direct access to my expertise without any sales pressure. You bring your questions, your comparisons, your "is this stone actually worth it" doubts, and I give you straight answers. No agenda. No upsell. It's the first and only service of its kind in the world, as far as I can tell.</p>
+          <p>I've worked with hundreds of couples across Canada who couldn't find what they were looking for at a traditional jeweller. They'd been shown overpriced mined stones, given vague answers about ethical sourcing, or pressured into a design they didn't love. They came to me because I don't operate that way.</p>
+          <p>If you're not sure whether lab-grown is right for you, I'm glad to talk through it. I'm not going to push you toward a decision. I'm going to give you the information you need to make the right one for your situation.</p>
+
+          <h2>Lux Jewels by the Numbers</h2>
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Detail</th>
+                  <th>What It Means for You</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Founded 2007</td>
+                  <td>Nearly two decades of custom jewellery experience</td>
+                </tr>
+                <tr>
+                  <td>Lab-grown only since 2015</td>
+                  <td>Canada's first exclusive lab-grown specialist</td>
+                </tr>
+                <tr>
+                  <td>100% remote</td>
+                  <td>No showroom visits required, ever</td>
+                </tr>
+                <tr>
+                  <td>Ships Canada-wide</td>
+                  <td>FedEx Priority, fully insured, signature required</td>
+                </tr>
+                <tr>
+                  <td>4-6 week turnaround</td>
+                  <td>CAD approval included before fabrication starts</td>
+                </tr>
+                <tr>
+                  <td>Repurposed gold</td>
+                  <td>99.5% previously refined, no new mining required</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Ready to Talk?</h2>
+          <p>I'd love to hear what you're looking for. If you're early in the process and want to explore your options, the <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Free Consultation</a> is the right place to start. If you've already done your homework and want to get straight to the details, the <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">No-BS Call</a> is built for you.</p>
+          <p>Either way, you'll be talking directly with me, Suman. That's how it's always worked at Lux Jewels, and that's how it'll stay.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>

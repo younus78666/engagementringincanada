@@ -1,0 +1,222 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Engagement Rings Montreal — Lab-Grown Custom Design";
+const description = "Lab-grown engagement rings for Montreal couples. IGI-certified, custom design, insured FedEx delivery across Greater Montreal. Free video consultation with Suman Smith.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/engagement-rings-montreal/",
+      "url": "https://engagementringincanada.com/engagement-rings-montreal/",
+      "name": "Engagement Rings Montreal — Lab-Grown Custom Design",
+      "description": "Lab-grown engagement rings for Montreal couples. IGI-certified, custom design, insured FedEx delivery across Greater Montreal. Free video consultation with Suman Smith.",
+      "inLanguage": "en-CA",
+      "areaServed": {"@type": "City", "name": "Montreal", "containedInPlace": {"@type": "Province", "name": "Quebec"}},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Engagement Rings Montreal", "item": "https://engagementringincanada.com/engagement-rings-montreal/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "Do you offer French-language consultations?", "acceptedAnswer": {"@type": "Answer", "text": "Not currently — Lux Jewels consultations are in English. For French-language service, Joaillerie St-Onge, Flamme en rose, and Proud Diamond offer French-language consultations in Montreal."}},
+        {"@type": "Question", "name": "Do you have a studio in Montreal?", "acceptedAnswer": {"@type": "Answer", "text": "No. Lux Jewels is entirely online. Consultations are video calls via Zoom or Google Meet. Rings ship via FedEx Priority, fully insured, with signature required. Operating this way since 2007."}},
+        {"@type": "Question", "name": "Is lab-grown cheaper than natural diamonds in Montreal?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, significantly. A 1-carat lab-grown diamond ring is typically three times less expensive than a comparable natural diamond ring in Montreal. Traditional Old Montreal joailliers start at C$7,000 for mined diamond solitaires."}},
+        {"@type": "Question", "name": "How does Lux Jewels compare to local Montreal lab-grown jewellers?", "acceptedAnswer": {"@type": "Answer", "text": "Lux Jewels was founded in 2007 and became Canada's first exclusively lab-grown jewellery specialist in 2015 — before Ecksand's lab-grown expansion and Flamme en rose's current positioning. Clients work directly with founder Suman Smith throughout the process."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Do you offer French-language consultations?",
+    a: "Not currently — Lux Jewels consultations are conducted in English. For French-language lab-grown ring consultations, Joaillerie St-Onge, Flamme en rose, and Proud Diamond offer French-language service in Montreal. If you're comfortable in English and want Canada's first lab-grown specialist, we're ready when you are."
+  },
+  {
+    q: "Do you have a studio in Montreal?",
+    a: "No. Lux Jewels is entirely online. Consultations are video calls via Zoom or Google Meet. Rings ship via FedEx Priority, fully insured, with signature required. This model has been in place since 2007."
+  },
+  {
+    q: "How does Lux Jewels compare to Montreal's local lab-grown jewellers like Ecksand or Flamme en rose?",
+    a: "I founded Lux Jewels in 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015 — before both Ecksand's lab-grown expansion and Flamme en rose's current positioning. You're working with the person who built the lab-grown specialist model in Canada, not a subsequent adapter."
+  },
+  {
+    q: "Is lab-grown really cheaper in Montreal?",
+    a: "Yes, significantly. A 1-carat lab-grown diamond ring is typically three times less expensive than a comparable natural diamond ring in Montreal. Traditional Old Montreal joailliers start at C$7,000 for mined diamond solitaires. An equivalent quality lab-grown ring from Lux Jewels or other specialists is available for a fraction of that."
+  },
+  {
+    q: "How long does delivery to Montreal take?",
+    a: "FedEx Priority, next-day from ship date to Montreal addresses. Custom orders take 4-6 weeks to produce. All rings are fully insured with signature required."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Rings Montreal — Lab-Grown Custom Design</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Rings Montreal</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lux Jewels serves Montreal and Quebec couples with IGI-certified lab-grown engagement rings through a fully online process — free video consultation in English, custom design, and insured FedEx Priority delivery to any Quebec address. I'm Suman Smith, founder of Lux Jewels. With over 20 years in the Canadian jewellery industry, I founded Lux Jewels in 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown diamonds.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't require Montreal couples to navigate Holt Renfrew or book a Saturday appointment in Old Montreal. The consultation is a video call, the ring is custom-designed to your specifications, and it's delivered insured to your door — whether you're in Plateau-Mont-Royal, Westmount, Laval, or Quebec City.</p>
+
+          <p><strong>Note on language:</strong> Lux Jewels consultations are currently conducted in English. For French-language consultations, Quebec-based jewellers like Flamme en rose and Joaillerie St-Onge offer French-language service. If you're comfortable in English and want access to Canada's first exclusively lab-grown specialist, we're ready.</p>
+
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+
+          <h2>Montreal's Engagement Ring Market in 2026</h2>
+
+          <p>Montreal has two distinct segments of the engagement ring market:</p>
+
+          <p><strong>Traditional Old Montreal joailliers:</strong> Historic jewellery houses on St-Catherine Street and in the Golden Square Mile where mined diamond solitaires start around C$7,000. High prestige, high prices, primarily natural diamonds.</p>
+
+          <p><strong>New generation of lab-grown specialists:</strong> A growing number of Montreal-based jewellers offering lab-grown alternatives:</p>
+
+          <p><strong>Joaillerie St-Onge</strong> — Quebec-made rings in 14k/18k hypoallergenic gold. Montreal atelier. French-language service.</p>
+
+          <p><strong>Global Diamond Montreal</strong> — Lab-grown ring specialists. Montreal location.</p>
+
+          <p><strong>Proud Diamond</strong> — Montreal handmade jewelry with lab-created diamonds.</p>
+
+          <p><strong>Flamme en rose</strong> — Canadian-made lab-grown diamonds. Quebec-based, bilingual, strong ethical positioning.</p>
+
+          <p><strong>Ecksand</strong> — Lab-grown and natural fine jewellery. One of Canada's best-known indie jewellers. Montreal-based with Canada-wide reach.</p>
+
+          <p>All showroom-based. All primarily French-language or bilingual. All serving the island of Montreal primarily.</p>
+
+          <h2>Why the Traditional Montreal Market Is Expensive</h2>
+
+          <p>The article "Why Lab-Grown Diamonds Are Taking Over Montreal's Engagement Ring Scene" makes the math clear: a 1-carat lab-grown diamond ring costs approximately three times less than a comparable natural diamond ring in Montreal.</p>
+
+          <p>Montreal's traditional jewellery houses carry Old Montreal prestige overhead. Their prices reflect location rent, inventory financing, and institutional brand positioning. A mined diamond solitaire starting at C$7,000 in the traditional segment can often be matched in quality by a lab-grown equivalent at a fraction of that price.</p>
+
+          <p>Lab-grown diamonds are real diamonds — same chemistry, same hardness (Mohs 10), same optical properties, same IGI and GIA grading. The only difference is origin: laboratory growth rather than geological mining.</p>
+
+          <h2>Why Montreal Couples Work with Lux Jewels</h2>
+
+          <p><strong>Canada's first lab-grown exclusive jeweller.</strong> In 2015, I became the first Canadian jeweller to dedicate an entire business to lab-grown stones. Every current Montreal lab-grown specialist — Flamme en rose, Ecksand's lab-grown line, St-Onge's ethical collection — came after that. You're working with the pioneer of the category in Canada, not a recent adapter.</p>
+
+          <p><strong>No showroom, lower prices.</strong> Montreal retail costs are lower than Toronto and Vancouver, but they're not zero. Every showroom's overhead is embedded in their prices. We don't have those costs.</p>
+
+          <p><strong>Quebec province-wide reach.</strong> We serve the island of Montreal, Laval, Longueuil, the South Shore, Quebec City, Sherbrooke, Gatineau, and every other Quebec community the same way.</p>
+
+          <p><strong>English-language service.</strong> For anglophone and bilingual Montreal couples who prefer to conduct the consultation in English, we provide a native English-language experience that many local jewellers don't.</p>
+
+          <h2>Popular Styles Among Montreal Buyers</h2>
+
+          <p>Based on consultations with Montreal and Quebec clients:</p>
+
+          <p><strong>Shape:</strong> Emerald cut is notably popular in Montreal — aligned with the city's design sophistication and appreciation for the architectural aesthetic. Oval is second. Round brilliant is consistent across all markets.</p>
+
+          <p><strong>Metal:</strong> White gold and platinum are particularly popular in Montreal. Yellow gold is less dominant than in Calgary or other markets.</p>
+
+          <p><strong>Style:</strong> Minimalist and sophisticated designs — clean solitaires, no halos, or very restrained halo designs. Montreal's aesthetic culture leans toward European design sensibility.</p>
+
+          <p><strong>All shapes available for Montreal orders:</strong></p>
+
+          <p>
+            <a href="/oval-engagement-rings/">Oval</a> |
+            <a href="/emerald-cut-engagement-rings/">Emerald cut</a> |
+            <a href="/solitaire-engagement-rings/">Solitaire</a> |
+            <a href="/round-engagement-rings/">Round</a> |
+            <a href="/halo-engagement-rings/">Halo</a> |
+            <a href="/vintage-engagement-rings/">Vintage</a> |
+            <a href="/pear-engagement-rings/">Pear</a> |
+            <a href="/cushion-cut-engagement-rings/">Cushion</a> |
+            <a href="/radiant-cut-engagement-rings/">Radiant</a> |
+            <a href="/rose-gold-engagement-rings/">Rose Gold</a>
+          </p>
+
+          <p>All rings use repurposed gold (99.5% previously refined). All stones IGI-certified.</p>
+
+          <h2>Delivery to Montreal and Quebec</h2>
+
+          <p>FedEx Priority, fully insured, signature required. Typical delivery to Montreal addresses: next-day from ship date. Custom orders: 4-6 weeks production.</p>
+
+          <p>Delivery areas:</p>
+          <ul>
+            <li>Montreal (all boroughs: Plateau, Rosemont, Outremont, Cote-des-Neiges, Verdun, LaSalle, Anjou, etc.)</li>
+            <li>Island of Montreal + surrounding (Laval, Longueuil, South Shore, North Shore)</li>
+            <li>Quebec province (Quebec City, Sherbrooke, Trois-Rivieres, Gatineau, Saguenay)</li>
+            <li>All Canadian provinces and territories</li>
+            <li>United States</li>
+          </ul>
+
+          <h2>2026 Price Context for Montreal Lab-Grown Rings</h2>
+
+          <p>Montreal's lab-grown specialists don't publicly list starting prices — Joaillerie St-Onge, Flamme en rose, and Ecksand all require consultation for pricing. Old Montreal traditional jewellers start at C$7,000 for mined diamond solitaires.</p>
+
+          <p>Lux Jewels pricing is available on request. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> to discuss your budget and specifications.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <h2>Two Ways to Start</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+
+          <p>Video call via Zoom or Google Meet, conducted in English. Style, stone preferences, and budget discussion. Follow-up with stone candidates and pricing.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+
+          <p>You've received a quote from a Montreal jeweller. Bring it. I'll assess the stone quality and pricing objectively.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

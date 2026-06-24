@@ -1,0 +1,282 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Halo Engagement Rings Canada — Lab-Grown Custom";
+const description = "Shop halo lab-grown engagement rings in Canada. Standard halo vs hidden halo compared, 2026 CAD pricing, all shapes available. Free video consultation. Ships Canada-wide.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/halo-engagement-rings/",
+      "url": "https://engagementringincanada.com/halo-engagement-rings/",
+      "name": "Halo Engagement Rings Canada — Lab-Grown Custom",
+      "description": "Shop halo lab-grown engagement rings in Canada. Standard halo vs hidden halo compared, 2026 CAD pricing, all shapes available. Free video consultation. Ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"},
+          {"@type": "ListItem", "position": 3, "name": "Halo Engagement Rings", "item": "https://engagementringincanada.com/halo-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What is the advantage of a halo engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "A halo setting makes the ring appear larger than the centre stone alone, adds significant perimeter sparkle, and creates a more elaborate look at the same centre stone carat weight. It adds 0.5-1.0mm to visible diameter on all sides."}},
+        {"@type": "Question", "name": "What is a hidden halo engagement ring?", "acceptedAnswer": {"@type": "Answer", "text": "A hidden halo places smaller diamonds beneath the girdle of the centre stone, between the prongs. From above it looks like a solitaire; tilted sideways, the ring of accent diamonds is visible. It combines solitaire aesthetics from above with halo sparkle from the side."}},
+        {"@type": "Question", "name": "Does a halo make a ring look bigger?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A standard halo adds 0.5-1.0mm to the visible diameter. A 1.0ct round (6.5mm) in a halo can appear equivalent to a 1.25-1.5ct solitaire face-up."}},
+        {"@type": "Question", "name": "What colour grade do I need for a halo ring?", "acceptedAnswer": {"@type": "Answer", "text": "G or better in white gold or platinum. The colourless accent stones in the halo can make a warmer centre stone appear more tinted by contrast. In yellow gold, H colour is more acceptable because the warm metal reduces the colour contrast."}}
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "What is the advantage of a halo engagement ring?",
+    a: "A halo setting makes the ring appear larger than the centre stone alone, adds significant perimeter sparkle, and creates a more elaborate look than a solitaire at the same centre stone carat weight. It's a good choice when visual impact per dollar is a priority."
+  },
+  {
+    q: "What is a hidden halo engagement ring?",
+    a: "A hidden halo places a ring of smaller diamonds beneath the girdle of the centre stone, between the prongs. From above, the ring looks like a plain solitaire. Tilted sideways, the hidden ring of diamonds becomes visible. It's a way to get halo sparkle without the visible crown frame."
+  },
+  {
+    q: "Does a halo make the ring look bigger?",
+    a: "Yes. A standard halo typically adds 0.5-1.0mm to the visible diameter of the ring on all sides. For a 1.0ct round diamond (6.5mm), a halo can make the ring appear equivalent in face-up size to a 1.25-1.5ct solitaire."
+  },
+  {
+    q: "Do I need a better quality stone for a halo setting?",
+    a: "The halo adds visual size but doesn't improve stone quality. G or better colour is recommended for halos in white gold or platinum, because the colourless halo accent stones can make a warmer centre look more tinted by contrast. VS2 or better clarity is standard."
+  },
+  {
+    q: "How long does a halo engagement ring take?",
+    a: "Custom halo rings take 4-6 weeks from stone selection to delivery. All Lux Jewels rings ship via FedEx Priority, fully insured, with signature required, to all Canadian provinces and the US. In 2015, I became Canada's first lab-grown jewellery specialist, and since then I've built halo rings for clients in every province."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Halo Engagement Rings Canada — Lab-Grown Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <a href="/lab-grown-engagement-rings/">Lab-Grown Engagement Rings</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Halo Engagement Rings</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>A halo engagement ring places a frame of smaller diamonds around the centre stone, adding perimeter sparkle and making the overall ring appear significantly larger than the centre stone alone. A hidden halo (also called a secret or floating halo) places those accent stones beneath the girdle of the centre stone, invisible from above but visible from the side. I'm Suman Smith, founder of Lux Jewels. I've been building halo settings with lab-grown centre stones across Canada since 2007. In 2015, I became the first Canadian jeweller to specialize exclusively in lab-grown stones.</p>
+          <p>I don't push halo settings as the default for smaller budgets. I recommend them when the design genuinely benefits from the added sparkle and visual mass — not just to disguise a smaller stone.</p>
+          <p>
+            <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free video consultation</a> |
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a>
+          </p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <h2>Standard Halo vs Hidden Halo — What's the Difference?</h2>
+
+          <p><strong>Standard (crown) halo:</strong> A visible ring of smaller diamonds sits in the same plane as or just above the girdle of the centre stone. From above, you see the centre stone surrounded by accent diamonds. The halo adds to the apparent diameter of the ring by several millimetres.</p>
+
+          <p><strong>Hidden halo (floating halo):</strong> The accent diamonds sit beneath the girdle, in a channel between the prongs. From above, the ring looks like a plain solitaire. When you tilt it toward you, the ring of diamonds becomes visible. This is a popular choice for buyers who want the sparkle of a halo without the visual "framed" look from above.</p>
+
+          <p><strong>Double halo:</strong> Two concentric rings of accent stones surround the centre stone. More visual weight, more complexity, more cost. Works especially well with round and cushion centres.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>Standard Halo</th>
+                  <th>Hidden Halo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Visible from above</td>
+                  <td>Yes — visible ring of diamonds</td>
+                  <td>No — looks like solitaire from above</td>
+                </tr>
+                <tr>
+                  <td>Adds apparent size</td>
+                  <td>Yes — significantly</td>
+                  <td>Minimal from above</td>
+                </tr>
+                <tr>
+                  <td>Side view</td>
+                  <td>Accent stones in crown</td>
+                  <td>Accent stones visible from side only</td>
+                </tr>
+                <tr>
+                  <td>Setting complexity</td>
+                  <td>Standard</td>
+                  <td>Slightly more complex</td>
+                </tr>
+                <tr>
+                  <td>Who it suits</td>
+                  <td>Maximum sparkle; visual size priority</td>
+                  <td>Subtle approach; best-of-both-worlds</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>How Much Larger Does a Halo Make a Ring Look?</h2>
+
+          <p>A standard halo setting typically adds 0.5-1.0mm to the visible diameter of the ring on all sides. For a round 1.0ct diamond (approximately 6.5mm diameter), a halo can make the ring appear as wide as a 7.5-8.0mm stone face-up — roughly equivalent to a 1.5ct round without the halo.</p>
+
+          <p>This is the main reason halo settings are popular for buyers working with a set budget: a 0.75ct lab-grown diamond in a halo can appear equivalent in face-up size to a 1.0-1.25ct stone in a solitaire.</p>
+
+          <p>However, there's a caveat: the visible size from above doesn't change the actual stone quality. The centre stone is still 0.75ct. For clients who care primarily about the IGI certificate's carat weight, the halo doesn't change that number.</p>
+
+          <h2>Which Shapes Work Best with Halo Settings?</h2>
+
+          <p>Halo settings work with all diamond shapes, but they behave differently:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Shape</th>
+                  <th>Halo Behavior</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Round</td>
+                  <td>Adds circular sparkle frame</td>
+                  <td>Most common halo combination</td>
+                </tr>
+                <tr>
+                  <td>Oval</td>
+                  <td>Elongates the visible width significantly</td>
+                  <td>Very popular — oval halo looks large</td>
+                </tr>
+                <tr>
+                  <td>Cushion</td>
+                  <td>Halo frames the pillow-like shape</td>
+                  <td>Creates "double cushion" look</td>
+                </tr>
+                <tr>
+                  <td>Pear</td>
+                  <td>Halo traces teardrop outline</td>
+                  <td>Elongating; dramatic</td>
+                </tr>
+                <tr>
+                  <td>Emerald cut</td>
+                  <td>Halo disrupts step-cut geometry</td>
+                  <td>Less common — reduces the architectural clarity</td>
+                </tr>
+                <tr>
+                  <td>Radiant cut</td>
+                  <td>Halo + brilliant facets = maximum sparkle</td>
+                  <td>Very high sparkle output</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Oval halo and round halo are the two most requested in our Canadian consultations. Cushion halo is the third most common. Emerald cut with a halo is the least common because the halo competes with the clean hall-of-mirrors aesthetic that makes emerald cut distinctive.</p>
+
+          <h2>Halo Settings and Stone Quality</h2>
+
+          <p>A common concern: if the halo makes the ring look bigger, can I buy a smaller or lower-quality centre stone?</p>
+
+          <p>The answer is nuanced. You can absolutely use a smaller carat weight and achieve an equivalent face-up appearance with a halo. This is a legitimate budget strategy.</p>
+
+          <p>What the halo doesn't fix is colour or clarity. If you buy a J-colour stone in a halo setting, the slight warmth of the colour grade is still visible in the centre stone. The halo's accent diamonds are typically colourless (E-F), which creates a contrast that can actually make a warmer centre stone look more yellow by comparison.</p>
+
+          <p>For halo settings, the stone grade rules I apply:</p>
+          <ul>
+            <li><strong>Colour:</strong> G or better in a white gold or platinum halo. H in a yellow gold halo (warm metal reduces colour contrast).</li>
+            <li><strong>Clarity:</strong> VS2 or better for round and cushion. VS1 for oval (step-like facets in some ovals can show inclusions).</li>
+          </ul>
+
+          <h2>2026 Halo Lab-Grown Engagement Ring Prices (Canada)</h2>
+
+          <p>Halo settings cost more than equivalent solitaires because of the additional accent diamonds and more complex setting work. The premium varies by halo size and diamond count.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Configuration</th>
+                  <th>Approximate Price (CAD)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.75ct round, G/VS2, 14K standard halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct oval, F/VS1, 14K oval halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.0ct round, G/VS1, 14K hidden halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+                <tr>
+                  <td>1.5ct cushion, G/VS2, 18K double halo</td>
+                  <td>C$[OWNER INPUT]</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+
+          <h2>Two Ways to Start</h2>
+
+          <h3>Free Consultation — 30 to 40 Minutes</h3>
+          <p>We'll discuss standard vs hidden halo, stone shape preference, and budget. I'll show you what the face-up appearance difference looks like between a solitaire and halo with the same centre stone. Video call via Zoom or Google Meet.</p>
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation</a></p>
+
+          <h3>No-BS Call — $199 for 30 Minutes</h3>
+          <p>You've been quoted a halo ring and want to know if the centre stone quality is appropriate for the setting and whether the price is fair for the accent diamond count described.</p>
+          <p>The first and only service of its kind in the world.</p>
+          <p>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</p>
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>

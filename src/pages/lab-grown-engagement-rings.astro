@@ -1,0 +1,583 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Lab-Grown Diamonds Canada - 2026 Complete Guide";
+const description = "Everything about lab-grown diamonds in Canada: what they are, HPHT vs CVD, IGI certification, 2026 CAD pricing, and how they compare to natural diamonds. Updated June 2026.";
+
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/lab-grown-engagement-rings/",
+      "url": "https://engagementringincanada.com/lab-grown-engagement-rings/",
+      "name": "Lab-Grown Diamonds Canada - 2026 Complete Guide",
+      "description": "Everything about lab-grown diamonds in Canada: what they are, HPHT vs CVD, IGI certification, 2026 CAD pricing, and how they compare to natural diamonds. Updated June 2026.",
+      "dateModified": "2026-06-24",
+      "inLanguage": "en-CA",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Lab-Grown Engagement Rings Canada", "item": "https://engagementringincanada.com/lab-grown-engagement-rings/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are lab-grown diamonds real diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lab-grown diamonds are chemically, physically, and optically identical to mined diamonds. They're pure carbon in a cubic crystal structure, rated Mohs 10, and graded by IGI and GIA using the same 4Cs criteria as natural stones."}
+        },
+        {
+          "@type": "Question",
+          "name": "How much cheaper are lab-grown diamonds in Canada?",
+          "acceptedAnswer": {"@type": "Answer", "text": "In Canada in 2026, lab-grown diamonds cost approximately 70-90% less than equivalent natural diamonds. A 1ct E/VS1 lab-grown stone runs C$1,000-C$2,500. The same grade natural stone runs C$6,000-C$12,000."}
+        },
+        {
+          "@type": "Question",
+          "name": "Can you tell a lab-grown diamond from a natural diamond by looking at it?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Not with the naked eye, not with a jeweller's loupe, and not with a standard diamond tester. Only specialist equipment and the grading report can distinguish origin."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between HPHT and CVD lab-grown diamonds?",
+          "acceptedAnswer": {"@type": "Answer", "text": "HPHT uses extreme heat and pressure to grow a diamond from a seed crystal - the same basic process as natural diamond formation. CVD grows a diamond atom by atom in a carbon-gas chamber. Both produce real diamonds. Your IGI report specifies which method produced your stone."}
+        },
+        {
+          "@type": "Question",
+          "name": "What colour and clarity should I buy for a lab-grown diamond?",
+          "acceptedAnswer": {"@type": "Answer", "text": "For most buyers, E-F colour and VS1 clarity is the sweet spot. You get a colourless stone with eye-clean clarity and save significantly compared to D/VVS1 without seeing any difference in your finished ring."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do lab-grown diamonds hold their value?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lab-grown diamonds currently resell at approximately 30-40% of purchase price. Natural diamonds resell at 40-60%. Neither is a reliable investment vehicle. Buy a lab-grown diamond for the ring, not the resale."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is an IGI yellow-coded report?",
+          "acceptedAnswer": {"@type": "Answer", "text": "IGI grading reports for lab-grown diamonds use a yellow-tinted background to distinguish them from natural diamond reports (white background). This is a transparency feature. Both carry the same grading authority."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do lab-grown diamonds come with a certificate?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Every lab-grown diamond supplied by Lux Jewels comes with an IGI grading certificate. The report number is laser-inscribed on the stone's girdle and verifiable on IGI's online database."}
+        },
+        {
+          "@type": "Question",
+          "name": "What is a laser girdle inscription?",
+          "acceptedAnswer": {"@type": "Answer", "text": "A laser girdle inscription is a microscopic report number etched into the diamond's outer edge using a laser. It permanently links the stone to its IGI certificate and can be verified on IGI's online lookup tool."}
+        },
+        {
+          "@type": "Question",
+          "name": "Do lab-grown diamonds pass a diamond tester?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Standard thermal conductivity testers read lab-grown diamonds as diamonds because their thermal properties are identical to natural stones. Standard testers cannot distinguish lab-grown from mined diamonds."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Are lab-grown diamonds real diamonds?",
+    a: "Yes. Lab-grown diamonds are chemically, physically, and optically identical to mined diamonds. They're pure carbon in a cubic crystal structure, rated Mohs 10, and graded by IGI and GIA using the same 4Cs criteria as natural stones."
+  },
+  {
+    q: "How much cheaper are lab-grown diamonds in Canada?",
+    a: "In Canada in 2026, lab-grown diamonds cost approximately 70-90% less than equivalent natural diamonds. A 1ct E/VS1 lab-grown stone runs C$1,000-C$2,500. The same grade natural stone runs C$6,000-C$12,000."
+  },
+  {
+    q: "Can you tell a lab-grown diamond from a natural diamond by looking at it?",
+    a: "No. Not with the naked eye, not with a jeweller's loupe, and not with a standard diamond tester. Only specialist equipment (like a De Beers DiamondView) and the grading report can distinguish origin."
+  },
+  {
+    q: "What's the difference between HPHT and CVD lab-grown diamonds?",
+    a: "HPHT uses extreme heat and pressure to grow a diamond from a seed crystal - the same basic process that forms natural diamonds underground. CVD grows a diamond atom by atom in a carbon-gas chamber. Both produce real diamonds. Your IGI report specifies which method produced your stone."
+  },
+  {
+    q: "Do lab-grown diamonds come with a certificate?",
+    a: "Every lab-grown diamond we supply at Lux Jewels comes with an IGI grading certificate. The report number is laser-inscribed on the stone's girdle and verifiable on <a href='https://www.igi.org/' target='_blank' rel='noopener'>IGI's online database</a>."
+  },
+  {
+    q: "What colour and clarity should I buy for a lab-grown diamond?",
+    a: "For most buyers, E-F colour and VS1 clarity is the sweet spot. You get a colourless stone with eye-clean clarity and save significantly compared to D/VVS1 without seeing any difference in your ring."
+  },
+  {
+    q: "Do lab-grown diamonds hold their value?",
+    a: "Lab-grown diamonds currently resell at approximately 30-40% of purchase price. Natural diamonds resell at 40-60%. Neither is a reliable investment vehicle. Buy a lab-grown diamond for the ring, not the resale."
+  },
+  {
+    q: "Are lab-grown diamonds ethical?",
+    a: "They don't require land excavation or the associated environmental and community disruption of mining. That said, lab diamond production requires significant energy (electricity). The ethical case is generally stronger than mining, but it depends on the energy source of the lab."
+  },
+  {
+    q: "What is an IGI yellow-coded report?",
+    a: "IGI grading reports for lab-grown diamonds use a yellow-tinted background to distinguish them from natural diamond reports (which have a white background). This is a transparency feature, not a quality designation. Both carry the same grading authority."
+  },
+  {
+    q: "Where can I buy IGI-certified lab-grown diamonds in Canada?",
+    a: "Lux Jewels (engagementringincanada.com) sources IGI-certified lab-grown diamonds for custom engagement rings shipped Canada-wide. <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>Book a free consultation</a> to discuss your stone specifications."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Lab-Grown Diamonds Canada: The Complete 2026 Buyer's Guide</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Lab-Grown Engagement Rings Canada</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p><strong>Quick Answer:</strong> Lab-grown diamonds are real diamonds created in a laboratory using HPHT (high pressure, high temperature) or CVD (chemical vapour deposition) processes. They're chemically, physically, and optically identical to mined diamonds, graded by IGI and GIA using the same 4Cs criteria. In Canada in 2026, a 1ct lab-grown diamond typically costs C$1,000-C$2,500 versus C$6,000-C$12,000 for an equivalent natural stone.</p>
+        </div>
+
+        <!-- Intro -->
+        <div class="lj-prose">
+
+          <p>Lab-grown diamonds are real diamonds. I want to get that on the table before anything else because most of the confusion in this space starts with that question. I'm Suman Smith, and I've been sourcing lab-grown diamonds for Lux Jewels since 2007. In 2015, I became the first jeweller in Canada to commit exclusively to lab-grown stones - over ten years before "ethical diamond" became a marketing line for chains that still primarily sell mined. I've watched this market build from a niche to a mainstream choice, and I've seen what buyers get wrong when they're researching it. This guide covers all of it.</p>
+
+          <p><em>Last updated: June 2026.</em></p>
+
+          <ul>
+            <li>Same chemical composition as mined diamonds: pure carbon, cubic crystal structure</li>
+            <li>Mohs hardness 10 - the same as natural diamonds, the hardest gemstone on earth</li>
+            <li>Graded by IGI and GIA using the same 4Cs: cut, colour, clarity, carat weight</li>
+            <li>Created via HPHT or CVD technology, not mining</li>
+            <li>70-90% less expensive than comparable natural diamonds in Canada (2026 market)</li>
+            <li>Resale value: 30-40% of purchase price (lower than mined diamonds)</li>
+            <li>Available in all shapes, grades, and carat weights</li>
+          </ul>
+
+          <p><a href="/lab-grown-engagement-rings/">Browse our lab-grown engagement ring collection</a></p>
+
+          <h2>What Are Lab-Grown Diamonds?</h2>
+
+          <p>Lab-grown diamonds are real diamonds. They're made of pure carbon arranged in the same cubic crystal lattice as natural diamonds - just grown in a controlled laboratory environment rather than mined from the earth over billions of years. Every measurable physical property is identical: hardness, brilliance, fire, scintillation, thermal conductivity. The only difference is origin.</p>
+
+          <h3>How Are Lab-Grown Diamonds Made? HPHT vs CVD</h3>
+
+          <p>There are two production methods.</p>
+
+          <p><strong>HPHT (High Pressure High Temperature):</strong> A diamond seed crystal is placed in a press with carbon material and subjected to temperatures above 1,400&deg;C and pressures exceeding 1.5 million PSI - the same conditions under which natural diamonds form underground. Carbon crystallizes around the seed and a diamond grows over days to weeks. HPHT diamonds often have a slightly yellowish or bluish tint in lower grades due to residual nitrogen or boron; at D-F colour grades this isn't visible.</p>
+
+          <p><strong>CVD (Chemical Vapour Deposition):</strong> A diamond seed is placed in a chamber filled with carbon-rich gas (typically methane). The gas is ionized, which breaks the carbon molecules apart. Carbon atoms rain down onto the seed and deposit in layers, building up the diamond atom by atom over several weeks. CVD diamonds tend to grow with fewer internal stresses, which often produces very high clarity grades.</p>
+
+          <p>Both methods produce real diamonds. Your IGI report will specify which method produced your stone - this is disclosed on every certified report.</p>
+
+          <h3>Are Lab-Grown Diamonds Real Diamonds?</h3>
+
+          <p>Yes. Without qualification.</p>
+
+          <p>Lab-grown diamonds have the same carbon atom lattice, the same Mohs hardness of 10, the same brilliance (white light return), fire (colour dispersion), and scintillation (sparkle pattern) as mined diamonds. IGI and GIA grade them with the same 4Cs criteria. No gemologist can distinguish a lab-grown diamond from a natural diamond without specialist equipment and the grading report.</p>
+
+          <p>The FTC (Federal Trade Commission) in the US clarified in 2018 that "diamond" applies to any stone with the same physical, chemical, and optical properties as a mined diamond, regardless of origin. In Canada, the same logic applies. A lab-grown diamond is a diamond.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Gemstone</th>
+                  <th>Mohs Hardness</th>
+                  <th>Suitable for Everyday Ring Wear?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Diamond (lab or natural)</td>
+                  <td>10</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Moissanite</td>
+                  <td>9.25</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Sapphire</td>
+                  <td>9</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                  <td>Emerald</td>
+                  <td>7.5-8</td>
+                  <td>With care</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>For reference: anything above 7 is suitable for everyday ring wear. Lab-grown diamonds and natural diamonds share the top position.</p>
+
+          <h3>Do Lab-Grown Diamonds Pass a Diamond Tester?</h3>
+
+          <p>Yes. Standard thermal conductivity diamond testers read lab-grown diamonds as diamonds because their thermal properties are identical to natural stones. The tester measures how heat moves through the stone - that behaviour is the same whether the diamond was mined or grown in a lab.</p>
+
+          <p>More advanced multi-testers (like the DiamondSure) can distinguish between diamond and moissanite, but cannot distinguish lab-grown from mined. The laser girdle inscription on the IGI report is the verifiable identifier - it links your specific stone to its grading certificate.</p>
+
+          <h2>How Do Lab-Grown and Natural Diamonds Compare?</h2>
+
+          <p>The two questions I hear most often are: do they look the same, and are they worth buying? Here's the full picture.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Lab-Grown Diamond</th>
+                  <th>Natural Diamond</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Chemical composition</td>
+                  <td>Pure carbon (C)</td>
+                  <td>Pure carbon (C)</td>
+                </tr>
+                <tr>
+                  <td>Crystal structure</td>
+                  <td>Cubic</td>
+                  <td>Cubic</td>
+                </tr>
+                <tr>
+                  <td>Mohs hardness</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Brilliance and fire</td>
+                  <td>Identical</td>
+                  <td>Identical</td>
+                </tr>
+                <tr>
+                  <td>Passes diamond tester</td>
+                  <td>Yes (thermal)</td>
+                  <td>Yes (thermal)</td>
+                </tr>
+                <tr>
+                  <td>2026 price (1ct E/VS1)</td>
+                  <td>C$1,000-C$2,500</td>
+                  <td>C$6,000-C$12,000</td>
+                </tr>
+                <tr>
+                  <td>Rarity</td>
+                  <td>Manufactured on demand</td>
+                  <td>Earth-mined, finite supply</td>
+                </tr>
+                <tr>
+                  <td>Grading body</td>
+                  <td>IGI / GIA (same criteria)</td>
+                  <td>IGI / GIA (same criteria)</td>
+                </tr>
+                <tr>
+                  <td>Resale value</td>
+                  <td>30-40% of purchase price</td>
+                  <td>40-60% of purchase price</td>
+                </tr>
+                <tr>
+                  <td>Environmental impact</td>
+                  <td>Lower (no land disruption)</td>
+                  <td>Higher (land + water + energy)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>The only meaningful differences are origin, price, and resale value. If you're buying a diamond to wear every day for decades, the first two differences are entirely in your favour with lab-grown. The resale difference matters only if you plan to sell.</p>
+
+          <h2>How Much Do Lab-Grown Diamonds Cost in Canada?</h2>
+
+          <p>A CBC Marketplace investigation found that identical lab-grown diamonds are sold at vastly different prices across Canadian retailers - making it important to understand what you're paying for, not just what a stone costs at one store. Here's what you can expect in 2026.</p>
+
+          <h3>2026 Lab-Grown Diamond Price Guide (CAD)</h3>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Carat Weight</th>
+                  <th>Lab-Grown Diamond (CAD)</th>
+                  <th>Natural Diamond (CAD)</th>
+                  <th>Approximate Savings</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>0.5ct E/VS1</td>
+                  <td>C$500-C$900</td>
+                  <td>C$2,000-C$4,000</td>
+                  <td>75-85%</td>
+                </tr>
+                <tr>
+                  <td>1.0ct E/VS1</td>
+                  <td>C$1,000-C$2,500</td>
+                  <td>C$6,000-C$12,000</td>
+                  <td>75-85%</td>
+                </tr>
+                <tr>
+                  <td>1.5ct E/VS1</td>
+                  <td>C$2,000-C$4,500</td>
+                  <td>C$12,000-C$22,000</td>
+                  <td>75-80%</td>
+                </tr>
+                <tr>
+                  <td>2.0ct E/VS1</td>
+                  <td>C$3,500-C$7,500</td>
+                  <td>C$22,000-C$40,000</td>
+                  <td>75-80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p><em>These are loose stone price ranges based on Canadian lab-grown specialist market pricing as of June 2026. Final ring pricing includes setting, design, and delivery. Prices vary based on cut grade, colour, and clarity. Pricing subject to change - confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <h3>Why Are Lab-Grown Diamonds Cheaper?</h3>
+
+          <p>The reason is practical: making a diamond in a lab costs a fraction of mining one.</p>
+
+          <p>There's no land acquisition. No open-pit excavation. No heavy machinery fleet, no environmental remediation budget, and no geopolitical supply-chain premium. Lab-grown production is also scalable - as demand grows, capacity grows, which keeps prices from spiking the way rare natural stones can. The second factor is the supply chain: lab-grown diamonds go from producer to jeweller with fewer intermediaries than mined stones, which eliminates several layers of margin.</p>
+
+          <h2>Are Lab-Grown Diamonds Worth It?</h2>
+
+          <p>For most couples: yes. If you're buying a ring you'll wear every day for decades, lab-grown diamonds give you the same look, the same durability, and the same certified quality as natural diamonds at 70-90% less cost. They're not worth it if you're buying as a financial investment.</p>
+
+          <h3>Do Lab-Grown Diamonds Hold Their Value?</h3>
+
+          <p>Lab-grown diamonds currently resell at approximately 30-40% of their purchase price. That's lower than natural diamonds, which retain roughly 40-60% on resale. The gap exists because lab-grown supply has expanded rapidly - there's no scarcity premium driving a secondary market.</p>
+
+          <p>You're not buying a ring as an investment. Neither type of diamond is a reliable store of value - rare, large, GIA-certified natural diamonds with documented provenance can appreciate, but standard engagement ring diamonds, mined or lab-grown, don't behave as investment vehicles. Buy for the ring, not the return.</p>
+
+          <h3>Are Lab-Grown Diamonds a Good Investment?</h3>
+
+          <p>No. And neither are most natural diamonds bought as retail engagement rings. If the goal is financial return, diamonds of any origin aren't the right instrument. If the goal is a ring you'll wear and love for decades, lab-grown gives you more carat, better cut, or a more complex setting at the same price as a smaller natural stone.</p>
+
+          <h2>Are There Downsides to Lab-Grown Diamonds?</h2>
+
+          <p>Yes. I'll give you both because you deserve the full picture.</p>
+
+          <p><strong>Resale value is lower.</strong> Lab-grown diamonds resell at 30-40% of purchase price. That's below natural diamonds (40-60%), and the gap is likely to widen as production technology scales further. If you're planning to sell or trade up in 5-10 years, natural diamonds hold their value better. This isn't a secret. It's just a fact worth knowing.</p>
+
+          <p><strong>Some buyers prefer the origin story.</strong> There's a real and legitimate preference for a stone that's billions of years old, formed under geological pressure inside the earth. That preference isn't wrong - it's personal. If your partner has specifically asked for a natural stone, honour that.</p>
+
+          <p>For most couples buying a ring to wear and cherish - not to resell - neither downside is a dealbreaker. But you should walk in knowing them.</p>
+
+          <h2>What Should You Look for in IGI and GIA Certification?</h2>
+
+          <p>Every lab-grown diamond we source at Lux Jewels comes with a full IGI grading report. Since 2015, when I became the first Canadian jeweller to commit exclusively to lab-grown stones, I've verified every IGI report before a stone gets set. Here's what that means and what to look at when you receive yours.</p>
+
+          <h3>How to Read an IGI Grading Report</h3>
+
+          <p>An IGI report contains four sections you should check:</p>
+
+          <ol>
+            <li><strong>Report number</strong> - this number is laser-inscribed on the stone's girdle. Verify it matches what's etched on your actual diamond.</li>
+            <li><strong>Shape and cutting style</strong> - confirms the cut (round brilliant, oval, emerald, etc.)</li>
+            <li><strong>4Cs grade</strong> - cut / colour / clarity / carat weight, each with their specific grade designation</li>
+            <li><strong>Origin statement</strong> - "Laboratory Grown" is printed explicitly on the report for lab-grown stones</li>
+          </ol>
+
+          <p>You can verify any IGI report number on IGI's online lookup tool at <a href="https://www.igi.org/" target="_blank" rel="noopener">igi.org</a> using just the report number.</p>
+
+          <h3>What Is the Yellow-Coded IGI Report?</h3>
+
+          <p>IGI grading reports for lab-grown diamonds use a yellow-tinted background versus the white background used for natural diamond reports. This is a transparency feature, not a quality designation. Both types carry the same grading authority, the same methodology, and the same credibility. The yellow tint simply communicates origin at a glance.</p>
+
+          <p>When a jeweller shows you a white-background IGI report for a stone they're claiming is lab-grown, ask questions.</p>
+
+          <h3>What Is a Laser Girdle Inscription?</h3>
+
+          <p>A laser girdle inscription is a microscopic report number etched into the outer edge (girdle) of the diamond using a precision laser. It's invisible to the naked eye and visible under 10x magnification. Its purpose is to permanently link your specific stone to its IGI grading certificate - so there's no ambiguity about whether the stone you received matches the report you were given.</p>
+
+          <p>You can verify your laser inscription number against the IGI database at any time.</p>
+
+          <h2>How Do the 4Cs Apply to Lab-Grown Diamonds?</h2>
+
+          <p>Lab-grown diamonds are graded on the same 4Cs as natural diamonds. Here's how each one affects what you pay and what you actually see.</p>
+
+          <h3>Why Cut Is the Most Important C</h3>
+
+          <p>Cut determines how light moves through the stone: its brilliance (white light return), fire (colour dispersion), and scintillation (sparkle pattern). A poorly cut D-Flawless lab-grown diamond will look dull compared to a well-cut H/VS2. Don't trade cut quality for a larger carat. Ideal or Excellent cut grades are the ones worth prioritizing.</p>
+
+          <h3>Which Colour Grade Should You Choose?</h3>
+
+          <p>For lab-grown diamonds, D-F grades are colourless (highest tier). G-H are near-colourless - the sweet spot for value. With white gold or platinum settings, a G or H grade looks completely colourless to the naked eye in a finished ring. With yellow or rose gold, you can go to H or I without the colour showing in the metal contrast.</p>
+
+          <p>You'll save meaningfully going from D to G without seeing any difference in your ring.</p>
+
+          <h3>What Do VS1 and VVS2 Mean for Clarity?</h3>
+
+          <p>VS1 (Very Slightly Included 1): inclusions are present but invisible to the naked eye. VVS2 (Very Very Slightly Included 2): essentially flawless to the naked eye. SI1 (Slightly Included 1): inclusions may be visible to a trained eye under the right conditions - less ideal for step-cut shapes like emerald.</p>
+
+          <p>For engagement rings, VS1 is the sweet spot. You won't see the inclusions. You won't pay the premium for VVS2 or Flawless grades. And for brilliant cuts (oval, round), VS1 gives you clean, beautiful clarity without overspending.</p>
+
+          <h3>Our Specific Recommendation</h3>
+
+          <p>For most Canadian buyers, I recommend <strong>E-F colour and VS1 clarity</strong> as the grading sweet spot for a lab-grown engagement ring. You get a near-colourless to colourless stone with clean, eye-clean clarity. You'll save significantly compared to D/VVS1 without seeing any visual difference in the finished ring. The savings on grade let you invest in a better cut or a larger carat weight - which you will notice.</p>
+
+          <h2>Lab-Grown Diamond vs Moissanite: Which One's Right for You?</h2>
+
+          <p>Moissanite is a lab-created gemstone made of silicon carbide - not carbon, not a diamond. It has its own distinct optical properties: a refractive index higher than diamond, which produces more white light and more rainbow colour fire. Mohs hardness is 9.25, which is excellent for everyday ring wear.</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Property</th>
+                  <th>Lab-Grown Diamond</th>
+                  <th>Moissanite</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Material</td>
+                  <td>Carbon (C)</td>
+                  <td>Silicon carbide (SiC)</td>
+                </tr>
+                <tr>
+                  <td>Mohs hardness</td>
+                  <td>10</td>
+                  <td>9.25</td>
+                </tr>
+                <tr>
+                  <td>Refractive index</td>
+                  <td>2.42</td>
+                  <td>2.65-2.69</td>
+                </tr>
+                <tr>
+                  <td>Colour fire</td>
+                  <td>Lower</td>
+                  <td>Higher (rainbow flash)</td>
+                </tr>
+                <tr>
+                  <td>2026 price (1ct equiv.)</td>
+                  <td>C$1,000-C$2,500</td>
+                  <td>C$250-C$600</td>
+                </tr>
+                <tr>
+                  <td>Passes diamond tester</td>
+                  <td>Yes</td>
+                  <td>No (on thermal testers)</td>
+                </tr>
+                <tr>
+                  <td>Certification</td>
+                  <td>IGI / GIA</td>
+                  <td>Charles &amp; Colvard grading</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Choose moissanite if budget is the primary driver and you're open to a stone with its own optical character. Choose a lab-grown diamond if you want a stone that is, in every verifiable way, a diamond.</p>
+
+          <p><a href="/moissanite-engagement-rings/">Full guide to moissanite engagement rings</a></p>
+
+          <h2>How Lux Jewels Sources Lab-Grown Diamonds</h2>
+
+          <p>I don't work with a fixed supplier. I source each stone independently against the specifications you've approved - cut grade, colour, clarity, carat weight - and I won't set a stone I haven't verified against the IGI report. The report number goes to you before the stone gets set. You check it on IGI's site. There's no trust-me stage in this process.</p>
+
+          <p>Since 2015 - when I became the first Canadian jeweller to commit exclusively to lab-grown - I've built relationships with lab-grown producers who can consistently supply E-F/VS1 stones in the shapes and sizes most common in custom engagement ring design. That sourcing depth took years to build and it's why I can tell you with confidence what's achievable in your budget.</p>
+
+          <p><a href="/custom-engagement-rings/">Start your custom design with a free consultation</a></p>
+
+          <h2>Two Ways to Work With Lux Jewels</h2>
+
+          <p><strong>Free Consultation - 30 to 40 Minutes</strong><br>
+          A free video call (Zoom or Google Meet) where I'll answer your questions, help you understand what grade of stone your budget can achieve, and give you a design direction. No obligation. No pressure.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <p><strong>No-BS Call - $199 for 30 Minutes</strong><br>
+          You've done your research. You have specific questions, quotes from other jewellers, or a stone you're trying to evaluate. I'll give you a straight answer on every one. The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+
+</Base>
+
+<style>
+  .lj-table-wrap {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #e6e2de;
+    border-radius: 6px;
+  }
+
+  .lj-table-wrap table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .lj-table-wrap thead tr {
+    background: #f9f8f6;
+  }
+
+  .lj-table-wrap th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #202020;
+    border-bottom: 2px solid #e6e2de;
+    white-space: nowrap;
+  }
+
+  .lj-table-wrap td {
+    padding: 0.7rem 1rem;
+    color: #202020;
+    border-bottom: 1px solid #e6e2de;
+    vertical-align: top;
+  }
+
+  .lj-table-wrap tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .lj-table-wrap tbody tr:nth-child(even) {
+    background: #f9f8f6;
+  }
+</style>

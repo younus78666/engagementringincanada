@@ -1,0 +1,296 @@
+﻿---
+import Base from '../layouts/Base.astro';
+import TwoWaysCTA from '../components/TwoWaysCTA.astro';
+import FAQSection from '../components/FAQSection.astro';
+
+const title = "Engagement Rings Toronto — Lab-Grown, Online & Custom";
+const description = "Lab-grown engagement rings for Toronto couples. IGI-certified, custom design, insured FedEx delivery across the GTA. Free video consultation with Suman Smith.";
+const jsonLd = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/engagement-rings-toronto/",
+      "url": "https://engagementringincanada.com/engagement-rings-toronto/",
+      "name": "Engagement Rings Toronto — Lab-Grown, Online & Custom",
+      "description": "Lab-grown engagement rings for Toronto couples. IGI-certified, custom design, insured FedEx delivery across the GTA. Free video consultation with Suman Smith.",
+      "inLanguage": "en-CA",
+      "areaServed": {
+        "@type": "City",
+        "name": "Toronto",
+        "containedInPlace": {"@type": "Province", "name": "Ontario", "containedInPlace": {"@type": "Country", "name": "Canada"}}
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://engagementringincanada.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Engagement Rings Toronto", "item": "https://engagementringincanada.com/engagement-rings-toronto/"}
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do you have a showroom in Toronto?",
+          "acceptedAnswer": {"@type": "Answer", "text": "No. Lux Jewels operates entirely online. Consultations are 30-40 minute video calls via Zoom or Google Meet. Rings deliver via FedEx Priority, fully insured, with signature required. The online process is faster, less expensive, and works better for a custom product than a showroom visit."}
+        },
+        {
+          "@type": "Question",
+          "name": "Why buy from an online jeweller instead of a Toronto showroom?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lower overhead equals lower prices for equivalent quality. Toronto showroom rent, sales staff, and display inventory are real costs embedded in ring prices. An online specialist has lower overhead and passes savings to clients. You also work directly with the founder, not a commissioned salesperson, with access to stone inventory from multiple suppliers."}
+        },
+        {
+          "@type": "Question",
+          "name": "How does delivery work in Toronto?",
+          "acceptedAnswer": {"@type": "Answer", "text": "All rings ship via FedEx Priority, fully insured, with signature required. Typical delivery to Toronto addresses is next-day from ship date. Tracking is provided at shipment. Custom orders take 4-6 weeks to produce before shipping."}
+        },
+        {
+          "@type": "Question",
+          "name": "Are your lab-grown diamonds IGI certified?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every lab-grown diamond we work with comes with an IGI grading certificate and a laser girdle inscription. The inscription matches the certificate number, so you can independently verify the stone you received matches the certification you paid for."}
+        },
+        {
+          "@type": "Question",
+          "name": "What makes Lux Jewels different from other Toronto lab-grown jewellers?",
+          "acceptedAnswer": {"@type": "Answer", "text": "Lux Jewels was founded in 2007, and in 2015 became the first Canadian jewellery business to specialize exclusively in lab-grown diamonds. That's over a decade ahead of national chains adding lab-grown collections. Clients work directly with founder Suman Smith, not a sales rep, and every ring is custom-made to their specifications."}
+        }
+      ]
+    }
+  ]
+});
+
+const faqs = [
+  {
+    q: "Do you have a showroom in Toronto?",
+    a: "No. Lux Jewels operates entirely online. Consultations are 30-40 minute video calls via Zoom or Google Meet. Rings are delivered via FedEx Priority, fully insured, with signature required. I've operated this way since 2007 — not because I can't open a showroom, but because an online process is faster, less expensive for clients, and genuinely works better for a custom product."
+  },
+  {
+    q: "Why should I buy from an online jeweller instead of a Toronto showroom?",
+    a: "The honest answer is lower overhead equals lower prices for equivalent quality. Toronto showroom rent, sales staff, and display inventory are real costs that get embedded into ring prices. An online specialist has lower overhead and passes that back. You also get direct access to me — not a sales rep working toward a commission — and access to stone inventory from multiple suppliers rather than whatever a single showroom happens to carry."
+  },
+  {
+    q: "How does the consultation work if I'm in Toronto?",
+    a: "You book a 30-40 minute video call via Zoom or Google Meet. We discuss your style preferences, stone priorities (shape, size, colour, clarity), setting preferences, and budget. After the call, I identify candidate stones and follow up with pricing and photos. If you'd like to proceed, I present CAD designs before production begins. Everything is async-friendly — you don't have to be available outside work hours."
+  },
+  {
+    q: "How does delivery work in Toronto?",
+    a: "All rings ship via FedEx Priority, fully insured, with signature required. Typical delivery to Toronto addresses is next-day from ship date. You'll receive tracking information when the order ships. If no one is available to sign on the first attempt, FedEx will schedule a reattempt or hold at a local FedEx location for pickup."
+  },
+  {
+    q: "What lab-grown engagement rings do you carry for Toronto clients?",
+    a: "Every shape in our collection is available — oval, emerald cut, round brilliant, pear, cushion, solitaire, halo, three-stone, radiant, vintage-inspired. All stones are IGI-certified. Custom design is available from a free consultation. We don't carry a display-case inventory — every ring is made to order for the specific client, with the specific stone grade, metal, and setting they've chosen."
+  },
+  {
+    q: "Are your lab-grown diamonds IGI certified?",
+    a: "Yes. Every lab-grown diamond we work with comes with an IGI grading certificate and a laser girdle inscription. The inscription matches the certificate number, so you can verify the stone you received matches the certification you paid for. If a seller can't give you a specific IGI or GIA certificate number for the stone before you purchase it, that's a problem."
+  },
+  {
+    q: "What's the difference between you and other Toronto lab-grown jewellers?",
+    a: "The most significant difference is my track record. I founded Lux Jewels in 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown stones in 2015. That's over a decade ahead of the national chains adding lab-grown to their display cases. It's also a different service model — you're working directly with the founder and designer, not a salesperson, and the entire process is built around your specific preferences rather than an existing inventory."
+  },
+  {
+    q: "Can I get a ring for under C$2,000 in Toronto?",
+    a: "Yes, depending on your specifications. A 0.5-0.75ct oval or round lab-grown diamond in a simple 14K solitaire setting can fall under C$2,000. The variables that push price up are carat weight, clarity grade, colour grade, and setting complexity. <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>Book a free consultation</a> and we'll find the best stone for your specific budget."
+  },
+];
+---
+
+<Base title={title} description={description} jsonLd={jsonLd}>
+  <!-- HERO -->
+  <section class="lj-hero">
+    <div class="lj-hero__overlay"></div>
+    <div class="lj-hero__content">
+      <p class="lj-hero__eyebrow">Lux Jewels Canada</p>
+      <h1>Engagement Rings Toronto — Lab-Grown, Online &amp; Custom</h1>
+      <div class="lj-hero__ctas">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BREADCRUMB -->
+  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
+    <div class="lj-container">
+      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a><span class="lj-breadcrumb__sep">/</span>
+        <span>Engagement Rings Toronto</span>
+      </nav>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="lj-section lj-section-pad" style="background:#ffffff;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+
+        <!-- Quick Answer -->
+        <div class="lj-quick-answer">
+          <p>Lux Jewels serves Toronto couples with IGI-certified lab-grown engagement rings through a fully online process — free video consultation, custom design, and insured FedEx Priority delivery to any address in the GTA. You don't need to visit a showroom. I'm Suman Smith, founder of Lux Jewels. With over 20 years in the Canadian jewellery industry, I founded Lux Jewels in 2007 and became the first Canadian jeweller to specialize exclusively in lab-grown diamonds in 2015.</p>
+        </div>
+
+        <!-- Main prose -->
+        <div class="lj-prose">
+
+          <p>I don't ask Toronto clients to book a parking spot and spend Saturday afternoon in a showroom. We handle the entire engagement ring process — consultation, stone selection, CAD review, production, and delivery — by video call and courier. The ring arrives at your door insured and verified.</p>
+
+          <p>
+            <a href="/lab-grown-engagement-rings/">Browse the full collection</a> or <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">book a free video consultation</a>.
+          </p>
+
+          <h2>Why Toronto's Lab-Grown Ring Market Looks the Way It Does</h2>
+
+          <p>Toronto has one of the most developed engagement ring markets in Canada. You'll find everything from single-family independent jewellers to international chains, and a growing number of lab-grown specialists in the city.</p>
+
+          <p>Here's the competitive landscape as of 2026:</p>
+
+          <p><strong>AGI Design</strong> — a Toronto-based family business with lab-grown rings starting from CA$1,680. They're one of the better-known independent options in the city. In-person and online consultations available.</p>
+
+          <p><strong>Bellisa Jewellery</strong> — CA$1,835-CA$2,643, over 450 customer reviews, lifetime warranty, CJA membership. A solid Toronto indie with a physical presence and an established customer base.</p>
+
+          <p><strong>Valour Diamonds</strong> — located at 55 Queen Street East, downtown Toronto. Appointment-based process, founder-led (Monil Shah). No pricing displayed publicly — appointments required to discuss budget.</p>
+
+          <p><strong>Ring Come True, CELI Toronto, Livia Diamonds</strong> — additional Toronto independents with showroom presences.</p>
+
+          <p><strong>Michael Hill</strong> — the national chain, with multiple Toronto locations. Lab collections available but not specialist-focused.</p>
+
+          <p>Every one of these competitors has a physical storefront, an appointment queue, and a cost structure that includes showroom rent, sales staff, and display inventory. That cost structure is embedded in their pricing.</p>
+
+          <h2>Why No Showroom Is an Advantage for Toronto Buyers</h2>
+
+          <p>I'll be direct about this: not having a Toronto showroom isn't a limitation — it's a deliberate choice, and it benefits you.</p>
+
+          <p><strong>No showroom rent means lower overhead.</strong> Retail jewellery store rent in downtown Toronto isn't cheap. The price you pay at a showroom partly covers that space. We don't have that cost. Our overhead is design time, stone sourcing, and production — and that's all you're paying for.</p>
+
+          <p><strong>No sales floor means no commission pressure.</strong> Showroom staff have sales targets. Video consultations with me don't. I'm trying to find you the right ring, not close a transaction by end of business.</p>
+
+          <p><strong>Online-only means truly Canada-wide reach.</strong> You're not limited to what a single city's supplier network can offer. I source stones from multiple suppliers and find the specific combination of carat, cut, clarity, colour, and shape that matches your specifications — not your specifications filtered by what I happen to have in a display case.</p>
+
+          <p><strong>Video consultation is more efficient.</strong> A 30-40 minute call with me covers everything a two-hour showroom visit covers, without the commute, the parking, and the sales environment. We're both more focused.</p>
+
+          <p>I've been operating this way since 2007. In 2015, when I committed the entire business to lab-grown exclusively, the online model was already proven. What changed was the quality of the product: lab-grown diamonds at IGI certification level, at a fraction of the cost of natural stones.</p>
+
+          <h2>What Toronto Engagement Ring Buyers Are Looking For in 2026</h2>
+
+          <p>Based on the consultations we do with Toronto and GTA couples, the most requested characteristics are:</p>
+
+          <p><strong>Shape:</strong> Oval is the top request right now, followed by emerald cut, then round brilliant and pear. Toronto clients tend to track jewellery trends and often come in already knowing their preferred shape.</p>
+
+          <p><strong>Budget:</strong> Most Toronto consultations are in the C$2,000-C$6,000 range for a complete ring (stone + setting). Lab-grown diamonds make that budget go significantly further than natural stones — a 1.5ct lab-grown in a good grade is accessible in that range; a 1.5ct natural diamond at equivalent quality is not.</p>
+
+          <p><strong>Customization:</strong> A high percentage of Toronto clients want at least some customization — different metal, band style, or setting than what they've seen. Custom design is available at Lux Jewels starting from a free consultation.</p>
+
+          <p><strong>Certification:</strong> Toronto buyers tend to be research-forward. They often already know they want IGI or GIA. Every stone we work with has an IGI grading certificate and laser girdle inscription you can verify.</p>
+
+          <h2>Popular Lab-Grown Engagement Ring Shapes for Toronto Buyers</h2>
+
+          <h3>Oval Lab-Grown Rings</h3>
+
+          <p>The most requested shape in our Toronto consultations right now. Oval lab-grown diamonds appear 10-15% larger per carat than rounds of equivalent weight. The elongated silhouette creates a finger-slimming effect. Available in 14K or 18K yellow, white, or rose gold, and Platinum 950. All settings use repurposed gold (99.5% previously refined).</p>
+
+          <p><a href="/oval-engagement-rings/">Browse oval engagement rings</a></p>
+
+          <h3>Emerald Cut Lab-Grown Rings</h3>
+
+          <p>The architectural choice. Step-cut facets produce a hall-of-mirrors effect rather than sparkle. VS1 clarity or better recommended — the open facets show inclusions more than brilliant cuts. D-F or G colour ideal for emerald cut.</p>
+
+          <p><a href="/emerald-cut-engagement-rings/">Browse emerald cut rings</a></p>
+
+          <h3>Solitaire Lab-Grown Rings</h3>
+
+          <p>A single stone, a clean band. Solitaire settings work with any shape and put all focus on the stone grade and cut quality. The most timeless configuration in the collection.</p>
+
+          <p><a href="/solitaire-engagement-rings/">Browse solitaire rings</a></p>
+
+          <h3>Halo Lab-Grown Rings</h3>
+
+          <p>A frame of smaller accent diamonds around the centre stone adds perimeter sparkle and makes the visual size of the ring significantly larger. Popular in the GTA for 0.75-1.0ct centre stones where clients want maximum visual impact.</p>
+
+          <p><a href="/halo-engagement-rings/">Browse halo rings</a></p>
+
+          <h3>Custom Design</h3>
+
+          <p>If you've seen something specific — on a friend's hand, in a photo, in your own imagination — we can design from scratch. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book a free consultation</a> and we'll talk through the design process.</p>
+
+          <h2>2026 Price Context for Toronto Lab-Grown Engagement Rings</h2>
+
+          <p>For reference, here's what Toronto-area jewellers are showing publicly for lab-grown engagement rings:</p>
+
+          <div class="lj-table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Toronto Jeweller</th>
+                  <th>Starting Price (CAD)</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AGI Design</td>
+                  <td>from $1,680</td>
+                  <td>37+ oval designs shown; range to $5,800</td>
+                </tr>
+                <tr>
+                  <td>Bellisa Jewellery</td>
+                  <td>from $1,835</td>
+                  <td>207 designs; range to $2,643 on collection page</td>
+                </tr>
+                <tr>
+                  <td>Valour Diamonds</td>
+                  <td>Not publicly listed</td>
+                  <td>Appointment required to discuss pricing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Lux Jewels pricing is available on request — <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">book a free consultation</a> or a <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">No-BS Call</a> to discuss your specific budget and requirements.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <h2>Delivery to Toronto and the GTA</h2>
+
+          <p>All Lux Jewels engagement rings ship via FedEx Priority, fully insured, with signature required on delivery. We don't ship rings without insurance and signature — there's no other way to do it responsibly.</p>
+
+          <p>Typical delivery time to Toronto and the GTA is next-day from shipping date. For custom orders, production takes 4-6 weeks.</p>
+
+          <p>We ship to:</p>
+          <ul>
+            <li>All Toronto neighbourhoods (downtown, Midtown, North York, Etobicoke, Scarborough)</li>
+            <li>GTA municipalities (Mississauga, Brampton, Markham, Richmond Hill, Oakville, Burlington)</li>
+            <li>All Canadian provinces and territories</li>
+            <li>United States</li>
+          </ul>
+
+          <h2>Two Ways to Work with Lux Jewels as a Toronto Client</h2>
+
+          <p><strong>Free Consultation — 30 to 40 Minutes</strong><br>
+          Video call via Zoom or Google Meet. We'll discuss your style, stone preferences, and budget. I'll identify options and follow up with specific stone candidates and pricing. No commitment required.</p>
+
+          <p><a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book Your Free Consultation</a></p>
+
+          <p><strong>No-BS Call — $199 for 30 Minutes</strong><br>
+          You've already visited a Toronto showroom, received a quote, or found a specific stone online. You want a straight second opinion from someone with over 20 years in this industry.</p>
+
+          <p>Bring the IGI certificate, the quote, the product link — whatever you have. I'll tell you exactly what it's worth, whether the stone is priced fairly, and whether there are better options at the same budget.</p>
+
+          <p>The first and only service of its kind in the world.</p>
+
+          <p><em>Pricing subject to change. Confirm current rate at stan.store/luxjewels before booking.</em></p>
+
+          <p><a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn">Book a No-BS Call</a></p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <FAQSection items={faqs} />
+
+  <!-- TWO WAYS CTA -->
+  <TwoWaysCTA />
+</Base>
