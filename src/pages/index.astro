@@ -1,488 +1,406 @@
-﻿---
+---
 import Base from '../layouts/Base.astro';
 import TwoWaysCTA from '../components/TwoWaysCTA.astro';
 import FAQSection from '../components/FAQSection.astro';
 
-const title = "Engagement Rings Canada — Custom Lab-Grown Design";
-const description = "Shop lab-grown engagement rings across Canada. IGI-certified diamonds and moissanite, custom design in 4-6 weeks. Free video consultation. Ships Canada-wide.";
+const title = "Engagement Rings Canada - Custom Lab-Grown Design";
+const description = "Shop lab-grown engagement rings across Canada. IGI-certified diamonds and moissanite, custom design in 4-6 weeks. Free video consultation with Suman Smith. Ships Canada-wide.";
+
 const jsonLd = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "WebPage",
-      "@id": "https://engagementringincanada.com/",
-      "url": "https://engagementringincanada.com/",
-      "name": "Engagement Rings Canada - Custom Lab-Grown Design",
-      "description": "Shop lab-grown engagement rings across Canada. IGI-certified diamonds and moissanite, custom design in 4-6 weeks. Free video consultation. Ships Canada-wide.",
-      "inLanguage": "en-CA",
-      "isPartOf": {
-        "@id": "https://engagementringincanada.com/"
-      }
-    },
     {
       "@type": "Organization",
       "@id": "https://engagementringincanada.com/#org",
       "name": "Lux Jewels",
       "url": "https://engagementringincanada.com/",
+      "logo": "https://www.luxjewels.com/wp-content/uploads/2023/06/LuxJewels_Full_Black-640x103.png",
+      "founder": {"@type": "Person", "name": "Suman Smith"},
       "foundingDate": "2007",
-      "founder": {
-        "@type": "Person",
-        "name": "Suman Smith"
-      },
-      "description": "First Canadian lab-grown diamond specialist since 2015. Custom engagement ring design for Canada and the US.",
-      "areaServed": ["CA", "US"],
-      "serviceType": "Custom Engagement Ring Design"
+      "description": "Custom lab-grown diamond and moissanite engagement rings, Canada-wide. First exclusively lab-grown specialist in Canada since 2015.",
+      "areaServed": "CA"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://engagementringincanada.com/",
+      "url": "https://engagementringincanada.com/",
+      "name": "Engagement Rings Canada - Custom Lab-Grown Design",
+      "description": "Custom lab-grown engagement rings across Canada. IGI-certified diamonds and moissanite, free consultation, ships Canada-wide.",
+      "inLanguage": "en-CA",
+      "publisher": {"@id": "https://engagementringincanada.com/#org"}
     },
     {
       "@type": "FAQPage",
       "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Are lab-grown diamonds real diamonds?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Lab-grown diamonds have the same chemical composition, the same Mohs hardness of 10, and the same optical properties as mined diamonds. The only difference is origin. IGI grades them using the same 4Cs system."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much do engagement rings cost in Canada?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "A lab-grown diamond solitaire in Canada typically runs CA$800-CA$2,200 for the stone at 1 carat, plus setting and design costs. Natural diamonds of equivalent size run CA$6,000-CA$9,000 or more. Moissanite is the most affordable option, starting around CA$250-CA$600 per carat equivalent."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can I get an engagement ring for under CA$1,000 in Canada?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. A moissanite stone in a 0.75-1ct equivalent size with a standard 14K solitaire setting is achievable in this budget. Lab-grown diamonds at 0.5ct are also possible."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the difference between lab-grown and moissanite?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Lab-grown diamonds are diamonds. Moissanite is silicon carbide, a completely different material. Moissanite has a higher refractive index and produces more rainbow fire, slightly lower hardness at 9.25 vs 10, and a significantly lower price point. Both are durable enough for everyday wear."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer custom ring design?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. About 60% of rings built at Lux Jewels are fully custom. The process starts with a free video consultation, moves through CAD rendering and approval, then stone sourcing with an IGI report before you commit."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you ship across Canada?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes. Lux Jewels ships to all Canadian provinces via FedEx Priority, insured with signature required. Typical delivery is next-day once shipped. We also ship to the US."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What certifications do your diamonds come with?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "All lab-grown diamonds supplied by Lux Jewels come with an IGI grading certificate. The report number is laser-inscribed on the stone's girdle so you can independently verify the grade."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does a custom ring take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "4-6 weeks from design approval. The CAD rendering and revision phase takes 5-7 business days. Casting and setting takes 10-15 business days. Shipping typically adds one business day."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What metal options are available?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "14K yellow, rose, or white gold; 18K yellow, rose, or white gold; platinum 950. All gold alloys use repurposed gold (99.5% previously refined)."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://engagementringincanada.com/"
-        }
+        {"@type": "Question", "name": "Are lab-grown diamonds real diamonds?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lab-grown diamonds have the same chemical composition, Mohs hardness of 10, and optical properties as mined diamonds. IGI grades them using the same 4Cs system."}},
+        {"@type": "Question", "name": "How much do engagement rings cost in Canada?", "acceptedAnswer": {"@type": "Answer", "text": "A lab-grown diamond solitaire at 1 carat runs CA$800-CA$2,200. Natural diamonds of equivalent size run CA$6,000-CA$9,000 or more. Moissanite starts around CA$250-CA$600 per carat equivalent."}},
+        {"@type": "Question", "name": "How long does a custom ring take?", "acceptedAnswer": {"@type": "Answer", "text": "4-6 weeks from design approval. CAD rendering takes 5-7 business days. Casting and setting takes 10-15 business days. Shipping is next-day once dispatched."}},
+        {"@type": "Question", "name": "Do you ship across Canada?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lux Jewels ships to all Canadian provinces via FedEx Priority, insured with signature required."}}
       ]
     }
   ]
 });
 
+const shapes = [
+  { label: "Oval", href: "/oval-engagement-rings/", desc: "Most popular",
+    svg: `<ellipse cx="27" cy="27" rx="18" ry="13" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Emerald Cut", href: "/emerald-cut-engagement-rings/", desc: "Step cut",
+    svg: `<rect x="9" y="16" width="36" height="22" rx="2" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><line x1="13" y1="16" x2="9" y2="21" stroke="#bcaf9f" stroke-width="1"/><line x1="41" y1="16" x2="45" y2="21" stroke="#bcaf9f" stroke-width="1"/><line x1="9" y1="33" x2="13" y2="38" stroke="#bcaf9f" stroke-width="1"/><line x1="45" y1="33" x2="41" y2="38" stroke="#bcaf9f" stroke-width="1"/>` },
+  { label: "Cushion", href: "/cushion-cut-engagement-rings/", desc: "Soft corners",
+    svg: `<rect x="11" y="11" width="32" height="32" rx="10" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Round", href: "/round-engagement-rings/", desc: "Classic brilliant",
+    svg: `<circle cx="27" cy="27" r="16" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Pear", href: "/pear-engagement-rings/", desc: "Unique silhouette",
+    svg: `<path d="M27 43 C18 43 11 35 11 26 C11 18 18 10 27 10 C36 10 43 18 43 26 C43 35 36 43 27 43Z" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Halo", href: "/halo-engagement-rings/", desc: "Added sparkle",
+    svg: `<circle cx="27" cy="27" r="11" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><circle cx="27" cy="27" r="18" fill="none" stroke="#bcaf9f" stroke-width="1" stroke-dasharray="2.5 2"/>` },
+  { label: "Solitaire", href: "/solitaire-engagement-rings/", desc: "Pure elegance",
+    svg: `<circle cx="27" cy="21" r="12" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><line x1="27" y1="33" x2="27" y2="48" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Radiant", href: "/radiant-cut-engagement-rings/", desc: "Brilliant sparkle",
+    svg: `<polygon points="17,10 37,10 47,20 47,34 37,44 17,44 7,34 7,20" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Vintage", href: "/vintage-engagement-rings/", desc: "Art deco inspired",
+    svg: `<rect x="11" y="16" width="32" height="22" rx="3" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><rect x="7" y="12" width="5" height="5" rx="1" fill="none" stroke="#bcaf9f" stroke-width="1"/><rect x="42" y="12" width="5" height="5" rx="1" fill="none" stroke="#bcaf9f" stroke-width="1"/><rect x="7" y="37" width="5" height="5" rx="1" fill="none" stroke="#bcaf9f" stroke-width="1"/><rect x="42" y="37" width="5" height="5" rx="1" fill="none" stroke="#bcaf9f" stroke-width="1"/>` },
+  { label: "Pave", href: "/pave-engagement-rings/", desc: "All-over sparkle",
+    svg: `<circle cx="27" cy="27" r="11" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><circle cx="27" cy="11" r="2.5" fill="#bcaf9f"/><circle cx="39" cy="16" r="2.5" fill="#bcaf9f"/><circle cx="43" cy="29" r="2.5" fill="#bcaf9f"/><circle cx="38" cy="41" r="2.5" fill="#bcaf9f"/><circle cx="27" cy="45" r="2.5" fill="#bcaf9f"/><circle cx="16" cy="41" r="2.5" fill="#bcaf9f"/><circle cx="11" cy="29" r="2.5" fill="#bcaf9f"/><circle cx="15" cy="16" r="2.5" fill="#bcaf9f"/>` },
+  { label: "Three Stone", href: "/three-stone-engagement-rings/", desc: "Past, present, future",
+    svg: `<circle cx="27" cy="27" r="11" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><circle cx="13" cy="27" r="8" fill="none" stroke="#bcaf9f" stroke-width="1.5"/><circle cx="41" cy="27" r="8" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+  { label: "Custom", href: "/custom-engagement-rings/", desc: "Your vision",
+    svg: `<path d="M27 8 L31 20 L44 20 L34 28 L38 41 L27 33 L16 41 L20 28 L10 20 L23 20 Z" fill="none" stroke="#bcaf9f" stroke-width="1.5"/>` },
+];
+
 const faqs = [
-  {
-    q: "Are lab-grown diamonds real diamonds?",
-    a: "Yes. Lab-grown diamonds have the same chemical composition, the same Mohs hardness of 10, and the same optical properties as mined diamonds. The only difference is origin. IGI grades them using the same 4Cs system as natural stones."
-  },
-  {
-    q: "How much do engagement rings cost in Canada?",
-    a: "A lab-grown diamond solitaire in Canada typically runs CA$800&ndash;CA$2,200 for the stone at 1 carat, plus setting and design costs. Natural diamonds of equivalent size run CA$6,000&ndash;CA$9,000 or more. Moissanite is the most affordable option, starting around CA$250&ndash;CA$600 per carat equivalent. Pricing subject to change; confirm current rates at <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>stan.store/luxjewels</a> before booking."
-  },
-  {
-    q: "Can I get an engagement ring for under CA$1,000 in Canada?",
-    a: "Yes. A moissanite stone in a 0.75&ndash;1ct equivalent size with a standard 14K solitaire setting is achievable in this budget. Lab-grown diamonds at 0.5ct are also possible. The <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>free consultation</a> or <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>No-BS Call</a> will map exactly what's achievable at your number."
-  },
-  {
-    q: "What's the difference between lab-grown diamonds and moissanite?",
-    a: "Lab-grown diamonds are diamonds. Moissanite is silicon carbide, a completely different material with a higher refractive index (more rainbow fire), slightly lower hardness at 9.25 vs 10, and a significantly lower price point. Both are durable enough for everyday wear on an engagement ring."
-  },
-  {
-    q: "Do you offer custom ring design?",
-    a: "Yes. About 60% of rings built at Lux Jewels are fully custom from the first conversation. The process starts with a free 30&ndash;40 minute video consultation, moves through CAD rendering and approval, then stone sourcing with an IGI report before you commit. <a href='/custom-engagement-rings/'>Learn more about custom design.</a>"
-  },
-  {
-    q: "Do you ship across Canada?",
-    a: "Yes. Lux Jewels ships to all Canadian provinces via FedEx Priority, insured with signature required. Typical delivery is next-day once shipped. We also ship to the US."
-  },
-  {
-    q: "What certifications do your diamonds come with?",
-    a: "All lab-grown diamonds I supply come with an IGI (International Gemological Institute) grading certificate. The report number is laser-inscribed on the stone's girdle so you can independently verify the grade before the ring arrives."
-  },
-  {
-    q: "How long does a custom ring take?",
-    a: "4&ndash;6 weeks from design approval. The CAD rendering and revision phase takes 5&ndash;7 business days. Casting and setting takes 10&ndash;15 business days. Shipping typically adds one business day once the ring ships."
-  },
-  {
-    q: "What metal options are available?",
-    a: "14K yellow, rose, or white gold; 18K yellow, rose, or white gold; platinum 950. All gold alloys use repurposed gold (99.5% previously refined). Metal choice affects durability, colour, and price."
-  },
+  { q: "Are lab-grown diamonds real diamonds?", a: "Yes. Lab-grown diamonds have the same chemical composition, the same Mohs hardness of 10, and the same optical properties as mined diamonds. The only difference is origin. IGI grades them using the same 4Cs system as natural stones." },
+  { q: "How much do engagement rings cost in Canada?", a: "A lab-grown diamond solitaire in Canada typically runs CA$800-CA$2,200 for the stone at 1 carat, plus setting and design costs. Natural diamonds of equivalent size run CA$6,000-CA$9,000 or more. Moissanite starts around CA$250-CA$600 per carat equivalent. Pricing subject to change; confirm current rates at <a href='https://stan.store/luxjewels' target='_blank' rel='noopener'>stan.store/luxjewels</a> before booking." },
+  { q: "Can I get an engagement ring for under CA$1,000 in Canada?", a: "Yes. A moissanite stone in a 0.75-1ct equivalent size with a standard 14K solitaire setting is achievable in this budget. Lab-grown diamonds at 0.5ct are also possible. A <a href='https://luxjewels.com/booking-appointment/' target='_blank' rel='noopener'>free consultation</a> will map exactly what's achievable at your number." },
+  { q: "What's the difference between lab-grown diamonds and moissanite?", a: "Lab-grown diamonds are diamonds. Moissanite is silicon carbide, a completely different material with a higher refractive index (more rainbow fire), slightly lower hardness at 9.25 vs 10, and a significantly lower price point. Both are durable enough for everyday wear on an engagement ring." },
+  { q: "Do you offer custom ring design?", a: "Yes. About 60% of rings built at Lux Jewels are fully custom from the first conversation. The process starts with a free 30-40 minute video consultation, moves through CAD rendering and approval, then stone sourcing with an IGI report before you commit. <a href='/custom-engagement-rings/'>Learn more about custom design.</a>" },
+  { q: "Do you ship across Canada?", a: "Yes. Lux Jewels ships to all Canadian provinces via FedEx Priority, insured with signature required. Typical delivery is next-day once shipped. We also ship to the US." },
+  { q: "What certifications do your diamonds come with?", a: "All lab-grown diamonds I supply come with an IGI grading certificate. The report number is laser-inscribed on the stone's girdle so you can independently verify the grade before the ring arrives." },
+  { q: "How long does a custom ring take?", a: "4-6 weeks from design approval. The CAD rendering and revision phase takes 5-7 business days. Casting and setting takes 10-15 business days. Shipping typically adds one business day once the ring ships." },
 ];
 ---
 
 <Base title={title} description={description} jsonLd={jsonLd}>
 
-  <!-- HERO -->
-  <section class="lj-hero">
-    <div class="lj-hero__overlay"></div>
+  <!-- ===== HERO ===== -->
+  <section class="lj-hero" style="min-height:660px;">
+    <img
+      src="/assets/images/hero-ring-1.jpg"
+      alt="Oval lab-grown diamond engagement ring on dark velvet"
+      class="lj-hero__bg-img"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="lj-hero__overlay" style="background:linear-gradient(105deg, rgba(6,4,3,0.93) 0%, rgba(6,4,3,0.72) 50%, rgba(6,4,3,0.18) 100%);"></div>
     <div class="lj-hero__content">
-      <p class="lj-hero__eyebrow">Lux Jewels, Since 2007</p>
+      <p class="lj-hero__eyebrow">Canada's First Exclusively Lab-Grown Diamond Specialist</p>
       <h1>Engagement Rings Canada</h1>
+      <p class="hp-hero__sub">Custom lab-grown diamonds and moissanite. IGI-certified stones, Canada-wide delivery, designed by Suman Smith since 2007.</p>
       <div class="lj-hero__ctas">
-        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">Book Free Consultation</a>
-        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">No-BS Call - $199</a>
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-hero-btn-primary">
+          Book Free Consultation
+        </a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-hero-btn-secondary">
+          No-BS Call - $199
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- BREADCRUMB -->
-  <div style="background:#f9f8f6;border-bottom:1px solid #e6e2de;">
-    <div class="lj-container">
-      <nav class="lj-breadcrumb" aria-label="Breadcrumb">
-        <span>Home</span>
-      </nav>
+  <!-- ===== STATS ROW ===== -->
+  <section class="lj-stats-row">
+    <div class="lj-stat">
+      <span class="lj-stat__num">2007</span>
+      <span class="lj-stat__label">Founded by Suman</span>
     </div>
-  </div>
-
-  <!-- INTRO + QUICK ANSWER -->
-  <section class="lj-section lj-section-pad" style="background:#ffffff;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-
-        <div class="lj-prose">
-          <p>I don't pressure you into a stone you can't afford. I don't hide prices behind a "contact us" button, and I don't pretend a bigger budget automatically means a better ring. I'm Suman Smith, and I've spent over 20 years helping couples across Canada and the US find the engagement ring that actually fits their life, not a showroom floor target. I started Lux Jewels in 2007, and in 2015 I became the first Canadian jeweller to specialize exclusively in lab-grown diamonds. I do things differently because I've seen too many buyers overpay for a name, not a stone.</p>
-        </div>
-
-        <div class="lj-quick-answer">
-          <p>Lux Jewels designs custom lab-grown engagement rings for couples across Canada. Stones are IGI-certified, set in 14K or 18K repurposed gold or platinum 950, and delivered via FedEx Priority insured shipping. Custom design takes 4&ndash;6 weeks. You can start with a free 30-minute video consultation or book a No-BS Call for direct, one-on-one advice.</p>
-        </div>
-
-        <div class="lj-prose">
-          <ul>
-            <li>IGI-certified lab-grown diamonds and moissanite</li>
-            <li>Custom design from concept to finished ring</li>
-            <li>Canada-wide and US delivery via FedEx Priority, insured</li>
-            <li>4&ndash;6 weeks from design approval to delivery</li>
-            <li>14K, 18K repurposed gold (99.5% previously refined) and platinum 950</li>
-            <li>Free 30&ndash;40 min video consultation included</li>
-            <li>First Canadian lab-grown specialist since 2015</li>
-          </ul>
-        </div>
-
-      </div>
+    <div class="lj-stat">
+      <span class="lj-stat__num">IGI</span>
+      <span class="lj-stat__label">Certified on every stone</span>
+    </div>
+    <div class="lj-stat">
+      <span class="lj-stat__num">4-6W</span>
+      <span class="lj-stat__label">Custom design timeline</span>
+    </div>
+    <div class="lj-stat">
+      <span class="lj-stat__num">CA</span>
+      <span class="lj-stat__label">Ships every province</span>
     </div>
   </section>
 
-  <!-- WHY LAB-GROWN -->
+  <!-- ===== WHY LAB-GROWN (split: text + diamond image) ===== -->
+  <section class="lj-split" style="background:#fff;">
+    <div class="lj-split__body">
+      <p class="lj-subtitle">Why It Matters</p>
+      <h2 class="lj-h2">Why Canadians Are Choosing Lab-Grown in 2026</h2>
+      <hr class="lj-divider" style="margin-left:0;" />
+      <div class="lj-prose" style="max-width:500px;">
+        <p>I don't pressure you into a stone you can't afford. I don't hide prices behind a "contact us" button, and I don't pretend a bigger budget automatically means a better ring. I'm Suman Smith, founder of Lux Jewels.</p>
+        <p>A 1-carat G, VS1 lab-grown diamond in Canada runs CA$800-CA$2,200. The same grade mined stone? CA$6,000-CA$9,000 or more from a national chain. That's not a compromise - that's a smarter allocation of the same budget.</p>
+        <p>Lab-grown diamonds are real diamonds. Same crystal structure. Same Mohs hardness of 10. Same 4Cs grading. IGI grades them with the same rigour it applies to mined stones. The only difference is origin.</p>
+        <p>In 2015, I became the first Canadian jeweller to commit exclusively to lab-grown diamonds. The market's caught up since then. I was just earlier than most.</p>
+      </div>
+      <div style="margin-top:28px;">
+        <a href="/lab-grown-engagement-rings/" class="lj-btn">Full Lab-Grown Guide</a>
+      </div>
+    </div>
+    <div class="lj-split__img">
+      <img
+        src="/assets/images/diamond-feature-1.jpg"
+        alt="Lab-grown diamond facets showing light refraction"
+        loading="lazy"
+      />
+    </div>
+  </section>
+
+  <!-- ===== SHAPE GRID ===== -->
   <section class="lj-section lj-section-pad" style="background:#f9f8f6;">
     <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>Why Canadians Are Choosing Lab-Grown Engagement Rings in 2026</h2>
-          <p>The market has shifted. Five years ago, lab-grown diamonds were a niche choice. Today they're what a lot of couples in Canada actively look for, and the reason's simple: you can get a visually identical, chemically identical stone for 60&ndash;85% less than mined.</p>
-          <p>A 1-carat G, VS1, excellent-cut mined diamond in Canada runs CA$6,000&ndash;CA$9,000 or more from a national chain. The same grade lab-grown stone? CA$800&ndash;CA$2,200 depending on where you buy. That's not a compromise. That's a smarter allocation of the same budget.</p>
-          <p>Lab-grown diamonds are real diamonds. The only difference is origin. A mined diamond forms under the earth over billions of years. A lab-grown diamond forms in a controlled environment over weeks, using either HPHT (high pressure, high temperature) or CVD (chemical vapour deposition). The result is the same crystal structure, the same Mohs hardness of 10, the same optical properties, and the same 4Cs grading system applies. IGI grades lab-grown diamonds with the same rigour it applies to mined stones.</p>
-          <p>Moissanite is a different stone entirely, made from silicon carbide, with a Mohs hardness of 9.25 and a refractive index higher than diamond. It produces more brilliance and more colour fire than a diamond. It's not a diamond substitute; it's a different stone with different optical properties and a different story. I'll help you decide which one fits what you're looking for.</p>
-          <p>If you're comparing affordable engagement rings in Canada, lab-grown gives you the most per dollar of any premium stone. And for couples working with a tighter budget, moissanite puts a stunning custom ring within reach of almost any price point.</p>
-        </div>
+      <p class="lj-subtitle">Shop the Collection</p>
+      <h2 class="lj-h2">Engagement Rings by Shape and Style</h2>
+      <hr class="lj-divider" />
+      <div class="lj-shapes-premium">
+        {shapes.map(s => (
+          <a href={s.href} class="lj-shape-premium">
+            <svg class="lj-shape-premium__icon" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg" set:html={s.svg} />
+            <span class="lj-shape-premium__name">{s.label}</span>
+            <span class="lj-shape-premium__desc">{s.desc}</span>
+          </a>
+        ))}
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="/engagement-rings-canada/" class="lj-btn">Browse All Styles</a>
       </div>
     </div>
   </section>
 
-  <!-- COLLECTION -->
-  <section class="lj-section lj-section-pad" style="background:#ffffff;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>Shop Our Lab-Grown Engagement Ring Collection</h2>
-          <p>Every ring Lux Jewels designs starts from a conversation about what you actually want. I don't hand you a catalogue and hope something fits. But if you're exploring, here's what's in the collection.</p>
-
-          <h3>Oval Engagement Rings</h3>
-          <p>Oval diamonds are the most popular shape I work with right now. The elongated shape makes the stone look larger than a round of the same carat weight, which means you get more visual impact per dollar. It's flattering on every hand shape. I set oval stones primarily in solitaire, hidden halo, and east-west configurations.</p>
-          <p><a href="/oval-engagement-rings/">Browse oval engagement rings</a></p>
-
-          <h3>Emerald Cut Engagement Rings</h3>
-          <p>If you want a ring that looks like it belongs in a vault, emerald cut is it. The long, step-cut facets create a hall-of-mirrors effect that's completely different from any brilliant cut. Clarity matters more with emerald cuts since the stone's transparency shows inclusions more easily. I recommend VS1 or better for this shape.</p>
-          <p><a href="/emerald-cut-engagement-rings/">Browse emerald cut engagement rings</a></p>
-
-          <h3>Solitaire Engagement Rings</h3>
-          <p>One stone. One metal band. No distractions. Solitaires are timeless for a reason: they put all the focus on the centre stone, which means the stone quality becomes the feature. I work with round, oval, and emerald cut centres in solitaire settings in 14K, 18K repurposed gold, and platinum 950.</p>
-          <p><a href="/solitaire-engagement-rings/">Browse solitaire engagement rings</a></p>
-
-          <h3>Halo and Hidden Halo Engagement Rings</h3>
-          <p>A halo setting places small accent diamonds around the centre stone, adding perimeter sparkle and making the centre stone appear larger. A hidden halo places those accent stones under the girdle of the centre stone, so they catch light from below without being immediately visible from above. Both styles work well with oval and round centre stones.</p>
-          <p><a href="/halo-engagement-rings/">Browse halo engagement rings</a></p>
-
-          <h3>Vintage-Inspired Engagement Rings</h3>
-          <p>Milgrain detailing, filigree work, pear-shaped stones in antique settings, and mixed metal bands. If the ring shouldn't look like it came from 2026, vintage-inspired design is what you're looking for. I build these with the same IGI-certified stones I use in all my designs, just in settings that reference 1920s and 1930s ring aesthetics.</p>
-          <p><a href="/vintage-engagement-rings/">Browse vintage-inspired engagement rings</a></p>
-
-          <h3>Custom Engagement Ring Design</h3>
-          <p>You've got a vision but you don't see it here. That's fine. About 60% of the rings I build are fully custom from the first conversation. We'll talk through the stone shape, the band profile, the metal, the setting style, and any detail elements you want, then I'll build a photorealistic CAD rendering for your approval before any metal gets poured.</p>
-          <p><a href="/custom-engagement-rings/">Start your custom design</a></p>
-        </div>
-      </div>
+  <!-- ===== CUSTOM DESIGN (split: design image + steps) ===== -->
+  <section class="lj-split" style="background:#fff;">
+    <div class="lj-split__img">
+      <img
+        src="/assets/images/process-design-2.jpg"
+        alt="Jewellery designer sketching a custom engagement ring"
+        loading="lazy"
+        style="object-position: center top;"
+      />
     </div>
-  </section>
-
-  <!-- SHAPES GRID -->
-  <section class="lj-section lj-section-pad" style="background:#f9f8f6;">
-    <div class="lj-container">
-      <h2 style="text-align:center;margin-bottom:2rem;">Browse by Ring Style</h2>
-      <div class="lj-shapes-grid">
-        <a href="/oval-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Oval</span>
-        </a>
-        <a href="/emerald-cut-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Emerald Cut</span>
-        </a>
-        <a href="/cushion-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Cushion</span>
-        </a>
-        <a href="/pear-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Pear</span>
-        </a>
-        <a href="/round-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Round</span>
-        </a>
-        <a href="/halo-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Halo</span>
-        </a>
-        <a href="/solitaire-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Solitaire</span>
-        </a>
-        <a href="/vintage-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Vintage</span>
-        </a>
-        <a href="/custom-engagement-rings/" class="lj-shape-card">
-          <span class="lj-shape-card__name">Custom</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHAT MAKES LUX JEWELS DIFFERENT -->
-  <section class="lj-section lj-section-pad" style="background:#ffffff;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>What Makes Lux Jewels Different From Other Canadian Jewellers</h2>
-          <p>I'll be direct about what separates the way I work from how most jewellers operate.</p>
-          <p>First, I show you the grading report. Every lab-grown diamond I source comes with an IGI grading certificate. That certificate has a report number laser-inscribed on the stone's girdle. You can verify the stone yourself. There's no ambiguity about what you're buying. Most retail environments don't walk you through this step.</p>
-          <p>Second, I don't have a showroom to rent. I work online, which means every dollar you'd spend on a jewellery district lease goes toward the stone and the craftsmanship instead. Canada-wide delivery via FedEx Priority, insured with signature required, is the model. It works. I've shipped to every province.</p>
-          <p>Third, you're talking to the designer. There's no sales associate, no commission pressure, no upsell pipeline. When you book a free consultation with Lux Jewels, you're booking time with me. I've been doing this since 2007. I'm not going to recommend a stone that doesn't serve you.</p>
-          <p>Fourth, my pricing is written down. That price table is coming up in the next section. No "call for pricing." No guessing games. The Canadian market has a transparency problem and I've been trying to fix it since 2015 when I committed to lab-grown as the primary offering.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- STONE TYPES -->
-  <section class="lj-section lj-section-pad" style="background:#f9f8f6;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>IGI-Certified Lab-Grown Diamonds and Moissanite</h2>
-
-          <h3>Lab-Grown Diamonds</h3>
-          <p>A lab-grown diamond is a diamond. The Federal Trade Commission in the US clarified this in 2018: the word "diamond" applies to any stone with the same chemical, optical, and physical properties as a mined diamond, regardless of origin. IGI grades lab-grown diamonds using the same 4Cs system as natural diamonds: cut, colour, clarity, and carat weight.</p>
-          <p>When I source stones for Lux Jewels customers, I look for E or F colour grades and VS1 clarity for most designs. That combination gives you a stone that's eye-clean with near-colourless to colourless appearance. The difference between E and F is not perceptible in a set ring. The difference between VS1 and SI1, in a step-cut like emerald, absolutely can be.</p>
-          <p>Every stone I supply comes with an IGI report. The report number is laser-inscribed on the girdle. You can check it.</p>
-          <p><a href="/lab-grown-diamonds-canada/">Learn more about lab-grown diamonds in Canada</a></p>
-
-          <h3>Moissanite</h3>
-          <p>Moissanite is not a diamond. I want to be upfront about that. It's a silicon carbide gemstone, first discovered in a meteorite crater in 1893 by Henri Moissan. The gem-quality moissanite used in jewellery today is lab-created by Charles &amp; Colvard, who produce the Forever One line.</p>
-          <p>Moissanite has a Mohs hardness of 9.25, which means it's durable enough for everyday wear on an engagement ring. Its refractive index is higher than diamond, which gives it more brilliance and a distinctive rainbow fire that some wearers love and others find too flashy. That's a personal preference, not a quality issue.</p>
-          <p>The price difference is significant. A 1-carat moissanite runs CA$250&ndash;CA$600 in a custom design compared to CA$800&ndash;CA$2,200 for a lab-grown diamond of similar size. If budget is the driver, moissanite is the honest recommendation.</p>
-          <p><a href="/moissanite-engagement-rings/">Browse moissanite engagement rings</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROCESS -->
-  <section class="lj-section lj-section-pad" style="background:#ffffff;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>How Our Custom Ring Process Works</h2>
-          <p>You don't need to know exactly what you want before you contact me. That's what the consultation is for. Here's how the process goes.</p>
-
-          <h3>Step 1: Free Video Consultation (30&ndash;40 minutes)</h3>
-          <p>We talk via Zoom or Google Meet. I'll ask about the style you're drawn to, the metal preferences, the budget, the wearer's lifestyle, and whether you've got any reference images. By the end of this call you'll know which stone type I'd recommend, what carat weight fits your budget, and what setting direction makes sense. <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener">Book your free consultation here.</a></p>
-
-          <h3>Step 2: Design and CAD Rendering</h3>
-          <p>I build a photorealistic 3D render of the ring based on our conversation. You'll see exactly what the ring will look like before I source the stone or start casting. We revise until you're happy. This step typically takes 5&ndash;7 business days.</p>
-
-          <h3>Step 3: Stone Sourcing with IGI Report</h3>
-          <p>Once the design is locked, I source the stone against your approved specifications. You'll receive the IGI grading report with the report number before any payment is made. If the stone doesn't match the agreed specifications, I source again.</p>
-
-          <h3>Step 4: Casting, Setting, and Delivery</h3>
-          <p>Ring casting and stone setting takes 10&ndash;15 business days. Delivery is via FedEx Priority, insured with signature required, typically next-day once shipped. Total timeline from design approval to delivery: 4&ndash;6 weeks.</p>
-
-          <p><a href="/custom-engagement-rings/">Start your custom design</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRICING TABLE -->
-  <section class="lj-section lj-section-pad" style="background:#f9f8f6;">
-    <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
-        <div class="lj-prose">
-          <h2>Engagement Ring Prices in Canada</h2>
-          <p>I promised transparency and here it is. The table below shows estimated price ranges for common carat weights across three stone types in a standard solitaire setting in 14K gold.</p>
-
-          <div class="lj-table-wrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Carat Weight</th>
-                  <th>Lab-Grown Diamond</th>
-                  <th>Natural Diamond</th>
-                  <th>Moissanite</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>0.5 ct</td>
-                  <td>CA$400&ndash;CA$900</td>
-                  <td>CA$2,500&ndash;CA$4,500</td>
-                  <td>CA$150&ndash;CA$300</td>
-                </tr>
-                <tr>
-                  <td>1.0 ct</td>
-                  <td>CA$800&ndash;CA$2,200</td>
-                  <td>CA$6,000&ndash;CA$9,000</td>
-                  <td>CA$250&ndash;CA$600</td>
-                </tr>
-                <tr>
-                  <td>1.5 ct</td>
-                  <td>CA$1,500&ndash;CA$3,800</td>
-                  <td>CA$12,000&ndash;CA$18,000</td>
-                  <td>CA$400&ndash;CA$900</td>
-                </tr>
-                <tr>
-                  <td>2.0 ct</td>
-                  <td>CA$2,800&ndash;CA$6,500</td>
-                  <td>CA$22,000&ndash;CA$35,000</td>
-                  <td>CA$600&ndash;CA$1,400</td>
-                </tr>
-              </tbody>
-            </table>
+    <div class="lj-split__body" style="background:#f9f8f6;">
+      <p class="lj-subtitle">The Process</p>
+      <h2 class="lj-h2">How Custom Ring Design Works</h2>
+      <hr class="lj-divider" style="margin-left:0;" />
+      <div class="hp-steps">
+        <div class="hp-step">
+          <span class="hp-step__num">01</span>
+          <div>
+            <p class="hp-step__title">Free Video Consultation</p>
+            <p class="hp-step__body">30-40 minutes via Zoom or Meet. We talk through stone type, setting style, budget, and lifestyle. You'll leave knowing exactly which direction fits.</p>
           </div>
+        </div>
+        <div class="hp-step">
+          <span class="hp-step__num">02</span>
+          <div>
+            <p class="hp-step__title">CAD Rendering and Approval</p>
+            <p class="hp-step__body">I build a photorealistic 3D render. You see exactly what the ring looks like before I source a single stone. We revise until you're satisfied.</p>
+          </div>
+        </div>
+        <div class="hp-step">
+          <span class="hp-step__num">03</span>
+          <div>
+            <p class="hp-step__title">Stone Sourcing with IGI Report</p>
+            <p class="hp-step__body">I source the stone to your approved specs. You receive the IGI grading report with the inscribed report number before any payment is made.</p>
+          </div>
+        </div>
+        <div class="hp-step">
+          <span class="hp-step__num">04</span>
+          <div>
+            <p class="hp-step__title">Crafting and FedEx Delivery</p>
+            <p class="hp-step__body">10-15 business days to cast and set. FedEx Priority, insured with signature. Total: 4-6 weeks from design approval.</p>
+          </div>
+        </div>
+      </div>
+      <div style="margin-top:32px;">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Start Your Custom Design</a>
+      </div>
+    </div>
+  </section>
 
-          <p>These are stone prices. Custom design, setting fabrication, and shipping are quoted separately based on the complexity of the setting. The band metal choice (14K vs 18K vs platinum 950) also affects total price.</p>
-          <p><strong>Pricing subject to change. Confirm current rate at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener">stan.store/luxjewels</a> before booking.</strong></p>
-          <p>If you're looking for engagement rings in Canada under CA$1,000 total, moissanite in a 0.5&ndash;1ct equivalent with a standard solitaire 14K setting is absolutely achievable. If your budget is CA$2,000&ndash;CA$4,000, you're in strong territory for a 1&ndash;1.5ct lab-grown diamond with a custom setting.</p>
-          <p>The key takeaway: there's no price point where I can't build something worth wearing. The stone type just changes.</p>
+  <!-- ===== PRICING (split: price table + diamond image) ===== -->
+  <section class="lj-split" style="background:#fff;">
+    <div class="lj-split__body">
+      <p class="lj-subtitle">Transparent Pricing</p>
+      <h2 class="lj-h2">Engagement Ring Prices in Canada</h2>
+      <hr class="lj-divider" style="margin-left:0;" />
+      <div style="overflow-x:auto;">
+        <table style="min-width:320px;">
+          <thead>
+            <tr>
+              <th>Carat</th>
+              <th>Lab-Grown Diamond</th>
+              <th>Moissanite</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0.5 ct</td><td>CA$400-CA$900</td><td>CA$150-CA$300</td></tr>
+            <tr><td>1.0 ct</td><td>CA$800-CA$2,200</td><td>CA$250-CA$600</td></tr>
+            <tr><td>1.5 ct</td><td>CA$1,500-CA$3,800</td><td>CA$400-CA$900</td></tr>
+            <tr><td>2.0 ct</td><td>CA$2,800-CA$6,500</td><td>CA$600-CA$1,400</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="lj-price-note" style="margin-top:12px;">Stone prices only. Setting, metal, and design quoted separately. Pricing subject to change. Confirm at <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" style="color:#601c2b;">stan.store/luxjewels</a>.</p>
+      <div style="margin-top:28px;">
+        <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn">Book Free Consultation</a>
+      </div>
+    </div>
+    <div class="lj-split__img">
+      <img
+        src="/assets/images/diamond-feature-2.jpg"
+        alt="Lab-grown diamond on white marble with light refraction"
+        loading="lazy"
+        style="object-position: center center;"
+      />
+    </div>
+  </section>
+
+  <!-- ===== FOUR PILLARS (dark) ===== -->
+  <section class="lj-section lj-section-pad" style="background:#1a1a1a;">
+    <div class="lj-container">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0 24px;">
+        <p class="lj-subtitle">The Lux Jewels Difference</p>
+        <h2 class="lj-h2 lj-h2--light">What Makes Lux Jewels Different</h2>
+        <hr class="lj-divider" />
+        <div class="hp-pillars">
+          <div class="hp-pillar">
+            <div class="hp-pillar__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3 L17 10 L25 10 L19 15 L21 23 L14 18 L7 23 L9 15 L3 10 L11 10 Z" stroke="#bcaf9f" stroke-width="1.2" fill="none"/></svg>
+            </div>
+            <h3 class="hp-pillar__title">IGI Report on Every Stone</h3>
+            <p class="hp-pillar__body">Every lab-grown diamond I supply comes with an IGI grading certificate. The report number is laser-inscribed on the girdle. You can verify it independently any time.</p>
+          </div>
+          <div class="hp-pillar">
+            <div class="hp-pillar__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="6" width="20" height="16" rx="2" stroke="#bcaf9f" stroke-width="1.2"/><path d="M9 14 L12 17 L19 11" stroke="#bcaf9f" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="hp-pillar__title">You're Talking to the Designer</h3>
+            <p class="hp-pillar__body">No sales associate, no commission pressure, no upsell pipeline. When you book time with Lux Jewels, you're booking time with me directly. I've been doing this since 2007.</p>
+          </div>
+          <div class="hp-pillar">
+            <div class="hp-pillar__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M5 14 L10 9 L14 13 L20 7 L24 11" stroke="#bcaf9f" stroke-width="1.2" stroke-linecap="round"/><line x1="5" y1="20" x2="24" y2="20" stroke="#bcaf9f" stroke-width="1.2" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="hp-pillar__title">Prices Written Down</h3>
+            <p class="hp-pillar__body">No "call for pricing." No guessing games. The Canadian jewellery market has a transparency problem. I've been working to fix it since 2015 when I committed fully to lab-grown.</p>
+          </div>
+          <div class="hp-pillar">
+            <div class="hp-pillar__icon">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="14" cy="14" r="10" stroke="#bcaf9f" stroke-width="1.2"/><path d="M9 14 L14 10 L19 14 L14 18 Z" stroke="#bcaf9f" stroke-width="1.2" fill="none"/></svg>
+            </div>
+            <h3 class="hp-pillar__title">Canada-Wide, No Showroom</h3>
+            <p class="hp-pillar__body">Every dollar you'd spend on jewellery district overhead goes toward the stone and craftsmanship instead. I've shipped to every Canadian province via FedEx Priority, fully insured.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT SUMAN -->
+  <!-- ===== ABOUT SUMAN ===== -->
   <section class="lj-section lj-section-pad" style="background:#ffffff;">
     <div class="lj-container">
-      <div class="lj-container--narrow" style="margin:0 auto;padding:0;">
+      <div class="lj-container--narrow" style="margin:0 auto;padding:0 24px;">
+        <p class="lj-subtitle">The Person Behind the Ring</p>
+        <h2 class="lj-h2">About Suman Smith</h2>
+        <hr class="lj-divider" />
         <div class="lj-prose">
-          <h2>About Suman Smith</h2>
-          <p>I've been working in the jewellery industry for over 20 years. I started Lux Jewels in 2007, initially as a custom design studio focused on quality over volume. The operation was small and that was intentional: I wanted to know every ring I was building and every person I was building it for.</p>
-          <p>In 2015 I made a shift that most Canadian jewellers weren't ready to make. I committed fully to lab-grown diamonds as the primary stone offering. The technology had reached the point where the stones were genuinely indistinguishable from mined, the grading infrastructure was credible, and the price differential was too significant to ignore on behalf of my customers. It was an easy decision for me and a hard one to explain to the market. Now, a decade later, the market's caught up.</p>
-          <p>I'm not affiliated with any mining group or stone manufacturer. I source independently and my only incentive is to match you with the right stone for your budget and your preferences. That independence matters.</p>
-          <p>I do this work online. My customers are in Ontario, BC, Quebec, Alberta, the Maritimes, and across the US. I don't need a showroom to do this well. I need the right conversation, the right design process, and the right stone at a price that doesn't make you wince every time you look at your hand.</p>
-          <p>That's the whole point of Lux Jewels.</p>
+          <p>I've been working in the jewellery industry for over 20 years. I started Lux Jewels in 2007 as a custom design studio focused on quality over volume. The operation was intentionally small: I wanted to know every ring I was building and every person I was building it for.</p>
+          <p>In 2015 I made a shift that most Canadian jewellers weren't ready to make. I committed fully to lab-grown diamonds as the primary stone offering. The technology had reached the point where the stones were genuinely indistinguishable from mined, the grading infrastructure was credible, and the price differential was too significant to ignore on behalf of my customers.</p>
+          <p>I work exclusively online. My customers are in Ontario, BC, Quebec, Alberta, the Maritimes, and across the US. I don't need a showroom to do this well. I need the right conversation, the right design process, and the right stone at a price that doesn't make you wince every time you look at your hand. That's the whole point of Lux Jewels.</p>
+        </div>
+        <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="/about/" class="lj-btn">About Suman</a>
+          <a href="https://luxjewels.com/booking-appointment/" target="_blank" rel="noopener" class="lj-btn lj-btn--primary">Book a Consultation</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FAQ -->
-  <FAQSection items={faqs} />
+  <!-- ===== FAQ ===== -->
+  <FAQSection items={faqs} title="Engagement Ring Questions" />
 
-  <!-- TWO WAYS CTA -->
+  <!-- ===== TWO WAYS CTA ===== -->
   <TwoWaysCTA />
 
 </Base>
 
 <style>
-  .lj-shapes-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-    gap: 1rem;
-    max-width: 900px;
-    margin: 0 auto;
-  }
+.hp-hero__sub {
+  color: rgba(255,255,255,0.78);
+  font-weight: 300;
+  font-size: 17px;
+  max-width: 500px;
+  margin: 0 0 32px 0;
+  line-height: 1.65;
+}
 
-  .lj-shape-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    border: 1px solid #e6e2de;
-    border-radius: 4px;
-    padding: 1.25rem 1rem;
-    text-align: center;
-    text-decoration: none;
-    color: #202020;
-    font-family: 'Lato', sans-serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    letter-spacing: 0.03em;
-    transition: border-color 0.2s, color 0.2s;
-  }
+.hp-steps { display: flex; flex-direction: column; gap: 24px; }
 
-  .lj-shape-card:hover {
-    border-color: #bcaf9f;
-    color: #601c2b;
-  }
+.hp-step { display: flex; gap: 20px; align-items: flex-start; }
 
-  .lj-shape-card__name {
-    display: block;
-  }
+.hp-step__num {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #d4cfc9;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 48px;
+  text-align: center;
+}
+
+.hp-step__title {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #202020;
+  margin: 0 0 6px 0;
+}
+
+.hp-step__body {
+  font-size: 14px;
+  font-weight: 300;
+  color: #6b6b6b;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.hp-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 44px 64px;
+  margin-top: 8px;
+}
+
+.hp-pillar__icon { margin-bottom: 14px; }
+
+.hp-pillar__title {
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.hp-pillar__body {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #9a948c;
+  line-height: 1.78;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .hp-pillars { grid-template-columns: 1fr; gap: 32px; }
+  .hp-step__num { font-size: 24px; width: 36px; }
+}
 </style>
