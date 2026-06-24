@@ -1,0 +1,158 @@
+---
+const BOOKING_URL = 'https://luxjewels.com/booking-appointment/';
+const NOBSCALL_URL = 'https://stan.store/luxjewels';
+const year = new Date().getFullYear();
+---
+
+<footer class="lj-footer">
+  <div class="lj-footer__top">
+    <div class="lj-container">
+      <div class="lj-footer__grid">
+        <!-- Brand -->
+        <div class="lj-footer__brand">
+          <a href="/" aria-label="Home">
+            <img
+              src="https://www.luxjewels.com/wp-content/uploads/2023/06/LuxJewels_Full_White-640x103.png"
+              alt="Lux Jewels"
+              width="180"
+              height="29"
+              loading="lazy"
+            />
+          </a>
+          <p>Custom lab-grown engagement rings, Canada-wide. Founded 2007. Canada's first exclusively lab-grown specialist since 2015.</p>
+          <p class="lj-footer__ships">Ships Canada-wide via FedEx Priority, insured.</p>
+        </div>
+
+        <!-- Shop -->
+        <div class="lj-footer__col">
+          <p class="lj-footer__col-heading">Shop</p>
+          <a href="/oval-engagement-rings/">Oval Engagement Rings</a>
+          <a href="/emerald-cut-engagement-rings/">Emerald Cut Rings</a>
+          <a href="/cushion-cut-engagement-rings/">Cushion Cut Rings</a>
+          <a href="/pear-engagement-rings/">Pear Engagement Rings</a>
+          <a href="/round-engagement-rings/">Round Brilliant Rings</a>
+          <a href="/halo-engagement-rings/">Halo Rings</a>
+          <a href="/solitaire-engagement-rings/">Solitaire Rings</a>
+          <a href="/vintage-engagement-rings/">Vintage Rings</a>
+          <a href="/custom-engagement-rings/">Custom Design</a>
+        </div>
+
+        <!-- Guides -->
+        <div class="lj-footer__col">
+          <p class="lj-footer__col-heading">Guides</p>
+          <a href="/lab-grown-engagement-rings/">Lab-Grown Guide</a>
+          <a href="/moissanite-engagement-rings/">Moissanite Guide</a>
+          <a href="/learn/how-lab-grown-diamonds-are-made/">How Lab-Grown Diamonds Are Made</a>
+          <a href="/learn/lab-grown-vs-natural-diamonds/">Lab-Grown vs Natural</a>
+          <a href="/learn/4cs-diamond-guide/">The 4Cs Explained</a>
+          <a href="/learn/engagement-ring-budget-canada/">Budget Guide Canada</a>
+          <a href="/learn/how-to-find-ring-size/">Find Your Ring Size</a>
+          <a href="/learn/">All Guides</a>
+        </div>
+
+        <!-- Book -->
+        <div class="lj-footer__col">
+          <p class="lj-footer__col-heading">Work With Suman</p>
+          <a href={BOOKING_URL} target="_blank" rel="noopener">Book Free Consultation</a>
+          <a href={NOBSCALL_URL} target="_blank" rel="noopener">No-BS Call — $199</a>
+          <a href="/about/">About Suman Smith</a>
+          <a href="/contact/">Contact</a>
+          <a href="/engagement-rings-toronto/">Toronto</a>
+          <a href="/engagement-rings-vancouver/">Vancouver</a>
+          <a href="/engagement-rings-calgary/">Calgary</a>
+          <a href="/engagement-rings-montreal/">Montreal</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lj-footer__bottom">
+    <div class="lj-container">
+      <p>
+        &copy; {year} Lux Jewels. All rights reserved. |
+        <a href="/contact/">Contact</a> |
+        Engagement rings Canada — custom lab-grown diamonds and moissanite.
+      </p>
+      <p class="lj-footer__disclaimer">
+        Prices are approximate and subject to change based on stone availability and market conditions.
+        All rings custom-designed; not all configurations available in all markets.
+        Lab-grown diamonds are real diamonds as defined by the FTC (2018).
+      </p>
+    </div>
+  </div>
+</footer>
+
+<style>
+.lj-footer { background: #1a1a1a; color: #d9d4cd; }
+
+.lj-footer__top { padding: 64px 0 40px; }
+
+.lj-footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.lj-footer__brand p {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #9a948c;
+  margin: 16px 0 0 0;
+}
+.lj-footer__ships {
+  font-size: 12px !important;
+  color: #bcaf9f !important;
+  margin-top: 10px !important;
+}
+
+.lj-footer__col { display: flex; flex-direction: column; }
+
+.lj-footer__col-heading {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #bcaf9f;
+  margin: 0 0 16px 0;
+}
+
+.lj-footer__col a {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  font-weight: 300;
+  color: #9a948c;
+  text-decoration: none;
+  padding: 5px 0;
+  transition: color 0.2s;
+}
+.lj-footer__col a:hover { color: #d9d4cd; }
+
+.lj-footer__bottom {
+  border-top: 1px solid #2a2a2a;
+  padding: 20px 0;
+}
+.lj-footer__bottom p {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #6b6b6b;
+  margin: 0 0 8px 0;
+  line-height: 1.6;
+}
+.lj-footer__bottom p:last-child { margin: 0; }
+.lj-footer__bottom a { color: #9a948c; text-decoration: underline; text-underline-offset: 2px; }
+.lj-footer__bottom a:hover { color: #d9d4cd; }
+.lj-footer__disclaimer { font-size: 11px !important; color: #4a4a4a !important; }
+
+@media (max-width: 900px) {
+  .lj-footer__grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .lj-footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 480px) {
+  .lj-footer__grid { grid-template-columns: 1fr; }
+  .lj-footer__brand { grid-column: auto; }
+}
+</style>

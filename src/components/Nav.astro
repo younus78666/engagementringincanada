@@ -1,0 +1,259 @@
+---
+const BOOKING_URL = 'https://luxjewels.com/booking-appointment/';
+
+const shopLinks = [
+  { label: 'Oval', href: '/oval-engagement-rings/' },
+  { label: 'Emerald Cut', href: '/emerald-cut-engagement-rings/' },
+  { label: 'Cushion Cut', href: '/cushion-cut-engagement-rings/' },
+  { label: 'Pear', href: '/pear-engagement-rings/' },
+  { label: 'Round', href: '/round-engagement-rings/' },
+  { label: 'Radiant Cut', href: '/radiant-cut-engagement-rings/' },
+  { label: 'Halo', href: '/halo-engagement-rings/' },
+  { label: 'Vintage', href: '/vintage-engagement-rings/' },
+  { label: 'Unique', href: '/unique-engagement-rings/' },
+  { label: 'Solitaire', href: '/solitaire-engagement-rings/' },
+  { label: 'Rose Gold', href: '/rose-gold-engagement-rings/' },
+  { label: 'Three Stone', href: '/three-stone-engagement-rings/' },
+  { label: 'Pave', href: '/pave-engagement-rings/' },
+];
+
+const learnLinks = [
+  { label: 'How Lab-Grown Diamonds Are Made', href: '/learn/how-lab-grown-diamonds-are-made/' },
+  { label: 'Lab-Grown vs Natural Diamonds', href: '/learn/lab-grown-vs-natural-diamonds/' },
+  { label: 'How to Read an IGI Certificate', href: '/learn/how-to-read-igi-certificate/' },
+  { label: 'The 4Cs Explained', href: '/learn/4cs-diamond-guide/' },
+  { label: 'Engagement Ring Budget Canada', href: '/learn/engagement-ring-budget-canada/' },
+  { label: 'Ring Metals Guide', href: '/learn/engagement-ring-metals-guide/' },
+  { label: 'How to Find Your Ring Size', href: '/learn/how-to-find-ring-size/' },
+  { label: 'Moissanite vs Lab-Grown Diamond', href: '/learn/moissanite-vs-lab-grown-diamond/' },
+];
+---
+
+<header class="lj-nav">
+  <div class="lj-nav__inner">
+    <!-- Logo -->
+    <a href="/" class="lj-nav__logo" aria-label="Engagement Ring in Canada — Lux Jewels">
+      <img
+        src="https://www.luxjewels.com/wp-content/uploads/2023/06/LuxJewels_Full_Black-640x103.png"
+        alt="Lux Jewels — Custom Lab-Grown Engagement Rings Canada"
+        width="200"
+        height="32"
+        loading="eager"
+      />
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="lj-nav__links" aria-label="Main navigation">
+      <!-- Shop dropdown -->
+      <div class="lj-nav__item lj-nav__item--drop">
+        <button class="lj-nav__btn" aria-expanded="false" aria-haspopup="true">
+          Shop Rings <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="lj-nav__chevron"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lj-nav__dropdown lj-nav__dropdown--wide">
+          <div class="lj-nav__drop-inner">
+            {shopLinks.map(l => <a href={l.href} class="lj-nav__drop-link">{l.label}</a>)}
+          </div>
+        </div>
+      </div>
+
+      <a href="/lab-grown-engagement-rings/" class="lj-nav__link">Lab-Grown</a>
+      <a href="/custom-engagement-rings/" class="lj-nav__link">Custom Design</a>
+
+      <!-- Learn dropdown -->
+      <div class="lj-nav__item lj-nav__item--drop">
+        <button class="lj-nav__btn" aria-expanded="false" aria-haspopup="true">
+          Learn <svg width="10" height="10" viewBox="0 0 10 10" fill="none" class="lj-nav__chevron"><path d="M2 3.5L5 6.5L8 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <div class="lj-nav__dropdown">
+          <div class="lj-nav__drop-inner">
+            {learnLinks.map(l => <a href={l.href} class="lj-nav__drop-link">{l.label}</a>)}
+          </div>
+        </div>
+      </div>
+
+      <a href="/about/" class="lj-nav__link">About</a>
+    </nav>
+
+    <!-- CTA + Mobile toggle -->
+    <div class="lj-nav__right">
+      <a href={BOOKING_URL} target="_blank" rel="noopener" class="lj-nav__cta">
+        Book Free Consult
+      </a>
+      <button class="lj-nav__mobile-toggle" aria-label="Open menu" aria-expanded="false">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none"><rect y="0" width="22" height="2" fill="currentColor"/><rect y="7" width="22" height="2" fill="currentColor"/><rect y="14" width="22" height="2" fill="currentColor"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="lj-nav__mobile" aria-hidden="true">
+    <div class="lj-nav__mob-inner">
+      <div class="lj-nav__mob-group">
+        <p class="lj-nav__mob-label">Shop</p>
+        {shopLinks.map(l => <a href={l.href} class="lj-nav__mob-link">{l.label}</a>)}
+      </div>
+      <div class="lj-nav__mob-group">
+        <a href="/lab-grown-engagement-rings/" class="lj-nav__mob-link">Lab-Grown Guide</a>
+        <a href="/custom-engagement-rings/" class="lj-nav__mob-link">Custom Design</a>
+        <a href="/about/" class="lj-nav__mob-link">About Suman</a>
+      </div>
+      <div class="lj-nav__mob-group">
+        <p class="lj-nav__mob-label">Learn</p>
+        {learnLinks.map(l => <a href={l.href} class="lj-nav__mob-link">{l.label}</a>)}
+      </div>
+      <div class="lj-nav__mob-ctas">
+        <a href={BOOKING_URL} target="_blank" rel="noopener" class="lj-btn lj-btn--primary" style="width:100%;text-align:center;">Book Free Consult</a>
+        <a href="https://stan.store/luxjewels" target="_blank" rel="noopener" class="lj-btn" style="width:100%;text-align:center;margin-top:12px;">No-BS Call — $199</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<style>
+.lj-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 1px solid #e6e2de;
+}
+
+.lj-nav__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.lj-nav__logo img { height: 32px; width: auto; }
+
+.lj-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex: 1;
+}
+
+.lj-nav__link, .lj-nav__btn {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  color: #202020;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+.lj-nav__link:hover, .lj-nav__btn:hover { color: #601c2b; }
+
+.lj-nav__chevron { transition: transform 0.2s; }
+.lj-nav__item--drop:hover .lj-nav__chevron { transform: rotate(180deg); }
+
+/* Dropdown */
+.lj-nav__item { position: relative; }
+.lj-nav__dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  background: #ffffff;
+  border: 1px solid #e6e2de;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+  min-width: 220px;
+  z-index: 200;
+  padding: 12px 0;
+}
+.lj-nav__dropdown--wide { min-width: 300px; }
+.lj-nav__item--drop:hover .lj-nav__dropdown { display: block; }
+.lj-nav__drop-inner { display: flex; flex-direction: column; }
+.lj-nav__drop-link {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #202020;
+  padding: 9px 20px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+.lj-nav__drop-link:hover { background: #f9f8f6; color: #601c2b; }
+
+/* CTA */
+.lj-nav__cta {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1.5px solid #202020;
+  color: #202020;
+  transition: background 0.25s, color 0.25s;
+  white-space: nowrap;
+}
+.lj-nav__cta:hover { background: #202020; color: #ffffff; }
+
+.lj-nav__right { display: flex; align-items: center; gap: 16px; margin-left: auto; }
+.lj-nav__mobile-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; color: #202020; }
+
+/* Mobile nav */
+.lj-nav__mobile {
+  display: none;
+  background: #ffffff;
+  border-top: 1px solid #e6e2de;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+.lj-nav__mobile.is-open { max-height: 90vh; overflow-y: auto; }
+.lj-nav__mob-inner { padding: 24px 24px 32px; display: flex; flex-direction: column; gap: 24px; }
+.lj-nav__mob-group { display: flex; flex-direction: column; gap: 4px; }
+.lj-nav__mob-label {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #bcaf9f;
+  margin: 0 0 8px 0;
+}
+.lj-nav__mob-link {
+  font-family: 'Lato', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #202020;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0ede9;
+  transition: color 0.2s;
+}
+.lj-nav__mob-link:hover { color: #601c2b; }
+.lj-nav__mob-ctas { display: flex; flex-direction: column; margin-top: 8px; }
+
+@media (max-width: 900px) {
+  .lj-nav__links { display: none; }
+  .lj-nav__mobile-toggle { display: block; }
+  .lj-nav__mobile { display: block; }
+}
+</style>
+
+<script>
+  const toggle = document.querySelector('.lj-nav__mobile-toggle');
+  const mobileMenu = document.querySelector('.lj-nav__mobile');
+  toggle?.addEventListener('click', () => {
+    const expanded = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!expanded));
+    mobileMenu?.classList.toggle('is-open');
+  });
+</script>

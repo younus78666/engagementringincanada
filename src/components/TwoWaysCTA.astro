@@ -1,0 +1,38 @@
+---
+const BOOKING_URL = 'https://luxjewels.com/booking-appointment/';
+const NOBSCALL_URL = 'https://stan.store/luxjewels';
+---
+
+<section class="lj-twoways lj-section" aria-label="Two ways to work with Suman">
+  <div class="lj-container">
+    <p class="lj-subtitle">Work With Suman</p>
+    <h2 class="lj-h2 lj-h2--light">Two Ways to Start</h2>
+    <hr class="lj-divider" />
+
+    <div class="lj-twoways__grid">
+      <!-- Free Consultation -->
+      <div class="lj-twoway">
+        <h3>Free Consultation</h3>
+        <p>
+          A 30-40 minute video call to talk through what you're looking for. No pressure, no pitch. We'll cover shapes, stones, settings, and budget. You'll leave with a clear direction whether you book with us or not.
+        </p>
+        <a href={BOOKING_URL} target="_blank" rel="noopener" class="lj-btn lj-btn--light">
+          Book Free Consultation
+        </a>
+        <span class="lj-price-note">Free. No purchase required. 30-40 minutes via Zoom or Google Meet.</span>
+      </div>
+
+      <!-- No-BS Call -->
+      <div class="lj-twoway">
+        <h3>No-BS Diamond Buying Call</h3>
+        <p>
+          A paid 30-minute call for buyers who already have quotes or stones in mind. I'll review the specific stone grades, assess whether the price is fair for the Canadian market, and tell you directly what to buy or avoid.
+        </p>
+        <a href={NOBSCALL_URL} target="_blank" rel="noopener" class="lj-btn lj-btn--primary">
+          Book the No-BS Call
+        </a>
+        <span class="lj-price-note">$199 for 30 minutes. Pricing subject to change. Confirm at stan.store/luxjewels.</span>
+      </div>
+    </div>
+  </div>
+</section>
